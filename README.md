@@ -80,6 +80,7 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 | `dist/styles.css` | L'apparence et les adaptations mobiles |
 | `dist/fonts/` | Les polices IBM Plex Sans et IBM Plex Mono (licence SIL OFL 1.1, voir `OFL.txt`), servies avec le site et intégrées en data URI dans le fichier autonome `index.html` : aucune requête vers un service de polices tiers |
 | `dist/index.html` | La structure de la page web |
+| `branding/` | L'icône du site (`icon.svg`, traits épais pour rester lisible à 16 px) et le logo de l'organisation GitHub (`logo.svg`, rendu en `logo-organisation.png`) ; `python3 scripts/build-icons.py` (demande `rsvg-convert`) les intègre en data URI dans `dist/index.html` et régénère le logo |
 
 Après modification des données, régénérer **les deux distributions** avec Python 3 :
 
