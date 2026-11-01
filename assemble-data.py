@@ -116,10 +116,13 @@ for axis in axis_ids:
         featured = [x for x in references['arguments'] if x['axis'] == axis and x['pole'] == pole and x['featured']]
         assert 1 <= len(featured) <= 2, f'{axis}, pôle {pole} : {len(featured)} thèses mises en avant'
 
-data = {'edition': 'France · novembre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
+# Version de la distribution, la seule affichée dans l'application : celle du fichier VERSION.
+version = (base / 'VERSION').read_text().strip()
+assert re.fullmatch(r'\d{4}\.\d{1,2}(\.v\d+)?', version), f'VERSION inattendue : {version}'
+data = {'version': version, 'edition': 'France · novembre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
         'families': families, 'familiesVersion': families_catalog['version'], 'parties': parties_catalog}
-(base / 'dist/data.js').write_text('window.REPERES_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
-print(f'Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(thinkers)} authors, {len(references["arguments"])} arguments, '
+(base / 'dist/data.js').write_text('window.ISOLOIR_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
+print(f'Version {version}. Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(thinkers)} authors, {len(references["arguments"])} arguments, '
       f'{len(families)} families (version {families_catalog["version"]}), {len(parties)} parties.')
 if missing_copies:
     print(f'{missing_copies} copies de sources absentes de research/sources/ sur {len(source_index)} : leurs empreintes n’ont pas été vérifiées.')

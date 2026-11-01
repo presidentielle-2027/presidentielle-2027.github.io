@@ -3,6 +3,7 @@
 
 # Sessions exportées depuis l'application lors d'essais : elles contiennent des opinions politiques
 reperes-session-politique*.json
+avant-isoloir-session*.json
 
 # Caches Python et dépendances Node éventuelles
 __pycache__/

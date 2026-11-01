@@ -1,6 +1,6 @@
 # Effort de défense et soutien à un pays agressé : sources des repères
 
-Méthode `reperes-fr-2026.2`, repères des familles version 2026.11.v3. Ces deux axes complètent l'axe « Alliances et autonomie stratégique » (voir `defense.md`) dans le thème « Écologie, Europe & monde ».
+Méthode `avant-isoloir-2026.2`, repères des familles version 2026.11.v3. Ces deux axes complètent l'axe « Alliances et autonomie stratégique » (voir `defense.md`) dans le thème « Écologie, Europe & monde ».
 
 Les citations ont été retrouvées mot pour mot dans les copies archivées sous `research/sources/` (chemins relatifs à ce dossier : `../sources/…`). Les pages sont celles du fichier PDF. Une source marquée *provisoire* est une déclaration publique (entretien, compte rendu de séance, article de presse citant les mots exacts) retenue parce que les textes de référence de la famille ne traitent pas le sujet ; elle sera remplacée par le programme 2027 du parti dès sa parution.
 

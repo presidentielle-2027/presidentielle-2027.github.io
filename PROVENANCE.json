@@ -1,8 +1,8 @@
 {
-  "application": "Repères — Cartographie politique",
+  "application": "Avant l'isoloir",
   "edition": "France · novembre 2026",
   "source_commit": "e8d8399b39c9c30c92d0dcb0989b5856a0441e4a",
-  "method_version": "reperes-fr-2026.2",
+  "method_version": "avant-isoloir-2026.2",
   "families_version": "2026.11.v3",
   "contents": {
     "questions": 80,

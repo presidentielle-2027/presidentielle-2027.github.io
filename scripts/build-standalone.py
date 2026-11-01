@@ -37,5 +37,5 @@ if re.search(r'<script\b[^>]*\bsrc\s*=|<link\b[^>]*rel=[\'"]stylesheet', html, f
     raise SystemExit('Une ressource externe subsiste dans le document autonome.')
 if re.search(r'url\((?!data:)', css):
     raise SystemExit('Une police ou une image n’a pas été intégrée au document autonome.')
-(base / 'reperes.html').write_text(html)
-print('Fichier autonome prêt : reperes.html')
+(base / 'index.html').write_text(html)
+print('Fichier autonome prêt : index.html')

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {METHOD_VERSION,COMPATIBLE_METHODS,READING,computeProfile,compareFamilies,globalCoordinates,interpretation,axisReading,proximity,familyContrast,findings,familyCoordinates,coordinateReading,sanitizeSession} from '../dist/engine.mjs';
+import {METHOD_VERSION,METHOD_ALIASES,COMPATIBLE_METHODS,READING,computeProfile,compareFamilies,globalCoordinates,interpretation,axisReading,proximity,familyContrast,findings,familyCoordinates,coordinateReading,sanitizeSession} from '../dist/engine.mjs';
 const axes=JSON.parse(fs.readFileSync(new URL('../research/questionnaire.json',import.meta.url))).axes;
 const families=JSON.parse(fs.readFileSync(new URL('../research/families.json',import.meta.url))).families;
 const responsesFor=(scoreFn)=>Object.fromEntries(axes.flatMap(a=>a.questions.map(q=>[q.id,Math.max(-2,Math.min(2,Math.round((scoreFn(a.id)-5)/2.5/q.direction)))])));
@@ -38,6 +38,12 @@ test('Each deliberately distinct family is recoverable from its exact coordinate
 });
 test('Imports enforce version, known identifiers, values, priorities and cursor bounds',()=>{
  assert.throws(()=>sanitizeSession({methodVersion:'other'},axes));const s=sanitizeSession({methodVersion:METHOD_VERSION,answers:{q01:2,q02:3,q03:'skip',foreign:2},priorities:{redistribution:3,work:9},cursor:999},axes);assert.deepEqual(s.answers,{q01:2,q03:'skip'});assert.deepEqual(s.priorities,{redistribution:3});assert.equal(s.cursor,axes.flatMap(a=>a.questions).length-1);
+});
+test('A session saved under a former identifier of the current method keeps its answers and its position',()=>{
+ for(const version of METHOD_ALIASES){
+  const s=sanitizeSession({methodVersion:version,answers:{q01:2,q02:'skip'},cursor:5},axes);
+  assert.equal(s.methodVersion,METHOD_VERSION);assert.deepEqual(s.answers,{q01:2,q02:'skip'});assert.equal(s.cursor,5);
+ }
 });
 test('A session from a compatible earlier method keeps its answers and resumes at the first open proposition',()=>{
  const all=axes.flatMap(a=>a.questions);

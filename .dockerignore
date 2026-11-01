@@ -1,8 +1,0 @@
-# Seuls les fichiers copiés par le Dockerfile entrent dans le contexte de construction :
-# l'historique Git, les sessions exportées et les éventuels fichiers .env n'atteignent jamais le démon Docker.
-*
-!dist
-!deploy/nginx.conf
-
-# Fichiers système macOS présents dans les dossiers conservés
-**/.DS_Store

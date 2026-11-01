@@ -10,22 +10,23 @@ const familyList=familyCatalog.families;
 const axisList=read('../research/questionnaire.json').axes;
 const questions=axisList.flatMap(a=>a.questions);
 const Q=questions.length,A=axisList.length;
+const VERSION=fs.readFileSync(new URL('../VERSION',import.meta.url),'utf8').trim();
 
-// Runs the assembled standalone page in a simulated browser; `session` pre-fills the local storage.
-function boot(session){
- const html=fs.readFileSync(new URL('../reperes.html',import.meta.url),'utf8');
+// Runs the assembled standalone page in a simulated browser; `session` pre-fills the local storage under `key`.
+function boot(session,key='avant-isoloir-v1'){
+ const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
  assert.doesNotMatch(html,/<script\b[^>]*\bsrc\s*=|<link\b[^>]*rel=["']stylesheet/i);
  assert.doesNotMatch(html,/<script\b[^>]*type=["']module/i);
  const scripts=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(x=>x[1]);
  const elements=Object.fromEntries(['main','navigation','toast'].map(id=>[id,{innerHTML:'',style:{},focus(){},querySelector(){return null}}]));
- const handlers={},windowHandlers={},saved=new Map(session?[['reperes-politique-fr-v1',JSON.stringify(session)]]:[]);
+ const handlers={},windowHandlers={},saved=new Map(session?[[key,JSON.stringify(session)]]:[]);
  let hash='';
  const location={get hash(){return hash},set hash(value){hash=value.startsWith('#')?value:'#'+value}};
  const bodyClasses=new Set();
  const document={getElementById:id=>elements[id],addEventListener(type,fn){(handlers[type]??=[]).push(fn)},querySelector(){return null},
   createElement:()=>({id:'',innerHTML:'',remove(){delete elements[this.id]}}),
   body:{appendChild(el){elements[el.id]=el},classList:{add:c=>bodyClasses.add(c),remove:c=>bodyClasses.delete(c)}}};
- const context={document,location,innerWidth:1280,scrollTo(){},addEventListener(type,fn){(windowHandlers[type]??=[]).push(fn)},localStorage:{getItem:key=>saved.get(key)??null,setItem:(key,value)=>saved.set(key,value)},setTimeout(){return 0},clearTimeout(){},URL,Blob,confirm(){return true},fetch(){throw new Error('Unexpected network request')}};
+ const context={document,location,innerWidth:1280,scrollTo(){},addEventListener(type,fn){(windowHandlers[type]??=[]).push(fn)},localStorage:{getItem:key=>saved.get(key)??null,setItem:(key,value)=>saved.set(key,value),removeItem:key=>saved.delete(key)},setTimeout(){return 0},clearTimeout(){},URL,Blob,confirm(){return true},fetch(){throw new Error('Unexpected network request')}};
  context.window=context;
  vm.createContext(context);
  vm.runInContext(scripts.join('\n'),context,{timeout:3000});
@@ -45,7 +46,7 @@ function boot(session){
 test('The standalone classic script starts and completes the questionnaire without imports or network',()=>{
  const app=boot();
  const {elements,handlers,windowHandlers,saved,location,bodyClasses,fire,action}=app;
- assert.match(app.html(),/Préparer mon choix/);
+ assert.match(app.html(),/Commencer le questionnaire/);
  // L'aperçu du bilan montre une famille sans nom par famille du catalogue, sans résultat simulé.
  assert.equal((app.html().match(/class="home-dot"/g)||[]).length,familyList.length);
  assert.match(app.html(),/aucun résultat simulé/);
@@ -72,7 +73,7 @@ test('The standalone classic script starts and completes the questionnaire witho
  for(const f of familyList)assert.ok(mapTable.includes(`<td>${f.name}`),f.name);
  assert.equal((app.html().match(/<title>[^<]* · économie /g)||[]).length,8);
  assert.match(app.html(),/<strong>Position intermédiaire<\/strong>/);
- assert.equal(JSON.parse(saved.get('reperes-politique-fr-v1')).answers.q02,'skip');
+ assert.equal(JSON.parse(saved.get('avant-isoloir-v1')).answers.q02,'skip');
  action('results-tab',undefined,{tab:'familles'});
  const families=app.html();
  assert.match(families,/class="proximity-chart"/);
@@ -105,13 +106,14 @@ test('The standalone classic script starts and completes the questionnaire witho
  // Le bilan imprimé déplie les sources et les repères des familles qu'il présente.
  assert.equal((report.match(/<details class="family-sub" open>/g)||[]).length,6);
  assert.doesNotMatch(report,/class="axis-ref"/);
- assert.ok(report.includes(`Repères des familles ${familyCatalog.version}`));
+ assert.ok(report.includes(`Version ${VERSION}`));
  fire(windowHandlers.afterprint);
  assert.equal(elements['print-report'],undefined);
  assert.ok(!bodyClasses.has('print-report-on'));
  app.go('#methode');
  const method=app.html(),parties=read('../research/parties.json').parties;
  assert.match(method,/id="familles-partis"/);
+ assert.ok(method.includes(`Version ${VERSION}.`));
  assert.equal((method.match(/<table class="party-table">[\s\S]*?<\/table>/g)||[]).join('').match(/<tr><td>/g).length,parties.length);
  assert.match(method,/La France insoumise[\s\S]*?Texte de référence : Gauche de rupture écologique/);
  assert.match(method,/Reconquête[\s\S]*?Texte comparé : Droite nationale souverainiste/);
@@ -138,6 +140,14 @@ test('Every axis presents arguments for both poles and the method page lists eve
  assert.match(method,/id="auteurs"/);
  assert.equal(method.match(/<ul class="author-list">[\s\S]*?<\/ul>/)[0].match(/<li>/g).length,refs.thinkers.length);
  assert.ok(method.includes(`${refs.thinkers.length} auteurs`));
+});
+
+test('Answers saved under the former storage key move to the current key on first load',()=>{
+ const app=boot({methodVersion:'reperes-fr-2026.2',answers:{q01:2,q02:-1},priorities:{work:3},cursor:2,usePriorities:true},'reperes-politique-fr-v1');
+ assert.ok(!app.saved.has('reperes-politique-fr-v1'));
+ const moved=JSON.parse(app.saved.get('avant-isoloir-v1'));
+ assert.deepEqual(moved.answers,{q01:2,q02:-1});assert.deepEqual(moved.priorities,{work:3});assert.equal(moved.cursor,2);
+ assert.equal(moved.methodVersion,METHOD_VERSION);
 });
 
 test('A partial questionnaire still lists every family of the catalog in the proximities',()=>{

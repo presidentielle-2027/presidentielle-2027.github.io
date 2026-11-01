@@ -1,4 +1,6 @@
-export const METHOD_VERSION='reperes-fr-2026.2';
+export const METHOD_VERSION='avant-isoloir-2026.2';
+// Ancien identifiant de cette même méthode : mêmes propositions dans le même ordre, sessions reprises telles quelles.
+export const METHOD_ALIASES=['reperes-fr-2026.2'];
 // Versions antérieures dont les propositions sont reprises à l'identique : leurs sessions restent importables,
 // les propositions ajoutées depuis restent simplement sans réponse.
 export const COMPATIBLE_METHODS=['reperes-fr-2026.1'];
@@ -39,7 +41,7 @@ export function interpretation(profile,ranked){
  const first=ranked[0],second=ranked[1];
  const mixed=first.distance>READING.transversal;const tied=!!second&&second.distance-first.distance<READING.tie;
  const {eco,culture}=coordinateReading(c);
- return {ready:true,measured,title:mixed?'Un profil transversal':tied?`${first.name} / ${second.name}`:first.name,description:mixed?'Vos réponses se combinent sans correspondre nettement à l’un des profils de référence. Aucun courant ne se détache : les axes détaillés et vos priorités feront la différence.':tied?'Deux familles présentent des écarts proches avec vos réponses. Cette synthèse conserve cette proximité plutôt que de forcer un choix.':'C’est la famille de référence dont les positions sont les moins éloignées de vos réponses, parmi les dix profils modélisés.',eco,culture,mixed,tied,first,second,checks:map.checks?.score};
+ return {ready:true,measured,title:mixed?'Un profil transversal':tied?`${first.name} / ${second.name}`:first.name,description:mixed?'Vos réponses ne correspondent nettement à aucun des profils de référence. Pour affiner la lecture, consultez les axes un par un et l’effet de vos priorités.':tied?'Deux familles sont à des écarts proches de vos réponses ; le bilan les présente ensemble.':'C’est la famille dont les repères sont les moins éloignés de vos réponses.',eco,culture,mixed,tied,first,second,checks:map.checks?.score};
 }
 // Seuils de lecture du bilan : conventions éditoriales de cette version, sans calibration statistique.
 // strong et middle sont des distances au milieu de l'axe (5) ; tie, clear et transversal portent sur les écarts moyens
@@ -90,12 +92,12 @@ export function findings(axes,profile,priorities={},ranked=[],alternative=[],rea
  return {marked,moreStrong,split,middle,unmeasured,family};
 }
 export function sanitizeSession(raw,axes){
- if(!raw||typeof raw!=='object'||Array.isArray(raw)||![METHOD_VERSION,...COMPATIBLE_METHODS].includes(raw.methodVersion))throw new Error('Format ou version de questionnaire incompatible.');
+ if(!raw||typeof raw!=='object'||Array.isArray(raw)||![METHOD_VERSION,...METHOD_ALIASES,...COMPATIBLE_METHODS].includes(raw.methodVersion))throw new Error('Format ou version de questionnaire incompatible.');
  const ids=new Set(axes.flatMap(a=>a.questions.map(q=>q.id)));const axisIds=new Set(axes.map(a=>a.id));const answers={};const priorities={};
  for(const [id,v]of Object.entries(raw.answers??{})){if(ids.has(id)&&isAnswer(v))answers[id]=v;}
  for(const [id,v]of Object.entries(raw.priorities??{})){if(axisIds.has(id)&&[1,2,3].includes(v))priorities[id]=v;}
  const usePriorities=typeof raw.usePriorities==='boolean'?raw.usePriorities:typeof raw.comparison?.usePriorities==='boolean'?raw.comparison.usePriorities:true;
  // Une session d'une version antérieure reprend à la première proposition sans réponse : l'ordre des propositions a pu changer.
  const all=axes.flatMap(a=>a.questions),firstOpen=Math.max(0,all.findIndex(q=>!(q.id in answers)));
- return {methodVersion:METHOD_VERSION,answers,priorities,usePriorities,cursor:raw.methodVersion!==METHOD_VERSION?firstOpen:Number.isInteger(raw.cursor)?Math.max(0,Math.min(all.length-1,raw.cursor)):0};
+ return {methodVersion:METHOD_VERSION,answers,priorities,usePriorities,cursor:![METHOD_VERSION,...METHOD_ALIASES].includes(raw.methodVersion)?firstOpen:Number.isInteger(raw.cursor)?Math.max(0,Math.min(all.length-1,raw.cursor)):0};
 }
