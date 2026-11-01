@@ -1,214 +1,272 @@
-[
-  {
-    "id": "anticapitalisme",
-    "name": "Anticapitalisme émancipateur",
-    "description": "Redistribution très forte, transformation de la propriété et du pouvoir économique, avec une priorité aux libertés et à l’émancipation.",
-    "positions": {
-      "redistribution": 0,
-      "economy": 1,
-      "work": 0,
-      "society": 1,
-      "liberties": 1,
-      "immigration": 1,
-      "integration": 2,
-      "ecology": 2,
-      "trade": 8,
-      "participation": 9
+{
+  "version": "2026.10",
+  "families": [
+    {
+      "id": "anticapitalisme",
+      "name": "Anticapitalisme émancipateur",
+      "description": "Redistribution très forte, transformation de la propriété et du pouvoir économique, avec une priorité aux libertés et à l’émancipation.",
+      "positions": {
+        "redistribution": 0,
+        "economy": 1,
+        "work": 0,
+        "society": 1,
+        "liberties": 1,
+        "immigration": 1,
+        "integration": 2,
+        "ecology": 2,
+        "trade": 8,
+        "participation": 9
+      },
+      "sources": [
+        {
+          "title": "Principes fondateurs",
+          "kind": "texte doctrinal",
+          "party": "npaa",
+          "url": "https://www.npa-lanticapitaliste.org/principes-fondateurs"
+        }
+      ]
     },
-    "sources": [
-      "https://www.npa-lanticapitaliste.org/principes-fondateurs"
-    ]
-  },
-  {
-    "id": "communisme",
-    "name": "Communisme étatiste",
-    "description": "Propriété collective, rôle structurant de la puissance publique et du travail organisé. Ce repère économique ne préjuge pas du rapport aux libertés ni du modèle culturel.",
-    "positions": {
-      "redistribution": 0,
-      "economy": 0,
-      "work": 1,
-      "budget": 3,
-      "ecology": 5,
-      "europe": 7,
-      "trade": 9,
-      "territory": 3
+    {
+      "id": "communisme",
+      "name": "Communisme étatiste",
+      "description": "Propriété collective, rôle structurant de la puissance publique et du travail organisé. Ce repère économique ne préjuge pas du rapport aux libertés ni du modèle culturel.",
+      "positions": {
+        "redistribution": 0,
+        "economy": 0,
+        "work": 1,
+        "budget": 3,
+        "ecology": 5,
+        "europe": 7,
+        "trade": 9,
+        "territory": 3
+      },
+      "sources": [
+        {
+          "title": "Site du Parti communiste français",
+          "kind": "site de parti",
+          "party": "pcf",
+          "url": "https://www.pcf.fr/"
+        }
+      ]
     },
-    "sources": [
-      "https://www.pcf.fr/"
-    ]
-  },
-  {
-    "id": "socialdemocratie",
-    "name": "Social-démocratie",
-    "description": "Économie de marché régulée, redistribution, négociation sociale et protections collectives, dans un cadre pluraliste et européen.",
-    "positions": {
-      "redistribution": 2,
-      "economy": 4,
-      "work": 3,
-      "society": 2,
-      "liberties": 3,
-      "immigration": 4,
-      "integration": 4,
-      "ecology": 3,
-      "europe": 2,
-      "trade": 4,
-      "checks": 1
+    {
+      "id": "socialdemocratie",
+      "name": "Social-démocratie",
+      "description": "Économie de marché régulée, redistribution, négociation sociale et protections collectives, dans un cadre pluraliste et européen.",
+      "positions": {
+        "redistribution": 2,
+        "economy": 4,
+        "work": 3,
+        "society": 2,
+        "liberties": 3,
+        "immigration": 4,
+        "integration": 4,
+        "ecology": 3,
+        "europe": 2,
+        "trade": 4,
+        "checks": 1
+      },
+      "sources": [
+        {
+          "title": "Projet socialiste",
+          "kind": "programme",
+          "party": "ps",
+          "url": "https://projet-socialiste.fr/projet/"
+        }
+      ]
     },
-    "sources": [
-      "https://projet-socialiste.fr/projet/"
-    ]
-  },
-  {
-    "id": "ecologie",
-    "name": "Écologie politique",
-    "description": "Limites écologiques, transformation sociale, autonomie individuelle et participation citoyenne occupent une place centrale.",
-    "positions": {
-      "redistribution": 2,
-      "economy": 3,
-      "work": 2,
-      "society": 1,
-      "liberties": 1,
-      "immigration": 2,
-      "integration": 2,
-      "ecology": 0,
-      "europe": 2,
-      "trade": 6,
-      "checks": 1,
-      "participation": 9,
-      "territory": 8
+    {
+      "id": "ecologie",
+      "name": "Écologie politique",
+      "description": "Limites écologiques, transformation sociale, autonomie individuelle et participation citoyenne occupent une place centrale.",
+      "positions": {
+        "redistribution": 2,
+        "economy": 3,
+        "work": 2,
+        "society": 1,
+        "liberties": 1,
+        "immigration": 2,
+        "integration": 2,
+        "ecology": 0,
+        "europe": 2,
+        "trade": 6,
+        "checks": 1,
+        "participation": 9,
+        "territory": 8
+      },
+      "sources": [
+        {
+          "title": "Projet des Écologistes",
+          "kind": "programme",
+          "party": "lesecologistes",
+          "url": "https://projet.lesecologistes.fr/"
+        }
+      ]
     },
-    "sources": [
-      "https://projet.lesecologistes.fr/"
-    ]
-  },
-  {
-    "id": "socialliberalisme",
-    "name": "Centre social-libéral",
-    "description": "Économie mixte favorable à l’entreprise, protection sociale ciblée, réformes graduelles et intégration européenne.",
-    "positions": {
-      "redistribution": 4,
-      "economy": 6,
-      "work": 5,
-      "budget": 6,
-      "society": 3,
-      "liberties": 5,
-      "immigration": 5,
-      "integration": 5,
-      "ecology": 4,
-      "europe": 1,
-      "trade": 3,
-      "checks": 2
+    {
+      "id": "socialliberalisme",
+      "name": "Centre social-libéral",
+      "description": "Économie mixte favorable à l’entreprise, protection sociale ciblée, réformes graduelles et intégration européenne.",
+      "positions": {
+        "redistribution": 4,
+        "economy": 6,
+        "work": 5,
+        "budget": 6,
+        "society": 3,
+        "liberties": 5,
+        "immigration": 5,
+        "integration": 5,
+        "ecology": 4,
+        "europe": 1,
+        "trade": 3,
+        "checks": 2
+      },
+      "sources": [
+        {
+          "title": "Site de Renaissance",
+          "kind": "site de parti",
+          "party": "renaissance",
+          "url": "https://parti-renaissance.fr/"
+        }
+      ]
     },
-    "sources": [
-      "https://parti-renaissance.fr/"
-    ]
-  },
-  {
-    "id": "liberalprogressiste",
-    "name": "Libéralisme progressiste",
-    "description": "Concurrence, initiative privée et ouverture économique, associées à l’autonomie personnelle et aux libertés publiques.",
-    "positions": {
-      "redistribution": 7,
-      "economy": 8,
-      "work": 7,
-      "budget": 7,
-      "society": 1,
-      "liberties": 1,
-      "immigration": 3,
-      "integration": 3,
-      "religion": 2,
-      "ecology": 5,
-      "europe": 3,
-      "trade": 1,
-      "checks": 1
+    {
+      "id": "liberalprogressiste",
+      "name": "Libéralisme progressiste",
+      "description": "Concurrence, initiative privée et ouverture économique, associées à l’autonomie personnelle et aux libertés publiques.",
+      "positions": {
+        "redistribution": 7,
+        "economy": 8,
+        "work": 7,
+        "budget": 7,
+        "society": 1,
+        "liberties": 1,
+        "immigration": 3,
+        "integration": 3,
+        "religion": 2,
+        "ecology": 5,
+        "europe": 3,
+        "trade": 1,
+        "checks": 1
+      },
+      "sources": [
+        {
+          "title": "Toulouse School of Economics",
+          "publisher": "Toulouse School of Economics",
+          "kind": "recherche",
+          "url": "https://www.tse-fr.eu/"
+        },
+        {
+          "title": "Site de Renaissance",
+          "kind": "site de parti",
+          "party": "renaissance",
+          "url": "https://parti-renaissance.fr/"
+        }
+      ]
     },
-    "sources": [
-      "https://www.tse-fr.eu/",
-      "https://parti-renaissance.fr/"
-    ]
-  },
-  {
-    "id": "liberalconservateur",
-    "name": "Droite libérale conservatrice",
-    "description": "Liberté économique, maîtrise des dépenses et responsabilité individuelle, avec une priorité à l’ordre et aux normes culturelles communes.",
-    "positions": {
-      "redistribution": 8,
-      "economy": 8,
-      "work": 8,
-      "budget": 9,
-      "society": 8,
-      "liberties": 7,
-      "immigration": 8,
-      "integration": 8,
-      "ecology": 7,
-      "europe": 5,
-      "trade": 3,
-      "checks": 3
+    {
+      "id": "liberalconservateur",
+      "name": "Droite libérale conservatrice",
+      "description": "Liberté économique, maîtrise des dépenses et responsabilité individuelle, avec une priorité à l’ordre et aux normes culturelles communes.",
+      "positions": {
+        "redistribution": 8,
+        "economy": 8,
+        "work": 8,
+        "budget": 9,
+        "society": 8,
+        "liberties": 7,
+        "immigration": 8,
+        "integration": 8,
+        "ecology": 7,
+        "europe": 5,
+        "trade": 3,
+        "checks": 3
+      },
+      "sources": [
+        {
+          "title": "Nos propositions",
+          "kind": "programme",
+          "party": "lr",
+          "url": "https://republicains.fr/nos-propositions/"
+        }
+      ]
     },
-    "sources": [
-      "https://republicains.fr/nos-propositions/"
-    ]
-  },
-  {
-    "id": "gaullismesocial",
-    "name": "Gaullisme social",
-    "description": "Souveraineté, État stratège, cohésion sociale et exécutif fort. Il se distingue du libéralisme économique comme de l’étatisme redistributif.",
-    "positions": {
-      "redistribution": 4,
-      "economy": 3,
-      "work": 4,
-      "society": 6,
-      "liberties": 6,
-      "immigration": 7,
-      "integration": 8,
-      "ecology": 6,
-      "europe": 7,
-      "trade": 7,
-      "defense": 9,
-      "executive": 9
+    {
+      "id": "gaullismesocial",
+      "name": "Gaullisme social",
+      "description": "Souveraineté, État stratège, cohésion sociale et exécutif fort. Il se distingue du libéralisme économique comme de l’étatisme redistributif.",
+      "positions": {
+        "redistribution": 4,
+        "economy": 3,
+        "work": 4,
+        "society": 6,
+        "liberties": 6,
+        "immigration": 7,
+        "integration": 8,
+        "ecology": 6,
+        "europe": 7,
+        "trade": 7,
+        "defense": 9,
+        "executive": 9
+      },
+      "sources": [
+        {
+          "title": "Un enjeu actuel pour la France : la Participation (synthèse du rapport 2021)",
+          "publisher": "Fondation Charles de Gaulle",
+          "kind": "rapport",
+          "url": "https://www.charles-de-gaulle.org/wp-content/uploads/2021/05/Synthese-du-rapport-2021-Un-enjeu-actuel-pour-la-France-%E2%80%93-la-Participation-2.pdf"
+        }
+      ]
     },
-    "sources": [
-      "https://www.charles-de-gaulle.org/wp-content/uploads/2021/05/Synthese-du-rapport-2021-Un-enjeu-actuel-pour-la-France-%E2%80%93-la-Participation-2.pdf"
-    ]
-  },
-  {
-    "id": "droitenationale",
-    "name": "Droite nationale souverainiste",
-    "description": "Contrôle de l’immigration, assimilation, ordre et souveraineté. L’économie peut combiner protection, interventions publiques et baisses d’impôts.",
-    "positions": {
-      "society": 8,
-      "liberties": 9,
-      "immigration": 10,
-      "integration": 10,
-      "ecology": 8,
-      "europe": 9,
-      "trade": 9,
-      "executive": 8,
-      "participation": 8
+    {
+      "id": "droitenationale",
+      "name": "Droite nationale souverainiste",
+      "description": "Contrôle de l’immigration, assimilation, ordre et souveraineté. L’économie peut combiner protection, interventions publiques et baisses d’impôts.",
+      "positions": {
+        "society": 8,
+        "liberties": 9,
+        "immigration": 10,
+        "integration": 10,
+        "ecology": 8,
+        "europe": 9,
+        "trade": 9,
+        "executive": 8,
+        "participation": 8
+      },
+      "sources": [
+        {
+          "title": "Contre-budget 2026",
+          "kind": "programme",
+          "party": "rn",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf"
+        }
+      ]
     },
-    "sources": [
-      "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf"
-    ]
-  },
-  {
-    "id": "libertarianisme",
-    "name": "Libertarianisme",
-    "description": "Réduction très forte des fonctions économiques de l’État, propriété privée, liberté contractuelle et limitation des pouvoirs coercitifs.",
-    "positions": {
-      "redistribution": 10,
-      "economy": 10,
-      "work": 10,
-      "budget": 9,
-      "society": 2,
-      "liberties": 0,
-      "religion": 0,
-      "ecology": 8,
-      "trade": 0,
-      "checks": 2,
-      "territory": 10
-    },
-    "sources": [
-      "https://www.institutcoppet.org/"
-    ]
-  }
-]
+    {
+      "id": "libertarianisme",
+      "name": "Libertarianisme",
+      "description": "Réduction très forte des fonctions économiques de l’État, propriété privée, liberté contractuelle et limitation des pouvoirs coercitifs.",
+      "positions": {
+        "redistribution": 10,
+        "economy": 10,
+        "work": 10,
+        "budget": 9,
+        "society": 2,
+        "liberties": 0,
+        "religion": 0,
+        "ecology": 8,
+        "trade": 0,
+        "checks": 2,
+        "territory": 10
+      },
+      "sources": [
+        {
+          "title": "Site de l’Institut Coppet",
+          "publisher": "Institut Coppet",
+          "kind": "institut",
+          "url": "https://www.institutcoppet.org/"
+        }
+      ]
+    }
+  ]
+}

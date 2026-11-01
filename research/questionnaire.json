@@ -1,6 +1,28 @@
 {
   "version": "1.0",
   "language": "fr-FR",
+  "themes": [
+    {
+      "id": "economie",
+      "number": "01",
+      "name": "Économie & travail"
+    },
+    {
+      "id": "societe",
+      "number": "02",
+      "name": "Société & libertés"
+    },
+    {
+      "id": "monde",
+      "number": "03",
+      "name": "Écologie & souveraineté"
+    },
+    {
+      "id": "democratie",
+      "number": "04",
+      "name": "Démocratie & pouvoirs"
+    }
+  ],
   "axes": [
     {
       "id": "redistribution",

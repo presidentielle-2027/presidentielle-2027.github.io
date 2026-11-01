@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {METHOD_VERSION,READING,computeProfile,compareFamilies,globalCoordinates,interpretation,axisReading,proximity,familyContrast,findings,familyCoordinates,coordinateReading,sanitizeSession} from '../dist/engine.mjs';
 const axes=JSON.parse(fs.readFileSync(new URL('../research/questionnaire.json',import.meta.url))).axes;
-const families=JSON.parse(fs.readFileSync(new URL('../research/families.json',import.meta.url)));
+const families=JSON.parse(fs.readFileSync(new URL('../research/families.json',import.meta.url))).families;
 const responsesFor=(scoreFn)=>Object.fromEntries(axes.flatMap(a=>a.questions.map(q=>[q.id,Math.max(-2,Math.min(2,Math.round((scoreFn(a.id)-5)/2.5/q.direction)))])));
 
 test('A missing or skipped opinion cannot become a middle score',()=>{

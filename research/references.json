@@ -418,5 +418,48 @@
       "year": 2026,
       "summary": "La demande de décentralisation traverse diverses sensibilités politiques. L’organisation territoriale doit donc être mesurée distinctement du simple classement gauche-droite."
     }
-  ]
+  ],
+  "axisHighlights": {
+    "redistribution": [
+      "piketty",
+      "zucman",
+      "salin",
+      "friedman"
+    ],
+    "economy": [
+      "piketty",
+      "hayek",
+      "aghion",
+      "duflo"
+    ],
+    "work": [
+      "marx",
+      "piketty",
+      "keynes",
+      "aghion"
+    ],
+    "budget": [
+      "keynes",
+      "salin",
+      "mahfouz",
+      "gollier"
+    ],
+    "ecology": [
+      "laurent",
+      "tirole",
+      "gollier",
+      "mahfouz"
+    ],
+    "europe": [
+      "piketty",
+      "pisani-ferry",
+      "thesmar"
+    ],
+    "trade": [
+      "auriol",
+      "salin",
+      "thesmar",
+      "hayek"
+    ]
+  }
 }

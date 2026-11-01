@@ -82,9 +82,10 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 
 | Fichier | Rôle |
 |---|---|
-| `research/questionnaire.json` | Les 18 axes, leurs pôles et les 72 propositions |
-| `research/families.json` | Les profils éditoriaux des dix familles, leurs coordonnées et leurs sources |
-| `research/references.json` | Les vingt économistes, leurs thèses, nuances et références |
+| `research/questionnaire.json` | Les quatre thèmes, les 18 axes, leurs pôles et les 72 propositions |
+| `research/families.json` | La version des repères, les profils éditoriaux des dix familles, leurs coordonnées et leurs sources (titre, éditeur, type de document, parti éventuel) |
+| `research/parties.json` | Les partis retenus selon le critère d'inclusion indiqué dans le fichier, la justification de chacun et, pour ceux dont aucun texte ne sert de référence à une famille, la raison de cette absence |
+| `research/references.json` | Les vingt économistes, leurs thèses, nuances et références, et ceux mis en avant sous chaque axe |
 | `dist/engine.mjs` | Les calculs et la validation des imports |
 | `dist/app.mjs` | Le parcours, les graphiques, les résultats et les exports |
 | `dist/styles.css` | L'apparence et les adaptations mobiles |
@@ -107,7 +108,9 @@ node --test tests/standalone.test.mjs
 node --check dist/app.mjs
 ```
 
-Le script de génération vérifie aussi le nombre d'axes et de propositions, l'unicité des identifiants et les orientations des questions. Si le nombre de questions ou la méthode changent, adapter ces vérifications, les compteurs de l'interface et la version du questionnaire pour éviter d'importer des réponses devenues incompatibles.
+Le script de génération vérifie aussi le nombre d'axes et de propositions, l'unicité des identifiants, les orientations des questions et la cohérence des catalogues : chaque axe appartient à un thème, chaque source de famille est décrite et renvoie, le cas échéant, à un parti du catalogue, chaque parti sert de référence à une famille ou porte la raison de son absence, et chaque économiste mis en avant sous un axe est associé à cet axe. Si le nombre de questions ou la méthode changent, adapter ces vérifications, les compteurs de l'interface et la version du questionnaire pour éviter d'importer des réponses devenues incompatibles.
+
+Les repères des familles ont leur propre version, au format `AAAA.M`, dans `research/families.json`. Modifier une famille, en ajouter ou en retirer impose de changer cette version, affichée dans la page Méthode, dans le rapport imprimé et dans les sessions exportées. Les réponses ne dépendant pas des familles, ce changement ne rend pas les sessions existantes incompatibles.
 
 Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 72 réponses et l'affichage des onglets du bilan, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe `file://` n'a pas pu être vérifiée dans le navigateur de préparation, dont la politique interdit ce protocole.
 
