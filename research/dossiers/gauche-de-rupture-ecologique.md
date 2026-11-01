@@ -37,6 +37,15 @@ Les citations ci-dessous ont été retrouvées mot pour mot dans les copies tél
 | Participation | 9 | « Instaurer le Référendum d'initiative citoyenne (RIC), par lequel les citoyens qui réunissent suffisamment de signatures peuvent révoquer des élus, proposer ou abroger une loi et modifier la Constitution » | [A] ch. 1, p. 23 ; [E] |
 | Territoires | 3 | « Interdire le « droit à la différenciation » » ; « L'État doit garantir l'égal financement des communes où qu'elles soient. » | [A] ch. 12, p. 92 ; [D] § 1.1 |
 
+## Axes ajoutés en 2026.11.v3
+
+| Axe | Repère | Justification |
+|---|---|---|
+| Effort de défense | 2 | Amendement n° 86 du groupe LFI à la loi de programmation militaire, qui « vise à supprimer toute référence au Produit intérieur brut (PIB) dans la programmation militaire des années à venir » ; participation « comme observateur au traité d'interdiction des armes nucléaires (TIAN) » ([A] p. 60 du PDF) |
+| Soutien à un pays agressé | 6 (incertain) | « En Ukraine, agir pour créer un cadre diplomatique permettant d'obtenir un cessez-le-feu, le retrait des troupes russes, et l'ouverture de négociations pour une paix durable » ([A] p. 60 du PDF) ; déclarations de Bastien Lachaud, retenues à titre provisoire |
+
+Le détail des citations et des copies archivées est dans `politique-etrangere.md`.
+
 ## Écarts avec les familles voisines
 
 Écart moyen non pondéré sur les axes définis des deux côtés : Anticapitalisme émancipateur 0,30 (10 axes), Communisme étatiste 1,00 (8 axes, après le passage du commerce à 7), Écologie politique 1,77 (13 axes). Sur ses axes communs avec l'Anticapitalisme, le profil est presque identique ; il s'en distingue par sept axes que l'Anticapitalisme ne définit pas : Europe, défense, exécutif, budget, territoires, contre-pouvoirs, laïcité.

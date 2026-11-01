@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {METHOD_VERSION,READING,computeProfile,compareFamilies,globalCoordinates,interpretation,axisReading,proximity,familyContrast,findings,familyCoordinates,coordinateReading,sanitizeSession} from '../dist/engine.mjs';
+import {METHOD_VERSION,COMPATIBLE_METHODS,READING,computeProfile,compareFamilies,globalCoordinates,interpretation,axisReading,proximity,familyContrast,findings,familyCoordinates,coordinateReading,sanitizeSession} from '../dist/engine.mjs';
 const axes=JSON.parse(fs.readFileSync(new URL('../research/questionnaire.json',import.meta.url))).axes;
 const families=JSON.parse(fs.readFileSync(new URL('../research/families.json',import.meta.url))).families;
 const responsesFor=(scoreFn)=>Object.fromEntries(axes.flatMap(a=>a.questions.map(q=>[q.id,Math.max(-2,Math.min(2,Math.round((scoreFn(a.id)-5)/2.5/q.direction)))])));
@@ -37,7 +37,16 @@ test('Each deliberately distinct family is recoverable from its exact coordinate
  for(const family of families){const p=axes.map(a=>({id:a.id,score:family.positions[a.id]??null}));const ranked=compareFamilies(p,families);const exact=ranked.find(f=>f.id===family.id);assert.equal(exact.distance,0);assert.equal(ranked[0].distance,0);}
 });
 test('Imports enforce version, known identifiers, values, priorities and cursor bounds',()=>{
- assert.throws(()=>sanitizeSession({methodVersion:'other'},axes));const s=sanitizeSession({methodVersion:METHOD_VERSION,answers:{q01:2,q02:3,q03:'skip',foreign:2},priorities:{redistribution:3,work:9},cursor:999},axes);assert.deepEqual(s.answers,{q01:2,q03:'skip'});assert.deepEqual(s.priorities,{redistribution:3});assert.equal(s.cursor,71);
+ assert.throws(()=>sanitizeSession({methodVersion:'other'},axes));const s=sanitizeSession({methodVersion:METHOD_VERSION,answers:{q01:2,q02:3,q03:'skip',foreign:2},priorities:{redistribution:3,work:9},cursor:999},axes);assert.deepEqual(s.answers,{q01:2,q03:'skip'});assert.deepEqual(s.priorities,{redistribution:3});assert.equal(s.cursor,axes.flatMap(a=>a.questions).length-1);
+});
+test('A session from a compatible earlier method keeps its answers and resumes at the first open proposition',()=>{
+ const all=axes.flatMap(a=>a.questions);
+ const answers=Object.fromEntries(all.filter(q=>!['military','assistance'].includes(q.axis)).map(q=>[q.id,1]));
+ for(const version of COMPATIBLE_METHODS){
+  const s=sanitizeSession({methodVersion:version,answers,cursor:71},axes);
+  assert.equal(s.methodVersion,METHOD_VERSION);assert.deepEqual(s.answers,answers);
+  assert.equal(s.cursor,all.findIndex(q=>q.axis==='military'));
+ }
 });
 test('A saved comparison preference survives export and import',()=>{
  assert.equal(sanitizeSession({methodVersion:METHOD_VERSION,usePriorities:false},axes).usePriorities,false);
@@ -66,8 +75,8 @@ test('Marked positions list clear preferences first and let decisive topics lead
  const out=findings(axes,p,{[strongIds[5]]:3,[moderateId]:3});
  assert.equal(out.marked.length,4);assert.equal(out.marked[0].id,strongIds[5]);
  assert.ok(out.marked.every(x=>x.reading.kind==='strong'));assert.equal(out.moreStrong,2);
- assert.equal(out.middle.length,11);assert.deepEqual(out.split,[]);assert.deepEqual(out.unmeasured,[]);
- assert.equal(findings(axes,computeProfile(axes,{})).unmeasured.length,18);
+ assert.equal(out.middle.length,axes.length-7);assert.deepEqual(out.split,[]);assert.deepEqual(out.unmeasured,[]);
+ assert.equal(findings(axes,computeProfile(axes,{})).unmeasured.length,axes.length);
 });
 test('The closest family is qualified by its lead over the next one',()=>{
  const fam=(id,distance,common=[])=>({id,name:id,distance,common});const level=(...d)=>findings(axes,[],{},d.map((x,i)=>fam('f'+i,x)),[],true).family.level;

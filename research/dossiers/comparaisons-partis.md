@@ -2,6 +2,8 @@
 
 Repères des familles, version 2026.11. Recherche menée en novembre 2026 sur les textes officiels des partis (programmes, textes de congrès, textes de campagne), sans recourir à la presse ni à la réputation des partis.
 
+La version 2026.11.v2 des repères renseigne l'axe Défense pour six familles. La version 2026.11.v3 le complète pour quatre autres et renseigne les deux axes ajoutés par la méthode `reperes-fr-2026.2`, « Effort de défense » et « Soutien à un pays agressé ». Les textes comparés et les partis à confirmer ont été revérifiés sur ces trois axes dans `defense.md` et `politique-etrangere.md` : aucun résultat du tableau ci-dessous ne change. Pour ces axes, les déclarations publiques datées des responsables sont admises à titre provisoire quand les textes officiels ne traitent pas le sujet ; les copies des sources sont dans `research/sources/`.
+
 ## Règle
 
 Le texte principal d'un parti est comparé aux repères d'une famille, axe par axe, sur les axes que la famille définit et que le texte aborde. Il est **compatible** si sa position reste à 2 points au plus du repère sur chacun de ces axes. Un texte compatible est cité comme **texte comparé** de la famille ; il ne sert pas à fixer ses repères. Seuls les rattachements évalués avec une confiance moyenne ou haute sont intégrés ; les autres restent « à confirmer ».

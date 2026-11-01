@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "language": "fr-FR",
   "themes": [
     {
@@ -15,7 +15,7 @@
     {
       "id": "monde",
       "number": "03",
-      "name": "Écologie & souveraineté"
+      "name": "Écologie, Europe & monde"
     },
     {
       "id": "democratie",
@@ -566,6 +566,84 @@
           "axis": "defense",
           "text": "L’autonomie dans la production des équipements militaires devrait primer sur les économies permises par une dépendance aux alliés.",
           "context": "La question oppose une capacité autonome à une solution extérieure moins coûteuse.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "name": "Effort de défense",
+      "shortName": "Effort militaire",
+      "group": "monde",
+      "low": "Effort limité",
+      "high": "Effort accru",
+      "description": "Mesure la priorité accordée aux dépenses militaires et à la dissuasion nucléaire par rapport aux autres dépenses publiques et au désarmement ; le choix des alliances reste distinct.",
+      "questions": [
+        {
+          "id": "q73",
+          "axis": "military",
+          "text": "La hausse des dépenses militaires ne devrait pas se faire au détriment des services publics.",
+          "context": "Les crédits militaires ne seraient augmentés que si d’autres ressources sont trouvées.",
+          "direction": -1
+        },
+        {
+          "id": "q74",
+          "axis": "military",
+          "text": "La France devrait s’engager dans un désarmement nucléaire négocié, y compris de ses propres armes.",
+          "context": "Le désarmement serait réciproque et vérifié.",
+          "direction": -1
+        },
+        {
+          "id": "q75",
+          "axis": "military",
+          "text": "Le budget des armées devrait augmenter fortement dans les prochaines années, même si d’autres dépenses doivent baisser.",
+          "context": "La question porte sur la priorité budgétaire, pas sur le choix des équipements.",
+          "direction": 1
+        },
+        {
+          "id": "q76",
+          "axis": "military",
+          "text": "La France devrait consacrer au moins 3,5 % de sa richesse nationale à sa défense.",
+          "context": "C’est l’objectif retenu par les pays de l’OTAN en 2025, à l’horizon 2035.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "assistance",
+      "name": "Soutien à un pays agressé",
+      "shortName": "Pays agressé",
+      "group": "monde",
+      "low": "Soutien militaire étendu",
+      "high": "Retenue et négociation",
+      "description": "Mesure l’aide que la France devrait apporter à un pays européen envahi, entre un soutien militaire et financier étendu et la priorité donnée à la retenue ou à une issue négociée.",
+      "questions": [
+        {
+          "id": "q77",
+          "axis": "assistance",
+          "text": "Lorsqu’un pays européen est envahi, la France devrait lui livrer des armes capables de frapper des cibles militaires sur le territoire de l’agresseur.",
+          "context": "La France n’enverrait pas de troupes combattantes.",
+          "direction": -1
+        },
+        {
+          "id": "q78",
+          "axis": "assistance",
+          "text": "Les avoirs publics d’un État agresseur gelés en Europe devraient être saisis pour financer la défense du pays agressé.",
+          "context": "Il s’agit de saisir le capital, pas seulement les intérêts qu’il produit.",
+          "direction": -1
+        },
+        {
+          "id": "q79",
+          "axis": "assistance",
+          "text": "La France devrait réduire son aide financière à un pays agressé lorsque son propre budget est sous tension.",
+          "context": "L’aide humanitaire serait maintenue.",
+          "direction": 1
+        },
+        {
+          "id": "q80",
+          "axis": "assistance",
+          "text": "Un cessez-le-feu rapide devrait primer sur la poursuite du soutien militaire, même si l’agresseur conserve une partie du territoire conquis.",
+          "context": "La question oppose deux priorités dans un conflit qui dure.",
           "direction": 1
         }
       ]

@@ -1,4 +1,7 @@
-export const METHOD_VERSION='reperes-fr-2026.1';
+export const METHOD_VERSION='reperes-fr-2026.2';
+// Versions antérieures dont les propositions sont reprises à l'identique : leurs sessions restent importables,
+// les propositions ajoutées depuis restent simplement sans réponse.
+export const COMPATIBLE_METHODS=['reperes-fr-2026.1'];
 export const isAnswer=v=>[-2,-1,0,1,2,'skip'].includes(v);
 export const mean=xs=>xs.length?xs.reduce((a,b)=>a+b,0)/xs.length:null;
 export function computeProfile(axes,answers={}){
@@ -87,10 +90,12 @@ export function findings(axes,profile,priorities={},ranked=[],alternative=[],rea
  return {marked,moreStrong,split,middle,unmeasured,family};
 }
 export function sanitizeSession(raw,axes){
- if(!raw||typeof raw!=='object'||Array.isArray(raw)||raw.methodVersion!==METHOD_VERSION)throw new Error('Format ou version de questionnaire incompatible.');
+ if(!raw||typeof raw!=='object'||Array.isArray(raw)||![METHOD_VERSION,...COMPATIBLE_METHODS].includes(raw.methodVersion))throw new Error('Format ou version de questionnaire incompatible.');
  const ids=new Set(axes.flatMap(a=>a.questions.map(q=>q.id)));const axisIds=new Set(axes.map(a=>a.id));const answers={};const priorities={};
  for(const [id,v]of Object.entries(raw.answers??{})){if(ids.has(id)&&isAnswer(v))answers[id]=v;}
  for(const [id,v]of Object.entries(raw.priorities??{})){if(axisIds.has(id)&&[1,2,3].includes(v))priorities[id]=v;}
  const usePriorities=typeof raw.usePriorities==='boolean'?raw.usePriorities:typeof raw.comparison?.usePriorities==='boolean'?raw.comparison.usePriorities:true;
- return {methodVersion:METHOD_VERSION,answers,priorities,usePriorities,cursor:Number.isInteger(raw.cursor)?Math.max(0,Math.min(axes.flatMap(a=>a.questions).length-1,raw.cursor)):0};
+ // Une session d'une version antérieure reprend à la première proposition sans réponse : l'ordre des propositions a pu changer.
+ const all=axes.flatMap(a=>a.questions),firstOpen=Math.max(0,all.findIndex(q=>!(q.id in answers)));
+ return {methodVersion:METHOD_VERSION,answers,priorities,usePriorities,cursor:raw.methodVersion!==METHOD_VERSION?firstOpen:Number.isInteger(raw.cursor)?Math.max(0,Math.min(all.length-1,raw.cursor)):0};
 }

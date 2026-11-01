@@ -1,3 +1,4 @@
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -17,11 +18,11 @@ themes = questionnaire['themes']
 families = families_catalog['families']
 parties = parties_catalog['parties']
 
-# Questionnaire : 18 axes de 4 propositions, deux orientées vers chaque pôle, chacun rattaché à un thème.
-assert len(questionnaire['axes']) == 18
+# Questionnaire : 20 axes de 4 propositions, deux orientées vers chaque pôle, chacun rattaché à un thème.
+assert len(questionnaire['axes']) == 20
 questions = [q for a in questionnaire['axes'] for q in a['questions']]
-assert len(questions) == 72
-assert len({q['id'] for q in questions}) == 72
+assert len(questions) == 80
+assert len({q['id'] for q in questions}) == 80
 for axis in questionnaire['axes']:
     assert len(axis['questions']) == 4
     assert sorted(q['direction'] for q in axis['questions']) == [-1, -1, 1, 1]
@@ -35,10 +36,27 @@ assert all(a['group'] in theme_ids for a in questionnaire['axes'])
 assert all(any(a['group'] == t for a in questionnaire['axes']) for t in theme_ids)
 
 # Familles : une version datée, des repères entre 0 et 10 sur des axes connus, des sources décrites.
-SOURCE_KINDS = {'programme', 'texte doctrinal', 'texte de campagne', 'site de parti', 'rapport', 'recherche', 'institut'}
+SOURCE_KINDS = {'programme', 'texte doctrinal', 'texte de campagne', 'site de parti', 'rapport', 'recherche', 'institut',
+                'texte parlementaire', 'déclaration', 'compte rendu', 'article de presse'}
+# Déclarations, comptes rendus de séance et articles de presse ne tranchent qu'un axe laissé ouvert par les textes
+# officiels : ils sont marqués provisoires, et seuls eux le sont.
+PROVISIONAL_KINDS = {'déclaration', 'compte rendu', 'article de presse'}
+# Copies archivées des sources : chaque fichier figure dans l'index avec son empreinte. Les copies sont conservées
+# hors de Git : une copie absente est signalée sans arrêter la construction, une copie présente doit être intacte.
+source_index = {e['file']: e for e in json.loads((base / 'research/sources/index.json').read_text())['sources']}
+missing_copies = 0
+for entry in source_index.values():
+    copy = base / entry['file']
+    if not copy.is_file():
+        missing_copies += 1
+        continue
+    assert hashlib.sha256(copy.read_bytes()).hexdigest() == entry['sha256'], f"archive altérée : {entry['file']}"
+    assert entry['url'] is None or re.match(r'https?://', entry['url']), entry['file']
 party_ids = [p['id'] for p in parties]
 assert len(set(party_ids)) == len(parties), 'identifiant de parti en double'
-assert re.fullmatch(r'\d{4}\.\d{1,2}', families_catalog['version']), 'version des familles attendue sous la forme AAAA.M'
+# Première version d'un mois : AAAA.M ; révisions suivantes du même mois : AAAA.M.v2, AAAA.M.v3…
+assert re.fullmatch(r'\d{4}\.\d{1,2}(\.v([2-9]|[1-9]\d+))?', families_catalog['version']), \
+    'version des familles attendue sous la forme AAAA.M ou AAAA.M.vN (N ≥ 2)'
 assert len({f['id'] for f in families}) == len(families)
 for family in families:
     assert set(family['positions']).issubset(axis_ids)
@@ -50,10 +68,13 @@ for family in families:
         assert source['title'] and source['kind'] in SOURCE_KINDS, (family['id'], source)
         assert re.match(r'https?://', source['url']), (family['id'], source['url'])
         assert 'party' not in source or source['party'] in party_ids, f"{family['id']} : parti inconnu {source['party']}"
+        assert (source['kind'] in PROVISIONAL_KINDS) == source.get('provisional', False), (family['id'], source['title'])
+        assert all(a in source_index for a in source.get('archive', [])), (family['id'], source['title'])
     # Textes comparés : textes de partis vérifiés proches des repères, sans avoir servi à les fixer.
     for text in family.get('compared', []):
         assert text['party'] in party_ids and text['title'] and text['kind'] in SOURCE_KINDS, (family['id'], text)
         assert re.match(r'https?://', text['url']), (family['id'], text['url'])
+        assert all(a in source_index for a in text.get('archive', [])), (family['id'], text['title'])
 
 # Partis : chacun sert de référence à une famille, y est comparé, ou porte la raison explicite de son absence.
 referenced = {s['party'] for f in families for s in f['sources'] if 'party' in s}
@@ -83,5 +104,7 @@ for axis, ids in references['axisHighlights'].items():
 data = {'edition': 'France · octobre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
         'families': families, 'familiesVersion': families_catalog['version'], 'parties': parties_catalog}
 (base / 'dist/data.js').write_text('window.REPERES_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
-print(f'Assembled {len(questions)} questions, 18 axes, {len(references["economists"])} economists, '
+print(f'Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(references["economists"])} economists, '
       f'{len(families)} families (version {families_catalog["version"]}), {len(parties)} parties.')
+if missing_copies:
+    print(f'{missing_copies} copies de sources absentes de research/sources/ sur {len(source_index)} : leurs empreintes n’ont pas été vérifiées.')

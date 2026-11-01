@@ -1,0 +1,1448 @@
+{
+  "accessed": "2026-11-01",
+  "sources": [
+    {
+      "file": "research/sources/centre/an-amendement-1001-n5-attal-saisie-avoirs-russes-2025-03-06.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1001/AN/5.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 7002,
+      "sha256": "a842e2812397d2696a52d59c5e492ec3677e6a0acc550d3eab29614b06d12849"
+    },
+    {
+      "file": "research/sources/centre/attal-declaration-politique-generale-2024-01-30.pdf",
+      "url": "https://www.landes.gouv.fr/contenu/telechargement/28367/239764/file/D%C3%A9claration%20de%20politique%20g%C3%A9n%C3%A9rale%20du%20Gouvernement.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 588188,
+      "sha256": "72da43f58aa9c6f9aaa16c421f1dc905ef4c5904b8c0f85cfd3d961c3f4d49d8"
+    },
+    {
+      "file": "research/sources/centre/attal-discours-reims-etats-unis-d-europe-2026-09-17.pdf",
+      "url": "https://doc.parti.re/2026/Discours_Europe.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 5544561,
+      "sha256": "635de4d569eb16b10da96e64b8d6940898d58d845294e7d472849cfb762c0980"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-aix-defense-2026-07-03.html",
+      "url": "https://attalpresident.fr/actualites/aux-rencontres-economiques-d-aix-en-provence-gabriel-attal-appelle-la-france-a-preparer-les-guerres-de-demain",
+      "accessed": "2026-11-01",
+      "bytes": 204572,
+      "sha256": "72991342788471270461121cc622d2fdfdfe3b7936e3e377cef6e6d98bfa8963"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-bfmtv-2026-09-06.html",
+      "url": "https://attalpresident.fr/actualites/bfm-tv-gabriel-attal-veut-changer-de-modele-pour-redonner-de-la-puissance-a-la-france",
+      "accessed": "2026-11-01",
+      "bytes": 207986,
+      "sha256": "24bd8ed7699fa9718f3008bca990381eef2461b577d13be5891ad37020042a05"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-eurosatory-2026-06-16.html",
+      "url": "https://attalpresident.fr/actualites/eurosatory-gabriel-attal-presente-sa-strategie-de-souverainete-technologique-et-d-independance-europeenne-au-salon",
+      "accessed": "2026-11-01",
+      "bytes": 207643,
+      "sha256": "7d97ed881cb9e8833736ba173845b43f681abab9c825a1a1d92796c10548022f"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-lci-2026-08-25.html",
+      "url": "https://attalpresident.fr/actualites/lci-gabriel-attal-defend-un-projet-de-rupture-pour-repondre-aux-grands-defis-du-pays",
+      "accessed": "2026-11-01",
+      "bytes": 232387,
+      "sha256": "03a6a1cb586920012397edce21d563d2f8761e6508457276ccc926ecaa64aa95"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-lci-debat-2026-06-29.html",
+      "url": "https://attalpresident.fr/actualites/grand-entretien-de-gabriel-attal-sur-lci",
+      "accessed": "2026-11-01",
+      "bytes": 197067,
+      "sha256": "03d4aab597044ab64ad1c0f21d166d40e208bc4770345115d81b05168b462153"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-mesure-dome-de-fer-europeen-2026-06-16.html",
+      "url": "https://attalpresident.fr/programme/mesures/dome-de-fer-europeen",
+      "accessed": "2026-11-01",
+      "bytes": 158316,
+      "sha256": "11a908c05debe3e351d1f63aae579fac95743940384a84dafff7797da835af1f"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-mesure-livre-blanc-defense-2026-07-03.html",
+      "url": "https://attalpresident.fr/programme/mesures/livre-blanc-defense-2027",
+      "accessed": "2026-11-01",
+      "bytes": 163399,
+      "sha256": "cf28d7ec8a34ddc319ac34013e2c3fe96dd16b67de93033bdbdc05a190cbbffa"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-mesure-preference-europeenne-defense-2026-09-17.html",
+      "url": "https://attalpresident.fr/programme/mesures/preference-europeenne-defense",
+      "accessed": "2026-11-01",
+      "bytes": 153800,
+      "sha256": "5b03826f1a45b31fef16b6fa43df4622ad44477a686b253661672585f30ee298"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-mesure-souverainete-equipements-militaires-2026-06-16.html",
+      "url": "https://attalpresident.fr/programme/mesures/diviser-par-deux-dependance-militaire",
+      "accessed": "2026-11-01",
+      "bytes": 159994,
+      "sha256": "b7b2c0c710727f36adfb5ad487bcd4293367f0012d54239320cf4afec08a7dc1"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-politico-2026-09-24.html",
+      "url": "https://attalpresident.fr/actualites/gabriel-attal-dans-politico-europe-ukraine-ia-et-finances-publiques-quatre-priorites-pour-preparer-la-france-de-demain",
+      "accessed": "2026-11-01",
+      "bytes": 210930,
+      "sha256": "ea085e9934db06f641b7480891247cd1f57061cf6b31efa856a356ba37147f5b"
+    },
+    {
+      "file": "research/sources/centre/attalpresident-programme-frontieres.html",
+      "url": "https://attalpresident.fr/programme/frontieres",
+      "accessed": "2026-11-01",
+      "bytes": 211859,
+      "sha256": "1091570b524ee5ddb0ba9171724380a9a3d8f38b93b0bdc9c1fa0a5db5a8123a"
+    },
+    {
+      "file": "research/sources/centre/besoindeurope-defense-et-diplomatie-2024.html",
+      "url": "https://besoindeurope.fr/thematique/defense-et-diplomatie",
+      "accessed": "2026-11-01",
+      "bytes": 39884,
+      "sha256": "da53ab5fd8b314d21dd63912f8b133403d2e7e413460ed1bd414489559607d54"
+    },
+    {
+      "file": "research/sources/centre/besoindeurope-maitrise-frontieres-2024.html",
+      "url": "https://besoindeurope.fr/thematique/maitrise-de-nos-frontieres",
+      "accessed": "2026-11-01",
+      "bytes": 40322,
+      "sha256": "879ac5adb924e4b459a9befe7df1a0e7ea86acbf86e556295c0ac53ef046ef2c"
+    },
+    {
+      "file": "research/sources/centre/besoindeurope-programme-europeennes-2024.pdf",
+      "url": "https://doc.besoindeurope.fr/programme-besoindeurope.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 3924251,
+      "sha256": "94385daf745b676a1f029d4a90f7846d6a61abb548ff8c2199aa988e3e65c170"
+    },
+    {
+      "file": "research/sources/centre/franceinfo-algerie-riposte-attal-barrot-2025-01-11.html",
+      "url": "https://www.franceinfo.fr/monde/afrique/algerie/crise-diplomatique-entre-la-france-et-l-algerie-de-quel-arsenal-de-riposte-dispose-paris-apres-le-renvoi-d-un-influenceur-algerien-expulse_7008044.html",
+      "accessed": "2026-11-01",
+      "bytes": 603570,
+      "sha256": "bb634855447a14b81e10ed7299c3a61d19ab5e821e2c3aea330f93c104fa33cb"
+    },
+    {
+      "file": "research/sources/centre/jns-israelhayom-entretien-attal-2025-03-23.html",
+      "url": "https://www.jns.org/news/former-french-pm-i-didnt-agree-with-every-decision-made-by-macron",
+      "accessed": "2026-11-01",
+      "bytes": 505955,
+      "sha256": "484c9d4196960981488811484fc4353b4fe639a82038a8d37e5633f0a95767a6"
+    },
+    {
+      "file": "research/sources/centre/modem-barrot-europe-de-la-defense-2026-01-21.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/jean-noel-barrot-si-ne-prepare-pas-leurope-de-la-defense-aura-leurope-de-la-defaite",
+      "accessed": "2026-11-01",
+      "bytes": 82080,
+      "sha256": "e1cc931cdc0212d800b813ef4386ebaddb999f054337c2c96246be539993b89b"
+    },
+    {
+      "file": "research/sources/centre/modem-barrot-questions-politiques-2025-11-16.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/jean-noel-barrot-nous-navons-pas-besoin-dune-diplomatie-dopinion-nous-avons-besoin-dune",
+      "accessed": "2026-11-01",
+      "bytes": 85676,
+      "sha256": "d4dcbeaba4c855b2f62763f65a3c2c92fda5e096a3e25533e241696afe712c03"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-cnews-europe1-2025-03-07.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/francois-bayrou-la-russie-fait-ce-que-dautres-pays-la-fin-des-annees-30-ont-fait-sur",
+      "accessed": "2026-11-01",
+      "bytes": 123223,
+      "sha256": "8eac79aef571028f95f995ffaf07649dd069e426c5a101c61faa3920f0104ed3"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-conference-finances-publiques-2025-04-15.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/francois-bayrou-notre-conviction-est-que-seule-une-prise-de-conscience-de-nos",
+      "accessed": "2026-11-01",
+      "bytes": 106591,
+      "sha256": "e25d3dcf7f607ec7dbd439143cb75c265d7f8d6454a603e23de843a2f6df8413"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-congres-pde-bilbao-2025-11-21.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/discours-de-francois-bayrou-au-congres-du-parti-democrate-europeen-bilbao-video-8070",
+      "accessed": "2026-11-01",
+      "bytes": 98352,
+      "sha256": "b5f76b3b3569a3e37735fe9c7b07ff38ced51b7226a6ad0a68c0c35bf21b0b7d"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-declaration-politique-generale-2025-01-14.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/declaration-de-politique-generale-du-premier-ministre-francois-bayrou-video-7391-video",
+      "accessed": "2026-11-01",
+      "bytes": 145370,
+      "sha256": "a6006ee813227ec028a5e8c58179408622c5e61b01e9d49e66569b1a99fa5a8b"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-discours-finances-publiques-2025-07-15.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/discours-de-francois-bayrou-sur-les-finances-publiques-video-7844-video",
+      "accessed": "2026-11-01",
+      "bytes": 135601,
+      "sha256": "4e9e3f585838ec0ce559b1c8e1f81cc406963e80b3fc14a23d0cc84f0d5fea54"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-lci-2025-07-10.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/francois-bayrou-nous-faisons-evoluer-le-mode-de-calcul-du-dpe-pour-mieux-refleter-notre",
+      "accessed": "2026-11-01",
+      "bytes": 175995,
+      "sha256": "6bfe8835d747124ffb1f3127c89823d7be4a154244b919ad6936fc483c365bd2"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-questions-politiques-2025-03-16.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/francois-bayrou-le-monde-que-lon-avait-decide-de-construire-cest-force-sera-la-loi-et-le",
+      "accessed": "2026-11-01",
+      "bytes": 149549,
+      "sha256": "106993dc71dca67671fbdf0711990f2814a0448af6a7b978a8dbd818390abbc5"
+    },
+    {
+      "file": "research/sources/centre/modem-bayrou-universite-rentree-cloture-2026-09-20.html",
+      "url": "https://www.mouvementdemocrate.fr/universite-de-rentree/ur-2026-revivez-le-discours-de-cloture-de-francois-bayrou-video-8501-video",
+      "accessed": "2026-11-01",
+      "bytes": 123547,
+      "sha256": "d206f2a740c4a57c9058e55b0daf919d26a4bad45d0dd29de2a5e15f9b8cdee3"
+    },
+    {
+      "file": "research/sources/centre/modem-fesneau-universite-rentree-cloture-2026-09-20.html",
+      "url": "https://www.mouvementdemocrate.fr/universite-de-rentree/ur-2026-revivez-le-discours-de-cloture-de-marc-fesneau-video-8500-video",
+      "accessed": "2026-11-01",
+      "bytes": 117298,
+      "sha256": "d54db64def978615e6386418eb911a0af7e19c7edca2b988a61ee2e4dc21241a"
+    },
+    {
+      "file": "research/sources/centre/modem-fuchs-radioj-2025-09-18.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/bruno-fuchs-il-faut-retrouver-de-la-responsabilite-video-7929-video",
+      "accessed": "2026-11-01",
+      "bytes": 80441,
+      "sha256": "efff2a809a8226c4cee4ba5fcbde32de7a766fbd612f2010a33d00c04fda9f75"
+    },
+    {
+      "file": "research/sources/centre/modem-fuchs-radioj-2026-06-03.html",
+      "url": "https://www.mouvementdemocrate.fr/nos-parlementaires/bruno-fuchs-entre-israel-et-le-liban-la-solution-est-politique-pas-militaire",
+      "accessed": "2026-11-01",
+      "bytes": 82782,
+      "sha256": "0d2b69db68887cd08d957d52b0a57e62af4e831c08a0278d1b64303cf1881554"
+    },
+    {
+      "file": "research/sources/centre/modem-fuchs-radioj-2026-10-19.html",
+      "url": "https://www.mouvementdemocrate.fr/nos-parlementaires/bruno-fuchs-il-faut-preserver-le-modele-de-la-democratie-et-le-respect-des",
+      "accessed": "2026-11-01",
+      "bytes": 81353,
+      "sha256": "76645f7b9a8788730f3fd4e7bf72186395ce91d73f04be7a4f7a3fb38e5a4d66"
+    },
+    {
+      "file": "research/sources/centre/modem-lecamp-barrot-qag-2026-01-20.html",
+      "url": "https://www.mouvementdemocrate.fr/nos-parlementaires/pascal-lecamp-les-etats-unis-menacent-aujourdhui-directement-la-souverainete",
+      "accessed": "2026-11-01",
+      "bytes": 81601,
+      "sha256": "91d8bf64fc8725b947da0220b78da90c004144ec9ffaa2ca905eeee747193b4a"
+    },
+    {
+      "file": "research/sources/centre/modem-liste-besoin-deurope-2024-06-14.html",
+      "url": "https://www.mouvementdemocrate.fr/actualites/felicitations-nos-eurodeputes-pour-leur-election-au-parlement-europeen-image-6981-image",
+      "accessed": "2026-11-01",
+      "bytes": 82637,
+      "sha256": "ceb66910baaa5388ca2689d7359e92cebcba55300ed252c2811f069d3a10738b"
+    },
+    {
+      "file": "research/sources/centre/modem-manifeste-pde-reinventer-europe-2024.pdf",
+      "url": "https://www.mouvementdemocrate.fr/system/files/documents/MANIFESTO%20FR_WEB.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 5086377,
+      "sha256": "c1c17ec7245848ddfde0b4a98deec680afa55004efb839b8c45e5fc66c6b963d"
+    },
+    {
+      "file": "research/sources/centre/modem-priorites-union-europeenne.html",
+      "url": "https://www.mouvementdemocrate.fr/renforcer-lunion-europeenne-7923",
+      "accessed": "2026-11-01",
+      "bytes": 66976,
+      "sha256": "ff97b5ab965248babf8dc12c643f073167de78148f0de2e0a0c575ced509f8c4"
+    },
+    {
+      "file": "research/sources/centre/publicsenat-attal-soldats-ukraine-2024-02-28.html",
+      "url": "https://www.publicsenat.fr/actualites/parlementaire/gabriel-attal-la-russie-est-une-menace-directe-et-immediate-pour-la-france-sur-tous-les-plans",
+      "accessed": "2026-11-01",
+      "bytes": 189056,
+      "sha256": "ca9b8b793b6794831a8f1c90c83bd3df295bbaa6823775c1ed85d85311859f2f"
+    },
+    {
+      "file": "research/sources/gauche/gdr-sansu-amendement-plf2026-CF1936-apd.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/CION_FIN/CF1936.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 75160,
+      "sha256": "27ca051dfeb8ab7ca2d4e019fb5a111c5a5069e252fc8aaf38769fc2bb9e1151"
+    },
+    {
+      "file": "research/sources/gauche/glucksmann-brut-service-obligatoire.html",
+      "url": "https://www.brut.media/fr/articles/raphael-glucksmann-est-pour-un-service-obligatoire-militaire-ou-civique",
+      "accessed": "2026-11-01",
+      "bytes": 63477,
+      "sha256": "0ec474fd51fbd181eee460c205fe0d8a02e06fd8105f8bc42938d77e307f0d1d"
+    },
+    {
+      "file": "research/sources/gauche/glucksmann-capclair-2025-02-19-europe-seule.html",
+      "url": "https://raphaelglucksmann.kessel.media/posts/pst_1f87f6fad32e4dd1af42939961e58704/leurope-seule-face-a-son-destin",
+      "accessed": "2026-11-01",
+      "bytes": 87231,
+      "sha256": "3f5515dc7baa7fc3b0e59e47ddaa47a36b40eadcf1eae3eb3c99393f063468f7"
+    },
+    {
+      "file": "research/sources/gauche/glucksmann-capclair-2025-02-24-ukraine.html",
+      "url": "https://raphaelglucksmann.kessel.media/posts/pst_bde552542ce94673b5d60ad3fd1e33c3/je-vous-ecris-dukraine-la-ou-se-joue-lavenir-de-leurope",
+      "accessed": "2026-11-01",
+      "bytes": 91104,
+      "sha256": "6316b5017e486c649d10423bba4195466938889db3c48ca8d7d575e91042dec4"
+    },
+    {
+      "file": "research/sources/gauche/glucksmann-capclair-defendre-europe-france-liberte.html",
+      "url": "https://raphaelglucksmann.kessel.media/posts/pst_be47d8a4ae504efbb6de3c62f6337008/defendre-leurope-la-france-et-notre-liberte",
+      "accessed": "2026-11-01",
+      "bytes": 83977,
+      "sha256": "65de77c3b27d78e2532303e4949b061d8a89206309efc8a2009e3809b62f6042"
+    },
+    {
+      "file": "research/sources/gauche/glucksmann-franceinfo-8h30-2025-11-24.html",
+      "url": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/plan-de-trump-pour-l-ukraine-retour-du-service-militaire-et-desunion-de-la-gauche-le-8-30-franceinfo-de-raphael-glucksmann_7606847.html",
+      "accessed": "2026-11-01",
+      "bytes": 656168,
+      "sha256": "1d4b6b64d9983d2ca6233cdedc57741d3d60de5c586e8dc26ba0c02b66ccb7b1"
+    },
+    {
+      "file": "research/sources/gauche/glucksmann-lcp-premieres-lignes-programme.html",
+      "url": "https://lcp.fr/actualites/presidentielle-raphael-glucksmann-devoile-les-premieres-lignes-de-son-possible-programme",
+      "accessed": "2026-11-01",
+      "bytes": 78361,
+      "sha256": "a97fd0c74ba63b534d97465f1f3a3cd559bb34cebf488c47da52fe425265b06f"
+    },
+    {
+      "file": "research/sources/gauche/lfi-amendement-lpm-2695-AN-86.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2695/AN/86.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 59011,
+      "sha256": "b240b6a878c6f71ef4d9291e510cc662515f38d9c16aecd2e5574c3a3fa7aef7"
+    },
+    {
+      "file": "research/sources/gauche/lo-arthaud-2024-06-26-politique-de-classe.html",
+      "url": "https://lutte-ouvriere.org/r/176032",
+      "accessed": "2026-11-01",
+      "bytes": 28939,
+      "sha256": "72f573fd7936e87980916eaf2363912e1de45f7acbabe0554df9c9942a99274f"
+    },
+    {
+      "file": "research/sources/gauche/lo-edito-2025-02-24-alliance-atlantique.html",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/alliance-atlantique-europeenne-brigandage-182196.html",
+      "accessed": "2026-11-01",
+      "bytes": 35454,
+      "sha256": "5db8f800ec3a6cd37763b1bb42fee467c913f39e8f3a7894131e06304648eda4"
+    },
+    {
+      "file": "research/sources/gauche/lo-edito-2025-03-10-pas-un-euro-armee.html",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/euro-larmee-homme-guerre-182538.html",
+      "accessed": "2026-11-01",
+      "bytes": 35593,
+      "sha256": "3079f9561cf2e71d4eb26d2ca0e5ae50a0432dffde67f816e99e692a59feec9e"
+    },
+    {
+      "file": "research/sources/gauche/lo-edito-chair-canons.html",
+      "url": "https://www.lutte-ouvriere.org/portail/editoriaux/chair-canons-chair-patrons-182922.html",
+      "accessed": "2026-11-01",
+      "bytes": 35650,
+      "sha256": "ce067b477719c0fe16370c0a19675d51f87a48e743dde95978756038ac13fea3"
+    },
+    {
+      "file": "research/sources/gauche/nfp-contrat-legislature-2024-melenchon2027.pdf",
+      "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 199854,
+      "sha256": "e6dd6fbd6c4315fbee86c2fcf4d7d008dfd2783d5a5ec1052fd0240c217a6cd3"
+    },
+    {
+      "file": "research/sources/gauche/npaa-2026-09-10-ukraine-resistance-civile-militaire.html",
+      "url": "https://npa-lanticapitaliste.org/actualite/international/ukraine-resistance-civile-et-militaire-contre-poutine",
+      "accessed": "2026-11-01",
+      "bytes": 61522,
+      "sha256": "d9847d08f246bef707c6402dfb2fa326a2efe5edf9d8c8fe8c0b664aa4b3128a"
+    },
+    {
+      "file": "research/sources/gauche/npaa-2026-10-30-militarisation-impasse.html",
+      "url": "https://npa-lanticapitaliste.org/actualite/politique/la-militarisation-ultime-impasse-du-neoliberalisme",
+      "accessed": "2026-11-01",
+      "bytes": 71287,
+      "sha256": "0c9874dc537631466b3172eb1185d0b8d039de72e019a74427b22ff49ec1c58c"
+    },
+    {
+      "file": "research/sources/gauche/npaa-cpn-resolution-2025-05-10.html",
+      "url": "https://npa-lanticapitaliste.org/actualite/vie-du-npa/resolution-politique-cpn-des-10-et-11-mai-2025",
+      "accessed": "2026-11-01",
+      "bytes": 84672,
+      "sha256": "ea5eb25b11cdf18ef4c6c406a4b0f727772c5a71283cf340948d92fe64d3ec00"
+    },
+    {
+      "file": "research/sources/gauche/npaa-cpn-resolution-2025-09-20.html",
+      "url": "https://npa-lanticapitaliste.org/actualite/vie-du-npa/resolution-politique-cpn-des-20-et-21-septembre-2025",
+      "accessed": "2026-11-01",
+      "bytes": 78983,
+      "sha256": "dadf387e8808e541996e1b32705f325b8c3d43f092d7ccfa94ac1515f3c5dbdd"
+    },
+    {
+      "file": "research/sources/gauche/npaa-cpn-resolution-2026-04-11.html",
+      "url": "https://npa-lanticapitaliste.org/actualite/vie-du-npa/resolution-politique-cpn-des-11-et-12-avril-2026",
+      "accessed": "2026-11-01",
+      "bytes": 69043,
+      "sha256": "624f4bce1cab8c3ce7e7f4d870841b336d6587f263b13b070e0383fb353fa690"
+    },
+    {
+      "file": "research/sources/gauche/npaa-hebdo-820-2026-10-29-trump-poutine-ukraine.html",
+      "url": "https://npa-lanticapitaliste.org/actualite/international/trump-sallie-poutine-contre-le-peuple-ukrainien",
+      "accessed": "2026-11-01",
+      "bytes": 63165,
+      "sha256": "4ed77993ec69d8fb2af82679c52a32e585b18f8172755da3ff5fcf390765c0d8"
+    },
+    {
+      "file": "research/sources/gauche/npar-2023-03-revolutionnaires-guerre-ukraine.html",
+      "url": "https://npa-revolutionnaires.org/articles/les-revolutionnaires-et-la-guerre-en-ukraine-quelle-voie-pour-les-travailleurs-et-les-peuples",
+      "accessed": "2026-11-01",
+      "bytes": 47432,
+      "sha256": "1acb9ced579aefcb7cdf37a384d83ed4abd5137281bbc4bf33d96f0e404519bc"
+    },
+    {
+      "file": "research/sources/gauche/npar-2025-07-sommet-otan-ukraine.html",
+      "url": "https://npa-revolutionnaires.org/articles/sommet-de-lotan-et-ukraine-trump-aboie-les-europeens-au-garde-a-vous",
+      "accessed": "2026-11-01",
+      "bytes": 29135,
+      "sha256": "3e1873f50de69b2bddcb33bfbbd68c42d449ba88608f4194647fa2bbdd57ee7a"
+    },
+    {
+      "file": "research/sources/gauche/npar-cpn-resolution-2026-02-14.html",
+      "url": "https://npa-revolutionnaires.org/articles/resolution-du-cpn-des-14-et-15-fevrier-dans-un-monde-rendu-instable-par-les-rivalites-imperialistes-quelle-politique-des-revolutionnaires-pour-une-independance-de-classe",
+      "accessed": "2026-11-01",
+      "bytes": 95544,
+      "sha256": "4712ba1be12829aeb9b3ec6fbdb897f4166fd28bfd61270b977459ce894b6dd0"
+    },
+    {
+      "file": "research/sources/gauche/npar-labib-fete-huma-2026-09.html",
+      "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+      "accessed": "2026-11-01",
+      "bytes": 55990,
+      "sha256": "dce6ac06dfea280c962033351c79039999f6fb39d55e198f9de22dbf522901a6"
+    },
+    {
+      "file": "research/sources/gauche/pcf-livret-regagner-la-paix-2026.pdf",
+      "url": "https://assets.nationbuilder.com/pcf/pages/41211/attachments/original/1779954906/document_cahier_paix_ppp_stc.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 544699,
+      "sha256": "d96b754eafce4809bc487cc8dd1628a47c8477f28fc27605b2456420cc1c2337"
+    },
+    {
+      "file": "research/sources/gauche/pcf-page-non-envoi-troupes-ukraine.html",
+      "url": "https://www.pcf.fr/non_envoi_troupes_en_ukraine",
+      "accessed": "2026-11-01",
+      "bytes": 45185,
+      "sha256": "c9bff63273e8c37759e7499a58fae74ae2f71eb442a2a2631b607b9fc463458e"
+    },
+    {
+      "file": "research/sources/gauche/placepublique-acte-i.html",
+      "url": "https://place-publique.eu/pages/6mRSwq5tuSrSi68Cw1IADX/l-acte-i",
+      "accessed": "2026-11-01",
+      "bytes": 70170,
+      "sha256": "f7c7b584d1fc3ebc9ab1d049c207a9e5353fc4603d7a9c8c6845000a8730b87a"
+    },
+    {
+      "file": "research/sources/gauche/primaire-ps-justiceinfo-ukraine-royal.html",
+      "url": "https://www.justiceinfo.net/fr/165818-ukraine-israel-royal-mise-sous-pression-par-ses-concurrents-a-la-primaire.html",
+      "accessed": "2026-11-01",
+      "bytes": 89392,
+      "sha256": "c3ae2af24cbd7347f306cdc55515c0e47bc00541b6ae0702d790a78dc8969eb8"
+    },
+    {
+      "file": "research/sources/gauche/primaire-ps-lcp-dernier-debat.html",
+      "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+      "accessed": "2026-11-01",
+      "bytes": 89661,
+      "sha256": "b3e5451593c8138332d0b07f70fabcd0a9e71aba5e3a29d08125f9ee06e37f33"
+    },
+    {
+      "file": "research/sources/gauche/primaire-ps-publicsenat-debat1-2026-09-23.html",
+      "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-echanges-tendus-sur-les-alliances-avec-lfi-gaza-ukraine-que-retenir-du-1er-debat-entre-les-candidats",
+      "accessed": "2026-11-01",
+      "bytes": 201764,
+      "sha256": "9ce0120a259eb7e7f7d4b20caf4c5738b61ed7e6b7b85bc27bac65106a5f4782"
+    },
+    {
+      "file": "research/sources/gauche/roussel-pcf-communique-2025-03-non-marche-guerre.html",
+      "url": "https://www.pcf.fr/reaction_intervention_macron_defense",
+      "accessed": "2026-11-01",
+      "bytes": 57507,
+      "sha256": "b5e9652cd00326fca9c1c18cf64ab6f3ab28f84603196da17d7764509476116f"
+    },
+    {
+      "file": "research/sources/gauche/roussel-publicsenat-2025-02-20-desescalade.html",
+      "url": "https://www.publicsenat.fr/actualites/international/reunion-sur-lukraine-avec-macron-poutine-veut-mettre-a-genoux-nos-democraties-affirme-le-senateur-lr-cedric-perrin",
+      "accessed": "2026-11-01",
+      "bytes": 195258,
+      "sha256": "f737a35d4bbba82e42080d7408afda20d1d461ad3c4fc8fe1b9975edfd17ada7"
+    },
+    {
+      "file": "research/sources/gauche/roussel-sudradio-guerre-russie.html",
+      "url": "https://www.sudradio.fr/linvite-politique/ukraine-je-ne-veux-pas-que-la-france-entre-en-guerre-contre-la-russie-declare-fabien-roussel",
+      "accessed": "2026-11-01",
+      "bytes": 166702,
+      "sha256": "229269934dec301d0444cb14872308d1b2549254dad77fe0b53903fb5c30f28e"
+    },
+    {
+      "file": "research/sources/gauche/rp-2025-03-imperialisme-europeen-pas-allie-ukraine.html",
+      "url": "https://www.revolutionpermanente.fr/L-imperialisme-europeen-n-est-pas-un-allie-de-l-Ukraine-2",
+      "accessed": "2026-11-01",
+      "bytes": 115524,
+      "sha256": "b0e6ab6904ff36e211eed7fefab38217991c7d8bfb21b00b8455ac0c237d8f98"
+    },
+    {
+      "file": "research/sources/gauche/saintoul-qag-860-otan-5pc.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QG860",
+      "accessed": "2026-11-01",
+      "bytes": 77399,
+      "sha256": "321c07211f845c294752ae75c7da1a5bb5c992d1e2bb0d70dfe6a90297eb9c17"
+    },
+    {
+      "file": "research/sources/gauche/tondelier-publicsenat-defense-solidarite.html",
+      "url": "https://www.publicsenat.fr/actualites/politique/augmentation-du-budget-de-la-defense-quand-on-a-des-defis-pareils-cest-la-solidarite-nationale-qui-doit-jouer-affirme-marine-tondelier",
+      "accessed": "2026-11-01",
+      "bytes": 190556,
+      "sha256": "ec92f059492de8441b354ea32a6d2e1d4f5c766b653851b3d8a4305682b3afdd"
+    },
+    {
+      "file": "research/sources/idees/cae-communique-note-88-2026-03-04.pdf",
+      "url": "https://cae-eco.fr/static/pdf/Communique-presse-N88_260304_def.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 278475,
+      "sha256": "c52ab2315f45ffbe6ab8a5e3aa073f75b7d37c22174851f8def76bb8e870ad67"
+    },
+    {
+      "file": "research/sources/idees/cae-note-88-rearmer-europe-2026-03.pdf",
+      "url": "https://cae-eco.fr/static/pdf/CAE088_Defense_260304.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 377904,
+      "sha256": "b2329de34130c949185257e955a0eceb167f77be6bc87bba24a2af50990d1cc5"
+    },
+    {
+      "file": "research/sources/idees/carrere-gee-sursaut-presseagence.html",
+      "url": "https://presseagence.fr/paris-marie-claire-carrere-gee-la-france-a-besoin-dun-sursaut-pas-dune-simple-alternance/",
+      "accessed": "2026-11-01",
+      "bytes": 85672,
+      "sha256": "fc50faf2794b66474659aa4e2deed07eff6dfe0e8ce0c9c042c2554df1e34f76"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-aide-developpement-hausse-2026-04-24.html",
+      "url": "https://contrepoints.org/laide-au-developpement-en-hausse-malgre-letat-des-finances-publiques-135-en-dix-ans/",
+      "accessed": "2026-11-01",
+      "bytes": 194143,
+      "sha256": "2ad46596b8d33c98c69093812c62ecc49a69298a50b6314d26fc00098de64b95"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-aide-developpement-immigration-2025-11-20.html",
+      "url": "https://contrepoints.org/aide-au-developpement-et-immigration-inaction-a-tous-les-etages/",
+      "accessed": "2026-11-01",
+      "bytes": 182022,
+      "sha256": "441c230f40042d4ec8b196d1043032a83f15de06edfe96b6651c0f1bb2756a17"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-desescalade-retenue-2026-01-30.html",
+      "url": "https://contrepoints.org/la-desescalade-et-la-retenue-sont-inefficaces-face-a-des-dictateurs/",
+      "accessed": "2026-11-01",
+      "bytes": 193101,
+      "sha256": "bbb6123edb4e8767377e4300a7ca07721a4d3ddb301dd073db95a8be70a9722f"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-otan-5-pib-2026-07-07.html",
+      "url": "https://contrepoints.org/otan-la-course-aux-5-du-pib-un-engagement-incertain/",
+      "accessed": "2026-11-01",
+      "bytes": 178748,
+      "sha256": "ed489cdbfe230192c9924917717fa6f113124d118ee43b586fa938b9a373ce1e"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-reconstruire-ukraine-2026-06-24.html",
+      "url": "https://contrepoints.org/reconstruire-lukraine-les-subventions-publiques-ne-suffiront-pas/",
+      "accessed": "2026-11-01",
+      "bytes": 189312,
+      "sha256": "b5c2aea27147f81a777f64078dbab0336babd66ff18bab82a543f8d06ea8b21f"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-scandale-apd-2025-02-24.html",
+      "url": "https://contrepoints.org/le-scandale-de-laide-publique-au-developpement-apd/",
+      "accessed": "2026-11-01",
+      "bytes": 198402,
+      "sha256": "442b09d88e32bdf5bffa7fa3d288fd5a31dbf428fd6de38d0e2c3ccf86ea4fc2"
+    },
+    {
+      "file": "research/sources/idees/contrepoints-ukraine-paix-aura-un-prix-2026-10-09.html",
+      "url": "https://contrepoints.org/ukraine-la-paix-aura-un-prix/",
+      "accessed": "2026-11-01",
+      "bytes": 180558,
+      "sha256": "90a9731097de526df39e588cbd84f72e33bb28deb371106e62a797b9288e2469"
+    },
+    {
+      "file": "research/sources/idees/coppet-bastiat-paix-et-liberte-1849.pdf",
+      "url": "https://www.coppetinstitute.org/EL/Bastiat-Paix-Liberte.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 557800,
+      "sha256": "00d6a864704814b4c01c3edcd7ccae15ced72e7f91700834a6d252b15c11403c"
+    },
+    {
+      "file": "research/sources/idees/coppet-dictionnaire-tradition-liberale-vol1-brouillon-2025.pdf",
+      "url": null,
+      "accessed": "2026-11-01",
+      "bytes": 5059382,
+      "sha256": "8ef198d3b2b02fc5cc8ab074122946e8e5fb367e23df833cebe1fda46471adec",
+      "note": "adresse d'origine non relevée lors du téléchargement"
+    },
+    {
+      "file": "research/sources/idees/coppet-page-dictionnaire-2026.html",
+      "url": "https://coppetinstitute.org/dictionnaire-de-la-tradition-liberale-francaise/",
+      "accessed": "2026-11-01",
+      "bytes": 40974,
+      "sha256": "bbf6a1d56f300f54be9f3a38059ab78e35bad8f0ba0acd59013fd9a2dafce87c"
+    },
+    {
+      "file": "research/sources/idees/coppet-page-frederic-bastiat-2026.html",
+      "url": "https://coppetinstitute.org/frederic-bastiat/",
+      "accessed": "2026-11-01",
+      "bytes": 57687,
+      "sha256": "c2cc393c8c0c87b911549b00b58a7ad89d018502859d724050d755dc242b63fe"
+    },
+    {
+      "file": "research/sources/idees/coppet-page-gustave-de-molinari-2026.html",
+      "url": "https://coppetinstitute.org/gustave-de-molinari/",
+      "accessed": "2026-11-01",
+      "bytes": 72552,
+      "sha256": "3c061e90132ea1304b09a3a78e46b94c7ca67cdf91b5823d8dee41f86cba7428"
+    },
+    {
+      "file": "research/sources/idees/coppet-page-murray-rothbard-2026.html",
+      "url": "https://coppetinstitute.org/murray-rothbard/",
+      "accessed": "2026-11-01",
+      "bytes": 42992,
+      "sha256": "7748703a0d0693a757f869746724db5034085582808719e62652c736adf54d08"
+    },
+    {
+      "file": "research/sources/idees/coppet-passy-avenir-europe-1895.pdf",
+      "url": null,
+      "accessed": "2026-11-01",
+      "bytes": 253389,
+      "sha256": "5e0d4b923fa40118867c0390c89bc4497357213dc042c7e1cba7d7f0dc04c149",
+      "note": "adresse d'origine non relevée lors du téléchargement"
+    },
+    {
+      "file": "research/sources/idees/coppet-rothbard-renouer-avec-la-liberte-1973.pdf",
+      "url": "https://coppetinstitute.org/EL/Rothbard-Renouer-liberte.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 1155551,
+      "sha256": "30946ba12a362908c98633a23ffdc840126428f13e5fd00f8885163481369857"
+    },
+    {
+      "file": "research/sources/idees/cvce-de-gaulle-discours-defense-1959-11-03.pdf",
+      "url": "https://www.cvce.eu/content/publication/1999/1/1/c45374f7-6791-41cb-866f-1e1523201df9/publishable_fr.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 57191,
+      "sha256": "c3ac6101d0b4f5dad3b44cc02243a5a79ddcdcf0b09613200f87df3a6a994146"
+    },
+    {
+      "file": "research/sources/idees/fcdg-bauchard-europe-heure-ukraine-2023-07-04.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2023/07/04/leurope-a-lheure-de-lukraine-un-bilan-provisoire-par-denis-bauchard/",
+      "accessed": "2026-11-01",
+      "bytes": 230276,
+      "sha256": "28e68cf2c701f78eae3cd6155cd7d20da40b91351cea8178c6149daaa10920da"
+    },
+    {
+      "file": "research/sources/idees/fcdg-couve-de-murville-publie-2026-03-25.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2026/03/25/il-ne-paraissait-plus-possible-dattendre-davantage-par-maurice-couve-de-murville-2/",
+      "accessed": "2026-11-01",
+      "bytes": 225888,
+      "sha256": "b071dc3e58367ad7755b09cdf071cba78744662ebf2c6038ba771003ee257ef4"
+    },
+    {
+      "file": "research/sources/idees/fcdg-de-gaulle-la-guerre-si-elle-devait-eclater-publie-2026-03-25.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2026/03/25/de-gaulle-la-guerre-si-elle-devait-eclater/",
+      "accessed": "2026-11-01",
+      "bytes": 215714,
+      "sha256": "42029006f11654dc2acf40af73b0c761678fc551a5d0acf4c9a1d24236940c99"
+    },
+    {
+      "file": "research/sources/idees/fcdg-dedeyan-independance-nationale-2024-07-11.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2024/07/11/lindependance-nationale-un-heritage-a-preserver-par-jean-marie-dedeyan/",
+      "accessed": "2026-11-01",
+      "bytes": 252592,
+      "sha256": "804198d347f28dd868196a396d42e39ce4e04ec25c94ba6cc07a1397b0dde4cb"
+    },
+    {
+      "file": "research/sources/idees/fcdg-lettre-de-gaulle-johnson-1966-publiee-2026-03-25.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2026/03/25/lettre-du-general-de-gaulle-au-president-johnson-2/",
+      "accessed": "2026-11-01",
+      "bytes": 217974,
+      "sha256": "9938bff5fff5dd9ab467698d0b230e5b38e48680b7a8fd824f930d6f082760ab"
+    },
+    {
+      "file": "research/sources/idees/fcdg-messmer-alliances-pas-eternelles-publie-2026-03-25.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2026/03/25/les-alliances-sont-utiles-et-parfois-necessaires-mais-elles-ne-sont-pas-eternelles-par-pierre-messmer-2/",
+      "accessed": "2026-11-01",
+      "bytes": 220244,
+      "sha256": "9162c212b38f9836d06b2d1bda27b272bf68b06932a65c40660ca78b9e540415"
+    },
+    {
+      "file": "research/sources/idees/fcdg-terrenoire-vision-paneuropeenne-2025-06-02.html",
+      "url": "https://www.charles-de-gaulle.org/blog/2025/06/02/https-www-charles-de-gaulle-org-blog-2025-06-02-de-gaulle-leurope-et-latlantisme-par-alain-terrenoire/",
+      "accessed": "2026-11-01",
+      "bytes": 246041,
+      "sha256": "f34dcaec4c1fc3e465eadc43191ef16c21bd060d7e74d18d5e9967c240a5f435"
+    },
+    {
+      "file": "research/sources/idees/iref-budget-2027-hypotheses-2026-09-08.html",
+      "url": "https://fr.irefeurope.org/budget-2027-quand-le-gouvernement-choisit-sciemment-des-hypotheses-fausses/",
+      "accessed": "2026-11-01",
+      "bytes": 213738,
+      "sha256": "fd003343be17bb3f74cee4bb262328a6e91450b045b31c33dd26485e67793b5c"
+    },
+    {
+      "file": "research/sources/idees/iref-delsol-scene-internationale-2025-03-31.html",
+      "url": "https://fr.irefeurope.org/jean-philippe-delsol-sur-la-scene-internationale-le-president-americain-va-jeter-un-doute-durable-sur-la-parole-et-laction-des-etats-unis/",
+      "accessed": "2026-11-01",
+      "bytes": 198134,
+      "sha256": "50485d8ba45b9745d713ee2ed950e1fa2b9fbeba5b53cd84fb7efe63a6762e47"
+    },
+    {
+      "file": "research/sources/idees/iref-desendetter-210-mds-2024-06-16.html",
+      "url": "https://fr.irefeurope.org/desendetter-france-depenses/",
+      "accessed": "2026-11-01",
+      "bytes": 241040,
+      "sha256": "d40fb6c0e49090a7ffc576e69869cdca6785e4cb90dd5788dbef0c5730434ab7"
+    },
+    {
+      "file": "research/sources/idees/iref-modele-social-ou-securite-2025-02-25.html",
+      "url": "https://fr.irefeurope.org/modele-social-francais-ou-securite-il-va-falloir-choisir/",
+      "accessed": "2026-11-01",
+      "bytes": 228307,
+      "sha256": "10710a488ebeeed15d5607f063bc1526d6bda0c84542edd5b2530a83a8249bbd"
+    },
+    {
+      "file": "research/sources/idees/molinari-capitaliser-defense-europe-2026-01-29.html",
+      "url": "https://www.institutmolinari.org/2026/01/29/capitaliser-pour-demultiplier-la-defense-europeenne-2/",
+      "accessed": "2026-11-01",
+      "bytes": 293012,
+      "sha256": "e50fa4a99830369ae82765c52dcccbf9f43defb2422bf18ebfc015f56f38b65f"
+    },
+    {
+      "file": "research/sources/idees/montaigne-rearmer-france-financer-2025.html",
+      "url": "https://institutmontaigne.org/expressions/rearmer-la-france-financer-la-montee-en-puissance",
+      "accessed": "2026-11-01",
+      "bytes": 65086,
+      "sha256": "c7d94a27300b6b2fb8e249c5ceb3a0c3c87a9e68a36bc8d6e7f387bc2d23ed36"
+    },
+    {
+      "file": "research/sources/idees/montaigne-reperes-defense-nationale-2026.pdf",
+      "url": "https://www.institutmontaigne.org/npp-admin/uploads/notes/defense-nationale-les-reperes-de-montaigne-6ac5183715a00492483292.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2686756,
+      "sha256": "e6751649501553cde8f139efc3b29ce4808a3b0a072659373d3ab13ca8717a70"
+    },
+    {
+      "file": "research/sources/idees/piie-blanchard-ubide-eurobonds-2025-05-30.html",
+      "url": "https://www.piie.com/blogs/realtime-economics/2025/now-time-eurobonds-specific-proposal",
+      "accessed": "2026-11-01",
+      "bytes": 92882,
+      "sha256": "00afac8041e30599bce6c5c934ef5b829783c39cf60ebb5d14e211c22c146360"
+    },
+    {
+      "file": "research/sources/idees/piie-blanchard-ubide-eurobonds-needed-2026.html",
+      "url": "https://www.piie.com/blogs/realtime-economics/2026/eurobonds-despite-objections-they-are-more-needed-ever",
+      "accessed": "2026-11-01",
+      "bytes": 91936,
+      "sha256": "278dcbdd68a42e718523422a3ed3e0ea2db8632458cef8276b1a299695063e81"
+    },
+    {
+      "file": "research/sources/idees/pisaniferry-defis-rearmement-europeen-2026.html",
+      "url": "https://jeanpisaniferry.substack.com/p/les-defis-du-rearmement-europeen",
+      "accessed": "2026-11-01",
+      "bytes": 123108,
+      "sha256": "f51b8ae2dfb472fa889e45ef1c8e55e1775a77466627bc68b15b21a5ce16f545"
+    },
+    {
+      "file": "research/sources/idees/plf-decouvrir-2026.html",
+      "url": "https://www.partilibertarien.fr/decouvrir/",
+      "accessed": "2026-11-01",
+      "bytes": 217917,
+      "sha256": "bb83206a14af6bbcaa3b19228feba7f996050a2ccae1dd33b8ee6ffba20fdd3c"
+    },
+    {
+      "file": "research/sources/idees/plf-notre-vision-2026.html",
+      "url": "https://www.partilibertarien.fr/notre-vision/",
+      "accessed": "2026-11-01",
+      "bytes": 204500,
+      "sha256": "8fb39c830e9e7acfe17f9ad4c78c6275137ce3b80f4440784d0ef43b4ed37d89"
+    },
+    {
+      "file": "research/sources/idees/terranova-pisaniferry-sanctions-2022-03-28.html",
+      "url": "https://tnova.fr/democratie/international-defense/lheure-des-sanctions-economiques-a-sonne/",
+      "accessed": "2026-11-01",
+      "bytes": 30321,
+      "sha256": "cad0c98e097ef77ddb1efff484ede472abd507873367a3df7ea723d4ca9580f8"
+    },
+    {
+      "file": "research/sources/idees/tse-rearmer-europe-2026.html",
+      "url": "https://www.tse-fr.eu/fr/actualites/rearmer-leurope-relever-defi-lintegration-economique-linnovation",
+      "accessed": "2026-11-01",
+      "bytes": 216950,
+      "sha256": "2abd2fc196884983ba70424b08bdd424b3bae41c371093639d84404dac449f18"
+    },
+    {
+      "file": "research/sources/lr/an-commission-defense-thieriot-2026-02-11.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_def/l17cion_def2526034_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 534579,
+      "sha256": "2a126bd131019d35e9afbd1eb9c49e49ccd897ea8ad7461ab420add18b40f8e4"
+    },
+    {
+      "file": "research/sources/lr/an-commission-finances-retailleau-2025-06-03.pdf",
+      "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2425123_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 510854,
+      "sha256": "e93eb661ffc94fa907ff53501695f407820ab663cadd216ec247eac4a5487700"
+    },
+    {
+      "file": "research/sources/lr/an-commission-lois-retailleau-2024-10-02.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_lois/l17cion_lois2425002_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 702992,
+      "sha256": "80e591737bec66bcd1639a7fcc6e04137907cf42cfa4946ed88366bf1c21ca9d"
+    },
+    {
+      "file": "research/sources/lr/avecretailleau-faq-2026-11-01.html",
+      "url": "https://www.avecretailleau.fr/projet/faq",
+      "accessed": "2026-11-01",
+      "bytes": 234754,
+      "sha256": "34c3acbd3b420e8e5d84f3a08e187ef997682157e29e70c432d3b5a9710f36d1"
+    },
+    {
+      "file": "research/sources/lr/avecretailleau-mesure-119-faire-moins-2026-10-15.html",
+      "url": "https://www.avecretailleau.fr/projet/mesure/faire-moins-perimetre-revu-politiques-au-tamis-dispositifs",
+      "accessed": "2026-11-01",
+      "bytes": 167502,
+      "sha256": "de647e27044dfbdd1b3c25ea86c919a29ad80d52b9208e649a72288ad2d86253"
+    },
+    {
+      "file": "research/sources/lr/avecretailleau-projet-sommaire-2026-11-01.html",
+      "url": "https://www.avecretailleau.fr/projet",
+      "accessed": "2026-11-01",
+      "bytes": 512887,
+      "sha256": "70b7932de7c1f3d1ec937019b9bf25a23c1f5f4eefe77492d445429de58000a1"
+    },
+    {
+      "file": "research/sources/lr/lcp-resolution-ukraine-avoirs-2025-03-12.html",
+      "url": "https://lcp.fr/actualites/l-assemblee-nationale-adopte-une-resolution-de-soutien-a-l-ukraine-appelant-a-saisir-les",
+      "accessed": "2026-11-01",
+      "bytes": 84225,
+      "sha256": "bf2d89831e3b84f8986b593276516360404c8f3710f305f1e6bacc703c9d39a6"
+    },
+    {
+      "file": "research/sources/lr/lr-bellamy-figaro-reglement-retour-2026-06-16.html",
+      "url": "https://republicains.fr/actualites/2026/06/16/discussion-sans-filtre-avec-francois-lenglet/",
+      "accessed": "2026-11-01",
+      "bytes": 155595,
+      "sha256": "eaf6bcd484409e0277be885675e422b9d1bd114685f1ebf59be10308b5902585"
+    },
+    {
+      "file": "research/sources/lr/lr-bellamy-iran-2025-06-23.html",
+      "url": "https://republicains.fr/actualites/2025/06/23/francois-xavier-bellamy-la-destruction-du-programme-nucleaire-iranien-ne-peut-etre-quune-bonne-nouvelle-pour-la-securite-du-monde/",
+      "accessed": "2026-11-01",
+      "bytes": 151189,
+      "sha256": "95c7c64aafbbc6329d9d30bee7b86b388599cb50978ed166b593289cdff42f8b"
+    },
+    {
+      "file": "research/sources/lr/lr-communique-etat-palestinien-2025-07-25.html",
+      "url": "https://republicains.fr/actualites/2025/07/25/reconnaissance-dun-etat-palestinien-par-la-france/",
+      "accessed": "2026-11-01",
+      "bytes": 148024,
+      "sha256": "3df74e0d47692ca9868f53e54a9da1a8c2356c8831567cc474172c09fbfb00a7"
+    },
+    {
+      "file": "research/sources/lr/lr-programme-europeennes-2024-05-14.pdf",
+      "url": "http://web.archive.org/web/20250922174012/https://republicains.fr/wp-content/uploads/2024/05/2024-05-14-lR-elections-europeennes-programme.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2175330,
+      "sha256": "51aa99925d58e407de5b0b08cb115151fc6ac3f739052a92c5188fc353074353"
+    },
+    {
+      "file": "research/sources/lr/lr-retailleau-dissuasion-ne-se-partage-pas-2026-03-01.html",
+      "url": "https://republicains.fr/actualites/2026/03/01/la-dissuasion-nucleaire-francaise-ne-se-partage-pas/",
+      "accessed": "2026-11-01",
+      "bytes": 127709,
+      "sha256": "7d024159e082cabae7ed58b6767520c4de543b8a57a3a112041418b4389e52ea"
+    },
+    {
+      "file": "research/sources/lr/lr-retailleau-jdd-algerie-visas-2026-05-02.html",
+      "url": "https://republicains.fr/actualites/2026/05/02/bruno-retailleau-interview-algerie-macron/",
+      "accessed": "2026-11-01",
+      "bytes": 157237,
+      "sha256": "1156c7e1e978bd840cd52e8f7a7bbeb6e5f05b6cce78730604eda53d611e3dfb"
+    },
+    {
+      "file": "research/sources/lr/lr-retailleau-jdd-schengen-aide-developpement-2026-08-02.html",
+      "url": "https://republicains.fr/actualites/2026/08/02/lespace-schengen-doit-etre-reserve-aux-europeens/",
+      "accessed": "2026-11-01",
+      "bytes": 150602,
+      "sha256": "703a89a3588cf129977469c4ed1638d1db1450d779cb60deb5500fad5944b894"
+    },
+    {
+      "file": "research/sources/lr/lr-retailleau-unite-nationale-premiere-de-nos-armes-2026-07-14.html",
+      "url": "https://republicains.fr/actualites/2026/07/14/lunite-nationale-premiere-de-nos-armes/",
+      "accessed": "2026-11-01",
+      "bytes": 153250,
+      "sha256": "557dfadfe76e64da2479eb53f051cc35097f3acb34f5e159f705a5f1601b3e56"
+    },
+    {
+      "file": "research/sources/lr/lr-secretaires-nationaux-2026-01-16.html",
+      "url": "https://republicains.fr/actualites/2026/01/16/nomination-de-nos-secretaires-nationaux/",
+      "accessed": "2026-11-01",
+      "bytes": 150635,
+      "sha256": "c2ae3dfd483d0bb87c050a7a9325c83ec9102545386d6194f02b65d62231a6c2"
+    },
+    {
+      "file": "research/sources/lr/lr-tract-maitriser-notre-destin-2024-04-06.pdf",
+      "url": "http://web.archive.org/web/20240607124831id_/https://republicains.fr/wp-content/uploads/2024/04/2024-04-06-lR-tract-maitriser-notre-destin.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 4294890,
+      "sha256": "62ff8795524546797942ba5d66df27730f1bfa36179bb593dfb3a893e8268d4f"
+    },
+    {
+      "file": "research/sources/lr/publicsenat-retailleau-plan-economies-2026-10-12.html",
+      "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+      "accessed": "2026-11-01",
+      "bytes": 197008,
+      "sha256": "bf2361af7f58fdcef1e2fc3917d46caf5864ab65362d478ffab937603c7d5676"
+    },
+    {
+      "file": "research/sources/parlement/an-2025-03-03-declaration-ukraine-securite-europe.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025",
+      "accessed": "2026-11-01",
+      "bytes": 1529168,
+      "sha256": "00ce0b8bcf2ae081f0194fedfe559cad598fa54011b03a72207048018c7087c1"
+    },
+    {
+      "file": "research/sources/parlement/an-2025-03-03-declaration-ukraine-securite-europe.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025",
+      "accessed": "2026-11-01",
+      "bytes": 560973,
+      "sha256": "05879e5fa7ece2aabd40aeae46a0febf68ec69dc9e34a87295dcd7906e167753"
+    },
+    {
+      "file": "research/sources/parlement/an-2025-03-12-1re-seance-resolution-ukraine.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/premiere-seance-du-mercredi-12-mars-2025",
+      "accessed": "2026-11-01",
+      "bytes": 3729781,
+      "sha256": "62d5fa46b7568aff6da5e569582ed8d08bb9019420596edbe2a066c3878fe8dd"
+    },
+    {
+      "file": "research/sources/parlement/an-2025-03-12-2e-seance-resolution-ukraine.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/deuxieme-seance-du-mercredi-12-mars-2025",
+      "accessed": "2026-11-01",
+      "bytes": 1989809,
+      "sha256": "53a9fbe92d9cb3e877db8d73ab57b27e99c580bcb25a3367c2750e76a3a3e53b"
+    },
+    {
+      "file": "research/sources/parlement/an-2025-12-10-declaration-strategie-defense.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/seance-du-mercredi-10-decembre-2025",
+      "accessed": "2026-11-01",
+      "bytes": 3232262,
+      "sha256": "0856e4b9336c60f9aef9e6af9a322c8e69414f6fa6cc55eb50d8dd7bbd1a96fc"
+    },
+    {
+      "file": "research/sources/parlement/an-2026-05-04-actualisation-lpm.html",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-lundi-04-mai-2026",
+      "accessed": "2026-11-01",
+      "bytes": 2201580,
+      "sha256": "973e7f7dae20b8fe6ffd2209a248e353074f36f11cb16c71ac2ad3bd848584d9"
+    },
+    {
+      "file": "research/sources/parlement/senat-2024-03-13-declaration-ukraine.html",
+      "url": "https://www.senat.fr/seances/s202403/s20240313/s20240313_mono.html",
+      "accessed": "2026-11-01",
+      "bytes": 1215645,
+      "sha256": "c064cee8f2cb91b90f934743bce995f7eb8ba1b2896fc81a2c617d7e12b9a6aa"
+    },
+    {
+      "file": "research/sources/parlement/senat-2026-05-05-debat-programmation-militaire.html",
+      "url": "https://www.senat.fr/seances/s202605/s20260505/s20260505_mono.html",
+      "accessed": "2026-11-01",
+      "bytes": 869157,
+      "sha256": "dcc4ee474ba197eb87030d32253368f1352a3d7894aa868b5342b27f2a35260a"
+    },
+    {
+      "file": "research/sources/parlement/senat-2026-06-02-loi-programmation-militaire.html",
+      "url": "https://www.senat.fr/seances/s202606/s20260602/s20260602021.html",
+      "accessed": "2026-11-01",
+      "bytes": 179902,
+      "sha256": "8f38bb5ac9636e7176584e7d2921c0364939e632409493e37115e80677934df1"
+    },
+    {
+      "file": "research/sources/references/attalpresident-accueil.html",
+      "url": "https://attalpresident.fr/",
+      "accessed": "2026-11-01",
+      "bytes": 1214121,
+      "sha256": "48f6553b04a5d2b4808d32896f6be46b9e84a45273b09894bbdacd16c2cba7c9"
+    },
+    {
+      "file": "research/sources/references/dlf-notre-projet.html",
+      "url": "https://www.debout-la-france.fr/notre-projet/",
+      "accessed": "2026-11-01",
+      "bytes": 278665,
+      "sha256": "8f8aaf3c9c05b3dfc98fd89867e92308d1b76c20db94ab1ff3a1eaa3796d5ea5"
+    },
+    {
+      "file": "research/sources/references/ecologistes-projet-ch4-i-europe-de-la-paix.html",
+      "url": "https://projet.lesecologistes.fr/project/chapitre-4-une-europe-democratique-dans-un-monde-en-paix/consultation/consultation-chapitre-4/consultation/i-batir-une-nouvelle-europe-de-la-paix",
+      "accessed": "2026-11-01",
+      "bytes": 499382,
+      "sha256": "02dfadc1d07e4b45379a2af0acfb1b9ac9a4d1a6aaf234695e2b9040519ba05a"
+    },
+    {
+      "file": "research/sources/references/ecologistes-projet-ch4-ii-droit-international.html",
+      "url": "https://projet.lesecologistes.fr/project/chapitre-4-une-europe-democratique-dans-un-monde-en-paix/consultation/consultation-chapitre-4/consultation/ii-defendre-le-droit-international",
+      "accessed": "2026-11-01",
+      "bytes": 615775,
+      "sha256": "2f26a73a453542314418cf677f3c203401a6496b6ac98b9da4d9b7013bd3ad71"
+    },
+    {
+      "file": "research/sources/references/fondation-de-gaulle-participation-2021.pdf",
+      "url": "https://www.charles-de-gaulle.org/wp-content/uploads/2021/05/Synthese-du-rapport-2021-Un-enjeu-actuel-pour-la-France-%E2%80%93-la-Participation-2.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 927353,
+      "sha256": "569a7a3e53d86d5e5625994f0fb213c6c1f59fff62ef441fca3295558adfa7a4"
+    },
+    {
+      "file": "research/sources/references/generation-ecologie-vivre-autrement.pdf",
+      "url": "https://generationecologie.fr/wp-content/uploads/2025/07/VIVRE-AUTREMENT-14eme-convention-nationale.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 247179,
+      "sha256": "5d57f7835da8fc6b293fda4b1170921b4a7d062bced5aa7a881ac1667d0c8ceb"
+    },
+    {
+      "file": "research/sources/references/generations-manifeste-2026.pdf",
+      "url": "https://www.generation-s.fr/wp-content/uploads/2026/09/manifeste.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 515864,
+      "sha256": "0514d59e071966dcaeadef0eb36657e980bc874795c782465229d36ca1908df9"
+    },
+    {
+      "file": "research/sources/references/grs-texte-congres-2026.pdf",
+      "url": "https://g-r-s.fr/wp-content/uploads/2026/06/Gauche-Republicaine-et-Socialiste-Texte-congres-amende.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 1085356,
+      "sha256": "7b738c29ea5a5f39997f4ccf10311ec52bd29a56443379a25bac10a4a42b1075"
+    },
+    {
+      "file": "research/sources/references/identite-libertes-notre-vision.html",
+      "url": "https://identite-libertes.fr/notre-vision/",
+      "accessed": "2026-11-01",
+      "bytes": 170335,
+      "sha256": "9d99ead9dd28be36cfab60e93403215ee29cf684bdae42462bb796bc4d0c7e8b"
+    },
+    {
+      "file": "research/sources/references/institut-coppet-accueil.html",
+      "url": "https://www.institutcoppet.org/",
+      "accessed": "2026-11-01",
+      "bytes": 36525,
+      "sha256": "a985e41e8c43b12d96c67ab2c9fbb4299e380de2c0666327d8356090d7b17aac",
+      "alsoAt": [
+        "https://coppetinstitute.org/"
+      ]
+    },
+    {
+      "file": "research/sources/references/la-convention-aux-francais-2026.pdf",
+      "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 1255921,
+      "sha256": "00f95d1a6ddf294a6c4a3955906b4fabdfb6581d0e9b2aa7c0385a89bb0f8529"
+    },
+    {
+      "file": "research/sources/references/lapres-manifeste.html",
+      "url": "https://l-apres.fr/pages/6HGzKMlzlC5zA1NDrKD464/notre-manifeste",
+      "accessed": "2026-11-01",
+      "bytes": 34216,
+      "sha256": "9fcd1d8b357d02e5ca7b1955eff0f02df3ebea8e38101d768e092c0bab392da5"
+    },
+    {
+      "file": "research/sources/references/lfi-avenir-en-commun-4e-edition-2025.pdf",
+      "url": "https://web.archive.org/web/20250603222117/https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 882569,
+      "sha256": "da9f73405a5e0f6efc4da9fd4f907de5a0822eeade54e993f8c6e9e60d0c78c8"
+    },
+    {
+      "file": "research/sources/references/lo-brochure-ete-2026.pdf",
+      "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 11103453,
+      "sha256": "c5d720a8cd9e06d7ba7a1229edd6f93294c41ae61c28b70e4f9b52c55052a190"
+    },
+    {
+      "file": "research/sources/references/lr-brochure-2026-01.pdf",
+      "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 7968195,
+      "sha256": "91ee32bf0982d4f4823560a8ad3fb68e0c25d49cf96df732b59ce6a54557f38a"
+    },
+    {
+      "file": "research/sources/references/lr-livret-ia-2026.pdf",
+      "url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 7252718,
+      "sha256": "6c96e249cd3b988e80cef214c16a264265e14604b902fdc4a93ab4926bda0375"
+    },
+    {
+      "file": "research/sources/references/lr-livret-produire-plus-2026.pdf",
+      "url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 13976003,
+      "sha256": "13e7e84e24bfd9b136825fbdb4510d711982f0a6933fb1c04301988a869c9000"
+    },
+    {
+      "file": "research/sources/references/lr-nos-propositions.html",
+      "url": "https://republicains.fr/nos-propositions/",
+      "accessed": "2026-11-01",
+      "bytes": 147997,
+      "sha256": "4a263c1f1e3c4af65a98476540529fc1aaf243f0f9616fdd64cce07ff60ebcfb"
+    },
+    {
+      "file": "research/sources/references/modem-nos-priorites.html",
+      "url": "https://www.mouvementdemocrate.fr/une-societe-unie-et-solidaire-7924",
+      "accessed": "2026-11-01",
+      "bytes": 82959,
+      "sha256": "8bdd1ddfe49497af35857dfb419513e55f393d37fce69e4a93fcc5854cfd02d2"
+    },
+    {
+      "file": "research/sources/references/npa-principes-fondateurs.html",
+      "url": "https://www.npa-lanticapitaliste.org/principes-fondateurs",
+      "accessed": "2026-11-01",
+      "bytes": 99546,
+      "sha256": "cc954e6bc0884aff4da66340adbfc857bf9a86855e55ed75ac1776fa21dba145"
+    },
+    {
+      "file": "research/sources/references/npar-reponse-labib-juvin-2026.html",
+      "url": "https://npa-revolutionnaires.org/articles/reponse-de-selma-labib-a-philippe-juvin-rapporteur-general-de-la-commission-des-finances",
+      "accessed": "2026-11-01",
+      "bytes": 44068,
+      "sha256": "81f63e95c98559502beb466beeaac3c903ba519a2ebdc34cd42b328a51438324"
+    },
+    {
+      "file": "research/sources/references/pcf-base-commune-40e-congres-2026.pdf",
+      "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 3400109,
+      "sha256": "fe4a9b0b2f7eca7faea6e281a895e22143f1312a75d363ccc921a710a5092576"
+    },
+    {
+      "file": "research/sources/references/place-publique-acte-un-2026.pdf",
+      "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2094957,
+      "sha256": "3898722a862a3ecef7d5481f7fc04ad7c329cd7e4070ed6f8de7a57cef4b1e7e",
+      "alsoAt": [
+        "https://drive.google.com/file/d/1Ols_EJxRAxOJeR-fLEKp7IzEk8-TSI1Q/view"
+      ]
+    },
+    {
+      "file": "research/sources/references/ps-projet-pacifier-le-monde.html",
+      "url": "https://projet-socialiste.fr/projet/pacifier-le-monde/",
+      "accessed": "2026-11-01",
+      "bytes": 148483,
+      "sha256": "b0ba813fd7bf535161eea4332ca17e30b970a4bd626658242e2c282d88753df9"
+    },
+    {
+      "file": "research/sources/references/ps-projet-vivre-libres.html",
+      "url": "https://projet-socialiste.fr/projet/vivre-libres/",
+      "accessed": "2026-11-01",
+      "bytes": 222283,
+      "sha256": "bffea6554151a82f3b3cff0ef186d6e7770aed40c58efc4dc2265bf004dfa0fa"
+    },
+    {
+      "file": "research/sources/references/reconquete-programme-2022.pdf",
+      "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 13259260,
+      "sha256": "08a8c9c9a7b450df7b7bde511970cb98379f59b7700c76e227f9241a4876b123"
+    },
+    {
+      "file": "research/sources/references/renaissance-accueil.html",
+      "url": "https://parti-renaissance.fr/",
+      "accessed": "2026-11-01",
+      "bytes": 229222,
+      "sha256": "e67b2340f53c376bafb96a541f6a3c49a36a40208ed6542aeace8f504371d9ae"
+    },
+    {
+      "file": "research/sources/references/renaissance-convention-nouvelle-donne.pdf",
+      "url": "https://doc.parti.re/Conventions-thematiques_Nouvelle-donne.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2077325,
+      "sha256": "26f207316997be53349ab9c4f32fc265217676c1c05e13f80ce224185ef99ace"
+    },
+    {
+      "file": "research/sources/references/renaissance-convention-regalien.pdf",
+      "url": "https://doc.parti.re/conventions/Restitution-Regalien-Une-Republique-ferme-une-France-apaisee.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 1244941,
+      "sha256": "5c67433e4bbdcfbe8bd32b49c082138031c9f88763b810e3690990627ed21950"
+    },
+    {
+      "file": "research/sources/references/rn-22-mesures-2022.pdf",
+      "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 3541212,
+      "sha256": "5528163f7638929ce4d91ac9be7beb9b7343f97d148cbb34f1e71144464e9806"
+    },
+    {
+      "file": "research/sources/references/rn-europe-des-nations-2024.pdf",
+      "url": "https://rassemblementnational.fr/documents/202411-programme-europeennes.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 24205781,
+      "sha256": "d8ca9c4af92be12b9ee9a1876742c9e0d578dfc2134b4bf63ce126624dd3fe80"
+    },
+    {
+      "file": "research/sources/references/rn-m-la-france-programme-2022.pdf",
+      "url": "https://mlafrance.fr/pdfs/manifeste-m-la-france-programme-presidentiel.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 27768594,
+      "sha256": "2228cf277a7b413270225101de778b5adb6c20a372108a3f96a5c317f2f558ea"
+    },
+    {
+      "file": "research/sources/references/rp-anasse2027-depliant-programme.pdf",
+      "url": "https://anasse2027.fr/programme/depliant-anasse-2027.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 4872079,
+      "sha256": "57722b44b7912f163590903a62a95e756073900ae273f738f5e2d729eb0a8c8a"
+    },
+    {
+      "file": "research/sources/references/tse-accueil.html",
+      "url": "https://www.tse-fr.eu/",
+      "accessed": "2026-11-01",
+      "bytes": 260867,
+      "sha256": "6c00f6b684403b8dbd910ce91e8213ebae5d6f8b8b6241efad7a8650b914a7f4"
+    },
+    {
+      "file": "research/sources/rn/aliot-couper-robinet-ukraine-lagazette-2026-09.html",
+      "url": "https://www.lagazettefrance.fr/article/le-rn-parle-de-couper-le-robinet-a-l-ukraine-ses-adversaires-l-accusent-de-servir-la-russie",
+      "accessed": "2026-11-01",
+      "bytes": 95099,
+      "sha256": "271fbae21cf5fc9741a2373e09b52b6b33362c383598ac7254cad0c9f01ce8f5"
+    },
+    {
+      "file": "research/sources/rn/aliot-couper-robinet-ukraine-sudradio-2026-09.html",
+      "url": "https://www.sudradio.fr/societe/le-rn-parle-de-couper-le-robinet-a-lukraine-ses-adversaires-laccusent-de-servir-la-russie",
+      "accessed": "2026-11-01",
+      "bytes": 162148,
+      "sha256": "a21af700c19682b7a4af9562e1badc4fe5d9ff9d76a5b2d6f2054e5cab225c7c"
+    },
+    {
+      "file": "research/sources/rn/an-amendement-2283-rn-apd-plf2026-2026-01-10.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/AN/2283.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 76346,
+      "sha256": "4e6a22d412791d3940bbfc79a318d7491e4da7d301ef700815fca42ac05a4d2b"
+    },
+    {
+      "file": "research/sources/rn/an-amendement-II-2758-rn-apd-plf2026-2025-11-18.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/AN/2758.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 10619,
+      "sha256": "b329ac629af2515a9d51290507858fbfc83b1bd06b132f611840ad51aa7623f7"
+    },
+    {
+      "file": "research/sources/rn/bardella-algerie-aide-developpement-algerie360-2025-03-24.html",
+      "url": "https://www.algerie360.com/jordan-bardella-veut-des-mesures-fortes-contre-alger-elle-doit-nous-donner-notre-independance/",
+      "accessed": "2026-11-01",
+      "bytes": 71358,
+      "sha256": "b607542f423de2c720e597eb4bd3b54e4c8fed65d11925d3d23c16af4c1faab7"
+    },
+    {
+      "file": "research/sources/rn/bardella-apd-bfmtv-observalgerie-2025-09-01.html",
+      "url": "https://observalgerie.com/2025/09/01/immigration/jordan-bardella-sattaque-de-nouveau-a-lalgerie/",
+      "accessed": "2026-11-01",
+      "bytes": 254943,
+      "sha256": "d7aa74850401ef852e2ab7c59b8a46449c279ce2a4b7d2d603f01c5c10233897"
+    },
+    {
+      "file": "research/sources/rn/bardella-conference-ukraine-publicsenat-2025-03-11.html",
+      "url": "https://www.publicsenat.fr/actualites/international/en-suspendant-laide-a-lukraine-donald-trump-met-en-oeuvre-un-engagement-de-sa-campagne-electorale-affirme-jordan-bardella",
+      "accessed": "2026-11-01",
+      "bytes": 203340,
+      "sha256": "1cc115ad4830d42150c747d1d4f057bdec92c6755f3335b0baf6dcfe440b8f9d"
+    },
+    {
+      "file": "research/sources/rn/bardella-missiles-troupes-europe1-2024-06-27.html",
+      "url": "https://www.europe1.fr/politique/jordan-bardella-je-ne-laisserai-pas-limperialisme-russe-absorber-un-etat-allie-comme-lukraine-4255229",
+      "accessed": "2026-11-01",
+      "bytes": 67272,
+      "sha256": "4d8bf421fa7773741e62efd2f980909f4b3409e5bb6f50aab6a6e88bc4058947"
+    },
+    {
+      "file": "research/sources/rn/bardella-otan-scalp-europe1-2024-03-28.html",
+      "url": "https://www.europe1.fr/politique/otan-jordan-bardella-contre-une-sortie-du-commandement-integre-en-periode-de-guerre-4238510",
+      "accessed": "2026-11-01",
+      "bytes": 67452,
+      "sha256": "61aadf1916dea058f7c182f09130ffb0028204ad586f42f6c7391d5dfe93af0b"
+    },
+    {
+      "file": "research/sources/rn/bardella-service-militaire-afp-lepetitjournal-2025-11-23.html",
+      "url": "https://lepetitjournal.com/expat-politique/actualites/vers-linstauration-dun-service-militaire-volontaire-en-france-428242",
+      "accessed": "2026-11-01",
+      "bytes": 507273,
+      "sha256": "06affd889c1c773d4e985b95a4f449169dd33d8d98ef3345b09760f3ce36d1bf"
+    },
+    {
+      "file": "research/sources/rn/bardella-ukraine-aide-kyivindependent-2026-09-07.html",
+      "url": "https://kyivindependent.com/french-far-right-wants-to-review-ukraine-aid/",
+      "accessed": "2026-11-01",
+      "bytes": 283501,
+      "sha256": "5922bc4342c82b3034f8b858c66f03ca62a59bfca66eb3c92bff7e75cf1ad9bc"
+    },
+    {
+      "file": "research/sources/rn/lepen-bardella-comparaison-lalibre-2026-02-13.html",
+      "url": "https://www.lalibre.be/international/2026/02/13/marine-le-pen-ou-jordan-bardella-candidat-a-la-presidentielle-du-pareil-au-meme-BPDFFCF6BRDKJFWTQTKJPNZNH4/",
+      "accessed": "2026-11-01",
+      "bytes": 815255,
+      "sha256": "213debefd3efdf0db4b2176c98747a21358354e87c93f15752b7cdeab23a1a06"
+    },
+    {
+      "file": "research/sources/rn/lepen-couper-aide-ukraine-parismatchbe-2026-10-15.html",
+      "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
+      "accessed": "2026-11-01",
+      "bytes": 421418,
+      "sha256": "1210600427fa2730bdfcbfb85d695db33ee6eb53da457ae0566a1a147ba766be"
+    },
+    {
+      "file": "research/sources/rn/lepen-dissuasion-opposee-europe1-2025-03-13.html",
+      "url": "https://www.europe1.fr/politique/elargissement-de-la-dissuasion-nucleaire-francaise-jy-suis-fondamentalement-oppose-appuie-marine-le-pen-667755",
+      "accessed": "2026-11-01",
+      "bytes": 64581,
+      "sha256": "b70fb21dcc03fe353d0f59c3bd8f27e6fa3e70df3555b7d337b56cd5bad1b150"
+    },
+    {
+      "file": "research/sources/rn/lepen-dissuasion-rtl-businessam-2026-03-04.html",
+      "url": "https://fr.businessam.be/le-pen-propose-un-echange-conditionnel-pour-la-dissuasion-nucleaire-francaise/",
+      "accessed": "2026-11-01",
+      "bytes": 231826,
+      "sha256": "be75e3b3fee600b06bb7252de915dff3bcb905f24c413d8e765fc7b14a47cea6"
+    },
+    {
+      "file": "research/sources/rn/lepen-otan-businessam-2026-05-24.html",
+      "url": "https://fr.businessam.be/le-pen-relance-le-debat-sur-lautonomie-strategique-de-la-france/",
+      "accessed": "2026-11-01",
+      "bytes": 230744,
+      "sha256": "1f8bf30e6a8c175931bbdbd0e506ef513c45ce1bc382e93eb2bbff65d438c3d3"
+    },
+    {
+      "file": "research/sources/rn/lepen-otan-commandement-reuters-devdiscourse-2026-05-22.html",
+      "url": "https://www.devdiscourse.com/article/politics/3918688-le-pen-says-france-should-quit-nato-command-structure",
+      "accessed": "2026-11-01",
+      "bytes": 90368,
+      "sha256": "bc179664fe441fc55bf8bbc81b7f1e48421222718714a6d54e3b68073ce805e6"
+    },
+    {
+      "file": "research/sources/rn/lepen-otan-commandement-reuters-tbsnews-2026-05-22.html",
+      "url": "https://www.tbsnews.net/worldbiz/europe/le-pen-says-france-should-quit-nato-command-structure-1446331",
+      "accessed": "2026-11-01",
+      "bytes": 93214,
+      "sha256": "811552ef813c09da2f0b590521a357798f53d7b6ff2c94fa8e43c382ce9111eb"
+    },
+    {
+      "file": "research/sources/rn/lepen-philippe-aide-ukraine-lagazette-2026-09.html",
+      "url": "https://www.lagazettefrance.fr/article/passe-d-armes-entre-le-pen-et-philippe-sur-l-aide-a-l-ukraine",
+      "accessed": "2026-11-01",
+      "bytes": 93573,
+      "sha256": "4fcf6229a8628631ec19c8ad5febf5dd145e40075e3222871895684e9ad384f4"
+    },
+    {
+      "file": "research/sources/rn/lepen-ukraine-kyivindependent-2026-09-16.html",
+      "url": "https://kyivindependent.com/france-can-provide-defense-aid-to-ukraine-but-should-scale-back-financial-support-le-pen-says/",
+      "accessed": "2026-11-01",
+      "bytes": 291533,
+      "sha256": "e55e368c354fd2cac6b91633923f29ccb8635e9ff7612ce8550c8a3fc1dd60d6"
+    },
+    {
+      "file": "research/sources/rn/lepen-victoire-ukraine-ue-euronews-2026-10-17.html",
+      "url": "https://fr.euronews.com/2026/10/17/moins-de-fonds-pour-lukraine-et-budget-de-lue-en-baisse-que-changerait-une-victoire-de-le-",
+      "accessed": "2026-11-01",
+      "bytes": 326100,
+      "sha256": "14db6131a5934f6d148de0e651418ad4232e510a6b6b733951c0df4fdc64c80e"
+    },
+    {
+      "file": "research/sources/rn/resolution-ukraine-avoirs-lcp-2025-03-12.html",
+      "url": "https://lcp.fr/actualites/l-assemblee-nationale-adopte-une-resolution-de-soutien-a-l-ukraine-appelant-a-saisir-les",
+      "accessed": "2026-11-01",
+      "bytes": 84262,
+      "sha256": "7a9311721d25511c33757f75d19834c4e3a4b8b5427f6c526fd76020b993bc79"
+    },
+    {
+      "file": "research/sources/rn/rn-communique-elargissement.html",
+      "url": "https://rassemblementnational.fr/communiques/elargissement-les-risques-sont-connus-mais-bruxelles-sobstine",
+      "accessed": "2026-11-01",
+      "bytes": 115304,
+      "sha256": "8f42218bb087ea55b62be62b2f1988e76432e6b545355c3d4a64691b54e27315"
+    },
+    {
+      "file": "research/sources/rn/rn-communique-lepen-bardella-russie-2026-09-19.html",
+      "url": "https://rassemblementnational.fr/communiques/communique_rn",
+      "accessed": "2026-11-01",
+      "bytes": 119766,
+      "sha256": "17f415e78b33a96f2e2bce21b7e2ec91a358964bfc9d38f4b5c50fad49641deb"
+    },
+    {
+      "file": "research/sources/rn/rn-communique-veto-politique-etrangere.html",
+      "url": "https://rassemblementnational.fr/communiques/droit-de-veto-e-macron-sacrifie-une-nouvelle-fois-la-souverainete-francaise",
+      "accessed": "2026-11-01",
+      "bytes": 115508,
+      "sha256": "edb402c7f7f92cbfb52b7bbf81e0c3595b495581d9be347b9e01a9f66555bac6"
+    },
+    {
+      "file": "research/sources/rn/rn-contre-budget-2026.pdf",
+      "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 893639,
+      "sha256": "800c6620d215ee12ad7166e3ad2e25da6c5b4de79e141e572118341e4f92a24b"
+    },
+    {
+      "file": "research/sources/rn/rn-politique-etrangere-panne-rupture-lagazette-2026.html",
+      "url": "https://www.lagazettefrance.fr/article/en-politique-etrangere-le-rn-en-panne-de-rupture",
+      "accessed": "2026-11-01",
+      "bytes": 94620,
+      "sha256": "ece325fcf21aecb719ea468d6a8e8c641eba287ef854fa715907a82c3951f23c"
+    },
+    {
+      "file": "research/sources/rn/rn-programme-legislatives-2024-06.pdf",
+      "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 21546654,
+      "sha256": "8bc4d891a6011ab2f219bfefbdbd2b9eb75e2c47f8182a74ab64faf09b7e8ed4"
+    },
+    {
+      "file": "research/sources/rn/rn-russie-double-discours-sudradio-2026-09.html",
+      "url": "https://www.sudradio.fr/societe/le-rn-hausse-le-ton-face-a-la-russie-mais-est-accuse-de-double-discours",
+      "accessed": "2026-11-01",
+      "bytes": 159677,
+      "sha256": "733dd1fd7f233da489f91478085f70b234f186339bd2778cab650502e7321327"
+    },
+    {
+      "file": "research/sources/rn/sudradio-vous-explique-1272.html",
+      "url": "https://www.sudradio.fr/emission/sud-radio-vous-explique-1272",
+      "accessed": "2026-11-01",
+      "bytes": 135375,
+      "sha256": "1843799c7a500cd35c545eb63de780ade8c3d31be92f662509427ec1c442f591"
+    },
+    {
+      "file": "research/sources/rn/tanguy-venezuela-europe1-2026-01-06.html",
+      "url": "https://www.europe1.fr/politique/venezuela-la-reaction-de-jean-luc-melenchon-est-une-reaction-de-soumission-tacle-jean-philippe-tanguy-877610",
+      "accessed": "2026-11-01",
+      "bytes": 64504,
+      "sha256": "e6fc2d5d57787c6cfe84ab315903e60d2f837ad32a925a287de8290e959fefba"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "2026.11",
+  "version": "2026.11.v3",
   "families": [
     {
       "id": "anticapitalisme",
@@ -15,6 +15,8 @@
         "integration": 2,
         "ecology": 2,
         "trade": 8,
+        "defense": 8,
+        "military": 1,
         "participation": 9
       },
       "sources": [
@@ -22,7 +24,19 @@
           "title": "Principes fondateurs",
           "kind": "texte doctrinal",
           "party": "npaa",
-          "url": "https://www.npa-lanticapitaliste.org/principes-fondateurs"
+          "url": "https://www.npa-lanticapitaliste.org/principes-fondateurs",
+          "archive": [
+            "research/sources/references/npa-principes-fondateurs.html"
+          ]
+        },
+        {
+          "title": "Résolution politique du conseil politique national des 20 et 21 septembre 2025",
+          "kind": "texte doctrinal",
+          "party": "npaa",
+          "url": "https://npa-lanticapitaliste.org/actualite/vie-du-npa/resolution-politique-cpn-des-20-et-21-septembre-2025",
+          "archive": [
+            "research/sources/gauche/npaa-cpn-resolution-2025-09-20.html"
+          ]
         }
       ],
       "compared": [
@@ -30,19 +44,28 @@
           "title": "Nathalie Arthaud – Présidentielle 2027 (2026)",
           "kind": "texte de campagne",
           "party": "lo",
-          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+          "archive": [
+            "research/sources/references/lo-brochure-ete-2026.pdf"
+          ]
         },
         {
           "title": "Réponse de Selma Labib à Philippe Juvin (2026)",
           "kind": "texte de campagne",
           "party": "npar",
-          "url": "https://npa-revolutionnaires.org/articles/reponse-de-selma-labib-a-philippe-juvin-rapporteur-general-de-la-commission-des-finances"
+          "url": "https://npa-revolutionnaires.org/articles/reponse-de-selma-labib-a-philippe-juvin-rapporteur-general-de-la-commission-des-finances",
+          "archive": [
+            "research/sources/references/npar-reponse-labib-juvin-2026.html"
+          ]
         },
         {
           "title": "Nos propositions (2026)",
           "kind": "programme",
           "party": "rp",
-          "url": "https://anasse2027.fr/programme/depliant-anasse-2027.pdf"
+          "url": "https://anasse2027.fr/programme/depliant-anasse-2027.pdf",
+          "archive": [
+            "research/sources/references/rp-anasse2027-depliant-programme.pdf"
+          ]
         }
       ]
     },
@@ -58,6 +81,9 @@
         "ecology": 5,
         "europe": 7,
         "trade": 7,
+        "defense": 10,
+        "military": 2,
+        "assistance": 8,
         "territory": 3
       },
       "sources": [
@@ -65,7 +91,19 @@
           "title": "Un communisme de conquêtes – Base commune votée au 40e congrès (2026)",
           "kind": "texte doctrinal",
           "party": "pcf",
-          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf"
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf",
+          "archive": [
+            "research/sources/references/pcf-base-commune-40e-congres-2026.pdf"
+          ]
+        },
+        {
+          "title": "Regagner la paix – livret adopté par le conseil national (9 mai 2026)",
+          "kind": "texte doctrinal",
+          "party": "pcf",
+          "url": "https://assets.nationbuilder.com/pcf/pages/41211/attachments/original/1779954906/document_cahier_paix_ppp_stc.pdf",
+          "archive": [
+            "research/sources/gauche/pcf-livret-regagner-la-paix-2026.pdf"
+          ]
         }
       ]
     },
@@ -87,6 +125,8 @@
         "europe": 8,
         "trade": 9,
         "defense": 10,
+        "military": 2,
+        "assistance": 6,
         "checks": 3,
         "executive": 1,
         "participation": 9,
@@ -97,7 +137,10 @@
           "title": "L’Avenir en commun (4e édition, 2025)",
           "kind": "programme",
           "party": "lfi",
-          "url": "https://web.archive.org/web/20250603222117/https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf"
+          "url": "https://web.archive.org/web/20250603222117/https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf",
+          "archive": [
+            "research/sources/references/lfi-avenir-en-commun-4e-edition-2025.pdf"
+          ]
         },
         {
           "title": "Comment nous allons remettre de l’ordre dans les comptes publics (2026)",
@@ -110,6 +153,26 @@
           "kind": "texte de campagne",
           "party": "lfi",
           "url": "https://melenchon2027.fr/programme/plans-thematiques/ruralite/"
+        },
+        {
+          "title": "Amendement n° 86 du groupe La France insoumise à la loi de programmation militaire (29 avril 2026)",
+          "kind": "texte parlementaire",
+          "party": "lfi",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2695/AN/86.pdf",
+          "archive": [
+            "research/sources/gauche/lfi-amendement-lpm-2695-AN-86.pdf"
+          ]
+        },
+        {
+          "title": "Interventions de Bastien Lachaud, député LFI, à l’Assemblée nationale (12 mars 2025 et 4 mai 2026)",
+          "kind": "compte rendu",
+          "party": "lfi",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-lundi-04-mai-2026",
+          "provisional": true,
+          "archive": [
+            "research/sources/parlement/an-2026-05-04-actualisation-lpm.html",
+            "research/sources/parlement/an-2025-03-12-2e-seance-resolution-ukraine.html"
+          ]
         }
       ]
     },
@@ -128,6 +191,9 @@
         "ecology": 3,
         "europe": 2,
         "trade": 4,
+        "defense": 2,
+        "military": 5,
+        "assistance": 1,
         "checks": 1
       },
       "sources": [
@@ -135,7 +201,32 @@
           "title": "Projet socialiste",
           "kind": "programme",
           "party": "ps",
-          "url": "https://projet-socialiste.fr/projet/"
+          "url": "https://projet-socialiste.fr/projet/",
+          "archive": [
+            "research/sources/references/ps-projet-vivre-libres.html",
+            "research/sources/references/ps-projet-pacifier-le-monde.html"
+          ]
+        },
+        {
+          "title": "Lettres « Cap clair » de Raphaël Glucksmann, candidat soutenu par le Parti socialiste (24 février et 31 mars 2025)",
+          "kind": "déclaration",
+          "party": "ps",
+          "url": "https://raphaelglucksmann.kessel.media/posts/pst_be47d8a4ae504efbb6de3c62f6337008/defendre-leurope-la-france-et-notre-liberte",
+          "provisional": true,
+          "archive": [
+            "research/sources/gauche/glucksmann-capclair-defendre-europe-france-liberte.html",
+            "research/sources/gauche/glucksmann-capclair-2025-02-24-ukraine.html"
+          ]
+        },
+        {
+          "title": "Intervention d’Anna Pic, oratrice du groupe socialiste, sur l’actualisation de la loi de programmation militaire (4 mai 2026)",
+          "kind": "compte rendu",
+          "party": "ps",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2025-2026/premiere-seance-du-lundi-04-mai-2026",
+          "provisional": true,
+          "archive": [
+            "research/sources/parlement/an-2026-05-04-actualisation-lpm.html"
+          ]
         }
       ],
       "compared": [
@@ -143,7 +234,10 @@
           "title": "Aux Françaises et aux Français – Tenir la promesse de la France (2026)",
           "kind": "texte de campagne",
           "party": "laconvention",
-          "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf"
+          "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf",
+          "archive": [
+            "research/sources/references/la-convention-aux-francais-2026.pdf"
+          ]
         }
       ]
     },
@@ -162,6 +256,9 @@
         "ecology": 0,
         "europe": 2,
         "trade": 6,
+        "defense": 1,
+        "military": 4,
+        "assistance": 0,
         "checks": 1,
         "participation": 9,
         "territory": 8
@@ -171,7 +268,21 @@
           "title": "Projet des Écologistes",
           "kind": "programme",
           "party": "lesecologistes",
-          "url": "https://projet.lesecologistes.fr/"
+          "url": "https://projet.lesecologistes.fr/",
+          "archive": [
+            "research/sources/references/ecologistes-projet-ch4-i-europe-de-la-paix.html",
+            "research/sources/references/ecologistes-projet-ch4-ii-droit-international.html"
+          ]
+        },
+        {
+          "title": "Marine Tondelier sur le budget de la défense, Public Sénat (14 mars 2025)",
+          "kind": "article de presse",
+          "party": "lesecologistes",
+          "url": "https://www.publicsenat.fr/actualites/politique/augmentation-du-budget-de-la-defense-quand-on-a-des-defis-pareils-cest-la-solidarite-nationale-qui-doit-jouer-affirme-marine-tondelier",
+          "provisional": true,
+          "archive": [
+            "research/sources/gauche/tondelier-publicsenat-defense-solidarite.html"
+          ]
         }
       ],
       "compared": [
@@ -179,13 +290,19 @@
           "title": "Vivre autrement !",
           "kind": "texte doctrinal",
           "party": "ge",
-          "url": "https://generationecologie.fr/wp-content/uploads/2025/07/VIVRE-AUTREMENT-14eme-convention-nationale.pdf"
+          "url": "https://generationecologie.fr/wp-content/uploads/2025/07/VIVRE-AUTREMENT-14eme-convention-nationale.pdf",
+          "archive": [
+            "research/sources/references/generation-ecologie-vivre-autrement.pdf"
+          ]
         },
         {
           "title": "Le temps des possibles – Manifeste (2026)",
           "kind": "texte doctrinal",
           "party": "generations",
-          "url": "https://www.generation-s.fr/wp-content/uploads/2026/09/manifeste.pdf"
+          "url": "https://www.generation-s.fr/wp-content/uploads/2026/09/manifeste.pdf",
+          "archive": [
+            "research/sources/references/generations-manifeste-2026.pdf"
+          ]
         }
       ]
     },
@@ -205,6 +322,9 @@
         "ecology": 4,
         "europe": 1,
         "trade": 3,
+        "defense": 4,
+        "military": 8,
+        "assistance": 1,
         "checks": 2
       },
       "sources": [
@@ -212,7 +332,52 @@
           "title": "Site de Renaissance",
           "kind": "site de parti",
           "party": "renaissance",
-          "url": "https://parti-renaissance.fr/"
+          "url": "https://parti-renaissance.fr/",
+          "archive": [
+            "research/sources/references/renaissance-accueil.html",
+            "research/sources/references/renaissance-convention-nouvelle-donne.pdf",
+            "research/sources/references/renaissance-convention-regalien.pdf"
+          ]
+        },
+        {
+          "title": "Discours de Reims sur l’Europe, Gabriel Attal (17 septembre 2026)",
+          "kind": "déclaration",
+          "party": "renaissance",
+          "url": "https://doc.parti.re/2026/Discours_Europe.pdf",
+          "provisional": true,
+          "archive": [
+            "research/sources/centre/attal-discours-reims-etats-unis-d-europe-2026-09-17.pdf"
+          ]
+        },
+        {
+          "title": "Programme de Gabriel Attal : chantier « Frontières » et mesures de défense (2026)",
+          "kind": "texte de campagne",
+          "party": "renaissance",
+          "url": "https://attalpresident.fr/programme/frontieres",
+          "archive": [
+            "research/sources/centre/attalpresident-programme-frontieres.html",
+            "research/sources/centre/attalpresident-mesure-souverainete-equipements-militaires-2026-06-16.html",
+            "research/sources/centre/attalpresident-lci-2026-08-25.html"
+          ]
+        },
+        {
+          "title": "Besoin d’Europe – programme pour les élections européennes (2024)",
+          "kind": "programme",
+          "party": "renaissance",
+          "url": "https://besoindeurope.fr/thematique/defense-et-diplomatie",
+          "archive": [
+            "research/sources/centre/besoindeurope-defense-et-diplomatie-2024.html",
+            "research/sources/centre/besoindeurope-programme-europeennes-2024.pdf"
+          ]
+        },
+        {
+          "title": "Amendement n° 5 à la résolution de soutien à l’Ukraine, déposé par Gabriel Attal (6 mars 2025)",
+          "kind": "texte parlementaire",
+          "party": "renaissance",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1001/AN/5.pdf",
+          "archive": [
+            "research/sources/centre/an-amendement-1001-n5-attal-saisie-avoirs-russes-2025-03-06.pdf"
+          ]
         }
       ],
       "compared": [
@@ -220,7 +385,10 @@
           "title": "Nos priorités",
           "kind": "programme",
           "party": "modem",
-          "url": "https://www.mouvementdemocrate.fr/une-societe-unie-et-solidaire-7924"
+          "url": "https://www.mouvementdemocrate.fr/une-societe-unie-et-solidaire-7924",
+          "archive": [
+            "research/sources/references/modem-nos-priorites.html"
+          ]
         }
       ]
     },
@@ -241,6 +409,9 @@
         "ecology": 5,
         "europe": 3,
         "trade": 1,
+        "defense": 4,
+        "military": 8,
+        "assistance": 1,
         "checks": 1
       },
       "sources": [
@@ -248,13 +419,71 @@
           "title": "Toulouse School of Economics",
           "publisher": "Toulouse School of Economics",
           "kind": "recherche",
-          "url": "https://www.tse-fr.eu/"
+          "url": "https://www.tse-fr.eu/",
+          "archive": [
+            "research/sources/references/tse-accueil.html"
+          ]
         },
         {
           "title": "Site de Renaissance",
           "kind": "site de parti",
           "party": "renaissance",
-          "url": "https://parti-renaissance.fr/"
+          "url": "https://parti-renaissance.fr/",
+          "archive": [
+            "research/sources/references/renaissance-accueil.html",
+            "research/sources/references/renaissance-convention-nouvelle-donne.pdf",
+            "research/sources/references/renaissance-convention-regalien.pdf"
+          ]
+        },
+        {
+          "title": "Discours de Reims sur l’Europe, Gabriel Attal (17 septembre 2026)",
+          "kind": "déclaration",
+          "party": "renaissance",
+          "url": "https://doc.parti.re/2026/Discours_Europe.pdf",
+          "provisional": true,
+          "archive": [
+            "research/sources/centre/attal-discours-reims-etats-unis-d-europe-2026-09-17.pdf"
+          ]
+        },
+        {
+          "title": "Programme de Gabriel Attal : chantier « Frontières » et mesures de défense (2026)",
+          "kind": "texte de campagne",
+          "party": "renaissance",
+          "url": "https://attalpresident.fr/programme/frontieres",
+          "archive": [
+            "research/sources/centre/attalpresident-programme-frontieres.html",
+            "research/sources/centre/attalpresident-mesure-souverainete-equipements-militaires-2026-06-16.html",
+            "research/sources/centre/attalpresident-lci-2026-08-25.html"
+          ]
+        },
+        {
+          "title": "Besoin d’Europe – programme pour les élections européennes (2024)",
+          "kind": "programme",
+          "party": "renaissance",
+          "url": "https://besoindeurope.fr/thematique/defense-et-diplomatie",
+          "archive": [
+            "research/sources/centre/besoindeurope-defense-et-diplomatie-2024.html",
+            "research/sources/centre/besoindeurope-programme-europeennes-2024.pdf"
+          ]
+        },
+        {
+          "title": "Amendement n° 5 à la résolution de soutien à l’Ukraine, déposé par Gabriel Attal (6 mars 2025)",
+          "kind": "texte parlementaire",
+          "party": "renaissance",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1001/AN/5.pdf",
+          "archive": [
+            "research/sources/centre/an-amendement-1001-n5-attal-saisie-avoirs-russes-2025-03-06.pdf"
+          ]
+        },
+        {
+          "title": "Réarmer l’Europe – note n° 88 (mars 2026)",
+          "kind": "rapport",
+          "publisher": "Conseil d’analyse économique (E. Auriol, TSE ; S. Jean ; A. Quinet)",
+          "url": "https://cae-eco.fr/static/pdf/CAE088_Defense_260304.pdf",
+          "archive": [
+            "research/sources/idees/cae-note-88-rearmer-europe-2026-03.pdf",
+            "research/sources/idees/tse-rearmer-europe-2026.html"
+          ]
         }
       ]
     },
@@ -274,6 +503,9 @@
         "ecology": 7,
         "europe": 5,
         "trade": 3,
+        "defense": 6,
+        "military": 9,
+        "assistance": 3,
         "checks": 3
       },
       "sources": [
@@ -281,7 +513,44 @@
           "title": "Nos propositions",
           "kind": "programme",
           "party": "lr",
-          "url": "https://republicains.fr/nos-propositions/"
+          "url": "https://republicains.fr/nos-propositions/",
+          "archive": [
+            "research/sources/references/lr-nos-propositions.html",
+            "research/sources/references/lr-livret-ia-2026.pdf",
+            "research/sources/references/lr-brochure-2026-01.pdf",
+            "research/sources/references/lr-livret-produire-plus-2026.pdf"
+          ]
+        },
+        {
+          "title": "Maîtriser notre destin – programme pour les élections européennes (2024)",
+          "kind": "programme",
+          "party": "lr",
+          "url": "https://republicains.fr/wp-content/uploads/2024/05/2024-05-14-lR-elections-europeennes-programme.pdf",
+          "archive": [
+            "research/sources/lr/lr-programme-europeennes-2024-05-14.pdf"
+          ]
+        },
+        {
+          "title": "« L’unité nationale, première de nos armes », tribune de Bruno Retailleau (14 juillet 2026)",
+          "kind": "déclaration",
+          "party": "lr",
+          "url": "https://republicains.fr/actualites/2026/07/14/lunite-nationale-premiere-de-nos-armes/",
+          "provisional": true,
+          "archive": [
+            "research/sources/lr/lr-retailleau-unite-nationale-premiere-de-nos-armes-2026-07-14.html"
+          ]
+        },
+        {
+          "title": "Interventions de Bruno Retailleau au Sénat (13 mars 2024 et 2 juin 2026) et de Jean-Louis Thiériot, secrétaire national à la Défense, en commission (11 février 2026)",
+          "kind": "compte rendu",
+          "party": "lr",
+          "url": "https://www.senat.fr/seances/s202606/s20260602/s20260602021.html",
+          "provisional": true,
+          "archive": [
+            "research/sources/parlement/senat-2026-06-02-loi-programmation-militaire.html",
+            "research/sources/parlement/senat-2024-03-13-declaration-ukraine.html",
+            "research/sources/lr/an-commission-defense-thieriot-2026-02-11.pdf"
+          ]
         }
       ]
     },
@@ -300,7 +569,9 @@
         "ecology": 6,
         "europe": 7,
         "trade": 7,
-        "defense": 9,
+        "defense": 8,
+        "military": 9,
+        "assistance": 3,
         "executive": 9
       },
       "sources": [
@@ -308,7 +579,37 @@
           "title": "Un enjeu actuel pour la France : la Participation (synthèse du rapport 2021)",
           "publisher": "Fondation Charles de Gaulle",
           "kind": "rapport",
-          "url": "https://www.charles-de-gaulle.org/wp-content/uploads/2021/05/Synthese-du-rapport-2021-Un-enjeu-actuel-pour-la-France-%E2%80%93-la-Participation-2.pdf"
+          "url": "https://www.charles-de-gaulle.org/wp-content/uploads/2021/05/Synthese-du-rapport-2021-Un-enjeu-actuel-pour-la-France-%E2%80%93-la-Participation-2.pdf",
+          "archive": [
+            "research/sources/references/fondation-de-gaulle-participation-2021.pdf"
+          ]
+        },
+        {
+          "title": "L’indépendance nationale, un héritage à préserver, par Jean-Marie Dedeyan, vice-président (11 juillet 2024)",
+          "kind": "texte doctrinal",
+          "publisher": "Fondation Charles de Gaulle",
+          "url": "https://www.charles-de-gaulle.org/blog/2024/07/11/lindependance-nationale-un-heritage-a-preserver-par-jean-marie-dedeyan/",
+          "archive": [
+            "research/sources/idees/fcdg-dedeyan-independance-nationale-2024-07-11.html"
+          ]
+        },
+        {
+          "title": "Lettre du général de Gaulle au président Johnson (7 mars 1966), republiée le 25 mars 2026",
+          "kind": "texte doctrinal",
+          "publisher": "Fondation Charles de Gaulle",
+          "url": "https://www.charles-de-gaulle.org/blog/2026/03/25/lettre-du-general-de-gaulle-au-president-johnson-2/",
+          "archive": [
+            "research/sources/idees/fcdg-lettre-de-gaulle-johnson-1966-publiee-2026-03-25.html"
+          ]
+        },
+        {
+          "title": "De Gaulle, l’Europe et l’atlantisme, par Alain Terrenoire (2 juin 2025)",
+          "kind": "texte doctrinal",
+          "publisher": "Fondation Charles de Gaulle",
+          "url": "https://www.charles-de-gaulle.org/blog/2025/06/02/https-www-charles-de-gaulle-org-blog-2025-06-02-de-gaulle-leurope-et-latlantisme-par-alain-terrenoire/",
+          "archive": [
+            "research/sources/idees/fcdg-terrenoire-vision-paneuropeenne-2025-06-02.html"
+          ]
         }
       ]
     },
@@ -324,6 +625,9 @@
         "ecology": 8,
         "europe": 9,
         "trade": 9,
+        "defense": 9,
+        "military": 8,
+        "assistance": 8,
         "participation": 8
       },
       "sources": [
@@ -331,19 +635,60 @@
           "title": "M la France – Mon programme présidentiel (2022)",
           "kind": "programme",
           "party": "rn",
-          "url": "https://mlafrance.fr/pdfs/manifeste-m-la-france-programme-presidentiel.pdf"
+          "url": "https://mlafrance.fr/pdfs/manifeste-m-la-france-programme-presidentiel.pdf",
+          "archive": [
+            "research/sources/references/rn-m-la-france-programme-2022.pdf"
+          ]
         },
         {
           "title": "22 mesures pour 2022",
           "kind": "programme",
           "party": "rn",
-          "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf"
+          "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf",
+          "archive": [
+            "research/sources/references/rn-22-mesures-2022.pdf"
+          ]
         },
         {
           "title": "Notre projet pour une Europe des nations (2024)",
           "kind": "programme",
           "party": "rn",
-          "url": "https://rassemblementnational.fr/documents/202411-programme-europeennes.pdf"
+          "url": "https://rassemblementnational.fr/documents/202411-programme-europeennes.pdf",
+          "archive": [
+            "research/sources/references/rn-europe-des-nations-2024.pdf"
+          ]
+        },
+        {
+          "title": "Programme pour les élections législatives (juin 2024)",
+          "kind": "programme",
+          "party": "rn",
+          "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+          "archive": [
+            "research/sources/rn/rn-programme-legislatives-2024-06.pdf"
+          ]
+        },
+        {
+          "title": "Interventions de Marine Le Pen à l’Assemblée nationale (3 mars et 10 décembre 2025) et du groupe RN sur la résolution de soutien à l’Ukraine (12 mars 2025)",
+          "kind": "compte rendu",
+          "party": "rn",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/seance-du-lundi-03-mars-2025",
+          "provisional": true,
+          "archive": [
+            "research/sources/parlement/an-2025-03-03-declaration-ukraine-securite-europe.html",
+            "research/sources/parlement/an-2025-12-10-declaration-strategie-defense.html",
+            "research/sources/parlement/an-2025-03-12-2e-seance-resolution-ukraine.html"
+          ]
+        },
+        {
+          "title": "Marine Le Pen sur l’aide à l’Ukraine, Paris Match Belgique (15 octobre 2026) et Sud Radio (septembre 2026)",
+          "kind": "article de presse",
+          "party": "rn",
+          "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
+          "provisional": true,
+          "archive": [
+            "research/sources/rn/lepen-couper-aide-ukraine-parismatchbe-2026-10-15.html",
+            "research/sources/rn/rn-russie-double-discours-sudradio-2026-09.html"
+          ]
         }
       ],
       "compared": [
@@ -351,13 +696,19 @@
           "title": "Pour que la France reste la France – Mon programme (2022)",
           "kind": "programme",
           "party": "reconquete",
-          "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf"
+          "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf",
+          "archive": [
+            "research/sources/references/reconquete-programme-2022.pdf"
+          ]
         },
         {
           "title": "Le Projet de Debout la France (2026)",
           "kind": "programme",
           "party": "dlf",
-          "url": "https://www.debout-la-france.fr/notre-projet/"
+          "url": "https://www.debout-la-france.fr/notre-projet/",
+          "archive": [
+            "research/sources/references/dlf-notre-projet.html"
+          ]
         }
       ]
     },
@@ -383,7 +734,10 @@
           "title": "Site de l’Institut Coppet",
           "publisher": "Institut Coppet",
           "kind": "institut",
-          "url": "https://www.institutcoppet.org/"
+          "url": "https://www.institutcoppet.org/",
+          "archive": [
+            "research/sources/references/institut-coppet-accueil.html"
+          ]
         }
       ]
     }

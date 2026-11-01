@@ -7,7 +7,9 @@ import {METHOD_VERSION} from '../dist/engine.mjs';
 const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
 const familyCatalog=read('../research/families.json');
 const familyList=familyCatalog.families;
-const questions=read('../research/questionnaire.json').axes.flatMap(a=>a.questions);
+const axisList=read('../research/questionnaire.json').axes;
+const questions=axisList.flatMap(a=>a.questions);
+const Q=questions.length,A=axisList.length;
 
 // Runs the assembled standalone page in a simulated browser; `session` pre-fills the local storage.
 function boot(session){
@@ -44,18 +46,24 @@ test('The standalone classic script starts and completes the questionnaire witho
  const app=boot();
  const {elements,handlers,windowHandlers,saved,location,bodyClasses,fire,action}=app;
  assert.match(app.html(),/Préparer mon choix/);
+ // L'aperçu du bilan montre une famille sans nom par famille du catalogue, sans résultat simulé.
+ assert.equal((app.html().match(/class="home-dot"/g)||[]).length,familyList.length);
+ assert.match(app.html(),/aucun résultat simulé/);
  action('start');
- assert.match(app.html(),/Question 1 sur 72/);
- for(let i=0;i<72;i++){
+ assert.match(app.html(),new RegExp(`Question 1 sur ${Q}`));
+ for(let i=0;i<Q;i++){
   action('answer',i===1?'skip':'0');
   action('next');
  }
  assert.equal(location.hash,'#resultats');
- assert.match(app.html(),/72\/72 propositions parcourues/);
- assert.match(app.html(),/71 prises de position/);
- assert.match(app.html(),/18\/18 axes mesurés/);
- assert.equal((app.html().match(/class="axis-mini"/g)||[]).length,18);
+ assert.match(app.html(),new RegExp(`${Q}/${Q} propositions parcourues`));
+ assert.match(app.html(),new RegExp(`${Q-1} prises de position`));
+ assert.match(app.html(),new RegExp(`${A}/${A} axes mesurés`));
+ assert.equal((app.html().match(/class="axis-mini"/g)||[]).length,A);
  assert.doesNotMatch(app.html(),/<svg id="radar-svg"/);
+ // La cible des proximités montre tout le catalogue : familles comparées et non comparées.
+ assert.equal((app.html().match(/<g class="orb-fam/g)||[]).length,familyList.length);
+ assert.equal((app.html().match(/<div class="orb-row"/g)||[]).length,A);
  assert.match(app.html(),/Ce que disent vos réponses/);
  assert.equal((app.html().match(/class="reading-guide"/g)||[]).length,1);
  assert.doesNotMatch(app.html(),/class="notice/);
@@ -74,10 +82,14 @@ test('The standalone classic script starts and completes the questionnaire witho
  assert.match(families,/écart moyen/);
  assert.equal((families.match(/<strong>Textes de référence<\/strong>/g)||[]).length,familyList.length);
  assert.equal((families.match(/<strong>Textes comparés<\/strong>/g)||[]).length,familyList.filter(f=>f.compared?.length).length);
+ // Chaque carte replie ses sources et ses repères axe par axe dans deux volets distincts.
+ assert.equal((families.match(/<details class="family-sub"/g)||[]).length,familyList.length*2);
+ // Les déclarations publiques retenues à titre provisoire sont listées à part des textes de référence.
+ assert.equal((families.match(/<strong>Déclarations retenues à titre provisoire<\/strong>/g)||[]).length,familyList.filter(f=>f.sources.some(s=>s.provisional)).length);
  assert.equal((families.match(/class="reading-guide"/g)||[]).length,1);
  assert.doesNotMatch(families,/class="notice/);
  action('results-tab',undefined,{tab:'axes'});
- assert.equal((app.html().match(/<details class="axis-row"/g)||[]).length,18);
+ assert.equal((app.html().match(/<details class="axis-row"/g)||[]).length,A);
  assert.doesNotMatch(app.html(),/class="axis-ref"/);
  fire(handlers.change,{target:{id:'compare-family',value:'socialdemocratie'}});
  const reference=familyList.find(f=>f.id==='socialdemocratie');
@@ -87,9 +99,11 @@ test('The standalone classic script starts and completes the questionnaire witho
  fire(windowHandlers.beforeprint);
  const report=elements['print-report'].innerHTML;
  assert.ok(bodyClasses.has('print-report-on'));
- for(const heading of ['Votre bilan avant de trancher','Comment lire ce bilan','Ce que disent vos réponses','Deux dimensions de lecture','Vos 18 positions, axe par axe','Vos proximités avec les familles d’idées'])assert.ok(report.includes(heading),heading);
- assert.equal((report.match(/<div class="axis-row">/g)||[]).length,18);
+ for(const heading of ['Votre bilan avant de trancher','Comment lire ce bilan','Ce que disent vos réponses','Deux dimensions de lecture',`Vos ${A} positions, axe par axe`,'Vos proximités avec les familles d’idées'])assert.ok(report.includes(heading),heading);
+ assert.equal((report.match(/<div class="axis-row">/g)||[]).length,A);
  assert.equal((report.match(/class="family-card report-family"/g)||[]).length,3);
+ // Le bilan imprimé déplie les sources et les repères des familles qu'il présente.
+ assert.equal((report.match(/<details class="family-sub" open>/g)||[]).length,6);
  assert.doesNotMatch(report,/class="axis-ref"/);
  assert.ok(report.includes(`Repères des familles ${familyCatalog.version}`));
  fire(windowHandlers.afterprint);

@@ -18,3 +18,8 @@ node_modules/
 # Variables d'environnement et identifiants d'hébergement
 .env
 .env.*
+
+# Copies des sources citées (textes de partis, comptes rendus, articles de presse) : conservées localement,
+# hors de Git ; leur index, avec adresses et empreintes, reste versionné.
+research/sources/*
+!research/sources/index.json

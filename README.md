@@ -1,6 +1,6 @@
 # Avant l'isoloir, par Repères — version autonome et déployable
 
-**72 questions · 18 axes · lecture axe par axe · 11 familles politiques · 20 économistes.**
+**80 questions · 20 axes · lecture axe par axe · 11 familles politiques · 20 économistes.**
 
 Une aide à la préparation du choix pour l'élection présidentielle de 2027. L'outil compare les réponses à onze familles d'idées, mesure un écart plutôt qu'un pourcentage de compatibilité et ne donne aucune consigne de vote.
 
@@ -82,11 +82,12 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 
 | Fichier | Rôle |
 |---|---|
-| `research/questionnaire.json` | Les quatre thèmes, les 18 axes, leurs pôles et les 72 propositions |
+| `research/questionnaire.json` | Les quatre thèmes, les 20 axes, leurs pôles et les 80 propositions |
 | `research/families.json` | La version des repères, les profils éditoriaux des onze familles, leurs coordonnées, leurs textes de référence et les textes d'autres partis comparés à leurs repères |
 | `research/parties.json` | Les partis retenus selon le critère d'inclusion indiqué dans le fichier, la justification de chacun et, pour ceux dont aucun texte ne sert de référence à une famille, la raison de cette absence |
 | `research/references.json` | Les vingt économistes, leurs thèses, nuances et références, et ceux mis en avant sous chaque axe |
 | `research/dossiers/` | Les dossiers de sources : citations, pages et adresses qui justifient les repères d'une famille, et résultats des comparaisons de partis |
+| `research/sources/` | Les copies des textes, comptes rendus et articles cités, rangées par groupe et conservées hors de Git ; seul `index.json`, versionné, donne pour chaque fichier son adresse d'origine, sa date de consultation et son empreinte SHA-256, vérifiée à l'assemblage pour chaque copie présente |
 | `dist/engine.mjs` | Les calculs et la validation des imports |
 | `dist/app.mjs` | Le parcours, les graphiques, les résultats et les exports |
 | `dist/styles.css` | L'apparence et les adaptations mobiles |
@@ -111,9 +112,9 @@ node --check dist/app.mjs
 
 Le script de génération vérifie aussi le nombre d'axes et de propositions, l'unicité des identifiants, les orientations des questions et la cohérence des catalogues : chaque axe appartient à un thème, chaque source de famille est décrite et renvoie, le cas échéant, à un parti du catalogue, chaque parti sert de référence à une famille ou porte la raison de son absence, et chaque économiste mis en avant sous un axe est associé à cet axe. Si le nombre de questions ou la méthode changent, adapter ces vérifications, les compteurs de l'interface et la version du questionnaire pour éviter d'importer des réponses devenues incompatibles.
 
-Les repères des familles ont leur propre version, au format `AAAA.M`, dans `research/families.json`. Modifier une famille, en ajouter ou en retirer impose de changer cette version, affichée dans la page Méthode, dans le rapport imprimé et dans les sessions exportées. Les réponses ne dépendant pas des familles, ce changement ne rend pas les sessions existantes incompatibles.
+Les repères des familles ont leur propre version dans `research/families.json` : `AAAA.M` pour la première version d'un mois, puis `AAAA.M.v2`, `AAAA.M.v3`… pour les révisions du même mois. Modifier une famille, en ajouter ou en retirer impose de changer cette version, affichée dans la page Méthode, dans le rapport imprimé et dans les sessions exportées. Les réponses ne dépendant pas des familles, ce changement ne rend pas les sessions existantes incompatibles.
 
-Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 72 réponses et l'affichage des onglets du bilan, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe `file://` n'a pas pu être vérifiée dans le navigateur de préparation, dont la politique interdit ce protocole.
+Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 80 réponses et l'affichage des onglets du bilan, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe `file://` n'a pas pu être vérifiée dans le navigateur de préparation, dont la politique interdit ce protocole.
 
 ## 6. Méthode et périmètre
 
@@ -126,6 +127,16 @@ La version 2026.11 refond la présentation du bilan. Chaque score est traduit en
 Cette version organise aussi les données en catalogues vérifiés à l'assemblage : thèmes, familles, partis et économistes. Les repères des familles ont leur propre version, 2026.11 : une onzième famille, Gauche de rupture écologique, s'appuie sur les textes de La France insoumise ; le Communisme étatiste et la Droite nationale souverainiste s'appuient sur des sources plus solides ; des textes d'autres partis sont cités comme textes comparés lorsqu'ils restent proches des repères d'une famille. La page Méthode présente ces textes et le tableau des partis retenus. Les dossiers de `research/dossiers/` gardent les citations et les pages qui justifient ces choix.
 
 Les questions, les scores des axes, la version de méthode (`reperes-fr-2026.1`) et le format des sessions sont inchangés : les sessions exportées depuis les versions précédentes restent importables. Les proximités peuvent différer, puisque les repères des familles ont évolué.
+
+La version 2026.11.v2 des repères des familles complète l'axe Défense, qui n'était renseigné que pour deux familles. Il l'est désormais pour six : Écologie politique (1), Social-démocratie (2), Anticapitalisme émancipateur (8), Droite nationale souverainiste (9), Communisme étatiste (10) et Gauche de rupture écologique (10). Le Gaullisme social n'a plus de repère sur cet axe, faute de texte de référence qui traite des alliances militaires. Les citations sont dans `research/dossiers/defense.md`. Les questions, les calculs et le format des sessions sont inchangés.
+
+La méthode `reperes-fr-2026.2` ajoute deux axes au thème « Écologie & souveraineté », renommé « Écologie, Europe & monde », soit 8 propositions de plus : « Effort de défense » (priorité des dépenses militaires et de la dissuasion par rapport aux autres dépenses et au désarmement) et « Soutien à un pays agressé » (livraisons d'armes, saisie des avoirs de l'agresseur, coût de l'aide, priorité au cessez-le-feu). Les 72 propositions précédentes sont reprises à l'identique : une session de la méthode `reperes-fr-2026.1`, enregistrée ou exportée, reste importable, et reprend à la première proposition sans réponse. La version 2026.11.v3 des repères des familles renseigne ces deux axes et complète l'axe Défense pour le Centre social-libéral (4), le Libéralisme progressiste (4), la Droite libérale conservatrice (6) et le Gaullisme social (8). Quand les textes de référence d'une famille ne traitent pas un sujet, des déclarations publiques datées de ses responsables, citées mot pour mot, servent de repère provisoire en attendant les programmes de 2027 ; la page Méthode les liste à part. Les citations sont dans `research/dossiers/defense.md` et `research/dossiers/politique-etrangere.md`, les copies des sources dans `research/sources/`.
+
+La vue d'ensemble du bilan présente aussi une cible animée, « Votre position face aux familles d'idées ». Vous êtes au centre ; chaque famille comparée rejoint une distance égale à son écart moyen, avec les mêmes calculs et les mêmes seuils de lecture que la liste des proximités (cercles à 1, 2 et 3 points). Les familles sont rangées par ordre alphabétique autour du centre, pour que la direction ne suggère aucun axe gauche-droite, et les familles non comparées restent sur le pourtour. Une visite guidée met chaque famille en avant, de la plus proche à la plus éloignée, et fait glisser ses repères sur les lignes des axes en regard de vos scores ; on peut la mettre en pause, passer d'une famille à l'autre ou en choisir une au clavier. Avec le réglage système « réduire les animations », la cible s'affiche directement dans son état final. Elle n'apparaît pas dans le bilan imprimé, qui garde la liste des proximités.
+
+Dans l'onglet Proximités, chaque carte de famille garde visibles son rang, ses axes comparés, son niveau de proximité, son écart moyen et une jauge sur une échelle commune à toutes les cartes ; le bouton « Détails » la déplie. Le corps présente d'abord ce qui vous rapproche (axes à 1 point au plus) et ce qui vous sépare le plus (écarts de plus de 2 points, tracés sur la ligne de l'axe), puis le courant en bref. Deux volets repliables distincts donnent les sources, par catégorie (textes de référence, déclarations provisoires, textes comparés), et les repères axe par axe, regroupés par thème. Le bilan imprimé déplie ces volets.
+
+Sur la page d'accueil, l'encart « Votre futur bilan » annonce ce que le bilan apporte (positions axe par axe, écart avec chaque famille d'idées, accords et écarts expliqués) autour d'une mini-cible où les familles, sans nom, dérivent entre les cercles sans jamais se fixer : aucun résultat n'est simulé.
 
 Sources techniques consultées pour la portabilité :
 
