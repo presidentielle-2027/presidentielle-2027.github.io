@@ -95,16 +95,31 @@ for party in parties:
     else:
         assert party.get('unmodelled'), f"{party['id']} : ni famille de référence, ni raison d’absence"
 
-# Économistes mis en avant sous un axe : connus du catalogue et associés à cet axe.
-economists = {e['id']: e for e in references['economists']}
-for axis, ids in references['axisHighlights'].items():
-    assert axis in axis_ids, axis
-    assert all(i in economists and axis in economists[i]['axes'] for i in ids), (axis, ids)
+# Auteurs et arguments : chaque argument se rattache à un pôle d'un axe connu, cite des auteurs du catalogue
+# et renvoie à une source archivée ; chaque auteur a au moins un argument ; chaque pôle de chaque axe a une
+# ou deux thèses mises en avant, les autres étant présentées comme lectures complémentaires.
+thinkers = {t['id']: t for t in references['thinkers']}
+assert len(thinkers) == len(references['thinkers']), 'auteur en double'
+assert all(t['name'] and t['discipline'] for t in thinkers.values())
+cited = set()
+for argument in references['arguments']:
+    assert argument['axis'] in axis_ids and argument['pole'] in ('low', 'high'), (argument['axis'], argument['pole'])
+    assert argument['authors'] and all(a in thinkers for a in argument['authors']), argument['authors']
+    assert argument['thesis'] and isinstance(argument['featured'], bool), argument['authors']
+    source = argument['source']
+    assert re.match(r'https?://', source['url']) and source['title'] and source['archive'], (argument['authors'], source)
+    assert all(a in source_index for a in source['archive']), (argument['authors'], source['title'])
+    cited.update(argument['authors'])
+assert cited == set(thinkers), f'auteurs sans argument : {sorted(set(thinkers) - cited)}'
+for axis in axis_ids:
+    for pole in ('low', 'high'):
+        featured = [x for x in references['arguments'] if x['axis'] == axis and x['pole'] == pole and x['featured']]
+        assert 1 <= len(featured) <= 2, f'{axis}, pôle {pole} : {len(featured)} thèses mises en avant'
 
 data = {'edition': 'France · novembre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
         'families': families, 'familiesVersion': families_catalog['version'], 'parties': parties_catalog}
 (base / 'dist/data.js').write_text('window.REPERES_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
-print(f'Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(references["economists"])} economists, '
+print(f'Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(thinkers)} authors, {len(references["arguments"])} arguments, '
       f'{len(families)} families (version {families_catalog["version"]}), {len(parties)} parties.')
 if missing_copies:
     print(f'{missing_copies} copies de sources absentes de research/sources/ sur {len(source_index)} : leurs empreintes n’ont pas été vérifiées.')

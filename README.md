@@ -1,6 +1,6 @@
 # Avant l'isoloir, par Repères — version autonome et déployable
 
-**80 questions · 20 axes · lecture axe par axe · 11 familles politiques · 20 économistes.**
+**80 questions · 20 axes · lecture axe par axe · 11 familles politiques · 114 auteurs cités aux deux pôles des axes.**
 
 Une aide à la préparation du choix pour l'élection présidentielle de 2027. L'outil compare les réponses à onze familles d'idées, mesure un écart plutôt qu'un pourcentage de compatibilité et ne donne aucune consigne de vote.
 
@@ -85,8 +85,8 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 | `research/questionnaire.json` | Les quatre thèmes, les 20 axes, leurs pôles et les 80 propositions |
 | `research/families.json` | La version des repères, les profils éditoriaux des onze familles, leurs coordonnées, leurs textes de référence et les textes d'autres partis comparés à leurs repères |
 | `research/parties.json` | Les partis retenus selon le critère d'inclusion indiqué dans le fichier, la justification de chacun et, pour ceux dont aucun texte ne sert de référence à une famille, la raison de cette absence |
-| `research/references.json` | Les vingt économistes, leurs thèses, nuances et références, et ceux mis en avant sous chaque axe |
-| `research/dossiers/` | Les dossiers de sources : citations, pages et adresses qui justifient les repères d'une famille, et résultats des comparaisons de partis |
+| `research/references.json` | Les auteurs cités et leurs arguments : pour chaque pôle de chaque axe, une thèse rédigée, une nuance, une citation en français quand la source le permet, et la source archivée ; une ou deux thèses sont mises en avant par pôle |
+| `research/dossiers/` | Les dossiers de sources : citations, pages et adresses qui justifient les repères d'une famille, résultats des comparaisons de partis, et recherche sur les auteurs cités sous les axes (`penseurs.md`) |
 | `research/sources/` | Les copies des textes, comptes rendus et articles cités, rangées par groupe et conservées hors de Git ; seul `index.json`, versionné, donne pour chaque fichier son adresse d'origine, sa date de consultation et son empreinte SHA-256, vérifiée à l'assemblage pour chaque copie présente |
 | `dist/engine.mjs` | Les calculs et la validation des imports |
 | `dist/app.mjs` | Le parcours, les graphiques, les résultats et les exports |
@@ -110,11 +110,11 @@ node --test tests/standalone.test.mjs
 node --check dist/app.mjs
 ```
 
-Le script de génération vérifie aussi le nombre d'axes et de propositions, l'unicité des identifiants, les orientations des questions et la cohérence des catalogues : chaque axe appartient à un thème, chaque source de famille est décrite et renvoie, le cas échéant, à un parti du catalogue, chaque parti sert de référence à une famille ou porte la raison de son absence, et chaque économiste mis en avant sous un axe est associé à cet axe. Si le nombre de questions ou la méthode changent, adapter ces vérifications, les compteurs de l'interface et la version du questionnaire pour éviter d'importer des réponses devenues incompatibles.
+Le script de génération vérifie aussi le nombre d'axes et de propositions, l'unicité des identifiants, les orientations des questions et la cohérence des catalogues : chaque axe appartient à un thème, chaque source de famille est décrite et renvoie, le cas échéant, à un parti du catalogue, chaque parti sert de référence à une famille ou porte la raison de son absence, chaque argument se rattache à un pôle d'un axe, cite des auteurs du catalogue et renvoie à une source archivée, chaque auteur a au moins un argument, et chaque pôle de chaque axe a une ou deux thèses mises en avant. Si le nombre de questions ou la méthode changent, adapter ces vérifications, les compteurs de l'interface et la version du questionnaire pour éviter d'importer des réponses devenues incompatibles.
 
 Les repères des familles ont leur propre version dans `research/families.json` : `AAAA.M` pour la première version d'un mois, puis `AAAA.M.v2`, `AAAA.M.v3`… pour les révisions du même mois. Modifier une famille, en ajouter ou en retirer impose de changer cette version, affichée dans la page Méthode, dans le rapport imprimé et dans les sessions exportées. Les réponses ne dépendant pas des familles, ce changement ne rend pas les sessions existantes incompatibles.
 
-Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 80 réponses et l'affichage des onglets du bilan, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe `file://` n'a pas pu être vérifiée dans le navigateur de préparation, dont la politique interdit ce protocole.
+Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 80 réponses, l'affichage des onglets du bilan, les arguments des deux pôles sous chaque axe et la liste des auteurs de la page Méthode, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe `file://` n'a pas pu être vérifiée dans le navigateur de préparation, dont la politique interdit ce protocole.
 
 ## 6. Méthode et périmètre
 
@@ -137,6 +137,8 @@ La vue d'ensemble du bilan présente aussi une cible animée, « Votre position 
 Dans l'onglet Proximités, chaque carte de famille garde visibles son rang, ses axes comparés, son niveau de proximité, son écart moyen et une jauge sur une échelle commune à toutes les cartes ; le bouton « Détails » la déplie. Le corps présente d'abord ce qui vous rapproche (axes à 1 point au plus) et ce qui vous sépare le plus (écarts de plus de 2 points, tracés sur la ligne de l'axe), puis le courant en bref. Deux volets repliables distincts donnent les sources, par catégorie (textes de référence, déclarations provisoires, textes comparés), et les repères axe par axe, regroupés par thème. Le bilan imprimé déplie ces volets.
 
 Sur la page d'accueil, l'encart « Votre futur bilan » annonce ce que le bilan apporte (positions axe par axe, écart avec chaque famille d'idées, accords et écarts expliqués) autour d'une mini-cible où les familles, sans nom, dérivent entre les cercles sans jamais se fixer : aucun résultat n'est simulé.
+
+La page « Idées », qui ne présentait que des économistes, est remplacée par des arguments placés sous chaque axe du bilan : 127 thèses de 114 auteurs, rangées par pôle, une ou deux mises en avant de chaque côté et les autres en lectures complémentaires. Sont retenus des chercheurs, intellectuels et penseurs dont l'œuvre a été reconnue par leurs pairs et qui ne sont associés ni à une théorie du complot, ni à la désinformation, ni à des propos extrémistes, racistes ou antisémites, ni à une condamnation ou à un scandale public ; les classiques et les responsables politiques du passé y figurent, les candidats et dirigeants en fonction non. Les citations affichées sont en français, reproduites mot pour mot depuis la source ou sa traduction publiée ; chaque source est archivée dans `research/sources/penseurs/`. La page Méthode présente ces critères et la liste des auteurs, et l'ancienne adresse `#references` y mène. Le dossier `research/dossiers/penseurs.md` garde les citations d'origine, les nuances et les auteurs écartés.
 
 Sources techniques consultées pour la portabilité :
 

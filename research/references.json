@@ -1,402 +1,3087 @@
 {
-  "economists": [
+  "thinkers": [
     {
-      "id": "piketty",
-      "name": "Thomas Piketty",
-      "current": true,
-      "tradition": "Socialisme participatif et économie des inégalités",
-      "thesis": "Dépasser le capitalisme par un socialisme participatif et décentralisé, visant une réduction des inégalités et une démocratie économique plus étendue.",
-      "nuance": "Son projet se distingue explicitement du socialisme d’État centralisé ; redistribution et centralisation ne sont pas synonymes.",
-      "axes": [
-        "redistribution",
-        "economy",
-        "work",
-        "europe"
-      ],
-      "sources": [
-        {
-          "title": "Vivement le socialisme ! — présentation et texte de l’auteur",
-          "url": "https://wid.world/fr/news-article/vivement-le-socialisme-de-thomas-piketty-2/",
-          "year": 2020
-        }
-      ]
+      "id": "agacinski",
+      "name": "Sylviane Agacinski",
+      "discipline": "Philosophie",
+      "role": "EHESS"
     },
     {
-      "id": "zucman",
-      "name": "Gabriel Zucman",
-      "current": true,
-      "tradition": "Économie de la fiscalité et des inégalités",
-      "thesis": "Un impôt minimum sur les très hauts patrimoines doit limiter la faible imposition effective permise par certaines structures de détention des richesses et rétablir leur contribution fiscale.",
-      "nuance": "Le rendement, les comportements d’évitement et les effets sur les entreprises font débat ; la proposition ne constitue pas un programme économique complet.",
-      "axes": [
-        "redistribution",
-        "budget"
-      ],
-      "sources": [
-        {
-          "title": "We Need to Tax Billionaires — page de l’auteur",
-          "url": "https://gabriel-zucman.eu/we-need-to-tax-billionaires/",
-          "year": 2026
-        }
-      ]
+      "id": "alesina",
+      "name": "Alberto Alesina",
+      "years": "1957–2020",
+      "discipline": "Économie",
+      "role": "Université Harvard"
     },
     {
-      "id": "cage",
-      "name": "Julia Cagé",
-      "current": true,
-      "tradition": "Économie politique de l’égalité démocratique",
-      "thesis": "Le financement privé de la vie politique peut transformer les inégalités de ressources en inégalités d’influence. Repenser le financement démocratique doit réduire cette dépendance à l’argent.",
-      "nuance": "Cette recherche porte sur l’influence des ressources économiques ; elle ne détermine pas automatiquement les réponses sur chaque institution ou politique publique.",
-      "axes": [
-        "redistribution"
-      ],
-      "sources": [
-        {
-          "title": "Le prix de la démocratie — présentation par Sciences Po",
-          "url": "https://www.sciencespo.fr/liepp/fr/actualites/nouvel-ouvrage-le-prix-de-la-democratie-de-julia-cage/",
-          "year": 2018
-        }
-      ]
+      "id": "allais",
+      "name": "Maurice Allais",
+      "years": "1911–2010",
+      "discipline": "Économie",
+      "role": "prix Nobel 1988"
     },
     {
-      "id": "laurent",
-      "name": "Éloi Laurent",
-      "current": true,
-      "tradition": "Social-écologie et économie du bien-être",
-      "thesis": "Le bien-être, la résilience et la soutenabilité doivent guider les politiques publiques plutôt que la seule croissance du PIB. Les inégalités et la crise écologique doivent être pensées ensemble.",
-      "nuance": "Sortir de l’objectif de croissance ne signifie pas, dans son propos, arrêter toute activité économique ni nécessairement sortir du capitalisme.",
-      "axes": [
-        "ecology",
-        "economy",
-        "redistribution"
-      ],
-      "sources": [
-        {
-          "title": "On peut sortir de la croissance sans sortir du capitalisme — entretien",
-          "url": "https://www.sciencespo.fr/fr/actualites/les-inegalites-jouent-un-role-decisif-dans-la-destruction-ecologique/",
-          "year": 2020
-        }
-      ]
+      "id": "anderson",
+      "name": "Elizabeth Anderson",
+      "discipline": "Philosophie",
+      "role": "Université du Michigan"
+    },
+    {
+      "id": "aron",
+      "name": "Raymond Aron",
+      "years": "1905–1983",
+      "discipline": "Sociologie et philosophie",
+      "role": "Collège de France"
+    },
+    {
+      "id": "badinter",
+      "name": "Élisabeth Badinter",
+      "discipline": "Philosophie",
+      "role": "École polytechnique"
+    },
+    {
+      "id": "bagehot",
+      "name": "Walter Bagehot",
+      "years": "1826–1877",
+      "discipline": "Essai politique",
+      "role": "The Economist"
+    },
+    {
+      "id": "baranger",
+      "name": "Denis Baranger",
+      "discipline": "Droit public",
+      "role": "Université Paris-Panthéon-Assas"
+    },
+    {
+      "id": "barthelemy",
+      "name": "Jacques Barthélémy",
+      "discipline": "Droit social",
+      "role": "avocat"
+    },
+    {
+      "id": "bastiat",
+      "name": "Frédéric Bastiat",
+      "years": "1801–1850",
+      "discipline": "Économie"
+    },
+    {
+      "id": "bauberot",
+      "name": "Jean Baubérot",
+      "discipline": "Histoire et sociologie",
+      "role": "École pratique des hautes études"
+    },
+    {
+      "id": "benassy-quere",
+      "name": "Agnès Bénassy-Quéré",
+      "discipline": "Économie",
+      "role": "Université Paris 1 Panthéon-Sorbonne"
+    },
+    {
+      "id": "binet",
+      "name": "Jean-René Binet",
+      "discipline": "Droit",
+      "role": "Université de Rennes"
+    },
+    {
+      "id": "blanchard",
+      "name": "Olivier Blanchard",
+      "discipline": "Économie",
+      "role": "MIT, Peterson Institute"
+    },
+    {
+      "id": "blondiaux",
+      "name": "Loïc Blondiaux",
+      "discipline": "Science politique",
+      "role": "Université Paris 1 Panthéon-Sorbonne"
+    },
+    {
+      "id": "boniface",
+      "name": "Pascal Boniface",
+      "discipline": "Relations internationales",
+      "role": "IRIS"
+    },
+    {
+      "id": "buchanan",
+      "name": "James M. Buchanan",
+      "years": "1919–2013",
+      "discipline": "Économie",
+      "role": "prix Nobel 1986"
+    },
+    {
+      "id": "burke",
+      "name": "Edmund Burke",
+      "years": "1729–1797",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "carens",
+      "name": "Joseph Carens",
+      "discipline": "Philosophie politique",
+      "role": "Université de Toronto"
+    },
+    {
+      "id": "cette",
+      "name": "Gilbert Cette",
+      "discipline": "Économie"
+    },
+    {
+      "id": "chang",
+      "name": "Ha-Joon Chang",
+      "discipline": "Économie",
+      "role": "SOAS, Université de Londres"
+    },
+    {
+      "id": "constant",
+      "name": "Benjamin Constant",
+      "years": "1767–1830",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "d-rousseau",
+      "name": "Dominique Rousseau",
+      "discipline": "Droit constitutionnel",
+      "role": "Université Paris 1 Panthéon-Sorbonne"
+    },
+    {
+      "id": "de-gaulle",
+      "name": "Charles de Gaulle",
+      "years": "1890–1970",
+      "discipline": "Responsable politique",
+      "role": "président de la République (1959–1969)"
+    },
+    {
+      "id": "delmas-marty",
+      "name": "Mireille Delmas-Marty",
+      "years": "1941–2022",
+      "discipline": "Droit",
+      "role": "Collège de France"
     },
     {
       "id": "duflo",
       "name": "Esther Duflo",
-      "current": true,
-      "tradition": "Économie du développement et évaluation expérimentale",
-      "thesis": "Les politiques de lutte contre la pauvreté doivent être éprouvées sur le terrain. L’évaluation expérimentale permet de distinguer les interventions efficaces des intuitions insuffisamment vérifiées.",
-      "nuance": "Une méthode d’évaluation ne fixe pas à elle seule les finalités collectives ; les résultats d’une expérimentation dépendent de son contexte.",
-      "axes": [
-        "redistribution",
-        "economy"
-      ],
-      "sources": [
-        {
-          "title": "Expérience, science et lutte contre la pauvreté — leçon inaugurale",
-          "url": "https://www.college-de-france.fr/fr/editions/lecons-inaugurales/experience-science-et-lutte-contre-la-pauvrete-9782722606647",
-          "year": 2009
-        }
-      ]
+      "discipline": "Économie",
+      "role": "prix Nobel 2019"
+    },
+    {
+      "id": "dupont-white",
+      "name": "Charles Dupont-White",
+      "years": "1807–1878",
+      "discipline": "Économie politique"
+    },
+    {
+      "id": "durkheim",
+      "name": "Émile Durkheim",
+      "years": "1858–1917",
+      "discipline": "Sociologie"
+    },
+    {
+      "id": "e-posner",
+      "name": "Eric A. Posner",
+      "discipline": "Droit",
+      "role": "Université de Chicago"
+    },
+    {
+      "id": "erasme",
+      "name": "Érasme",
+      "years": "vers 1466–1536",
+      "discipline": "Humanisme"
     },
     {
       "id": "fack",
       "name": "Gabrielle Fack",
-      "current": true,
-      "tradition": "Économie publique et égalité des chances",
-      "thesis": "Avec ses coauteurs du CAE, elle propose de réformer les grandes transmissions patrimoniales, de réduire les exonérations qui en diminuent la progressivité et d’instaurer une garantie en capital pour tous.",
-      "nuance": "Il s’agit d’une proposition collective sur l’héritage ; elle ne signifie pas taxer davantage chaque succession, quel qu’en soit le montant.",
-      "axes": [
-        "redistribution"
-      ],
-      "sources": [
-        {
-          "title": "Repenser l’héritage — Fack, Dherbécourt, Landais et Stantcheva",
-          "url": "https://cae-eco.fr/repenser-lheritage",
-          "year": 2021
-        }
-      ]
+      "discipline": "Économie"
     },
     {
-      "id": "stantcheva",
-      "name": "Stefanie Stantcheva",
-      "current": true,
-      "tradition": "Économie publique et fiscalité",
-      "thesis": "La concentration de l’héritage justifie, dans la note collective du CAE, de raisonner sur les transmissions reçues au cours de la vie et de mieux cibler les avantages fiscaux des plus grandes transmissions.",
-      "nuance": "La note combine redistribution et amélioration de la connaissance des transmissions ; elle ne réduit pas le débat à une hausse uniforme des taux.",
-      "axes": [
-        "redistribution"
-      ],
-      "sources": [
-        {
-          "title": "Repenser l’héritage — note du Conseil d’analyse économique",
-          "url": "https://cae-eco.fr/repenser-lheritage",
-          "year": 2021
-        }
-      ]
+      "id": "ferreras",
+      "name": "Isabelle Ferreras",
+      "discipline": "Sociologie et science politique",
+      "role": "UCLouvain, FNRS"
     },
     {
-      "id": "mahfouz",
-      "name": "Selma Mahfouz",
-      "current": true,
-      "tradition": "Macroéconomie de la transition écologique",
-      "thesis": "La transition nécessite un effort d’investissement important et une répartition équitable des coûts. Avec Jean Pisani-Ferry, elle analyse les effets sur les ménages, l’emploi, la productivité et les finances publiques.",
-      "nuance": "Le rapport combine aides, réglementation et prix du carbone ; il ne défend pas une solution instrumentale unique.",
-      "axes": [
-        "ecology",
-        "budget",
-        "redistribution"
-      ],
-      "sources": [
-        {
-          "title": "Les incidences économiques de l’action pour le climat",
-          "url": "https://www.strategie-plan.gouv.fr/publications/incidences-economiques-de-laction-climat",
-          "year": 2023
-        }
-      ]
+      "id": "finkielkraut",
+      "name": "Alain Finkielkraut",
+      "discipline": "Philosophie",
+      "role": "Académie française"
     },
     {
-      "id": "pisani-ferry",
-      "name": "Jean Pisani-Ferry",
-      "current": true,
-      "tradition": "Macroéconomie et politiques publiques européennes",
-      "thesis": "La décarbonation demande une transformation pilotée par les politiques publiques, avec des investissements privés et publics et des choix explicites de financement, plutôt qu’un simple pari sur l’évolution spontanée des marchés.",
-      "nuance": "Le rapport cosigné avec Selma Mahfouz envisage une combinaison de financement et d’instruments, dans un cadre européen de coordination.",
-      "axes": [
-        "ecology",
-        "budget",
-        "europe",
-        "economy"
-      ],
-      "sources": [
-        {
-          "title": "Les incidences économiques de l’action pour le climat",
-          "url": "https://www.strategie-plan.gouv.fr/publications/incidences-economiques-de-laction-climat",
-          "year": 2023
-        }
-      ]
-    },
-    {
-      "id": "aghion",
-      "name": "Philippe Aghion",
-      "current": true,
-      "tradition": "Croissance schumpétérienne et innovation",
-      "thesis": "L’innovation et la destruction créatrice expliquent une partie de la croissance. La concurrence, l’éducation, les institutions et certaines politiques industrielles doivent être articulées pour favoriser ce processus.",
-      "nuance": "Défendre l’innovation ne revient pas à demander le retrait général de l’État ; la politique de concurrence et les institutions jouent un rôle central.",
-      "axes": [
-        "economy",
-        "work",
-        "ecology"
-      ],
-      "sources": [
-        {
-          "title": "Économie des institutions, de l’innovation et de la croissance — chaire",
-          "url": "https://www.college-de-france.fr/fr/chaire/philippe-aghion-economie-des-institutions-de-innovation-et-de-la-croissance-chaire-statutaire",
-          "year": "consulté en 2026"
-        }
-      ]
-    },
-    {
-      "id": "tirole",
-      "name": "Jean Tirole",
-      "current": true,
-      "tradition": "Économie de la régulation et des incitations",
-      "thesis": "Un prix du carbone doit orienter les décisions des entreprises et des ménages vers la réduction des émissions. Les incitations et les règles doivent corriger les défaillances des marchés.",
-      "nuance": "Le recours aux mécanismes de marché pour le climat peut aller avec un objectif environnemental ambitieux et des mesures de redistribution.",
-      "axes": [
-        "economy",
-        "ecology"
-      ],
-      "sources": [
-        {
-          "title": "La taxe carbone est indispensable, point final — entretien",
-          "url": "https://www.tse-fr.eu/fr/articles/taxe-carbone-est-indispensable-point-final",
-          "year": 2022
-        }
-      ]
-    },
-    {
-      "id": "gollier",
-      "name": "Christian Gollier",
-      "current": true,
-      "tradition": "Économie du risque et du climat",
-      "thesis": "Donner un prix aux émissions permet d’aligner les décisions individuelles sur l’objectif climatique et de rechercher les réductions d’émissions les moins coûteuses pour la société.",
-      "nuance": "Cette approche discute les moyens de décarbonation, pas l’opportunité de l’action climatique ; ses effets distributifs doivent être examinés séparément.",
-      "axes": [
-        "ecology",
-        "economy",
-        "budget"
-      ],
-      "sources": [
-        {
-          "title": "Christian Gollier — publications et prises de position, Toulouse School of Economics",
-          "url": "https://www.tse-fr.eu/fr/annuaire/christian-gollier",
-          "year": "consulté en 2026"
-        }
-      ]
-    },
-    {
-      "id": "auriol",
-      "name": "Emmanuelle Auriol",
-      "current": true,
-      "tradition": "Économie publique, institutions et ouverture commerciale",
-      "thesis": "Le libre-échange apporte des bénéfices, mais des protections peuvent être justifiées lorsque les règles de concurrence ne sont pas respectées. La taille souhaitable de l’État dépend aussi des attentes collectives et du consentement à l’impôt.",
-      "nuance": "Ni le libre-échange ni l’intervention publique ne sont présentés comme des réponses uniformes ; les institutions et les situations concrètes comptent.",
-      "axes": [
-        "trade",
-        "economy",
-        "budget"
-      ],
-      "sources": [
-        {
-          "title": "État, libre-échange, inégalités et immigration — entretien",
-          "url": "https://escp.eu/news/etat-libre-echange-inegalites-et-immigration",
-          "year": 2026
-        }
-      ]
-    },
-    {
-      "id": "landier",
-      "name": "Augustin Landier",
-      "current": true,
-      "tradition": "Économie des marchés, de la finance et des valeurs",
-      "thesis": "Avec David Thesmar, il analyse les compromis entre valeurs et coûts économiques : souveraineté, liberté, égalité ou environnement doivent être discutés avec les ressources qu’une société accepte de leur consacrer.",
-      "nuance": "L’analyse des coûts ne suffit pas à choisir les valeurs ; le livre cherche précisément à intégrer les préférences non monétaires.",
-      "axes": [
-        "economy",
-        "trade",
-        "redistribution"
-      ],
-      "sources": [
-        {
-          "title": "The Price of Our Values — présentation par University of Chicago Press",
-          "url": "https://press.uchicago.edu/ucp/books/book/chicago/P/bo245441379.html",
-          "year": 2025
-        },
-        {
-          "title": "L’Europe devra accepter un capitalisme plus dur — entretien Landier–Thesmar",
-          "url": "https://www.hec.edu/fr/news-room/l-europe-devra-accepter-un-capitalisme-plus-dur-le-regard-cash-de-david-thesmar-et-augustin-landier",
-          "year": 2026
-        }
-      ]
-    },
-    {
-      "id": "thesmar",
-      "name": "David Thesmar",
-      "current": true,
-      "tradition": "Économie financière et concurrence",
-      "thesis": "Avec Augustin Landier, il souligne que la souveraineté économique européenne et la réduction des dépendances nécessitent des arbitrages coûteux, des choix industriels et un capitalisme plus compétitif.",
-      "nuance": "Cette position ne promet pas une souveraineté sans coût et ne constitue pas une défense indifférenciée de toutes les dépendances commerciales.",
-      "axes": [
-        "economy",
-        "trade",
-        "europe"
-      ],
-      "sources": [
-        {
-          "title": "L’Europe devra accepter un capitalisme plus dur — entretien Landier–Thesmar",
-          "url": "https://www.hec.edu/fr/news-room/l-europe-devra-accepter-un-capitalisme-plus-dur-le-regard-cash-de-david-thesmar-et-augustin-landier",
-          "year": 2026
-        }
-      ]
-    },
-    {
-      "id": "salin",
-      "name": "Pascal Salin",
-      "current": true,
-      "tradition": "Libéralisme classique et école autrichienne",
-      "thesis": "La liberté individuelle, les échanges volontaires et la propriété privée doivent guider l’organisation économique. Il critique l’extension de la fiscalité, des réglementations et des activités publiques.",
-      "nuance": "Il distingue expressément le libéralisme des politiques effectivement conduites par les partis de droite ; courant économique et étiquette partisane ne se confondent pas.",
-      "axes": [
-        "economy",
-        "redistribution",
-        "budget",
-        "trade"
-      ],
-      "sources": [
-        {
-          "title": "Les Français doivent retrouver le goût de la liberté individuelle — entretien",
-          "url": "https://www.revuepolitique.fr/les-francais-doivent-retrouver-le-gout-de-la-liberte-individuelle-une-interview-du-professeur-pascal-salin/",
-          "year": 2022
-        }
-      ]
-    },
-    {
-      "id": "hayek",
-      "name": "Friedrich Hayek",
-      "current": false,
-      "tradition": "Référence historique — libéralisme et école autrichienne",
-      "thesis": "L’information économique est dispersée entre les individus. Les prix permettent de coordonner cette connaissance sans qu’un planificateur central puisse en disposer intégralement.",
-      "nuance": "Texte de 1945 : il éclaire le débat sur la coordination, sans fournir un programme pour la France de 2026.",
-      "axes": [
-        "economy",
-        "trade"
-      ],
-      "sources": [
-        {
-          "title": "The Use of Knowledge in Society — texte de Hayek",
-          "url": "https://www.econlib.org/library/Essays/hykKnw.html",
-          "year": 1945
-        }
-      ]
+      "id": "fontaine",
+      "name": "Lauréline Fontaine",
+      "discipline": "Droit public",
+      "role": "Université Sorbonne Nouvelle"
     },
     {
       "id": "friedman",
       "name": "Milton Friedman",
-      "current": false,
-      "tradition": "Référence historique — école de Chicago et libéralisme",
-      "thesis": "Le capitalisme concurrentiel et la liberté économique sont présentés comme des conditions de la liberté politique. Son projet privilégie les choix individuels et un rôle limité de l’État.",
-      "nuance": "Ouvrage américain de 1962 : les institutions et propositions doivent être replacées dans leur époque, sans transposition automatique à la France.",
-      "axes": [
-        "economy",
-        "redistribution",
-        "trade"
-      ],
-      "sources": [
-        {
-          "title": "Capitalism and Freedom — University of Chicago Press",
-          "url": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo68666099",
-          "year": 1962
-        }
-      ]
+      "years": "1912–2006",
+      "discipline": "Économie",
+      "role": "Université de Chicago, prix Nobel 1976"
+    },
+    {
+      "id": "glazer",
+      "name": "Nathan Glazer",
+      "years": "1923–2019",
+      "discipline": "Sociologie",
+      "role": "Université Harvard"
+    },
+    {
+      "id": "gnesotto",
+      "name": "Nicole Gnesotto",
+      "discipline": "Science politique",
+      "role": "CNAM, Institut Jacques Delors"
+    },
+    {
+      "id": "gollier",
+      "name": "Christian Gollier",
+      "discipline": "Économie",
+      "role": "Toulouse School of Economics"
+    },
+    {
+      "id": "grand",
+      "name": "Camille Grand",
+      "discipline": "Études stratégiques",
+      "role": "ancien secrétaire général adjoint de l’OTAN"
+    },
+    {
+      "id": "habermas",
+      "name": "Jürgen Habermas",
+      "years": "1929–2026",
+      "discipline": "Philosophie",
+      "role": "Université de Francfort"
+    },
+    {
+      "id": "hamilton",
+      "name": "Alexander Hamilton",
+      "years": "1755 ou 1757–1804",
+      "discipline": "Philosophie politique",
+      "role": "coauteur du Fédéraliste"
+    },
+    {
+      "id": "hayek",
+      "name": "Friedrich Hayek",
+      "years": "1899–1992",
+      "discipline": "Économie",
+      "role": "prix Nobel 1974"
+    },
+    {
+      "id": "heran",
+      "name": "François Héran",
+      "discipline": "Démographie",
+      "role": "Collège de France"
+    },
+    {
+      "id": "hobbes",
+      "name": "Thomas Hobbes",
+      "years": "1588–1679",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "j-simon",
+      "name": "Julian L. Simon",
+      "years": "1932–1998",
+      "discipline": "Économie",
+      "role": "Université du Maryland"
+    },
+    {
+      "id": "jj-rousseau",
+      "name": "Jean-Jacques Rousseau",
+      "years": "1712–1778",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "jonas",
+      "name": "Hans Jonas",
+      "years": "1903–1993",
+      "discipline": "Philosophie"
+    },
+    {
+      "id": "kant",
+      "name": "Emmanuel Kant",
+      "years": "1724–1804",
+      "discipline": "Philosophie"
     },
     {
       "id": "keynes",
       "name": "John Maynard Keynes",
-      "current": false,
-      "tradition": "Référence historique — macroéconomie keynésienne",
-      "thesis": "Une demande insuffisante peut maintenir l’économie en sous-emploi. La puissance publique doit influencer l’investissement et la demande pour favoriser le plein emploi, tout en conservant une place importante à l’initiative privée.",
-      "nuance": "La Théorie générale date de 1936 ; elle ne justifie pas une relance identique dans toute situation, indépendamment de l’inflation et des contraintes de financement.",
-      "axes": [
-        "economy",
-        "budget",
-        "work"
-      ],
-      "sources": [
-        {
-          "title": "The General Theory — chapitre 24, texte de Keynes",
-          "url": "https://www.marxists.org/reference/subject/economics/keynes/general-theory/ch24.htm",
-          "year": 1936
-        }
-      ]
+      "years": "1883–1946",
+      "discipline": "Économie",
+      "role": "Université de Cambridge"
+    },
+    {
+      "id": "kintzler",
+      "name": "Catherine Kintzler",
+      "discipline": "Philosophie",
+      "role": "Université de Lille"
+    },
+    {
+      "id": "kymlicka",
+      "name": "Will Kymlicka",
+      "discipline": "Philosophie politique",
+      "role": "Université Queen’s"
+    },
+    {
+      "id": "landemore",
+      "name": "Hélène Landemore",
+      "discipline": "Théorie politique",
+      "role": "Université Yale"
+    },
+    {
+      "id": "latour",
+      "name": "Bruno Latour",
+      "years": "1947–2022",
+      "discipline": "Sociologie et philosophie",
+      "role": "Sciences Po"
+    },
+    {
+      "id": "laurent",
+      "name": "Éloi Laurent",
+      "discipline": "Économie",
+      "role": "Sciences Po, OFCE"
+    },
+    {
+      "id": "linz",
+      "name": "Juan J. Linz",
+      "years": "1926–2013",
+      "discipline": "Science politique",
+      "role": "Université Yale"
+    },
+    {
+      "id": "list",
+      "name": "Friedrich List",
+      "years": "1789–1846",
+      "discipline": "Économie"
+    },
+    {
+      "id": "locke",
+      "name": "John Locke",
+      "years": "1632–1704",
+      "discipline": "Philosophie"
+    },
+    {
+      "id": "lordon",
+      "name": "Frédéric Lordon",
+      "discipline": "Économie et philosophie",
+      "role": "CNRS"
+    },
+    {
+      "id": "mahfouz",
+      "name": "Selma Mahfouz",
+      "discipline": "Économie"
+    },
+    {
+      "id": "manent",
+      "name": "Pierre Manent",
+      "discipline": "Philosophie politique",
+      "role": "EHESS"
     },
     {
       "id": "marx",
       "name": "Karl Marx",
-      "current": false,
-      "tradition": "Référence historique — critique de l’économie politique",
-      "thesis": "L’analyse du capitalisme porte sur la propriété des moyens de production, les rapports entre capital et travail et l’appropriation de la plus-value. L’accumulation ne peut être comprise sans ces rapports sociaux.",
-      "nuance": "Le Capital paraît en 1867 ; cette référence n’attribue ni les institutions ultérieures des régimes communistes, ni un programme contemporain unique à son auteur.",
-      "axes": [
-        "economy",
-        "work",
-        "redistribution"
+      "years": "1818–1883",
+      "discipline": "Philosophie et économie"
+    },
+    {
+      "id": "mathieu",
+      "name": "Bertrand Mathieu",
+      "discipline": "Droit constitutionnel",
+      "role": "Université Paris 1 Panthéon-Sorbonne"
+    },
+    {
+      "id": "mazzucato",
+      "name": "Mariana Mazzucato",
+      "discipline": "Économie",
+      "role": "University College London"
+    },
+    {
+      "id": "mearsheimer",
+      "name": "John J. Mearsheimer",
+      "discipline": "Relations internationales",
+      "role": "Université de Chicago"
+    },
+    {
+      "id": "michaels",
+      "name": "Walter Benn Michaels",
+      "discipline": "Théorie littéraire",
+      "role": "Université de l’Illinois à Chicago"
+    },
+    {
+      "id": "mill",
+      "name": "John Stuart Mill",
+      "years": "1806–1873",
+      "discipline": "Philosophie"
+    },
+    {
+      "id": "miller",
+      "name": "David Miller",
+      "discipline": "Philosophie politique",
+      "role": "Université d’Oxford"
+    },
+    {
+      "id": "mokyr",
+      "name": "Joel Mokyr",
+      "discipline": "Économie et histoire",
+      "role": "Université Northwestern, prix Nobel 2025"
+    },
+    {
+      "id": "montbrial",
+      "name": "Thierry de Montbrial",
+      "discipline": "Relations internationales",
+      "role": "IFRI, Académie des sciences morales et politiques"
+    },
+    {
+      "id": "montesquieu",
+      "name": "Montesquieu",
+      "years": "1689–1755",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "morel",
+      "name": "Benjamin Morel",
+      "discipline": "Droit public",
+      "role": "Université Paris-Panthéon-Assas"
+    },
+    {
+      "id": "morgenthau",
+      "name": "Hans J. Morgenthau",
+      "years": "1904–1980",
+      "discipline": "Relations internationales",
+      "role": "Université de Chicago"
+    },
+    {
+      "id": "nozick",
+      "name": "Robert Nozick",
+      "years": "1938–2002",
+      "discipline": "Philosophie",
+      "role": "Université Harvard"
+    },
+    {
+      "id": "ostrom",
+      "name": "Elinor Ostrom",
+      "years": "1933–2012",
+      "discipline": "Science politique",
+      "role": "Université de l’Indiana, prix Nobel 2009"
+    },
+    {
+      "id": "p-simon",
+      "name": "Patrick Simon",
+      "discipline": "Démographie",
+      "role": "INED"
+    },
+    {
+      "id": "pasquier",
+      "name": "Romain Pasquier",
+      "discipline": "Science politique",
+      "role": "CNRS, Sciences Po Rennes"
+    },
+    {
+      "id": "pelluchon",
+      "name": "Corine Pelluchon",
+      "discipline": "Philosophie",
+      "role": "Université Gustave Eiffel"
+    },
+    {
+      "id": "pelopidas",
+      "name": "Benoît Pelopidas",
+      "discipline": "Science politique",
+      "role": "Sciences Po"
+    },
+    {
+      "id": "piketty",
+      "name": "Thomas Piketty",
+      "discipline": "Économie",
+      "role": "EHESS, École d’économie de Paris"
+    },
+    {
+      "id": "pisani-ferry",
+      "name": "Jean Pisani-Ferry",
+      "discipline": "Économie",
+      "role": "Sciences Po, institut Bruegel"
+    },
+    {
+      "id": "proudhon",
+      "name": "Pierre-Joseph Proudhon",
+      "years": "1809–1865",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "r-posner",
+      "name": "Richard A. Posner",
+      "discipline": "Droit",
+      "role": "Université de Chicago, ancien juge fédéral"
+    },
+    {
+      "id": "renan",
+      "name": "Ernest Renan",
+      "years": "1823–1892",
+      "discipline": "Histoire et philologie"
+    },
+    {
+      "id": "ricot",
+      "name": "Jacques Ricot",
+      "discipline": "Philosophie",
+      "role": "Université de Nantes"
+    },
+    {
+      "id": "ritchie",
+      "name": "Hannah Ritchie",
+      "discipline": "Données environnementales",
+      "role": "Université d’Oxford, Our World in Data"
+    },
+    {
+      "id": "rodrik",
+      "name": "Dani Rodrik",
+      "discipline": "Économie",
+      "role": "Université Harvard"
+    },
+    {
+      "id": "rosanvallon",
+      "name": "Pierre Rosanvallon",
+      "discipline": "Histoire et théorie politique",
+      "role": "Collège de France"
+    },
+    {
+      "id": "roussellier",
+      "name": "Nicolas Roussellier",
+      "discipline": "Histoire politique",
+      "role": "Sciences Po"
+    },
+    {
+      "id": "salin",
+      "name": "Pascal Salin",
+      "discipline": "Économie",
+      "role": "Université Paris-Dauphine"
+    },
+    {
+      "id": "sapir",
+      "name": "Jacques Sapir",
+      "discipline": "Économie",
+      "role": "EHESS"
+    },
+    {
+      "id": "scharpf",
+      "name": "Fritz W. Scharpf",
+      "discipline": "Science politique",
+      "role": "Institut Max-Planck pour l’étude des sociétés"
+    },
+    {
+      "id": "schnapper",
+      "name": "Dominique Schnapper",
+      "discipline": "Sociologie",
+      "role": "EHESS"
+    },
+    {
+      "id": "schoettl",
+      "name": "Jean-Éric Schoettl",
+      "discipline": "Droit public",
+      "role": "conseiller d’État honoraire"
+    },
+    {
+      "id": "seguin",
+      "name": "Philippe Séguin",
+      "years": "1943–2010",
+      "discipline": "Responsable politique",
+      "role": "président de l’Assemblée nationale (1993–1997)"
+    },
+    {
+      "id": "senac",
+      "name": "Réjane Sénac",
+      "discipline": "Science politique",
+      "role": "CNRS, Sciences Po"
+    },
+    {
+      "id": "sieyes",
+      "name": "Emmanuel-Joseph Sieyès",
+      "years": "1748–1836",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "smith",
+      "name": "Adam Smith",
+      "years": "1723–1790",
+      "discipline": "Économie et philosophie"
+    },
+    {
+      "id": "stael",
+      "name": "Germaine de Staël",
+      "years": "1766–1817",
+      "discipline": "Philosophie politique et lettres"
+    },
+    {
+      "id": "stantcheva",
+      "name": "Stefanie Stantcheva",
+      "discipline": "Économie",
+      "role": "Université Harvard"
+    },
+    {
+      "id": "taylor",
+      "name": "Charles Taylor",
+      "discipline": "Philosophie",
+      "role": "Université McGill"
+    },
+    {
+      "id": "tenenbaum",
+      "name": "Élie Tenenbaum",
+      "discipline": "Histoire et études stratégiques",
+      "role": "IFRI"
+    },
+    {
+      "id": "tertrais",
+      "name": "Bruno Tertrais",
+      "discipline": "Études stratégiques",
+      "role": "Fondation pour la recherche stratégique"
+    },
+    {
+      "id": "thery",
+      "name": "Irène Théry",
+      "discipline": "Sociologie",
+      "role": "EHESS"
+    },
+    {
+      "id": "tirole",
+      "name": "Jean Tirole",
+      "discipline": "Économie",
+      "role": "Toulouse School of Economics, prix Nobel 2014"
+    },
+    {
+      "id": "tocqueville",
+      "name": "Alexis de Tocqueville",
+      "years": "1805–1859",
+      "discipline": "Philosophie politique"
+    },
+    {
+      "id": "tribalat",
+      "name": "Michèle Tribalat",
+      "discipline": "Démographie",
+      "role": "INED"
+    },
+    {
+      "id": "urbinati",
+      "name": "Nadia Urbinati",
+      "discipline": "Théorie politique",
+      "role": "Université Columbia"
+    },
+    {
+      "id": "vegece",
+      "name": "Végèce",
+      "years": "IVe–Ve siècle",
+      "discipline": "Écrits militaires"
+    },
+    {
+      "id": "vermeule",
+      "name": "Adrian Vermeule",
+      "discipline": "Droit",
+      "role": "Université Harvard"
+    },
+    {
+      "id": "waldron",
+      "name": "Jeremy Waldron",
+      "discipline": "Philosophie du droit",
+      "role": "Université de New York"
+    },
+    {
+      "id": "walzer",
+      "name": "Michael Walzer",
+      "discipline": "Philosophie politique",
+      "role": "Institute for Advanced Study, Princeton"
+    },
+    {
+      "id": "wieviorka",
+      "name": "Michel Wieviorka",
+      "discipline": "Sociologie",
+      "role": "EHESS"
+    },
+    {
+      "id": "wihtol-de-wenden",
+      "name": "Catherine Wihtol de Wenden",
+      "discipline": "Science politique",
+      "role": "CNRS, Sciences Po"
+    },
+    {
+      "id": "zucman",
+      "name": "Gabriel Zucman",
+      "discipline": "Économie",
+      "role": "École normale supérieure, Observatoire européen de la fiscalité"
+    }
+  ],
+  "arguments": [
+    {
+      "axis": "redistribution",
+      "pole": "low",
+      "authors": [
+        "piketty"
       ],
-      "sources": [
-        {
-          "title": "Le Capital, livre I — texte de Marx",
-          "url": "https://www.marxists.org/archive/marx/works/1867-c1/",
-          "year": 1867
-        }
-      ]
+      "featured": true,
+      "thesis": "Le retour à un impôt fortement progressif sur les revenus et les patrimoines est une exigence de justice, et une condition d’une démocratie économique plus étendue.",
+      "nuance": "Le socialisme participatif qu’il défend se distingue explicitement d’un socialisme d’État centralisé.",
+      "quote": "Le mouvement de retour vers l’impôt progressif et une plus grande justice qui se dégage aujourd’hui a quelque chose d’évident, et n’a que trop tardé.",
+      "source": {
+        "title": "L’ISF en Amérique, blog du Monde",
+        "year": 2019,
+        "url": "https://www.lemonde.fr/blog/piketty/2019/02/12/lisf-en-amerique/",
+        "archive": [
+          "research/sources/penseurs/piketty-isf-en-amerique-2019.html"
+        ]
+      }
+    },
+    {
+      "axis": "redistribution",
+      "pole": "low",
+      "authors": [
+        "zucman"
+      ],
+      "featured": true,
+      "thesis": "Un impôt plancher égal à 2 % du patrimoine, réservé aux fortunes de plus de 100 millions d’euros, rétablirait une contribution aujourd’hui faible au regard de leur patrimoine.",
+      "nuance": "Ce n’est pas une surtaxe : celui qui paie déjà 2 % de son patrimoine en impôts personnels n’aurait rien de plus à payer. Le rendement et les comportements d’évitement font débat.",
+      "quote": "Une personne payant moins de 2 % du montant de son patrimoine en impôts personnels devrait s'acquitter de la différence pour atteindre le plancher de 2 %.",
+      "source": {
+        "title": "Audition par la commission d’enquête sur l’imposition des plus hauts patrimoines, Assemblée nationale",
+        "year": 2026,
+        "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cepat/l17cepat2526022_compte-rendu.pdf",
+        "archive": [
+          "research/sources/penseurs/zucman-audition-an-2026-05-06.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "redistribution",
+      "pole": "low",
+      "authors": [
+        "fack"
+      ],
+      "featured": false,
+      "thesis": "Avec ses coauteurs du Conseil d’analyse économique, elle propose d’imposer l’ensemble des transmissions reçues au cours de la vie, pour réduire les inégalités de patrimoine héritées.",
+      "nuance": "La réforme réduirait les droits de succession de la grande majorité des héritiers et alourdirait ceux des plus grandes transmissions.",
+      "quote": "la mise en place d’une politique de taxation sur le flux successoral total perçu par l’individu tout au long de sa vie afin de réduire les inégalités de patrimoine issues de l’héritage",
+      "source": {
+        "title": "Repenser l’héritage, note du Conseil d’analyse économique n° 69",
+        "year": 2021,
+        "url": "https://cae-eco.fr/static/pdf/cae-note069s.pdf",
+        "archive": [
+          "research/sources/penseurs/cae-note-69-repenser-heritage-2021.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "redistribution",
+      "pole": "low",
+      "authors": [
+        "stantcheva"
+      ],
+      "featured": false,
+      "thesis": "Lorsque les plus hauts revenus tiennent en partie à un pouvoir de négociation, les taux marginaux supérieurs souhaitables sont plus élevés qu’on ne le suppose généralement.",
+      "source": {
+        "title": "Optimal Taxation of Top Labor Incomes, avec Thomas Piketty et Emmanuel Saez, NBER",
+        "year": 2013,
+        "url": "https://www.nber.org/system/files/working_papers/w17616/w17616.pdf",
+        "archive": [
+          "research/sources/penseurs/piketty-saez-stantcheva-nber-17616.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "redistribution",
+      "pole": "low",
+      "authors": [
+        "duflo"
+      ],
+      "featured": false,
+      "thesis": "Les plus grandes fortunes ne paient pas leur juste part d’impôt ; les taxer davantage permettrait de financer l’adaptation des pays pauvres au changement climatique.",
+      "source": {
+        "title": "Tax the rich and save the planet, conférence TED",
+        "year": 2025,
+        "url": "https://www.ted.com/talks/esther_duflo_tax_the_rich_and_save_the_planet/transcript",
+        "archive": [
+          "research/sources/penseurs/duflo-ted-2025.html"
+        ]
+      }
+    },
+    {
+      "axis": "redistribution",
+      "pole": "high",
+      "authors": [
+        "nozick"
+      ],
+      "featured": true,
+      "thesis": "Seul un État minimal, limité à la protection contre la force, le vol et la fraude, est justifié ; il ne peut contraindre certains citoyens à en aider d’autres.",
+      "nuance": "Il admet des transferts destinés à réparer des injustices passées dans l’acquisition des biens.",
+      "source": {
+        "title": "Anarchie, État et utopie, présentation de l’édition française, PUF, collection Quadrige",
+        "year": 1974,
+        "url": "https://www.puf.com/anarchie-etat-et-utopie",
+        "archive": [
+          "research/sources/penseurs/nozick-anarchie-etat-utopie-puf.html"
+        ]
+      }
+    },
+    {
+      "axis": "redistribution",
+      "pole": "high",
+      "authors": [
+        "salin"
+      ],
+      "featured": true,
+      "thesis": "La progressivité de l’impôt décourage l’effort supplémentaire, le plus difficile à fournir ; l’extension des prélèvements est incompatible avec une société de liberté.",
+      "nuance": "Sa critique vise l’extension de l’État en général, pas seulement la redistribution.",
+      "quote": "L'effort marginal – c'est-à-dire celui qui est le plus difficile à faire – est en effet découragé par le système de prélèvements obligatoires, en particulier par la progressivité de l'impôt sur le revenu.",
+      "source": {
+        "title": "Un impôt mondial pour financer l’après-crise ?, Institut Libéral",
+        "year": 2022,
+        "url": "https://www.libinst.ch/publications/IL-Salin-Impot%20mondial.pdf",
+        "archive": [
+          "research/sources/penseurs/salin-impot-mondial-institut-liberal-2022.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "low",
+      "authors": [
+        "mazzucato"
+      ],
+      "featured": true,
+      "thesis": "L’État ne se borne pas à corriger les défaillances du marché : par des missions de recherche et d’innovation, il oriente l’économie et contribue à créer de nouveaux marchés.",
+      "nuance": "Les missions qu’elle décrit associent les entreprises privées ; elle ne plaide pas pour une propriété publique généralisée.",
+      "source": {
+        "title": "Mission-Oriented Research & Innovation in the European Union, Commission européenne",
+        "year": 2018,
+        "url": "https://www.era.gv.at/public/documents/3483/mazzucato_report_2018.pdf",
+        "archive": [
+          "research/sources/penseurs/mazzucato-mission-oriented-2018.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "low",
+      "authors": [
+        "keynes"
+      ],
+      "featured": true,
+      "thesis": "Une demande insuffisante peut maintenir durablement le sous-emploi ; une socialisation assez large de l’investissement est le moyen d’approcher le plein emploi.",
+      "nuance": "Il conserve une large place à l’initiative privée et à la coopération entre la puissance publique et les entreprises.",
+      "quote": "Aussi pensons-nous qu'une assez large socialisation de l'investissement s'avèrera le seul moyen d'assurer approximativement le plein emploi",
+      "source": {
+        "title": "Théorie générale de l’emploi, de l’intérêt et de la monnaie, chapitre 24, traduction Jean de Largentaye (1942), Les Classiques des sciences sociales",
+        "year": 1936,
+        "url": "https://web.archive.org/web/20180421230746id_/http://classiques.uqac.ca/classiques/keynes_john_maynard/theorie_gen_emploi/theorie_emploi_monnaie_2.pdf",
+        "archive": [
+          "research/sources/penseurs/keynes-theorie-generale-livres-4-6-largentaye.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "low",
+      "authors": [
+        "marx"
+      ],
+      "featured": false,
+      "thesis": "La propriété des moyens de production structure les rapports entre capital et travail ; le Manifeste prévoit de centraliser progressivement les instruments de production entre les mains de l’État.",
+      "nuance": "C’est un texte de combat de 1848, écrit dans un contexte révolutionnaire.",
+      "quote": "Le prolétariat se servira de sa suprématie politique pour arracher petit à petit tout le capital à la bourgeoisie, pour centraliser tous les instruments de production entre les mains de l'Etat",
+      "source": {
+        "title": "Manifeste du parti communiste, avec Friedrich Engels, chapitre II",
+        "year": 1848,
+        "url": "https://www.marxists.org/francais/marx/works/1847/00/kmfe18470000b.htm",
+        "archive": [
+          "research/sources/penseurs/marx-engels-manifeste-ch2.html"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "low",
+      "authors": [
+        "pisani-ferry",
+        "mahfouz"
+      ],
+      "featured": false,
+      "thesis": "La transition écologique sera pilotée d’abord par les politiques publiques : elle demande des investissements massifs, des choix explicites de financement et une répartition équitable des coûts.",
+      "nuance": "Le rapport ne renonce pas au prix du carbone, qui oriente les décisions de façon décentralisée.",
+      "quote": "cette transformation sera globale, plus rapide, et elle sera pilotée d’abord par les politiques publiques et non par les innovations technologiques et les marchés.",
+      "source": {
+        "title": "Les incidences économiques de l’action pour le climat, France Stratégie",
+        "year": 2023,
+        "url": "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/2023-incidences-economiques-rapport-pisani-5juin.pdf",
+        "archive": [
+          "research/sources/penseurs/pisani-ferry-mahfouz-incidences-economiques-2023.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "high",
+      "authors": [
+        "hayek"
+      ],
+      "featured": true,
+      "thesis": "L’information économique est dispersée entre les individus ; le système des prix la coordonne sans qu’aucun planificateur puisse la réunir.",
+      "nuance": "Son argument porte sur la connaissance ; il défend un cadre de règles générales, pas l’absence de règles.",
+      "quote": "Nous devons considérer le système des prix comme un mécanisme de communication de l'information si nous voulons comprendre sa fonction réelle",
+      "source": {
+        "title": "L’utilisation de la connaissance dans la société, traduction Véronique de Mareuil révisée par Emmanuel Martin, Laissons Faire n° 26, Institut Coppet",
+        "year": 1945,
+        "url": "https://www.coppetinstitute.org/EL/LaissonsFaire.No26_.Octobre2018-17-27.pdf",
+        "archive": [
+          "research/sources/penseurs/hayek-utilisation-connaissance-laissons-faire-26.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "high",
+      "authors": [
+        "tirole"
+      ],
+      "featured": true,
+      "thesis": "La concurrence protège les consommateurs et limite l’influence des intérêts particuliers ; l’État doit surtout réguler les marchés imparfaits plutôt que s’y substituer.",
+      "nuance": "Il souligne lui-même que la concurrence est rarement parfaite et que les marchés ont des failles.",
+      "quote": "La libre concurrence en effet protège les consommateurs de l’influence politique des lobbies et conduit les producteurs à proposer leurs biens et services à prix coûtant.",
+      "source": {
+        "title": "Conférence Nobel, traduction publiée par la Toulouse School of Economics",
+        "year": 2015,
+        "url": "https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/by/tirole/nobel_lecture_fr_30_mars_2015_partenaires_idei.pdf",
+        "archive": [
+          "research/sources/penseurs/tirole-conference-nobel-2014-fr.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "high",
+      "authors": [
+        "gollier"
+      ],
+      "featured": false,
+      "thesis": "Pour conduire la transition écologique, l’État doit envoyer des incitations, comme un prix du carbone, plutôt qu’imposer des obligations.",
+      "quote": "Il est difficile d'imaginer que l'État puisse en être le chef d'orchestre sans envoyer des incitations plutôt que des obligations.",
+      "source": {
+        "title": "Entretien, La Vie des idées",
+        "year": 2022,
+        "url": "https://laviedesidees.fr/IMG/pdf/20221202_gollier.pdf",
+        "archive": [
+          "research/sources/penseurs/gollier-vie-des-idees-2022.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "economy",
+      "pole": "high",
+      "authors": [
+        "salin"
+      ],
+      "featured": false,
+      "thesis": "La liberté individuelle, l’échange volontaire et la propriété doivent guider l’organisation économique ; accroître la part des activités publiques s’en éloigne.",
+      "quote": "Il est évident qu’on ne peut pas considérer comme libéral un président qui accroît les activités publiques par rapport aux activités privées.",
+      "source": {
+        "title": "Les Français doivent retrouver le goût de la liberté individuelle, entretien, Revue politique et parlementaire",
+        "year": 2022,
+        "url": "https://www.revuepolitique.fr/les-francais-doivent-retrouver-le-gout-de-la-liberte-individuelle-une-interview-du-professeur-pascal-salin/",
+        "archive": [
+          "research/sources/penseurs/salin-revue-politique-2022.html"
+        ]
+      }
+    },
+    {
+      "axis": "work",
+      "pole": "low",
+      "authors": [
+        "ferreras"
+      ],
+      "featured": true,
+      "thesis": "Le gouvernement de l’entreprise devrait être soumis à une double majorité : celle des apporteurs de capital et celle des représentants des salariés.",
+      "nuance": "Le texte, signé par des milliers de chercheurs, propose aussi une garantie d’emploi ; il ne supprime pas la représentation du capital.",
+      "quote": "Ces Chambres de représentation des travailleurs doivent désormais être dotées de droits similaires à ceux des Conseils d’administration, afin de soumettre le gouvernement de l’entreprise (le top management) à une double majorité.",
+      "source": {
+        "title": "Travail. Démocratiser. Démarchandiser. Dépolluer, tribune avec Julie Battilana et Dominique Méda",
+        "year": 2020,
+        "url": "https://www.DemocratizingWork.org/s/Work_Democratize_Decommodify_Remediate_FRA.pdf",
+        "archive": [
+          "research/sources/penseurs/ferreras-battilana-meda-democratiser-2020.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "work",
+      "pole": "low",
+      "authors": [
+        "piketty"
+      ],
+      "featured": true,
+      "thesis": "Donner aux salariés entre un tiers et la moitié des sièges des conseils d’administration rapprocherait la France des modèles allemand et nordique.",
+      "quote": "si le gouvernement français décidait d’amplifier le mouvement en introduisant un nombre substantiel de sièges pour les salariés (mettons, entre un tiers et la moitié, de façon à rejoindre l’axe germano-nordique), il s’agirait d’un acte majeur",
+      "source": {
+        "title": "Repenser le code du capital, blog du Monde",
+        "year": 2017,
+        "url": "https://www.lemonde.fr/blog/piketty/2017/09/12/repenser-le-code-du-capital/",
+        "archive": [
+          "research/sources/penseurs/piketty-repenser-code-capital-2017.html"
+        ]
+      }
+    },
+    {
+      "axis": "work",
+      "pole": "low",
+      "authors": [
+        "marx"
+      ],
+      "featured": false,
+      "thesis": "La grande production moderne peut se passer d’une classe de patrons employant une classe de salariés : l’Adresse de 1864 en voit la preuve dans les coopératives ouvrières.",
+      "quote": "la production sur une grande échelle et au niveau des exigences de la science moderne pouvait se passer d'une classe de patrons employant une classe de salariés",
+      "source": {
+        "title": "Adresse inaugurale de l’Association internationale des travailleurs",
+        "year": 1864,
+        "url": "https://www.marxists.org/francais/marx/works/1864/09/18640928.htm",
+        "archive": [
+          "research/sources/penseurs/marx-adresse-inaugurale-ait-1864.html"
+        ]
+      }
+    },
+    {
+      "axis": "work",
+      "pole": "high",
+      "authors": [
+        "friedman"
+      ],
+      "featured": true,
+      "thesis": "Le dirigeant d’une entreprise est l’employé de ses propriétaires : il leur doit de la gérer selon leurs intérêts, en général l’accroissement des profits dans le respect des lois.",
+      "nuance": "Il distingue ce que les actionnaires font de leur argent à titre personnel de ce que le dirigeant peut engager en leur nom.",
+      "source": {
+        "title": "The Social Responsibility of Business Is to Increase Its Profits, New York Times Magazine",
+        "year": 1970,
+        "url": "https://business.pitt.edu/wp-content/uploads/2025/02/25Right-Readings-Friedman-1.pdf",
+        "archive": [
+          "research/sources/penseurs/friedman-social-responsibility-1970.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "work",
+      "pole": "high",
+      "authors": [
+        "cette",
+        "barthelemy"
+      ],
+      "featured": true,
+      "thesis": "L’accord collectif d’entreprise devrait devenir la règle, la loi et la branche ne fixant plus qu’un socle d’ordre public.",
+      "nuance": "Ils défendent des accords signés par les représentants des salariés, non des décisions unilatérales de la direction.",
+      "quote": "La logique proposée, dans un premier temps, est de faire de la dérogation conventionnelle la règle.",
+      "source": {
+        "title": "Réformer le droit du travail, Odile Jacob et Terra Nova",
+        "year": 2015,
+        "url": "https://tnova.fr/site/assets/files/10876/02092015_-_r_former_le_droit_du_travail.pdf",
+        "archive": [
+          "research/sources/penseurs/barthelemy-cette-reformer-droit-travail-2015.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "budget",
+      "pole": "low",
+      "authors": [
+        "blanchard"
+      ],
+      "featured": true,
+      "thesis": "Tant que le taux d’intérêt reste inférieur au taux de croissance, la dette publique coûte peu au budget et au bien-être : elle ne doit pas empêcher les dépenses utiles.",
+      "nuance": "Il précise ne pas plaider pour davantage de dette ; la remontée des taux depuis 2022 modifie le calcul.",
+      "quote": "Que le coût de la dette, que ce soit le coût budgétaire, ou le coût en termes de bien-être, était beaucoup plus faible qu'il avait été dans le passé, et que ceci avait des implications importantes pour la politique budgétaire.",
+      "source": {
+        "title": "La baisse du taux d’intérêt est un phénomène mondial, conversation, Le Grand Continent",
+        "year": 2023,
+        "url": "https://legrandcontinent.eu/fr/2023/01/22/la-baisse-du-taux-dinteret-est-un-phenomene-mondial-une-conversation-avec-olivier-blanchard/",
+        "archive": [
+          "research/sources/penseurs/blanchard-grand-continent-2023.html"
+        ]
+      }
+    },
+    {
+      "axis": "budget",
+      "pole": "low",
+      "authors": [
+        "pisani-ferry",
+        "mahfouz"
+      ],
+      "featured": true,
+      "thesis": "Retarder l’effort de transition au nom de la maîtrise de la dette serait contre-productif ; un recours mesuré à l’endettement doit rester possible.",
+      "nuance": "Le rapport ne fait pas de l’endettement le premier instrument de financement ; il propose aussi un prélèvement exceptionnel sur les patrimoines financiers les plus élevés.",
+      "quote": "Il ne sert à rien de retarder les efforts au nom de la maîtrise de la dette publique.",
+      "source": {
+        "title": "Les incidences économiques de l’action pour le climat, France Stratégie",
+        "year": 2023,
+        "url": "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/2023-incidences-economiques-rapport-pisani-5juin.pdf",
+        "archive": [
+          "research/sources/penseurs/pisani-ferry-mahfouz-incidences-economiques-2023.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "budget",
+      "pole": "high",
+      "authors": [
+        "buchanan"
+      ],
+      "featured": true,
+      "thesis": "Une fois abandonnée la règle d’équilibre budgétaire, la démocratie penche durablement vers le déficit, qui permet de dépenser sans lever ouvertement l’impôt ; il faut rétablir cette règle.",
+      "nuance": "C’est un argument sur les institutions budgétaires, pas un refus de la dépense publique.",
+      "source": {
+        "title": "The Consequences of Mr Keynes, avec Richard E. Wagner, Institute of Economic Affairs",
+        "year": 1978,
+        "url": "https://iea.org.uk/wp-content/uploads/2016/07/THE%20CONSEQUENCES%20OF%20MR%20KEYNES.pdf",
+        "archive": [
+          "research/sources/penseurs/buchanan-wagner-consequences-keynes-1978.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "budget",
+      "pole": "high",
+      "authors": [
+        "alesina"
+      ],
+      "featured": true,
+      "thesis": "Les ajustements fondés sur la baisse des dépenses réduisent plus sûrement déficit et dette, et freinent moins l’activité, que ceux fondés sur les hausses d’impôts.",
+      "nuance": "Sa thèse d’une austérité favorable à la croissance est discutée, notamment par le FMI.",
+      "source": {
+        "title": "Large Changes in Fiscal Policy: Taxes versus Spending, avec Silvia Ardagna, NBER",
+        "year": 2009,
+        "url": "https://www.nber.org/system/files/working_papers/w15438/w15438.pdf",
+        "archive": [
+          "research/sources/penseurs/alesina-ardagna-nber-15438.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "budget",
+      "pole": "high",
+      "authors": [
+        "benassy-quere"
+      ],
+      "featured": false,
+      "thesis": "Mieux vaut conserver une capacité d’endettement pour faire face à l’imprévu que la consommer immédiatement.",
+      "nuance": "Elle distingue cette prudence d’une stratégie d’investissement public de long terme.",
+      "quote": "La bonne gestion du risque est alors de conserver la capacité d’endettement supplémentaire pour affronter l’imprévu plutôt que de la brûler immédiatement.",
+      "source": {
+        "title": "« Quoi qu’il en coûte » : c’est combien ?, billet de la cheffe économiste de la DG Trésor",
+        "year": 2021,
+        "url": "https://www.tresor.economie.gouv.fr/Articles/2021/02/22/quoiqu-il-en-coute-c-est-combien",
+        "archive": [
+          "research/sources/penseurs/benassy-quere-quoi-qu-il-en-coute-2021.html"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "low",
+      "authors": [
+        "mill"
+      ],
+      "featured": true,
+      "thesis": "La société ne peut contraindre un individu que pour l’empêcher de nuire à autrui ; pour ce qui ne concerne que lui-même, son corps et son esprit, il décide seul.",
+      "nuance": "Le principe vaut pour les adultes ; il n’interdit ni de conseiller ni de critiquer.",
+      "quote": "Pour ce qui n'intéresse que lui, son indépendance est, de droit, absolue. Sur lui-même, sur son corps et sur son esprit, l'individu est souverain.",
+      "source": {
+        "title": "De la liberté, chapitre I, traduction Dupont-White (1860), Wikisource",
+        "year": 1859,
+        "url": "https://fr.wikisource.org/wiki/De_la_libert%C3%A9/01",
+        "archive": [
+          "research/sources/penseurs/mill-de-la-liberte-ch1.html"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "low",
+      "authors": [
+        "thery"
+      ],
+      "featured": true,
+      "thesis": "La filiation repose sur l’engagement parental ; l’assistance médicale à la procréation avec donneur devrait être ouverte aux couples de femmes dans les mêmes conditions qu’aux autres couples.",
+      "nuance": "C’est la conclusion d’un groupe de travail remise aux ministres, avec la rapporteure Anne-Marie Leroyer.",
+      "quote": "Ouvrir l'accès à l'assistance médicale avec tiers donneur aux couples de femmes, dans les mêmes conditions que pour les couples de sexe différent.",
+      "source": {
+        "title": "Filiation, origines, parentalité, rapport du groupe de travail présidé par Irène Théry",
+        "year": 2014,
+        "url": "https://www.vie-publique.fr/files/rapport/pdf/144000203.pdf",
+        "archive": [
+          "research/sources/penseurs/thery-leroyer-filiation-origines-parentalite-2014.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "low",
+      "authors": [
+        "pelluchon"
+      ],
+      "featured": false,
+      "thesis": "Une aide médicale à mourir peut se concevoir pour une personne atteinte d’une maladie incurable en phase avancée, comme ultime recours examiné au cas par cas.",
+      "nuance": "Elle refuse d’en faire un droit ou une liberté, et redoute qu’elle supplée au manque de soins palliatifs.",
+      "quote": "à condition qu'on la présente comme un ultime recours, et non comme l'expression d'un « droit » à mourir dans la dignité ni même d'une liberté.",
+      "source": {
+        "title": "Un ultime recours, au cas par cas, La Grande Conversation",
+        "year": 2022,
+        "url": "https://www.lagrandeconversation.com/app/uploads/2022/12/Un-ultime-recours-au-cas-par-cas-La-Grande-Conversation.pdf",
+        "archive": [
+          "research/sources/penseurs/pelluchon-ultime-recours-2022.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "high",
+      "authors": [
+        "ricot"
+      ],
+      "featured": true,
+      "thesis": "L’aide à mourir romprait avec les lois de 2005 et 2016, qui accompagnent ceux qui vont mourir sans répondre à la demande de ceux qui veulent mourir.",
+      "nuance": "Il fonde sa position sur l’éthique du soin et se dit profondément laïque.",
+      "quote": "J'aime beaucoup la formule qui distingue ceux qui vont mourir, parfaitement armés par nos lois actuelles, et ceux qui veulent mourir.",
+      "source": {
+        "title": "Audition par la commission des affaires sociales du Sénat",
+        "year": 2025,
+        "url": "https://www.senat.fr/compte-rendu-commissions/20250707/soci.html",
+        "archive": [
+          "research/sources/penseurs/ricot-audition-senat-2025-07-09.html"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "high",
+      "authors": [
+        "agacinski"
+      ],
+      "featured": true,
+      "thesis": "La filiation repose sur l’asymétrie des deux sexes ; ouvrir la PMA aux femmes seules et aux couples de femmes effacerait la part de l’autre sexe dans la procréation.",
+      "nuance": "Elle approuve le mariage entre personnes de même sexe ; son argument tient à la différence des sexes et à la critique de la marchandisation du corps, non à la religion.",
+      "quote": "le principe de l'asymétrie des deux sexes dans la filiation serait abandonné. De plus, dans la mesure où la PMA s'effectue par don anonyme, la participation de l'autre sexe à la procréation serait tout simplement effacée.",
+      "source": {
+        "title": "Audition par la mission d’information sur la politique familiale, Assemblée nationale",
+        "year": 2019,
+        "url": "https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/polfamf/l15polfamf1819002_compte-rendu.pdf",
+        "archive": [
+          "research/sources/penseurs/agacinski-audition-an-2019-09-09.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "high",
+      "authors": [
+        "burke"
+      ],
+      "featured": false,
+      "thesis": "Les usages et les préjugés hérités contiennent une raison accumulée par les générations : il est plus sage de les conserver que de refaire les mœurs par la seule raison abstraite.",
+      "nuance": "Il admet la réforme graduelle : un État privé des moyens de changer serait privé des moyens de se conserver.",
+      "quote": "Le préjugé fait de la vertu une habitude pour les hommes, et non pas une suite d'actions incohérentes ; par les préjugés dont la vertu fait la base, le devoir devient une partie de notre nature.",
+      "source": {
+        "title": "Réflexions sur la Révolution de France, traduction de 1819, Wikisource",
+        "year": 1790,
+        "url": "https://fr.wikisource.org/wiki/R%C3%A9flexions_sur_la_r%C3%A9volution_de_France_-_1819/R%C3%A9flexions",
+        "archive": [
+          "research/sources/penseurs/burke-reflexions-revolution-1819.html"
+        ]
+      }
+    },
+    {
+      "axis": "society",
+      "pole": "high",
+      "authors": [
+        "binet"
+      ],
+      "featured": false,
+      "thesis": "L’intérêt de l’enfant commande de ne pas le priver par avance de toute filiation paternelle ; l’assistance médicale à la procréation devrait rester réservée aux couples formés d’un homme et d’une femme.",
+      "nuance": "Il demande surtout la prudence : une ouverture subordonnée à des études incontestables.",
+      "quote": "est-il en mesure de garantir la prise en compte de l'intérêt de l'enfant en le privant de toute possibilité d'avoir une filiation paternelle ?",
+      "source": {
+        "title": "Audition par la commission spéciale sur la bioéthique, Sénat",
+        "year": 2019,
+        "url": "https://www.senat.fr/compte-rendu-commissions/20191125/cs_bioethique.html",
+        "archive": [
+          "research/sources/penseurs/binet-audition-senat-2019-11-28.html"
+        ]
+      }
+    },
+    {
+      "axis": "liberties",
+      "pole": "low",
+      "authors": [
+        "montesquieu"
+      ],
+      "featured": true,
+      "thesis": "Tout pouvoir tend à l’abus : la liberté exige que le pouvoir arrête le pouvoir, et que la puissance de juger soit séparée de celle d’exécuter.",
+      "nuance": "Il définit la liberté politique par la sûreté : liberté et sécurité ne s’opposent pas chez lui.",
+      "quote": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+      "source": {
+        "title": "De l’esprit des lois, livre XI, Wikisource",
+        "year": 1748,
+        "url": "https://fr.wikisource.org/wiki/De_l%E2%80%99esprit_des_lois_(%C3%A9d._Nourse)/Livre_11",
+        "archive": [
+          "research/sources/penseurs/montesquieu-esprit-des-lois-livre-11.html"
+        ]
+      }
+    },
+    {
+      "axis": "liberties",
+      "pole": "low",
+      "authors": [
+        "delmas-marty"
+      ],
+      "featured": true,
+      "thesis": "La « culture de la peur » durcit le contrôle social ; les mesures fondées sur la seule dangerosité et l’exception devenue permanente menacent les libertés et l’État de droit.",
+      "nuance": "Elle tient l’insécurité pour une réalité que l’État a le devoir de combattre ; elle critique la dérive, non le contrôle.",
+      "quote": "elle durcit le contrôle social car elle appelle à encore et toujours plus de protection et de sécurité, au risque de sacrifier les libertés individuelles.",
+      "source": {
+        "title": "Libertés et sûreté dans un monde dangereux, résumé du cours, Annuaire du Collège de France",
+        "year": 2009,
+        "url": "https://www.college-de-france.fr/media/mireille-delmas-marty/UPL20008_delmas_marty_res0809.pdf",
+        "archive": [
+          "research/sources/penseurs/delmas-marty-libertes-surete-2009.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "liberties",
+      "pole": "high",
+      "authors": [
+        "hobbes"
+      ],
+      "featured": true,
+      "thesis": "Sans un pouvoir commun assez fort pour se faire craindre, les hommes restent en guerre de chacun contre chacun : la sécurité exige un souverain supérieur aux particuliers.",
+      "nuance": "La liberté des sujets subsiste là où la loi se tait.",
+      "quote": "Et les conventions, sans l'épée, ne sont que des mots, et n'ont pas du tout de force pour mettre en sécurité un homme.",
+      "source": {
+        "title": "Léviathan, chapitre XVII, traduction Philippe Folliot, Les Classiques des sciences sociales",
+        "year": 1651,
+        "url": "https://classiques.uqam.ca/classiques/hobbes_thomas/leviathan/leviathan_partie_2/leviathan_2e_partie.pdf",
+        "archive": [
+          "research/sources/penseurs/hobbes-leviathan-2e-partie-folliot.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "liberties",
+      "pole": "high",
+      "authors": [
+        "r-posner"
+      ],
+      "featured": true,
+      "thesis": "Face au terrorisme, le mandat judiciaire préalable arbitre mal entre sécurité et liberté : une surveillance efficace ne peut se limiter aux suspects déjà identifiés.",
+      "nuance": "Il propose d’autres garde-fous, comme un contrôle parlementaire, et raisonne sur le droit américain.",
+      "source": {
+        "title": "Privacy, Surveillance, and Law, University of Chicago Law Review",
+        "year": 2008,
+        "url": "https://lawreview.uchicago.edu/sites/default/files/75_1_Posner.pdf",
+        "archive": [
+          "research/sources/penseurs/posner-privacy-surveillance-law-2008.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "liberties",
+      "pole": "high",
+      "authors": [
+        "e-posner",
+        "vermeule"
+      ],
+      "featured": false,
+      "thesis": "En situation d’urgence, les garanties constitutionnelles peuvent être assouplies ; la crainte d’un emballement irréversible est, selon eux, mal fondée.",
+      "nuance": "Leur thèse vaut pour les urgences nationales, non pour la police ordinaire.",
+      "source": {
+        "title": "Accommodating Emergencies, Stanford Law Review, résumé de la faculté de droit de Harvard",
+        "year": 2003,
+        "url": "https://hls.harvard.edu/bibliography/accommodating-emergencies/",
+        "archive": [
+          "research/sources/penseurs/posner-vermeule-accommodating-emergencies.html"
+        ]
+      }
+    },
+    {
+      "axis": "religion",
+      "pole": "low",
+      "authors": [
+        "locke"
+      ],
+      "featured": true,
+      "thesis": "L’État ne protège que les intérêts civils : ce qui est permis à tous dans la vie ordinaire ne peut être interdit parce qu’on le fait par religion.",
+      "nuance": "Sa tolérance excluait les athées ; son texte porte sur le culte, non sur les signes religieux.",
+      "quote": "La loi ne saurait empêcher aucune assemblée religieuse, ni les prêtres d'aucune secte, de tourner à un saint usage ce qui est permis à tous les autres sujets dans la vie ordinaire et civile.",
+      "source": {
+        "title": "Lettre sur la tolérance, traduction Le Clerc (1710), Wikisource",
+        "year": 1689,
+        "url": "https://fr.wikisource.org/wiki/Lettre_sur_la_tol%C3%A9rance",
+        "archive": [
+          "research/sources/penseurs/locke-lettre-tolerance.html"
+        ]
+      }
+    },
+    {
+      "axis": "religion",
+      "pole": "low",
+      "authors": [
+        "bauberot"
+      ],
+      "featured": true,
+      "thesis": "Pour ce qui est réversible, comme un vêtement, mieux vaut convaincre que contraindre ; tout pouvant être lu comme un signe religieux, les interdictions tendent à s’étendre.",
+      "nuance": "Il admet la contrainte pour l’irréversible, comme le mariage forcé, et défend la police des cultes de la loi de 1905.",
+      "quote": "Autant il me semble normal de recourir à la contrainte pour ce qui relève de l'irréversible, autant, pour tout ce qui est réversible, je pense qu'il est préférable de chercher à convaincre.",
+      "source": {
+        "title": "Audition par la commission spéciale sur le projet de loi confortant le respect des principes de la République, Assemblée nationale",
+        "year": 2020,
+        "url": "https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/csprincrep/l15csprincrep2021005_compte-rendu.pdf",
+        "archive": [
+          "research/sources/penseurs/bauberot-audition-an-2020-12-21.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "religion",
+      "pole": "high",
+      "authors": [
+        "badinter"
+      ],
+      "featured": true,
+      "thesis": "La neutralité religieuse peut être exigée au-delà des agents publics : elle a soutenu la crèche associative Baby-Loup, qui l’imposait à ses salariées.",
+      "nuance": "Baby-Loup est une petite association subventionnée, non une entreprise commerciale ; elle n’a pas demandé de restreindre l’expression religieuse dans la rue, hors dissimulation du visage.",
+      "quote": "C’est pourquoi Baby-Loup est un double symbole : symbole de la laïcité, symbole de la cause des femmes.",
+      "source": {
+        "title": "La laïcité menacée. Appel à soutenir Baby-Loup, reproduit par Mezetulle",
+        "year": 2014,
+        "url": "https://www.mezetulle.fr/elisabeth-badinter-laicite-menacee-appel-soutenir-baby-loup/",
+        "archive": [
+          "research/sources/penseurs/badinter-appel-baby-loup-2014.html"
+        ]
+      }
+    },
+    {
+      "axis": "religion",
+      "pole": "high",
+      "authors": [
+        "kintzler"
+      ],
+      "featured": true,
+      "thesis": "L’autorité publique, et l’école en particulier, doit s’abstenir de toute expression religieuse ; elle étend cette exigence aux parents qui accompagnent les sorties scolaires.",
+      "nuance": "Elle refuse d’imposer cette abstention à la société civile, rue, commerces ou transports, et qualifie cette extension d’« extrémisme laïc ».",
+      "quote": "j'ai également coécrit et signé un texte pour demander que ces accompagnateurs scolaires soient tenus de protéger la liberté de conscience des élèves.",
+      "source": {
+        "title": "Audition par la commission spéciale sur le projet de loi confortant le respect des principes de la République, Assemblée nationale",
+        "year": 2021,
+        "url": "https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/csprincrep/l15csprincrep2021034_compte-rendu.pdf",
+        "archive": [
+          "research/sources/penseurs/kintzler-audition-an-2021-01-15.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "religion",
+      "pole": "high",
+      "authors": [
+        "hobbes"
+      ],
+      "featured": false,
+      "thesis": "L’État étant une seule personne, le souverain peut commander un culte public uniforme.",
+      "nuance": "Il distingue ce culte public de la foi intérieure, sur laquelle la loi n’a pas de prise.",
+      "quote": "Mais étant donné qu'une République n'est qu'une seule personne, elle doit aussi rendre à Dieu un seul culte, ce qu'elle fait quand elle ordonne que ce culte soit rendu publiquement par les particuliers.",
+      "source": {
+        "title": "Léviathan, chapitre XXXI, traduction Philippe Folliot, Les Classiques des sciences sociales",
+        "year": 1651,
+        "url": "https://classiques.uqam.ca/classiques/hobbes_thomas/leviathan/leviathan_partie_2/leviathan_2e_partie.pdf",
+        "archive": [
+          "research/sources/penseurs/hobbes-leviathan-2e-partie-folliot.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "immigration",
+      "pole": "low",
+      "authors": [
+        "heran"
+      ],
+      "featured": true,
+      "thesis": "Les migrations sont une composante ordinaire des sociétés et reposent de plus en plus sur des droits, familiaux ou d’asile, que la France a contribué à bâtir ; l’image d’une France « submergée » ne résiste pas aux comparaisons.",
+      "nuance": "Il ne plaide pas pour l’ouverture des frontières et refuse de pousser le curseur dans une seule direction.",
+      "quote": "la France peut-elle considérer comme une contrainte extérieure un droit international qu’elle a contribué à bâtir ? Peut-elle prôner une universalité fermée ?",
+      "source": {
+        "title": "Migrations et sociétés, résumé de la leçon inaugurale, Annuaire du Collège de France",
+        "year": 2018,
+        "url": "https://college-de-france.fr/sites/default/files/documents/francois-heran/UPL7518490759684155479_527_536_43_Heran.pdf",
+        "archive": [
+          "research/sources/penseurs/heran-lecon-inaugurale-resume-2018.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "immigration",
+      "pole": "low",
+      "authors": [
+        "carens"
+      ],
+      "featured": true,
+      "thesis": "L’égal respect dû à chaque personne laisse peu de justification à l’exclusion des migrants pauvres qui veulent rejoindre les pays riches.",
+      "nuance": "C’est un argument d’idéal de justice ; ses travaux ultérieurs raisonnent aussi dans le cadre d’un contrôle par les États.",
+      "source": {
+        "title": "Aliens and Citizens: The Case for Open Borders, The Review of Politics",
+        "year": 1987,
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0034670500033817",
+        "archive": [
+          "research/sources/penseurs/carens-aliens-and-citizens-1987.html"
+        ]
+      }
+    },
+    {
+      "axis": "immigration",
+      "pole": "low",
+      "authors": [
+        "wihtol-de-wenden"
+      ],
+      "featured": false,
+      "thesis": "Les engagements en matière de droits humains empêchent de fermer les frontières ; de nombreux travaux plaident pour davantage de voies légales de migration plutôt que pour la dissuasion.",
+      "nuance": "Elle parle d’ouvrir davantage les frontières, non d’abolir les contrôles.",
+      "quote": "Beaucoup de travaux académiques et d’experts convergent dans leurs conclusions sur la nécessité d’ouvrir davantage les frontières, de renoncer au tout sécuritaire et à la stratégie de dissuasion",
+      "source": {
+        "title": "L’immigration, trois questions à Catherine Wihtol de Wenden, IRIS",
+        "year": 2017,
+        "url": "https://www.iris-france.org/86479-limmigration-3-questions-a-catherine-wihtol-de-wenden/",
+        "archive": [
+          "research/sources/penseurs/wihtol-de-wenden-iris-2017.html"
+        ]
+      }
+    },
+    {
+      "axis": "immigration",
+      "pole": "high",
+      "authors": [
+        "tribalat"
+      ],
+      "featured": true,
+      "thesis": "La politique migratoire devrait redevenir un exercice de souveraineté qui règle l’immigration selon l’intérêt général ; le droit européen et la jurisprudence limitent aujourd’hui cette capacité.",
+      "nuance": "Elle décrit des contraintes juridiques sans proposer de plafond chiffré.",
+      "quote": "Normalement la politique migratoire est un exercice de souveraineté visant à réguler l’immigration étrangère en fonction de l’intérêt général.",
+      "source": {
+        "title": "Les impasses de la politique migratoire",
+        "year": 2020,
+        "url": "https://www.micheletribalat.fr/435984650/446554436",
+        "archive": [
+          "research/sources/penseurs/tribalat-impasses-politique-migratoire-2020.html"
+        ]
+      }
+    },
+    {
+      "axis": "immigration",
+      "pole": "high",
+      "authors": [
+        "miller"
+      ],
+      "featured": true,
+      "thesis": "Un État peut limiter le rythme et le nombre des admissions pour préserver sa culture publique et maîtriser l’évolution de sa population, tout en accueillant les réfugiés.",
+      "nuance": "Il refuse toute sélection selon l’origine et juge inacceptable une classe durable de non-citoyens, sans-papiers compris.",
+      "source": {
+        "title": "Immigration: The Case for Limits, Contemporary Debates in Applied Ethics",
+        "year": 2005,
+        "url": "https://icmigrations.cnrs.fr/wp-content/uploads/2024/03/LECTURE-4-David-Miller-Immigration-the-case-for-limits.pdf",
+        "archive": [
+          "research/sources/penseurs/miller-immigration-case-for-limits-2005.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "immigration",
+      "pole": "high",
+      "authors": [
+        "kant"
+      ],
+      "featured": false,
+      "thesis": "Tout étranger a le droit de ne pas être traité en ennemi, mais ce droit de visite n’est pas un droit de s’établir : on peut refuser de le recevoir si sa vie n’en est pas menacée.",
+      "nuance": "Le texte vise les voyages, le commerce et la conquête coloniale, non les migrations de travail.",
+      "quote": "le droit qu’a tout étranger de ne pas être traité en ennemi dans le pays où il arrive. On peut refuser de le recevoir, si l’on ne compromet point par là son existence",
+      "source": {
+        "title": "Projet de paix perpétuelle, troisième article définitif, traduction Barni (1853), Wikisource",
+        "year": 1795,
+        "url": "https://fr.wikisource.org/wiki/Projet_de_paix_perp%C3%A9tuelle",
+        "archive": [
+          "research/sources/penseurs/kant-projet-paix-perpetuelle-barni.html"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "low",
+      "authors": [
+        "kymlicka"
+      ],
+      "featured": true,
+      "thesis": "Les politiques multiculturelles, comme le soutien aux associations culturelles, construisent une citoyenneté démocratique : il s’agit d’encadrer les revendications des groupes par les droits, non de les supprimer.",
+      "nuance": "Il ne défend aucune pratique contraire aux droits et rejette un multiculturalisme réduit à la célébration de différences figées.",
+      "source": {
+        "title": "Multiculturalism: Success, Failure, and the Future, Migration Policy Institute",
+        "year": 2012,
+        "url": "https://ej.issuelab.org/resources/13140/13140.pdf",
+        "archive": [
+          "research/sources/penseurs/kymlicka-multiculturalism-mpi-2012.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "low",
+      "authors": [
+        "wieviorka"
+      ],
+      "featured": true,
+      "thesis": "Le multiculturalisme consiste à articuler les valeurs universelles du droit et la reconnaissance, y compris publique, des différences culturelles.",
+      "nuance": "Il se tient à distance du communautarisme comme d’un « universalisme abstrait ».",
+      "quote": "l’effort » pour articuler – et non pas opposer – les valeurs universelles du droit et de la raison, et la reconnaissance, y compris dans l’espace public, des différences culturelles.",
+      "source": {
+        "title": "Les termes du débat gouvernemental sont biaisés, entretien, Politis",
+        "year": 2011,
+        "url": "https://www.politis.fr/articles/2011/03/les-termes-du-debat-gouvernemental-sont-biaises-13356/",
+        "archive": [
+          "research/sources/penseurs/wieviorka-politis-2011.html"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "low",
+      "authors": [
+        "taylor"
+      ],
+      "featured": false,
+      "thesis": "La non-reconnaissance d’une identité peut être une forme d’oppression ; un libéralisme qui applique uniformément les mêmes règles reste inhospitalier à la différence.",
+      "nuance": "Il admet qu’une société poursuive des buts culturels collectifs, comme la survie du français au Québec.",
+      "source": {
+        "title": "The Politics of Recognition, dans Multiculturalism, Princeton University Press",
+        "year": 1994,
+        "url": "https://web.ics.purdue.edu/~drkelly/TaylorPoliticsOfRecognition1994.pdf",
+        "archive": [
+          "research/sources/penseurs/taylor-politics-of-recognition-1994.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "high",
+      "authors": [
+        "tribalat"
+      ],
+      "featured": true,
+      "thesis": "L’assimilation, qui accorde un privilège à la culture de la société d’accueil, est éthiquement fondée : s’installer en France engage à en adopter les modes de vie.",
+      "nuance": "Elle n’exclut pas les apports des nouveaux venus et distingue l’assimilation d’un « culturalisme ».",
+      "quote": "L’assimilation accorde un privilège à la culture de la société d’accueil. Vue d’un mauvais œil aujourd’hui, elle est pourtant parfaitement fondée éthiquement.",
+      "source": {
+        "title": "Intégration, la fin du modèle français, Commentaire",
+        "year": 2015,
+        "url": "https://www.micheletribalat.fr/434872084/435558977",
+        "archive": [
+          "research/sources/penseurs/tribalat-integration-fin-modele-2015.html"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "high",
+      "authors": [
+        "finkielkraut"
+      ],
+      "featured": true,
+      "thesis": "L’école doit transmettre la langue, la littérature et la culture françaises à tous les élèves, quelle que soit leur origine.",
+      "nuance": "Son propos est autobiographique : ses parents voulaient qu’il assimile la culture française sans renoncer à son identité juive.",
+      "quote": "Ce qu’ils voulaient ardemment néanmoins, c’est que j’assimile la langue, la littérature, la culture française. Et ils pouvaient, à l’époque, compter sur l’école.",
+      "source": {
+        "title": "Discours de réception à l’Académie française",
+        "year": 2016,
+        "url": "https://www.academie-francaise.fr/discours-de-reception-de-m-alain-finkielkraut",
+        "archive": [
+          "research/sources/penseurs/finkielkraut-discours-reception-academie-2016.html"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "high",
+      "authors": [
+        "schnapper"
+      ],
+      "featured": false,
+      "thesis": "Les démocraties européennes mènent de fait une politique d’intégration : elles respectent les identités de chacun mais en limitent l’expression collective dans l’espace public.",
+      "nuance": "Elle distingue cette intégration civique de l’assimilation aux traditions.",
+      "quote": "les exigences démocratiques et l’évolution de l’État providence conduisent tous les pays européens à mener en fait une politique d’intégration, en respectant les identités de chacun, mais en limitant leur expression collective dans l’espace public.",
+      "source": {
+        "title": "Intégration nationale et intégration des migrants : un enjeu européen, Questions d’Europe n° 90, Fondation Robert Schuman",
+        "year": 2008,
+        "url": "https://old.robert-schuman.eu/fr/doc/questions-d-europe/qe-90-fr.pdf",
+        "archive": [
+          "research/sources/penseurs/schnapper-integration-questions-europe-90.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "high",
+      "authors": [
+        "durkheim"
+      ],
+      "featured": false,
+      "thesis": "Une société ne vit que si l’éducation fixe chez l’enfant les similitudes essentielles qu’exige la vie collective.",
+      "nuance": "Il parle de la société en général, non des immigrés, et juge nécessaire une certaine diversité des professions.",
+      "quote": "La société ne peut vivre que s’il existe entre ses membres une suffisante homogénéité : l’éducation perpétue et renforce cette homogénéité en fixant d’avance dans l’âme de l’enfant les similitudes essentielles que réclame la vie collective.",
+      "source": {
+        "title": "Éducation et sociologie, chapitre I, Wikisource",
+        "year": 1922,
+        "url": "https://fr.wikisource.org/wiki/%C3%89ducation_et_sociologie/Chapitre_1",
+        "archive": [
+          "research/sources/penseurs/durkheim-education-sociologie-ch1.html"
+        ]
+      }
+    },
+    {
+      "axis": "integration",
+      "pole": "high",
+      "authors": [
+        "renan"
+      ],
+      "featured": false,
+      "thesis": "La nation repose à la fois sur un héritage de souvenirs possédé en commun et sur le consentement présent à vivre ensemble.",
+      "nuance": "Il refuse de fonder la nation sur la race, la langue ou la religion ; sa définition par le consentement est aussi invoquée par les tenants du pluralisme.",
+      "quote": "L’une est la possession en commun d’un riche legs de souvenirs ; l’autre est le consentement actuel, le désir de vivre ensemble, la volonté de continuer à faire valoir l’héritage qu’on a reçu indivis.",
+      "source": {
+        "title": "Qu’est-ce qu’une nation ?, conférence en Sorbonne, Wikisource",
+        "year": 1882,
+        "url": "https://fr.wikisource.org/wiki/Qu%E2%80%99est-ce_qu%E2%80%99une_nation_%3F",
+        "archive": [
+          "research/sources/penseurs/renan-qu-est-ce-qu-une-nation-1882.html"
+        ]
+      }
+    },
+    {
+      "axis": "discrimination",
+      "pole": "low",
+      "authors": [
+        "p-simon"
+      ],
+      "featured": true,
+      "thesis": "Les politiques sociales générales reproduisent les inégalités liées à l’origine qu’elles prétendent réparer : il faut mesurer ces écarts et cibler l’action.",
+      "nuance": "Il propose des indicateurs comparés, sur le modèle de l’égalité entre les femmes et les hommes, plutôt que des quotas.",
+      "quote": "Le problème des politiques sociales généralistes est qu’elles reproduisent dans leur mise en œuvre les inégalités qu’elles sont censées réparer.",
+      "source": {
+        "title": "Il n’existe pas de politique de lutte contre les discriminations sans statistiques, entretien, Observatoire des inégalités",
+        "year": 2010,
+        "url": "https://www.inegalites.fr/Il-n-existe-pas-de-politique-de-lutte-contre-les-discriminations-sans",
+        "archive": [
+          "research/sources/penseurs/simon-observatoire-inegalites-2010.html"
+        ]
+      }
+    },
+    {
+      "axis": "discrimination",
+      "pole": "low",
+      "authors": [
+        "anderson"
+      ],
+      "featured": true,
+      "thesis": "L’action positive fondée sur l’origine se justifie comme remède à la ségrégation de fait ; le principe d’indifférence à la couleur ne dit pas ce qui rend une préférence injuste.",
+      "nuance": "Elle raisonne sur le droit américain, modifié par la Cour suprême en 2023 ; le droit français n’admet pas de catégories ethniques.",
+      "source": {
+        "title": "Integration, Affirmative Action, and Strict Scrutiny, NYU Law Review",
+        "year": 2002,
+        "url": "https://nyulawreview.org/wp-content/uploads/2018/08/NYULawReview-77-5-Anderson.pdf",
+        "archive": [
+          "research/sources/penseurs/anderson-integration-affirmative-action-2002.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "discrimination",
+      "pole": "low",
+      "authors": [
+        "senac"
+      ],
+      "featured": false,
+      "thesis": "La parité déroge à l’égalité formelle pour atteindre l’égalité réelle ; elle doit se justifier comme exigence démocratique, non par de prétendues qualités propres aux femmes.",
+      "nuance": "Elle analyse l’ambivalence des quotas plus qu’elle ne plaide pour eux.",
+      "quote": "elle déroge ainsi à l’égalité de droit formelle pour atteindre l’égalité dans les faits dites égalité réelle.",
+      "source": {
+        "title": "Parité-quotas : « la qualité » de l’ambivalence, La Vie des idées",
+        "year": 2008,
+        "url": "https://laviedesidees.fr/Parite-quotas-la-qualite-de-l",
+        "archive": [
+          "research/sources/penseurs/senac-parite-quotas-vie-des-idees-2008.html"
+        ]
+      }
+    },
+    {
+      "axis": "discrimination",
+      "pole": "high",
+      "authors": [
+        "michaels"
+      ],
+      "featured": true,
+      "thesis": "La principale inégalité est l’écart de revenus et de patrimoine : changer l’origine ou le sexe de ceux qui réussissent laisse cet écart intact, d’où la priorité aux critères sociaux.",
+      "nuance": "Il ne nie pas les discriminations ; ses exemples sont américains.",
+      "quote": "la première chose à faire lorsqu’on décide de mettre en place une politique de discrimination positive, c’est de le faire par classes et non par races.",
+      "source": {
+        "title": "La diversité ne réduit pas les inégalités, entretien à Marianne repris par l’Observatoire des inégalités",
+        "year": 2009,
+        "url": "https://www.inegalites.fr/La-diversite-ne-reduit-pas-les-inegalites-Entretien-avec-Walter-Benn-Michaels",
+        "archive": [
+          "research/sources/penseurs/michaels-marianne-observatoire-inegalites-2009.html"
+        ]
+      }
+    },
+    {
+      "axis": "discrimination",
+      "pole": "high",
+      "authors": [
+        "schnapper"
+      ],
+      "featured": true,
+      "thesis": "La démocratie repose sur l’égalité de chaque citoyen : aucun pays européen n’a accordé de droits collectifs à des groupes particuliers.",
+      "nuance": "Elle note que la France pratique déjà des politiques ciblées sur des critères sociaux et territoriaux.",
+      "quote": "Ni en France, ni en Allemagne, ni au Royaume-Uni, des droits collectifs n’ont été accordés à des groupes particuliers. La démocratie est fondée sur l’égalité de chaque citoyen.",
+      "source": {
+        "title": "Intégration nationale et intégration des migrants : un enjeu européen, Questions d’Europe n° 90, Fondation Robert Schuman",
+        "year": 2008,
+        "url": "https://old.robert-schuman.eu/fr/doc/questions-d-europe/qe-90-fr.pdf",
+        "archive": [
+          "research/sources/penseurs/schnapper-integration-questions-europe-90.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "discrimination",
+      "pole": "high",
+      "authors": [
+        "glazer"
+      ],
+      "featured": false,
+      "thesis": "L’embauche et la promotion devraient reposer sur les capacités et le mérite, indépendamment de l’origine ou du sexe.",
+      "nuance": "En 1998, il admet une exception pour les Afro-Américains, dont l’exclusion persiste.",
+      "source": {
+        "title": "In Defense of Preference, The New Republic",
+        "year": 1998,
+        "url": "https://newrepublic.com/article/104772/in-defense-preference",
+        "archive": [
+          "research/sources/penseurs/glazer-in-defense-of-preference-1998.html"
+        ]
+      }
+    },
+    {
+      "axis": "ecology",
+      "pole": "low",
+      "authors": [
+        "latour"
+      ],
+      "featured": true,
+      "thesis": "La crise sanitaire a montré que l’économie peut être suspendue : il faut choisir les activités à ne pas reprendre et sortir de la production comme principe unique de rapport au monde.",
+      "nuance": "Il précise que cela « ne veut pas dire décroître » : il s’agit de trier, activité par activité.",
+      "quote": "C’est qu’il ne s’agit plus de reprendre ou d’infléchir un système de production, mais de sortir de la production comme principe unique de rapport au monde",
+      "source": {
+        "title": "Imaginer les gestes-barrières contre le retour à la production d’avant-crise, AOC",
+        "year": 2020,
+        "url": "https://www.bruno-latour.fr/sites/default/files/P-202-AOC-03-20.pdf",
+        "archive": [
+          "research/sources/penseurs/latour-gestes-barrieres-aoc-2020.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "ecology",
+      "pole": "low",
+      "authors": [
+        "laurent"
+      ],
+      "featured": true,
+      "thesis": "Le bien-être, la résilience et la soutenabilité devraient guider les politiques publiques plutôt que la croissance du PIB ; inégalités et crise écologique se nourrissent l’une l’autre.",
+      "nuance": "Sortir de l’objectif de croissance ne signifie pas pour lui sortir du capitalisme.",
+      "quote": "La crise des inégalités joue ainsi un rôle décisif dans la destruction de la biosphère.",
+      "source": {
+        "title": "Les inégalités jouent un rôle décisif dans la destruction écologique, entretien, Sciences Po",
+        "year": 2020,
+        "url": "https://www.sciencespo.fr/fr/actualites/les-inegalites-jouent-un-role-decisif-dans-la-destruction-ecologique/",
+        "archive": [
+          "research/sources/penseurs/laurent-sciences-po-2020.html"
+        ]
+      }
+    },
+    {
+      "axis": "ecology",
+      "pole": "low",
+      "authors": [
+        "jonas"
+      ],
+      "featured": false,
+      "thesis": "La puissance technique impose un impératif nouveau : agir de sorte que les effets de nos actions ne détruisent pas la possibilité future d’une vie humaine authentique.",
+      "nuance": "C’est une éthique de la responsabilité, non un programme d’instruments.",
+      "quote": "agis de façon que les effets de ton action ne soient pas destructeurs pour la possibilité future d’une telle vie",
+      "source": {
+        "title": "Le Principe responsabilité, extraits, dossier Eduscol",
+        "year": 1979,
+        "url": "https://eduscol.education.fr/document/24064/download",
+        "archive": [
+          "research/sources/penseurs/jonas-principe-responsabilite-eduscol.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "ecology",
+      "pole": "high",
+      "authors": [
+        "j-simon"
+      ],
+      "featured": true,
+      "thesis": "L’ingéniosité humaine remplace les ressources par substitution et innovation : hors sécurité nationale, rien ne justifie économiquement d’en restreindre l’usage.",
+      "nuance": "La préservation de ressources uniques, comme des espèces ou des sites, relève pour lui d’un choix collectif.",
+      "source": {
+        "title": "The Ultimate Resource 2, chapitre 20",
+        "year": 1996,
+        "url": "http://www.juliansimon.com/writings/Ultimate_Resource/TCHAR20.txt",
+        "archive": [
+          "research/sources/penseurs/simon-ultimate-resource-2-ch20.txt"
+        ]
+      }
+    },
+    {
+      "axis": "ecology",
+      "pole": "high",
+      "authors": [
+        "ritchie"
+      ],
+      "featured": true,
+      "thesis": "De nombreux pays ont réduit leurs émissions tout en augmentant leur production : croissance et baisse des émissions sont compatibles, à condition d’accélérer ce découplage.",
+      "nuance": "Elle juge le découplage actuel trop lent ; des économistes de la décroissance contestent ses conclusions.",
+      "source": {
+        "title": "Many countries have decoupled economic growth from CO2 emissions, Our World in Data",
+        "year": 2021,
+        "url": "https://ourworldindata.org/co2-gdp-decoupling",
+        "archive": [
+          "research/sources/penseurs/ritchie-co2-gdp-decoupling-2021.html"
+        ]
+      }
+    },
+    {
+      "axis": "ecology",
+      "pole": "high",
+      "authors": [
+        "mokyr"
+      ],
+      "featured": false,
+      "thesis": "Face au réchauffement, la réponse est d’innover et de s’adapter plutôt que de renoncer à la croissance.",
+      "nuance": "Il reconnaît que la croissance dégrade l’environnement et que les partisans de la décroissance soulèvent un vrai problème.",
+      "source": {
+        "title": "Discours au banquet Nobel",
+        "year": 2025,
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/2025/mokyr/speech/",
+        "archive": [
+          "research/sources/penseurs/mokyr-discours-banquet-nobel-2025.html"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "low",
+      "authors": [
+        "habermas"
+      ],
+      "featured": true,
+      "thesis": "L’Union européenne doit sortir du statu quo et se doter d’une capacité d’agir collectivement dans le monde ; une défense commune suppose une intégration renforcée.",
+      "nuance": "Il ne propose pas un État fédéral : les États restent des garants du droit et des libertés.",
+      "quote": "l'Union européenne n'a d'autre choix que de changer de cap par rapport à sa politique timorée du statu quo et de développer une capacité d'agir collectivement dans la politique mondiale",
+      "source": {
+        "title": "Jürgen Habermas (1929-2026), entretien avec Daniel Steinmetz-Jenkins, Le Grand Continent",
+        "year": 2026,
+        "url": "https://legrandcontinent.eu/fr/2026/03/14/habermas-in-memoriam/",
+        "archive": [
+          "research/sources/penseurs/habermas-grand-continent-2026.html"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "low",
+      "authors": [
+        "piketty"
+      ],
+      "featured": true,
+      "thesis": "Un noyau de pays prêts à aller plus loin devrait former une union parlementaire, dotée d’un budget commun voté par une Assemblée européenne issue des parlements nationaux.",
+      "nuance": "Il ne propose pas de sortir des traités existants : cette union s’ajouterait à l’Union européenne actuelle.",
+      "quote": "Ce budget serait voté par une Assemblée européenne (AE) composée de parlementaires issus des différents pays membres de l'UPE, en proportion des populations et des groupes politiques présents dans les différents Parlements nationaux.",
+      "source": {
+        "title": "Pour une Union parlementaire européenne (UPE), blog de Thomas Piketty",
+        "year": 2023,
+        "url": "https://thomaspiketty.wordpress.com/2023/06/13/pour-une-union-parlementaire-europeenne-upe/",
+        "archive": [
+          "research/sources/penseurs/piketty-union-parlementaire-europeenne-2023.html"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "high",
+      "authors": [
+        "manent"
+      ],
+      "featured": true,
+      "thesis": "La démocratie représentative suppose une communauté politique capable d’agir, la nation ; l’Europe devrait être le cadre de l’action commune des nations, qui en restent les agents principaux.",
+      "nuance": "Il ne rejette pas le cadre européen, qu’il décrit comme « nourricier ».",
+      "quote": "Comment redonner plausibilité, légitimité, force à une action commune dont l’ensemble européen serait le cadre nourricier et dont les nations européennes seraient les agents principaux ?",
+      "source": {
+        "title": "Le peuple politique, Le Grand Continent",
+        "year": 2019,
+        "url": "https://legrandcontinent.eu/fr/2019/07/14/le-peuple-politique/",
+        "archive": [
+          "research/sources/penseurs/manent-peuple-politique-grand-continent-2019.html"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "high",
+      "authors": [
+        "seguin"
+      ],
+      "featured": true,
+      "thesis": "La souveraineté doit rester aux nations : seules des délégations de compétences, que le Parlement peut reprendre, sont acceptables.",
+      "nuance": "Opposé au traité de Maastricht, il voulait « sauvegarder les acquis » de la Communauté et refusait que le non vaille sécession.",
+      "quote": "il nous faut redéfinir les règles du jeu pour que la souveraineté reste où elle doit être, c'est-à-dire dans les nations. Dès lors, il ne saurait plus y avoir aucun transfert irrévocable de souveraineté",
+      "source": {
+        "title": "Exception d’irrecevabilité sur le projet de révision constitutionnelle préalable au traité de Maastricht, Journal officiel, Assemblée nationale",
+        "year": 1992,
+        "url": "https://archives.assemblee-nationale.fr/9/cri/1991-1992-ordinaire2/022.pdf",
+        "archive": [
+          "research/sources/penseurs/seguin-exception-irrecevabilite-1992-05-05.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "high",
+      "authors": [
+        "lordon"
+      ],
+      "featured": false,
+      "thesis": "L’euro ne peut être réformé dans un sens social ; une rupture conduirait au retour aux monnaies nationales.",
+      "nuance": "Il défend une sortie de l’euro, non de l’Union, et envisage une monnaie commune.",
+      "quote": "Qu'on va passer de l'euro austéritaire présent à un euro enfin rénové, progressiste et social. Cela n'arrivera pas.",
+      "source": {
+        "title": "Sortir de l’euro ?, Le Monde diplomatique",
+        "year": 2013,
+        "url": "https://www.monde-diplomatique.fr/2013/08/LORDON/49561",
+        "archive": [
+          "research/sources/penseurs/lordon-sortir-de-l-euro-diplo-2013.html"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "high",
+      "authors": [
+        "sapir"
+      ],
+      "featured": false,
+      "thesis": "La zone euro ne deviendra jamais une nation ; sa dissolution concertée, avec des mécanismes d’ajustement entre monnaies nationales, mérite d’être envisagée.",
+      "nuance": "Il défend les coopérations entre États, sur le modèle d’Airbus.",
+      "quote": "À l'horizon d'une vie humaine, l'Union économique et monétaire, la zone euro, ne sera jamais une nation.",
+      "source": {
+        "title": "L’euro vingt ans après, actes du colloque de la Fondation Res Publica",
+        "year": 2019,
+        "url": "https://fondation-res-publica.org/wp-content/uploads/2023/03/Leuro-vingt-ans-apres-bilan-et-perspectives.pdf",
+        "archive": [
+          "research/sources/penseurs/sapir-euro-vingt-ans-res-publica-2019.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "europe",
+      "pole": "high",
+      "authors": [
+        "scharpf"
+      ],
+      "featured": false,
+      "thesis": "La jurisprudence européenne restreint la capacité des États à organiser démocratiquement leurs choix sociaux ; un État devrait pouvoir contester une règle européenne devant une instance politique.",
+      "nuance": "Il écarte les dérogations unilatérales décidées par les juges nationaux et ne demande pas de sortie de l’Union.",
+      "source": {
+        "title": "Community and Autonomy, introduction, Campus et MPIfG",
+        "year": 2010,
+        "url": "https://www.mpifg.de/135440/mpifg_bd_68.pdf",
+        "archive": [
+          "research/sources/penseurs/scharpf-community-and-autonomy-2010.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "low",
+      "authors": [
+        "smith"
+      ],
+      "featured": true,
+      "thesis": "Si un pays étranger peut fournir une marchandise à meilleur marché que nous, mieux vaut la lui acheter avec une partie du produit de notre propre travail.",
+      "nuance": "Il admet des exceptions au nom de la défense, la sécurité important davantage que l’opulence.",
+      "quote": "Si un pays étranger peut nous fournir une marchandise à meilleur marché que nous ne sommes en état de l'établir nous-mêmes, il vaut bien mieux que nous la lui achetions avec quelque partie du produit de notre propre industrie",
+      "source": {
+        "title": "Recherches sur la nature et les causes de la richesse des nations, livre IV, chapitre 2, traduction Garnier revue par Blanqui (1843), Wikisource",
+        "year": 1776,
+        "url": "https://fr.wikisource.org/wiki/Recherches_sur_la_nature_et_les_causes_de_la_richesse_des_nations/Livre_4/2",
+        "archive": [
+          "research/sources/penseurs/smith-richesse-des-nations-4-2-garnier.html"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "low",
+      "authors": [
+        "bastiat"
+      ],
+      "featured": true,
+      "thesis": "Entre deux pays inégalement dotés, c’est le moins favorisé qui gagne le plus à l’échange ; la protection prive les consommateurs de produits moins chers sans accroître la masse du travail national.",
+      "nuance": "Ses Sophismes, souvent satiriques, répondent aux arguments protectionnistes de son temps ; il a été député des Landes de 1848 à 1850.",
+      "quote": "si deux pays se trouvent placés dans des conditions de production inégales, c’est celui des deux qui est le moins favorisé de la nature qui a le plus à gagner à la liberté des échanges.",
+      "source": {
+        "title": "Sophismes économiques, première série, chapitre IV : Égaliser les conditions de production, Wikisource",
+        "year": 1845,
+        "url": "https://fr.wikisource.org/wiki/Sophismes_%C3%A9conomiques/Texte_entier",
+        "archive": [
+          "research/sources/penseurs/bastiat-sophismes-economiques.html"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "high",
+      "authors": [
+        "allais"
+      ],
+      "featured": true,
+      "thesis": "Le chômage des pays développés tient d’abord à la libéralisation des échanges : il faut rétablir des préférences régionales entre pays de développement comparable.",
+      "nuance": "Il raisonne par grands ensembles régionaux et juge qu’une protection raisonnable ne supprime pas la concurrence.",
+      "quote": "La réforme que je propose aujourd'hui est le rétablissement de préférences régionales au sein du commerce international.",
+      "source": {
+        "title": "Les causes véritables du chômage, Réalités industrielles, Annales des Mines",
+        "year": 2010,
+        "url": "https://www.annales.org/ri/2010/ri-mai-2010/Allais.pdf",
+        "archive": [
+          "research/sources/penseurs/allais-causes-veritables-chomage-2010.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "high",
+      "authors": [
+        "rodrik"
+      ],
+      "featured": true,
+      "thesis": "La mondialisation poussée à l’extrême a des coûts politiques et sociaux élevés : la coopération mondiale doit respecter l’espace politique des nations, qui gardent une marge pour fixer leurs normes et leurs politiques industrielles.",
+      "nuance": "Il vise une économie mondiale raisonnablement ouverte, non la fermeture.",
+      "quote": "Nous devons adopter une approche différente de la coopération mondiale, qui respecte l'espace politique des nations et cible les normes démocratiques de prise de décision",
+      "source": {
+        "title": "Le périmètre adéquat de la gouvernance mondiale et le renforcement de la démocratie, traduction Pierre-Benoit Drancourt et Vasile Rotaru, Le Grand Continent",
+        "year": 2021,
+        "url": "https://legrandcontinent.eu/fr/2021/03/17/le-perimetre-adequat-de-la-gouvernance-mondiale/",
+        "archive": [
+          "research/sources/penseurs/rodrik-gouvernance-mondiale-grand-continent-2021.html"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "high",
+      "authors": [
+        "keynes"
+      ],
+      "featured": false,
+      "thesis": "Les idées, la science et les voyages doivent rester internationaux, mais les biens devraient être produits sur place chaque fois que c’est raisonnablement possible, et la finance rester d’abord nationale.",
+      "nuance": "Il prévient que le repli coûte cher et doit être progressif.",
+      "source": {
+        "title": "National Self-Sufficiency, The Yale Review",
+        "year": 1933,
+        "url": "https://jmaynardkeynes.ucc.ie/national-self-sufficiency.html",
+        "archive": [
+          "research/sources/penseurs/keynes-national-self-sufficiency-1933.html"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "high",
+      "authors": [
+        "sapir"
+      ],
+      "featured": false,
+      "thesis": "Le libre-échange entre pays de développement très inégal appauvrit les pays développés en mettant en concurrence leurs protections sociales et écologiques.",
+      "quote": "La nécessité du protectionnisme découle de l'asymétrie de développement que nous connaissons depuis trente ans.",
+      "source": {
+        "title": "Faut-il un protectionnisme européen ?, Politis",
+        "year": 2012,
+        "url": "https://www.politis.fr/articles/2012/03/faut-il-un-protectionnisme-europeen-17688/",
+        "archive": [
+          "research/sources/penseurs/sapir-politis-protectionnisme-2012.html"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "high",
+      "authors": [
+        "chang"
+      ],
+      "featured": false,
+      "thesis": "Les pays aujourd’hui développés se sont industrialisés grâce aux droits de douane et aux subventions qu’ils déconseillent désormais aux pays en développement.",
+      "nuance": "Sa thèse porte sur les économies en rattrapage ; elle ne dit pas quelle protection conviendrait à un pays développé.",
+      "quote": "Les faits historiques sont sans appel : quand les pays actuellement développés étaient encore en développement, ils n'ont mené pratiquement aucune des politiques qu'ils préconisent.",
+      "source": {
+        "title": "Du protectionnisme au libre-échangisme, une conversion opportuniste, Le Monde diplomatique",
+        "year": 2003,
+        "url": "https://www.monde-diplomatique.fr/2003/06/CHANG/10189",
+        "archive": [
+          "research/sources/penseurs/chang-monde-diplomatique-2003.html"
+        ]
+      }
+    },
+    {
+      "axis": "trade",
+      "pole": "high",
+      "authors": [
+        "list"
+      ],
+      "featured": false,
+      "thesis": "Une nation en retard doit protéger temporairement son industrie naissante ; les pays parvenus au sommet rejettent ensuite l’échelle qui leur a servi.",
+      "nuance": "La protection qu’il défend est temporaire et graduée.",
+      "quote": "C’est une règle de prudence vulgaire, lorsqu’on est parvenu au faîte de la grandeur, de rejeter l’échelle avec laquelle on l’a atteint, afin d’ôter aux autres le moyen d’y monter après nous.",
+      "source": {
+        "title": "Système national d’économie politique, traduction Richelot (1857), Wikisource",
+        "year": 1841,
+        "url": "https://fr.wikisource.org/wiki/Syst%C3%A8me_national_d%E2%80%99%C3%A9conomie_politique/Texte_entier",
+        "archive": [
+          "research/sources/penseurs/list-systeme-national-economie-politique.html"
+        ]
+      }
+    },
+    {
+      "axis": "defense",
+      "pole": "low",
+      "authors": [
+        "aron"
+      ],
+      "featured": true,
+      "thesis": "Sans l’armée américaine, l’Alliance atlantique ne pourrait défendre l’Europe occidentale ; une dissuasion française isolée reste peu crédible face à une attaque conventionnelle.",
+      "nuance": "Il ne conteste pas l’existence de la force française et demande que les Européens prennent une plus grande part des charges.",
+      "quote": "Sans l'armée américaine, l'infériorité de l'OTAN ne laisserait aucune chance aux Occidentaux en cas d'agression militaire directe venant de l'Est.",
+      "source": {
+        "title": "La Communauté atlantique : 1949-1982, Politique étrangère",
+        "year": 1983,
+        "url": "https://www.persee.fr/doc/polit_0032-342x_1983_num_48_4_5706?pageId=T1_829",
+        "archive": [
+          "research/sources/penseurs/aron-communaute-atlantique-1983-p829.html"
+        ]
+      }
+    },
+    {
+      "axis": "defense",
+      "pole": "low",
+      "authors": [
+        "grand"
+      ],
+      "featured": true,
+      "thesis": "L’Alliance atlantique est au cœur de la défense collective de l’Europe : les Européens doivent y peser davantage et acheter leurs équipements en commun.",
+      "nuance": "La dissuasion nationale reste pour lui « notre assurance-vie ». Depuis 2025, il est secrétaire général de l’association européenne des industries aérospatiales et de défense.",
+      "quote": "Il faut reconnaître – comme le font les textes européens sans trop de difficultés – la centralité de l'Alliance atlantique dans la fonction de défense collective",
+      "source": {
+        "title": "Audition par la commission des affaires étrangères, Assemblée nationale",
+        "year": 2023,
+        "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/cion_afetr/l16cion_afetr2223044_compte-rendu.pdf",
+        "archive": [
+          "research/sources/penseurs/grand-audition-an-2023-04-13.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "defense",
+      "pole": "high",
+      "authors": [
+        "de-gaulle"
+      ],
+      "featured": true,
+      "thesis": "La France doit rétablir une situation normale de souveraineté : rester dans l’Alliance atlantique mais quitter son organisation militaire intégrée.",
+      "nuance": "Il prévoit de combattre aux côtés des alliés en cas d’agression.",
+      "quote": "il s'agit de rétablir une situation normale de souveraineté, dans laquelle ce qui est français, en fait de sol, de ciel, de mer et de forces, […] ne relèveront plus que des seules autorités françaises",
+      "source": {
+        "title": "Conférence de presse du 21 février 1966, présidence de la République",
+        "year": 1966,
+        "url": "https://www.elysee.fr/front/pdf/elysee-module-16476-fr.pdf",
+        "archive": [
+          "research/sources/penseurs/de-gaulle-conference-presse-1966-02-21.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "defense",
+      "pole": "high",
+      "authors": [
+        "gnesotto"
+      ],
+      "featured": true,
+      "thesis": "L’Union européenne doit acquérir une autonomie de décision, et pas seulement de moyens, y compris lorsque ses intérêts divergent de ceux des États-Unis.",
+      "nuance": "Elle défend une autonomie européenne et non nationale, qui passe par des moyens communs.",
+      "quote": "C'est dans le 1% des cas où nos intérêts divergeraient vraiment que se mesurera l'autonomie réelle de l'Union européenne.",
+      "source": {
+        "title": "Les quatre défis stratégiques de l’UE, Institut Jacques Delors",
+        "year": 2018,
+        "url": "https://institutdelors.eu/content/uploads/2025/04/Les4defisstrategiquesdelUE-Gnesotto-juillet2018-1.pdf",
+        "archive": [
+          "research/sources/penseurs/gnesotto-quatre-defis-strategiques-2018.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "military",
+      "pole": "low",
+      "authors": [
+        "kant"
+      ],
+      "featured": true,
+      "thesis": "Les armées permanentes menacent les autres États et entraînent une course aux armements dont le coût rend la paix plus onéreuse qu’une courte guerre : elles doivent disparaître avec le temps.",
+      "nuance": "Il admet les exercices militaires volontaires des citoyens pour défendre leur patrie.",
+      "quote": "Les armées permanentes (miles perpetuus) doivent entièrement disparaître avec le temps.",
+      "source": {
+        "title": "Projet de paix perpétuelle, article préliminaire 3, traduction Barni, Wikisource",
+        "year": 1795,
+        "url": "https://fr.wikisource.org/wiki/M%C3%A9taphysique_des_m%C5%93urs_(trad._Barni)/Tome_I/PERAD/De_la_paix",
+        "archive": [
+          "research/sources/penseurs/kant-de-la-paix-perpetuelle-barni.html"
+        ]
+      }
+    },
+    {
+      "axis": "military",
+      "pole": "low",
+      "authors": [
+        "pelopidas"
+      ],
+      "featured": true,
+      "thesis": "Plusieurs postulats du discours officiel sur la dissuasion nucléaire ne reposent pas sur des preuves suffisantes : la chance a contribué à éviter des explosions non désirées, et les choix d’arsenal devraient redevenir un objet de délibération démocratique.",
+      "nuance": "Il ne prescrit pas le désarmement : il demande que le débat soit rouvert.",
+      "quote": "il montre que la chance a été nécessaire à l'évitement d'explosions nucléaires non désirées par le passé",
+      "source": {
+        "title": "Pris au(x) piège(s) du nucléaire ?, entretien, CERI Sciences Po",
+        "year": 2022,
+        "url": "https://www.sciencespo.fr/ceri/fr/actualites/la-recherche-independante-au-service-du-choix-democratique-sur-les-arsenaux-nucleaires/",
+        "archive": [
+          "research/sources/penseurs/pelopidas-ceri-2022.html"
+        ]
+      }
+    },
+    {
+      "axis": "military",
+      "pole": "high",
+      "authors": [
+        "vegece"
+      ],
+      "featured": true,
+      "thesis": "La paix se garantit en préparant la guerre : nul n’ose attaquer celui qu’il sait supérieur au combat.",
+      "nuance": "Il traite de l’entraînement d’une armée romaine ; la maxime est souvent citée hors de son contexte.",
+      "quote": "Qui désire la paix, se prépare donc à la guerre.",
+      "source": {
+        "title": "Institutions militaires, livre III, prologue, édition Nisard (1860), Wikisource",
+        "year": null,
+        "url": "https://fr.wikisource.org/wiki/Institutions_militaires/Livre_III",
+        "archive": [
+          "research/sources/penseurs/vegece-institutions-militaires-livre-3-nisard.html"
+        ]
+      }
+    },
+    {
+      "axis": "military",
+      "pole": "high",
+      "authors": [
+        "tertrais"
+      ],
+      "featured": true,
+      "thesis": "La dissuasion nucléaire modère les puissances qui en disposent : la guerre en Ukraine montre que la Russie et l’OTAN évitent de s’attaquer.",
+      "nuance": "Il note que cette protection ne couvre pas un pays sans garantie nucléaire.",
+      "quote": "le cas ukrainien vient clairement démontrer ce qui était prévu par la théorie : la Russie ne s'attaque pas à l'OTAN, l'OTAN ne s'attaque pas à la Russie",
+      "source": {
+        "title": "Nucléaire : face à Poutine, une dissuasion à l’européenne, entretien, Le Grand Continent",
+        "year": 2024,
+        "url": "https://legrandcontinent.eu/fr/2024/03/11/nucleaire-face-a-poutine-une-dissuasion-a-leuropeenne-conversation-avec-bruno-tertrais/",
+        "archive": [
+          "research/sources/penseurs/tertrais-grand-continent-2024.html"
+        ]
+      }
+    },
+    {
+      "axis": "military",
+      "pole": "high",
+      "authors": [
+        "aron"
+      ],
+      "featured": false,
+      "thesis": "Les Européens devraient consacrer davantage de moyens à leur propre défense au sein de l’Alliance.",
+      "quote": "Les Européens devraient payer davantage pour leur défense",
+      "source": {
+        "title": "La Communauté atlantique : 1949-1982, Politique étrangère",
+        "year": 1983,
+        "url": "https://www.persee.fr/doc/polit_0032-342x_1983_num_48_4_5706?pageId=T1_832",
+        "archive": [
+          "research/sources/penseurs/aron-communaute-atlantique-1983-p832.html"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "low",
+      "authors": [
+        "walzer"
+      ],
+      "featured": true,
+      "thesis": "L’invasion d’un peuple qui résiste est une agression injuste : des pays tiers peuvent lui fournir des armes, et les sanctions ne devraient pas être levées tant que l’agresseur occupe son territoire.",
+      "nuance": "Il exclut l’envoi de troupes face à une puissance nucléaire.",
+      "source": {
+        "title": "Entretien, Kyunghyang Shinmun",
+        "year": 2022,
+        "url": "https://www.khan.co.kr/en/article/202204251747207",
+        "archive": [
+          "research/sources/penseurs/walzer-kyunghyang-2022.html"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "low",
+      "authors": [
+        "tenenbaum"
+      ],
+      "featured": true,
+      "thesis": "L’aide militaire à l’Ukraine devrait être planifiée sur plusieurs années, avec un fonds dédié de 30 milliards d’euros sur dix ans, pour donner de la visibilité à l’industrie.",
+      "nuance": "Il envisage aussi que la France contribue à garantir un éventuel cessez-le-feu.",
+      "quote": "c'est un fonds exceptionnel de 30 milliards d'euros échelonné sur dix ans que Paris devrait mettre en place pour financer son aide militaire à l'Ukraine",
+      "source": {
+        "title": "La France doit se montrer un partenaire fiable, tribune reprise par l’IFRI",
+        "year": 2024,
+        "url": "https://www.ifri.org/fr/presse-contenus-repris-sur-le-site/la-france-doit-se-montrer-un-partenaire-fiable-la-hauteur-des",
+        "archive": [
+          "research/sources/penseurs/tenenbaum-partenaire-fiable-ifri-2024.html"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "high",
+      "authors": [
+        "montbrial"
+      ],
+      "featured": true,
+      "thesis": "Les rapports de force, plus que la morale, ouvrent la voie à la négociation ; le droit international admet une modification des frontières par la négociation, non par la force.",
+      "nuance": "Il constatait en 2022 qu’aucun des deux camps n’était prêt à négocier, et plaide pour une architecture de sécurité européenne.",
+      "quote": "Le droit international dénonce la modification des frontières par la force mais pas par la négociation.",
+      "source": {
+        "title": "Gagner une guerre, c’est…, entretien au Journal du dimanche repris par l’IFRI",
+        "year": 2022,
+        "url": "https://www.ifri.org/fr/presse-contenus-repris-sur-le-site/thierry-de-montbrial-president-de-lifri-gagner-une-guerre-cest",
+        "archive": [
+          "research/sources/penseurs/montbrial-jdd-ifri-2022.html"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "high",
+      "authors": [
+        "boniface"
+      ],
+      "featured": true,
+      "thesis": "Un cessez-le-feu vaut mieux que la poursuite d’une guerre que l’Ukraine ne peut gagner militairement et qui épuise le pays.",
+      "nuance": "Il qualifie l’occupation d’« illégale, et injuste » et envisage des soldats européens après un cessez-le-feu.",
+      "quote": "L'alternative, c'est la poursuite inutile de la guerre que l'Ukraine ne peut gagner militairement, l'épuisement du pays, et la perte supplémentaire de nombreuses vies humaines.",
+      "source": {
+        "title": "Vers un cessez-le-feu en Ukraine ?, IRIS",
+        "year": 2024,
+        "url": "https://www.iris-france.org/190661-vers-un-cessez-le-feu-en-ukraine/",
+        "archive": [
+          "research/sources/penseurs/boniface-cessez-le-feu-iris-2024.html"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "high",
+      "authors": [
+        "mearsheimer"
+      ],
+      "featured": false,
+      "thesis": "Les États-Unis et leurs alliés devraient renoncer à arrimer l’Ukraine à l’Occident et en faire un État neutre entre l’OTAN et la Russie.",
+      "nuance": "Ces propos datent de 2015, avant l’invasion de 2022 ; en 2023, il jugeait qu’un conflit gelé était la meilleure issue possible.",
+      "quote": "L’Occident peut l’éviter en renonçant explicitement à intégrer l’Ukraine dans l’OTAN et dans l’Union européenne. Il peut s’atteler à créer une Ukraine neutre et souveraine qui serve d’Etat tampon entre l’ouest et la Russie.",
+      "source": {
+        "title": "En menaçant de livrer des armes à l’Ukraine, les Américains jouent avec le feu, entretien, Le Temps",
+        "year": 2015,
+        "url": "https://www.letemps.ch/monde/menacant-livrer-armes-lukraine-americains-jouent-feu",
+        "archive": [
+          "research/sources/penseurs/mearsheimer-le-temps-2015.html"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "high",
+      "authors": [
+        "morgenthau"
+      ],
+      "featured": false,
+      "thesis": "Une diplomatie de paix renonce à l’esprit de croisade et transige sur tout ce qui n’est pas vital.",
+      "nuance": "L’intégrité du territoire national reste pour lui un intérêt vital à défendre.",
+      "source": {
+        "title": "Politics Among Nations, première édition",
+        "year": 1948,
+        "url": "https://archive.org/details/in.ernet.dli.2015.74487",
+        "archive": [
+          "research/sources/penseurs/morgenthau-politics-among-nations-1948.txt"
+        ]
+      }
+    },
+    {
+      "axis": "assistance",
+      "pole": "high",
+      "authors": [
+        "erasme"
+      ],
+      "featured": false,
+      "thesis": "Presque toute paix, même injuste, vaut mieux que la plus juste des guerres.",
+      "nuance": "C’est un argument moral général, qui ne traite pas du cas d’un tiers aidant un pays envahi.",
+      "source": {
+        "title": "Querela pacis (1517), traduction anglaise de 1917",
+        "year": 1517,
+        "url": "https://archive.org/details/cu31924007361938",
+        "archive": [
+          "research/sources/penseurs/erasme-complainte-paix-en-1917.txt"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "low",
+      "authors": [
+        "montesquieu"
+      ],
+      "featured": true,
+      "thesis": "Tout homme qui a du pouvoir est porté à en abuser jusqu’à ce qu’il trouve des limites : les institutions doivent opposer les pouvoirs les uns aux autres.",
+      "nuance": "Il ne connaît pas de juge constitutionnel ; son équilibre vise d’abord l’exécutif et le législatif.",
+      "quote": "c'est une expérience éternelle, que tout homme qui a du pouvoir est porté à en abuser ; il va jusqu'à ce qu'il trouve des limites.",
+      "source": {
+        "title": "De l’esprit des lois, livre XI, Wikisource",
+        "year": 1748,
+        "url": "https://fr.wikisource.org/wiki/De_l%E2%80%99esprit_des_lois_(%C3%A9d._Nourse)/Livre_11",
+        "archive": [
+          "research/sources/penseurs/montesquieu-esprit-des-lois-livre-11.html"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "low",
+      "authors": [
+        "rosanvallon"
+      ],
+      "featured": true,
+      "thesis": "L’élection ne suffit plus à rendre un pouvoir pleinement démocratique : il doit aussi passer des épreuves d’impartialité et de contrôle, assurées notamment par les autorités indépendantes et les cours constitutionnelles.",
+      "nuance": "Il ne retire pas sa place au suffrage et note que ces institutions s’écartent parfois de leur théorie.",
+      "quote": "C'est pourquoi un pouvoir n'est désormais considéré comme pleinement démocratique que s'il est soumis à des épreuves de contrôle et de validation à la fois concurrentes et complémentaires de l'expression électorale majoritaire.",
+      "source": {
+        "title": "La Légitimité démocratique, présentation de l’ouvrage, Collège de France",
+        "year": 2008,
+        "url": "https://www.college-de-france.fr/media/pierre-rosanvallon/UPL35577_livrerosanvallon.pdf",
+        "archive": [
+          "research/sources/penseurs/rosanvallon-legitimite-democratique-2008.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "low",
+      "authors": [
+        "d-rousseau"
+      ],
+      "featured": false,
+      "thesis": "Le contrôle de constitutionnalité ne s’oppose pas à la démocratie : il rappelle aux élus qu’ils sont les délégués du peuple souverain, et non le souverain lui-même.",
+      "quote": "le juge constitutionnel interdit aux représentants de prétendre qu'ils sont le souverain et dévoile leur situation de simples délégués pouvant toujours être rappelés au respect des droits du souverain.",
+      "source": {
+        "title": "Constitutionnalisme et démocratie, La Vie des idées",
+        "year": 2008,
+        "url": "https://laviedesidees.fr/Constitutionnalisme-et-democratie",
+        "archive": [
+          "research/sources/penseurs/d-rousseau-constitutionnalisme-democratie-2008.html"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "low",
+      "authors": [
+        "fontaine"
+      ],
+      "featured": false,
+      "thesis": "Le constitutionnalisme consiste à limiter le pouvoir politique ; par sa composition, le Conseil constitutionnel n’offre pas les garanties d’une véritable juridiction.",
+      "nuance": "Elle demande une justice constitutionnelle plus exigeante, non un contrôle plus faible.",
+      "quote": "Or c'est le principe même du constitutionnalisme que de poser des limites à l'exercice du pouvoir politique",
+      "source": {
+        "title": "Le Conseil constitutionnel est-il vraiment un contre-pouvoir ?, Le Grand Continent",
+        "year": 2023,
+        "url": "https://legrandcontinent.eu/fr/2023/04/14/le-conseil-constitutionnel-est-il-vraiment-un-contre-pouvoir/",
+        "archive": [
+          "research/sources/penseurs/fontaine-conseil-constitutionnel-grand-continent-2023.html"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "high",
+      "authors": [
+        "jj-rousseau"
+      ],
+      "featured": true,
+      "thesis": "La souveraineté appartient au peuple, qui ne peut être lié par aucune loi fondamentale qu’il ne puisse révoquer.",
+      "nuance": "La volonté générale n’est pas une simple majorité de passage : elle vise l’intérêt commun.",
+      "quote": "il n'y a ni ne peut y avoir nulle espece de loi fondamentale obligatoire pour le corps du peuple, pas même le contract social.",
+      "source": {
+        "title": "Du contrat social, Wikisource",
+        "year": 1762,
+        "url": "https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Texte_entier",
+        "archive": [
+          "research/sources/penseurs/rousseau-contrat-social-1762.html"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "high",
+      "authors": [
+        "waldron"
+      ],
+      "featured": true,
+      "thesis": "Dans une démocratie aux institutions saines, rien n’indique que les juges protègent mieux les droits que le législateur : leur laisser le dernier mot sur la loi manque de légitimité démocratique.",
+      "nuance": "Il pose lui-même des conditions : des institutions démocratiques solides et un attachement réel aux droits.",
+      "source": {
+        "title": "The Core of the Case Against Judicial Review, Yale Law Journal",
+        "year": 2006,
+        "url": "https://openyls.law.yale.edu/bitstreams/4579485c-6d53-4310-959e-7921f32e4a68/download",
+        "archive": [
+          "research/sources/penseurs/waldron-case-against-judicial-review-2006.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "checks",
+      "pole": "high",
+      "authors": [
+        "mathieu"
+      ],
+      "featured": false,
+      "thesis": "Le pouvoir du juge est aujourd’hui celui que rien n’arrête : il peut limiter tous les autres sans être lui-même limité, ce qui affaiblit la décision démocratique.",
+      "nuance": "Il ne rejette pas l’État de droit, qu’il juge indissociable de la démocratie.",
+      "quote": "Or, s’il y a aujourd’hui un pouvoir que rien n’arrête c’est le pouvoir du juge. Le juge peut arrêter tous les pouvoirs mais le pouvoir du juge se revendique comme hors d’atteinte des autres pouvoirs.",
+      "source": {
+        "title": "La crise du modèle européen de démocratie libérale, colloque de la Fondation Res Publica",
+        "year": 2021,
+        "url": "https://fondation-res-publica.org/2021/11/22/la-crise-du-modele-europeen-de-democratie-liberale/",
+        "archive": [
+          "research/sources/penseurs/mathieu-crise-democratie-liberale-res-publica-2021.html"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "low",
+      "authors": [
+        "bagehot"
+      ],
+      "featured": true,
+      "thesis": "La force du système anglais tient à la fusion du législatif et de l’exécutif : le cabinet est un comité choisi par la Chambre et dépend de sa confiance.",
+      "nuance": "Ce système donne aussi un gouvernement puissant tant qu’il garde sa majorité.",
+      "quote": "L'efficacité secrète de la Constitution anglaise réside, on peut le dire, dans l'étroite union, dans la fusion presque complète du pouvoir exécutif et du pouvoir législatif.",
+      "source": {
+        "title": "La Constitution anglaise, traduction Gaulhiac (1869), Internet Archive",
+        "year": 1867,
+        "url": "https://archive.org/stream/laconstitutiona00bagegoog/laconstitutiona00bagegoog_djvu.txt",
+        "archive": [
+          "research/sources/penseurs/bagehot-constitution-anglaise-gaulhiac-1869.html"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "low",
+      "authors": [
+        "linz"
+      ],
+      "featured": true,
+      "thesis": "Les régimes parlementaires, où l’exécutif dépend d’une majorité de l’assemblée, se sont montrés plus favorables à une démocratie stable que les régimes présidentiels.",
+      "nuance": "Il classe la Ve République parmi les régimes hybrides, sur lesquels il ne conclut pas.",
+      "source": {
+        "title": "The Perils of Presidentialism, Journal of Democracy",
+        "year": 1990,
+        "url": "https://fenix.iseg.ulisboa.pt/downloadFile/1126033050836624/Juan%20Linz_presidentialism.pdf",
+        "archive": [
+          "research/sources/penseurs/linz-perils-of-presidentialism-1990.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "low",
+      "authors": [
+        "roussellier"
+      ],
+      "featured": false,
+      "thesis": "La République est passée d’un régime centré sur le Parlement à un pouvoir dominé par l’exécutif ; ce pacte d’efficacité ne se justifie plus de la même façon.",
+      "nuance": "Il préfère renforcer l’expertise du Parlement plutôt que réécrire la Constitution.",
+      "quote": "le pacte des années 1950-60 qui avait sacrifié la République parlementaire sur l'autel de l'efficacité et de la stabilité de l'exécutif ne peut plus se justifier de la même façon.",
+      "source": {
+        "title": "La Force de gouverner, entretien, Sciences Po",
+        "year": 2016,
+        "url": "https://www.sciencespo.fr/fr/actualites/force-de-gouverner/",
+        "archive": [
+          "research/sources/penseurs/roussellier-force-de-gouverner-sciences-po-2016.html"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "high",
+      "authors": [
+        "hamilton"
+      ],
+      "featured": true,
+      "thesis": "Un bon gouvernement suppose un exécutif énergique : unité, durée et moyens propres, indépendamment de l’assemblée.",
+      "nuance": "Son exécutif reste encadré par la séparation des pouvoirs et ne légifère pas à la place du Congrès.",
+      "quote": "L'énergie dans l'Exécutif est l'un des principaux caractères dans la définition d'un bon gouvernement.",
+      "source": {
+        "title": "Le Fédéraliste, n° LXX, traduction de 1792 revue par Boucard et Jèze (1902), Internet Archive",
+        "year": 1788,
+        "url": "https://archive.org/stream/lefdralistec00hami/lefdralistec00hami_djvu.txt",
+        "archive": [
+          "research/sources/penseurs/hamilton-federaliste-70-jeze-1902.html"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "high",
+      "authors": [
+        "schoettl"
+      ],
+      "featured": true,
+      "thesis": "Le 49-3 a permis de gouverner, sous des majorités de droite comme de gauche ; la révision de 2008 a affaibli l’exécutif et la proportionnelle aggraverait l’instabilité.",
+      "nuance": "Selon lui, le 49-3 laisse le dernier mot à l’Assemblée par la motion de censure.",
+      "quote": "L'invention du « 49-3 » a fait la preuve de sa pertinence : le procédé a été largement utilisé, tant par les gouvernements de droite que par ceux de gauche",
+      "source": {
+        "title": "Comment les institutions de la Ve République peuvent-elles évoluer ?, actes du colloque de la Fondation Res Publica",
+        "year": 2024,
+        "url": "https://fondation-res-publica.org/wp-content/uploads/2024/12/Actes-Comment-les-institutions-de-la-Ve-republique-peuvent-elles-evoluer-.pdf",
+        "archive": [
+          "research/sources/penseurs/res-publica-institutions-ve-republique-2024.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "high",
+      "authors": [
+        "stael"
+      ],
+      "featured": false,
+      "thesis": "Faute d’avoir donné à l’exécutif des armes légales, comme le droit de dissolution, la constitution de l’an III a poussé le Directoire aux coups de force.",
+      "nuance": "Elle défend un équilibre à l’anglaise, non un pouvoir personnel.",
+      "quote": "Si le gouvernement avoit eu le droit de dissoudre les cinq-cents, la simple menace d'user de cette prérogative auroit suffi pour les contenir.",
+      "source": {
+        "title": "Considérations sur la Révolution française, IIIe partie, chapitre XXIV, Wikisource",
+        "year": 1818,
+        "url": "https://fr.wikisource.org/wiki/Consid%C3%A9rations_sur_%E2%80%A6_la_R%C3%A9volution_Fran%C3%A7aise/Troisi%C3%A8me_partie/XXIV",
+        "archive": [
+          "research/sources/penseurs/stael-considerations-revolution-3-24.html"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "high",
+      "authors": [
+        "de-gaulle"
+      ],
+      "featured": false,
+      "thesis": "Le pouvoir exécutif ne doit pas procéder du Parlement, auquel il doit faire équilibre.",
+      "quote": "comment cette unité, cette cohésion, cette discipline seraient-elles maintenues à la longue si le pouvoir exécutif émanait de l'autre pouvoir auquel il doit faire équilibre",
+      "source": {
+        "title": "Discours de Bayeux, présidence de la République",
+        "year": 1946,
+        "url": "https://www.elysee.fr/front/pdf/sp-module-16441-fr.pdf",
+        "archive": [
+          "research/sources/penseurs/de-gaulle-discours-bayeux-1946-06-16.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "executive",
+      "pole": "high",
+      "authors": [
+        "baranger"
+      ],
+      "featured": false,
+      "thesis": "Le 49-3 est un instrument de gouvernement indispensable, dans un régime qui reste parlementaire.",
+      "nuance": "Il critique l’accumulation de procédures qui étouffent le Parlement.",
+      "quote": "J'ai écrit comme d'autres sur le 49-3 pour dire que c'était un instrument de gouvernement indispensable.",
+      "source": {
+        "title": "Un parlementarisme rationalisé jusqu’à le dérégler ?, entretien, La Grande Conversation",
+        "year": 2023,
+        "url": "https://www.lagrandeconversation.com/app/uploads/2023/03/debat-sur-les-retraites-un-parlementarisme-rationalise-jusqua-le-deregler-la-grande-conversation.pdf",
+        "archive": [
+          "research/sources/penseurs/baranger-parlementarisme-rationalise-2023.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "participation",
+      "pole": "low",
+      "authors": [
+        "burke"
+      ],
+      "featured": true,
+      "thesis": "L’élu doit à ses électeurs son jugement, non l’obéissance à leurs instructions : le Parlement délibère pour la nation entière.",
+      "nuance": "Il ne méprise pas l’opinion des électeurs ; il refuse le mandat impératif.",
+      "source": {
+        "title": "Speech to the Electors of Bristol, The Founders’ Constitution, Université de Chicago",
+        "year": 1774,
+        "url": "https://press-pubs.uchicago.edu/founders/documents/v1ch13s7.html",
+        "archive": [
+          "research/sources/penseurs/burke-discours-electeurs-bristol-1774.html"
+        ]
+      }
+    },
+    {
+      "axis": "participation",
+      "pole": "low",
+      "authors": [
+        "urbinati"
+      ],
+      "featured": true,
+      "thesis": "La représentation est une forme pleinement légitime de décision démocratique, et non un pis-aller faute de démocratie directe.",
+      "nuance": "Elle conçoit la représentation comme un échange continu entre la société et les institutions.",
+      "quote": "La démocratie représentative n’est certainement pas moins démocratique que la démocratie directe.",
+      "source": {
+        "title": "La démocratie représentative est-elle réellement démocratique ?, entretien avec Bernard Manin, La Vie des idées",
+        "year": 2008,
+        "url": "https://laviedesidees.fr/La-democratie-representative-est-elle-reellement-democratique",
+        "archive": [
+          "research/sources/penseurs/urbinati-manin-vie-des-idees-2008.html"
+        ]
+      }
+    },
+    {
+      "axis": "participation",
+      "pole": "low",
+      "authors": [
+        "constant"
+      ],
+      "featured": false,
+      "thesis": "La liberté des Modernes rend nécessaire le système représentatif, par lequel la nation confie à quelques-uns ce qu’elle ne peut ou ne veut faire elle-même.",
+      "nuance": "Il exige des citoyens une surveillance active et constante de leurs représentants.",
+      "quote": "Le système représentatif n'est autre chose qu'une organisation à l'aide de laquelle une nation se décharge sur quelques individus de ce qu'elle ne peut ou ne veut pas faire elle-même.",
+      "source": {
+        "title": "De la liberté des Anciens comparée à celle des Modernes, Wikisource",
+        "year": 1819,
+        "url": "https://fr.wikisource.org/wiki/%C5%92uvres_politiques_(Constant)/De_la_libert%C3%A9_des_Anciens_compar%C3%A9e_%C3%A0_celle_des_Modernes",
+        "archive": [
+          "research/sources/penseurs/constant-liberte-anciens-modernes-1819.html"
+        ]
+      }
+    },
+    {
+      "axis": "participation",
+      "pole": "high",
+      "authors": [
+        "jj-rousseau"
+      ],
+      "featured": true,
+      "thesis": "La souveraineté ne se représente pas : une loi que le peuple n’a pas ratifiée en personne est nulle.",
+      "nuance": "Il doute que ce modèle convienne aux grands États.",
+      "quote": "Toute loi que le Peuple en personne n'a pas ratifiée est nulle ; ce n'est point une loi. Le peuple Anglois pense être libre ; il se trompe fort, il ne l'est que durant l'élection des membres du Parlement",
+      "source": {
+        "title": "Du contrat social, Wikisource",
+        "year": 1762,
+        "url": "https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Texte_entier",
+        "archive": [
+          "research/sources/penseurs/rousseau-contrat-social-1762.html"
+        ]
+      }
+    },
+    {
+      "axis": "participation",
+      "pole": "high",
+      "authors": [
+        "landemore"
+      ],
+      "featured": true,
+      "thesis": "Placer les citoyens ordinaires, et non les élites, au cœur du pouvoir démocratique est possible, notamment par de grandes assemblées tirées au sort.",
+      "nuance": "Elle se démarque de la démocratie directe pure et défend une représentation non électorale et tournante.",
+      "quote": "J’ai acquis la conviction que la démocratie ne devrait pas se limiter à des moments ponctuels où un petit nombre de personnes prend des décisions pour tous, avec des vérifications occasionnelles par des élections et des référendums.",
+      "source": {
+        "title": "L’Islande est le rêve de tout théoricien politique, entretien, Le Grand Continent",
+        "year": 2025,
+        "url": "https://legrandcontinent.eu/fr/2025/08/08/islande-grand-tour/",
+        "archive": [
+          "research/sources/penseurs/landemore-grand-continent-2025.html"
+        ]
+      }
+    },
+    {
+      "axis": "participation",
+      "pole": "high",
+      "authors": [
+        "blondiaux"
+      ],
+      "featured": false,
+      "thesis": "Un référendum d’initiative citoyenne devrait être précédé d’une assemblée de citoyens tirés au sort qui délibère publiquement.",
+      "nuance": "La note, collective, détaille les risques du référendum et ne l’oppose pas à la représentation.",
+      "quote": "Notre thèse principale est qu'il importe de combiner aussi étroitement que possible démocratie directe et démocratie participative.",
+      "source": {
+        "title": "Le référendum d’initiative citoyenne délibératif, note collective, Terra Nova",
+        "year": 2019,
+        "url": "https://tnova.fr/site/assets/files/11908/terra-nova_ric-deliberatif_190219.pdf",
+        "archive": [
+          "research/sources/penseurs/terra-nova-ric-deliberatif-2019.pdf"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "low",
+      "authors": [
+        "sieyes"
+      ],
+      "featured": true,
+      "thesis": "La France est un tout unique, non un assemblage de petites nations qui se gouverneraient séparément.",
+      "nuance": "Il vise l’unité de la souveraineté et de la loi ; les administrations locales de 1789 étaient élues.",
+      "quote": "La France ne doit point être un assemblage de petites Nations, qui se gouverneroient séparément en Démocraties ; elle n'est point une collection d'États ; elle est un tout unique, composé de parties intégrantes",
+      "source": {
+        "title": "Dire sur la question du veto royal, séance du 7 septembre 1789, Wikisource",
+        "year": 1789,
+        "url": "https://fr.wikisource.org/wiki/Dire_de_l%27abb%C3%A9_Siey%C3%A8s,_sur_la_question_du_Veto_royal,_%C3%A0_la_s%C3%A9ance_du_7_septembre_1789",
+        "archive": [
+          "research/sources/penseurs/sieyes-dire-veto-royal-1789.html"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "low",
+      "authors": [
+        "morel"
+      ],
+      "featured": true,
+      "thesis": "La différenciation territoriale menace l’égalité devant la loi lorsqu’elle accorde des régimes particuliers sans critère objectif ; seules des exceptions justifiées par l’intérêt général sont admissibles.",
+      "nuance": "Il refuse d’opposer jacobins et girondins et accepte des règles adaptées à des situations objectives, comme la montagne ou le littoral.",
+      "quote": "Ce qui est contraire à la République, à son indivisibilité, c'est le fait de permettre une variation sans fondements ni critères objectifs, conduisant à faire de la loi un instrument de marchandage",
+      "source": {
+        "title": "La différenciation, dangers et faux semblants, tribune, Acteurs publics",
+        "year": 2021,
+        "url": "https://acteurspublics.fr/articles/benjamin-morel-la-differenciation-dangers-et-faux-semblants/",
+        "archive": [
+          "research/sources/penseurs/morel-differenciation-acteurs-publics-2021.html"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "low",
+      "authors": [
+        "dupont-white"
+      ],
+      "featured": false,
+      "thesis": "La centralisation est un bienfait, surtout en matière de budget : elle évite que les départements riches gardent leurs ressources tandis que les pauvres en sont réduits aux leurs.",
+      "nuance": "Il cherche à concilier centralisation et liberté politique.",
+      "quote": "Mais où la Centralisation est un bienfait, c'est en matière de budget.",
+      "source": {
+        "title": "La Centralisation, texte numérisé par Internet Archive",
+        "year": 1860,
+        "url": "https://archive.org/details/lacentralisatio00dupogoog",
+        "archive": [
+          "research/sources/penseurs/dupont-white-centralisation-1860.txt"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "high",
+      "authors": [
+        "tocqueville"
+      ],
+      "featured": true,
+      "thesis": "Une forte centralisation gouvernementale est nécessaire, mais la centralisation administrative affaiblit l’esprit civique des citoyens qui s’y soumettent.",
+      "nuance": "Il ne rejette pas un État central fort pour les affaires communes à toute la nation.",
+      "quote": "je ne saurais concevoir qu'une nation puisse vivre ni surtout prospérer sans une forte centralisation gouvernementale. Mais je pense que la centralisation administrative n'est propre qu'à énerver les peuples qui s'y soumettent",
+      "source": {
+        "title": "De la démocratie en Amérique, tome I, première partie, chapitre 5, Wikisource",
+        "year": 1835,
+        "url": "https://fr.wikisource.org/wiki/De_la_d%C3%A9mocratie_en_Am%C3%A9rique/%C3%89dition_1848/Tome_1/Premi%C3%A8re_partie/Chapitre_5",
+        "archive": [
+          "research/sources/penseurs/tocqueville-democratie-amerique-1-1-5.html"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "high",
+      "authors": [
+        "pasquier"
+      ],
+      "featured": true,
+      "thesis": "Les compétences non régaliennes devraient être exercées par les collectivités, avec une collectivité intermédiaire puissante et une part du pouvoir de fixer les normes.",
+      "nuance": "Il critique aussi l’émiettement des compétences locales.",
+      "quote": "Un débat doit avoir lieu sur ce qui reste du domaine du régalien et sur ce qui ne l'est pas. Les compétences non régaliennes doivent être exercées par les collectivités.",
+      "source": {
+        "title": "Avoir enfin une vraie ambition décentralisatrice est primordial, entretien, Acteurs publics",
+        "year": 2022,
+        "url": "https://acteurspublics.fr/articles/romain-pasquier-avoir-enfin-une-vraie-ambition-decentralisatrice-est-primordial/",
+        "archive": [
+          "research/sources/penseurs/pasquier-ambition-decentralisatrice-acteurs-publics-2022.html"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "high",
+      "authors": [
+        "proudhon"
+      ],
+      "featured": false,
+      "thesis": "Dans une fédération, communes, provinces et États se réservent plus de droits, de liberté et d’autorité qu’ils n’en abandonnent à l’autorité centrale.",
+      "nuance": "Il conçoit la fédération comme un contrat entre collectivités, dont l’autorité centrale ne reçoit que des attributions limitées.",
+      "quote": "les contractants, chefs de famille, communes, cantons, provinces ou États, non-seulement s’obligent synallagmatiquement et commutativement les uns envers les autres, ils se réservent individuellement, en formant le pacte, plus de droits, de liberté, d’autorité, de propriété, qu’ils n’en abandonnent.",
+      "source": {
+        "title": "Du principe fédératif, première partie, chapitre VII, Wikisource",
+        "year": 1863,
+        "url": "https://fr.wikisource.org/wiki/Proudhon_-_Du_Principe_f%C3%A9d%C3%A9ratif/Texte_entier",
+        "archive": [
+          "research/sources/penseurs/proudhon-principe-federatif-1863.html"
+        ]
+      }
+    },
+    {
+      "axis": "territory",
+      "pole": "high",
+      "authors": [
+        "ostrom"
+      ],
+      "featured": false,
+      "thesis": "Plusieurs centres de décision autonomes, sans hiérarchie unique, peuvent fournir efficacement des services publics.",
+      "nuance": "Ses enquêtes portent sur les métropoles américaines et les biens communs ; elle prévoit aussi des mécanismes pour arbitrer les conflits.",
+      "source": {
+        "title": "Beyond Markets and States, conférence Nobel",
+        "year": 2009,
+        "url": "https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf",
+        "archive": [
+          "research/sources/penseurs/ostrom-conference-nobel-2009.pdf"
+        ]
+      }
     }
   ],
   "methods": [
@@ -404,7 +3089,7 @@
       "title": "Chapel Hill Expert Survey — CHES-Europe",
       "url": "https://www.chesdata.eu/ches-europe/",
       "year": 2024,
-      "summary": "Référence pour distinguer plusieurs dimensions des positions partisanes : économie, valeurs culturelles, Europe et enjeux spécifiques. Les 18 axes et le barème de cette application sont une construction propre, non une reproduction ou une validation CHES."
+      "summary": "Référence pour distinguer plusieurs dimensions des positions partisanes : économie, valeurs culturelles, Europe et enjeux spécifiques. Les axes et le barème de cette application sont une construction propre, non une reproduction ou une validation CHES."
     },
     {
       "title": "CEVIPOF — Quatre familles politiques pour penser autrement le clivage gauche-droite",
@@ -418,48 +3103,5 @@
       "year": 2026,
       "summary": "La demande de décentralisation traverse diverses sensibilités politiques. L’organisation territoriale doit donc être mesurée distinctement du simple classement gauche-droite."
     }
-  ],
-  "axisHighlights": {
-    "redistribution": [
-      "piketty",
-      "zucman",
-      "salin",
-      "friedman"
-    ],
-    "economy": [
-      "piketty",
-      "hayek",
-      "aghion",
-      "duflo"
-    ],
-    "work": [
-      "marx",
-      "piketty",
-      "keynes",
-      "aghion"
-    ],
-    "budget": [
-      "keynes",
-      "salin",
-      "mahfouz",
-      "gollier"
-    ],
-    "ecology": [
-      "laurent",
-      "tirole",
-      "gollier",
-      "mahfouz"
-    ],
-    "europe": [
-      "piketty",
-      "pisani-ferry",
-      "thesmar"
-    ],
-    "trade": [
-      "auriol",
-      "salin",
-      "thesmar",
-      "hayek"
-    ]
-  }
+  ]
 }

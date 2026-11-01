@@ -7,7 +7,8 @@
   "contents": {
     "questions": 80,
     "axes": 20,
-    "economists": 20,
+    "authors": 114,
+    "arguments": 127,
     "families": 11
   }
 }

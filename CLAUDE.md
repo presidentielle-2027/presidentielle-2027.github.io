@@ -4,7 +4,7 @@ Outil civique neutre pour la présidentielle 2027 : 80 propositions, 20 axes, co
 
 ## Architecture
 
-- `research/` : catalogues sources, en JSON. `questionnaire.json` (thèmes, axes, propositions), `families.json` (version des repères, familles, textes de référence `sources`, textes comparés `compared`), `parties.json` (critère d'inclusion, partis, statut), `references.json` (économistes, `axisHighlights`). `research/dossiers/` garde les citations et pages qui justifient les repères ; `research/sources/` garde les copies des sources citées.
+- `research/` : catalogues sources, en JSON. `questionnaire.json` (thèmes, axes, propositions), `families.json` (version des repères, familles, textes de référence `sources`, textes comparés `compared`), `parties.json` (critère d'inclusion, partis, statut), `references.json` (auteurs `thinkers`, arguments par pôle `arguments`, repères de méthode `methods`). `research/dossiers/` garde les citations et pages qui justifient les repères ; `research/sources/` garde les copies des sources citées.
 - `assemble-data.py` : vérifie la cohérence des catalogues par des `assert` et écrit `dist/data.js`. Une incohérence arrête la construction.
 - `dist/engine.mjs` : calculs purs (profil, écarts, lecture des scores, seuils `READING`, `MIN_COMMON_AXES`). `dist/app.mjs` : rendu en gabarits de chaînes. `dist/styles.css` : règles sur de très longues lignes ; modifier par remplacement exact d'une règle, jamais par numéro de ligne.
 - `scripts/build-standalone.py` : reconstruit `dist/data.js` puis `reperes.html` (tout intégré, sans module). Ne jamais modifier `reperes.html` ni `dist/data.js` à la main.
@@ -35,13 +35,14 @@ L=$(mktemp) T=$(mktemp); awk '{print $2}' SHA256SUMS.txt > "$L" && xargs shasum 
 - Textes de référence (`sources`) : ils fixent les repères. Textes comparés (`compared`) : textes d'autres partis restés à `READING.diverge` points au plus du repère sur chaque axe vérifié ; ils ne fixent rien. Seules les comparaisons de confiance moyenne ou haute sont intégrées ; les autres portent une raison « à confirmer » dans `unmodelled`.
 - Chaque parti de `parties.json` a un texte de référence, un texte comparé, ou une raison `unmodelled`. Les critères fragiles portent `toVerify`.
 - Modifier, ajouter ou retirer une famille impose de changer `version` dans `families.json` (format `AAAA.M`, puis `AAAA.M.v2`, `AAAA.M.v3`… pour les révisions du même mois) et de mettre à jour les nombres écrits en dur : README, balise meta de `dist/index.html`, `PROVENANCE.json`.
+- Arguments sous les axes (`references.json`) : auteurs dont la pensée ou les écrits sont reconnus par leurs pairs, associés ni à une théorie du complot, ni à la désinformation, ni à des propos extrémistes, racistes ou antisémites, ni à une condamnation ou à un scandale public. Classiques et responsables politiques du passé admis ; candidats et dirigeants en fonction non cités. Une ou deux thèses mises en avant par pôle. La thèse est une synthèse neutre ; la citation, facultative, est en français (texte de l'auteur ou traduction publiée) et vérifiée mot pour mot sur la copie archivée. `research/dossiers/penseurs.md` garde la recherche et les auteurs écartés.
 - `METHOD_VERSION` ne change que si le questionnaire, les calculs ou le format de session changent : elle conditionne l'import des sessions.
 - Les seuils de lecture (`READING`) ont été validés par l'éditeur ; les réutiliser plutôt que d'en inventer.
 
 ## Cohérence de l'interface
 
 - Toute liste de familles affiche le catalogue complet dans l'ordre de `familyList(ranked)` : d'abord les familles comparées, de la plus proche à la plus éloignée, puis les autres. Une famille qu'on ne peut pas comparer apparaît comme « non comparée », elle ne disparaît pas.
-- Tout nombre affiché (familles, partis, économistes, axes, propositions) est calculé à partir des catalogues, jamais écrit en dur dans `dist/app.mjs`.
+- Tout nombre affiché (familles, partis, auteurs, axes, propositions) est calculé à partir des catalogues, jamais écrit en dur dans `dist/app.mjs`.
 - Aucune présentation ne suggère un axe gauche-droite : la cible des proximités range les familles par ordre alphabétique autour du centre, seule la distance (l'écart moyen) a un sens. L'aperçu de la page d'accueil ne simule aucun résultat.
 - Une animation respecte `prefers-reduced-motion` (état final immédiat, aucune lecture automatique) et n'apparaît pas dans le bilan imprimé, qui garde la liste des proximités ; les volets repliables des cartes y sont dépliés.
 - Dans les graphiques, le violet (`--accent`) est réservé aux positions de l'utilisateur ; la famille mise en avant est en encre, les autres en gris.

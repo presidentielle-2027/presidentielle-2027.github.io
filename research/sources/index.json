@@ -1443,6 +1443,860 @@
       "accessed": "2026-11-01",
       "bytes": 64504,
       "sha256": "e6fc2d5d57787c6cfe84ab315903e60d2f837ad32a925a287de8290e959fefba"
+    },
+    {
+      "file": "research/sources/penseurs/agacinski-audition-an-2019-09-09.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/polfamf/l15polfamf1819002_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 417535,
+      "sha256": "694a770366a5f27a9bff4f26e854aea46134dd35dd3fd33c71589fd9b479eab3"
+    },
+    {
+      "file": "research/sources/penseurs/alesina-ardagna-nber-15438.pdf",
+      "url": "https://www.nber.org/system/files/working_papers/w15438/w15438.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 249513,
+      "sha256": "bd24f6355b94c0e82edf85b4e2f387c555b613e278898f9f524c55cddd2731f1"
+    },
+    {
+      "file": "research/sources/penseurs/allais-causes-veritables-chomage-2010.pdf",
+      "url": "https://www.annales.org/ri/2010/ri-mai-2010/Allais.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 228472,
+      "sha256": "f6e6bd796a6a2ce106a6ad73766ee3591ece53008c7a829aecfc4800927339c2"
+    },
+    {
+      "file": "research/sources/penseurs/anderson-integration-affirmative-action-2002.pdf",
+      "url": "https://nyulawreview.org/wp-content/uploads/2018/08/NYULawReview-77-5-Anderson.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 5454980,
+      "sha256": "ab6b25123fe9ec499bf4f368d24165e15ebfc171b497d7732ef4919d0299db91"
+    },
+    {
+      "file": "research/sources/penseurs/aron-communaute-atlantique-1983-p829.html",
+      "url": "https://www.persee.fr/doc/polit_0032-342x_1983_num_48_4_5706?pageId=T1_829",
+      "accessed": "2026-11-01",
+      "bytes": 89112,
+      "sha256": "044c240dc7a24a4942bb609be37d8028c48d889370990714fba2fa1efaead378"
+    },
+    {
+      "file": "research/sources/penseurs/aron-communaute-atlantique-1983-p832.html",
+      "url": "https://www.persee.fr/doc/polit_0032-342x_1983_num_48_4_5706?pageId=T1_832",
+      "accessed": "2026-11-01",
+      "bytes": 87471,
+      "sha256": "719a281371a6d96962556e34d844817a0782602bb8b18ed72df370627346c97f"
+    },
+    {
+      "file": "research/sources/penseurs/badinter-appel-baby-loup-2014.html",
+      "url": "https://www.mezetulle.fr/elisabeth-badinter-laicite-menacee-appel-soutenir-baby-loup/",
+      "accessed": "2026-11-01",
+      "bytes": 100403,
+      "sha256": "9645bd25278f5b7b713f0a059f791471e78703e3c016e8bd11cefec896c12f56"
+    },
+    {
+      "file": "research/sources/penseurs/baranger-parlementarisme-rationalise-2023.pdf",
+      "url": "https://www.lagrandeconversation.com/app/uploads/2023/03/debat-sur-les-retraites-un-parlementarisme-rationalise-jusqua-le-deregler-la-grande-conversation.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 262038,
+      "sha256": "8557a7b1cb0586d970eb33b7bc1d1a095f23c9eb8ebaf1c1383bc3efbc401de8"
+    },
+    {
+      "file": "research/sources/penseurs/barthelemy-cette-reformer-droit-travail-2015.pdf",
+      "url": "https://tnova.fr/site/assets/files/10876/02092015_-_r_former_le_droit_du_travail.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2616385,
+      "sha256": "679a8c44ab723ceda86d55071861b9b3f4bd607a0bf3764d2b0713522cce048e"
+    },
+    {
+      "file": "research/sources/penseurs/bauberot-audition-an-2020-12-21.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/csprincrep/l15csprincrep2021005_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 905244,
+      "sha256": "b6d655cb1c077252c9db64cc8eb4aae1c0435621befc4764881ac1196cd3a4c9"
+    },
+    {
+      "file": "research/sources/penseurs/benassy-quere-quoi-qu-il-en-coute-2021.html",
+      "url": "https://www.tresor.economie.gouv.fr/Articles/2021/02/22/quoiqu-il-en-coute-c-est-combien",
+      "accessed": "2026-11-01",
+      "bytes": 38498,
+      "sha256": "073239aee48960119fc03546066602ee04864a7ac06320913c5c3a69cbe29404"
+    },
+    {
+      "file": "research/sources/penseurs/binet-audition-senat-2019-11-28.html",
+      "url": "https://www.senat.fr/compte-rendu-commissions/20191125/cs_bioethique.html",
+      "accessed": "2026-11-01",
+      "bytes": 259950,
+      "sha256": "742c8cf17b369fa393cd0d62250b590450fe4a66183b20c57bd2ebf49a624fbd"
+    },
+    {
+      "file": "research/sources/penseurs/boniface-cessez-le-feu-iris-2024.html",
+      "url": "https://www.iris-france.org/190661-vers-un-cessez-le-feu-en-ukraine/",
+      "accessed": "2026-11-01",
+      "bytes": 143538,
+      "sha256": "165d63a383558c69bb1716245218bd0053564afae8d9b2a960449e5af966ccee"
+    },
+    {
+      "file": "research/sources/penseurs/buchanan-wagner-consequences-keynes-1978.pdf",
+      "url": "https://iea.org.uk/wp-content/uploads/2016/07/THE%20CONSEQUENCES%20OF%20MR%20KEYNES.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 9336147,
+      "sha256": "798e8f09992cf6bbbe08cfc480bfdf17d04e110fc9efde0115c531057d7c2b99"
+    },
+    {
+      "file": "research/sources/penseurs/burke-discours-electeurs-bristol-1774.html",
+      "url": "https://press-pubs.uchicago.edu/founders/documents/v1ch13s7.html",
+      "accessed": "2026-11-01",
+      "bytes": 6920,
+      "sha256": "8657aff92b26cfdcf969fe2073a65187a7ad331adda9b244ac1afe4a19baf125"
+    },
+    {
+      "file": "research/sources/penseurs/burke-reflexions-revolution-1819.html",
+      "url": "https://fr.wikisource.org/wiki/R%C3%A9flexions_sur_la_r%C3%A9volution_de_France_-_1819/R%C3%A9flexions",
+      "accessed": "2026-11-01",
+      "bytes": 973782,
+      "sha256": "5c8f193d4f2ab233997864168b976f58959cab2689069d015cd535950de27939"
+    },
+    {
+      "file": "research/sources/penseurs/cae-note-69-repenser-heritage-2021.pdf",
+      "url": "https://cae-eco.fr/static/pdf/cae-note069s.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 599005,
+      "sha256": "abe5e8dbeb8a220888e991a554aa49c046996c64a206dd9b990494f9585c42ac"
+    },
+    {
+      "file": "research/sources/penseurs/carens-aliens-and-citizens-1987.html",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0034670500033817",
+      "accessed": "2026-11-01",
+      "bytes": 817266,
+      "sha256": "64b74cd6ed0b8a6ea46aaefeeaf263c726f9b0d9256141b5a441ba04af5c62de"
+    },
+    {
+      "file": "research/sources/penseurs/constant-liberte-anciens-modernes-1819.html",
+      "url": "https://fr.wikisource.org/wiki/%C5%92uvres_politiques_(Constant)/De_la_libert%C3%A9_des_Anciens_compar%C3%A9e_%C3%A0_celle_des_Modernes",
+      "accessed": "2026-11-01",
+      "bytes": 121929,
+      "sha256": "443016bff58e605f62edd9aa123be506319be59656fcbb8536c3de35f9c7e16f"
+    },
+    {
+      "file": "research/sources/penseurs/d-rousseau-constitutionnalisme-democratie-2008.html",
+      "url": "https://laviedesidees.fr/Constitutionnalisme-et-democratie",
+      "accessed": "2026-11-01",
+      "bytes": 113585,
+      "sha256": "062f4501d0da5d6f5a87bb3f4aac41ccf17b8a6bca47a0b2128ce5a84739c2ed"
+    },
+    {
+      "file": "research/sources/penseurs/de-gaulle-conference-presse-1966-02-21.pdf",
+      "url": "https://www.elysee.fr/front/pdf/elysee-module-16476-fr.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 884711,
+      "sha256": "4e08eed0fd2e39046aac6258e12a9549c0f168f17efcbfb7a0a9eff095013f92"
+    },
+    {
+      "file": "research/sources/penseurs/de-gaulle-discours-bayeux-1946-06-16.pdf",
+      "url": "https://www.elysee.fr/front/pdf/sp-module-16441-fr.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 349188,
+      "sha256": "a92e2948c8b66d2ec058231264759b2b3c11f75d24ebb56e261a97d707fc4599"
+    },
+    {
+      "file": "research/sources/penseurs/delmas-marty-libertes-surete-2009.pdf",
+      "url": "https://www.college-de-france.fr/media/mireille-delmas-marty/UPL20008_delmas_marty_res0809.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 244038,
+      "sha256": "b07d9ca0bc6bf4f00ab675a1c634fb8937607b5ad65835d3873f83b0d5d921b1"
+    },
+    {
+      "file": "research/sources/penseurs/duflo-ted-2025.html",
+      "url": "https://www.ted.com/talks/esther_duflo_tax_the_rich_and_save_the_planet/transcript",
+      "accessed": "2026-11-01",
+      "bytes": 185616,
+      "sha256": "9e4e45a3367c2f8179ac4da190ec0946bd66be57582c6e3c7d7c5a643fc99467"
+    },
+    {
+      "file": "research/sources/penseurs/dupont-white-centralisation-1860.txt",
+      "url": "https://archive.org/details/lacentralisatio00dupogoog",
+      "accessed": "2026-11-01",
+      "bytes": 558230,
+      "sha256": "3ddb44a1ae82d9f927f4e5c1ac06299601a08d4c992e64127ebff559a8bbe6b1"
+    },
+    {
+      "file": "research/sources/penseurs/durkheim-education-sociologie-ch1.html",
+      "url": "https://fr.wikisource.org/wiki/%C3%89ducation_et_sociologie/Chapitre_1",
+      "accessed": "2026-11-01",
+      "bytes": 123081,
+      "sha256": "04fa14d61ecc18ae68171fc56a082a6367df6d6c75c06da6269915a4b9d71edb"
+    },
+    {
+      "file": "research/sources/penseurs/erasme-complainte-paix-en-1917.txt",
+      "url": "https://archive.org/details/cu31924007361938",
+      "accessed": "2026-11-01",
+      "bytes": 155001,
+      "sha256": "a9af76e7ea866d65cb65b110e040e17a7a41721f17ddafd66fa1c2ae50838b7b"
+    },
+    {
+      "file": "research/sources/penseurs/ferreras-battilana-meda-democratiser-2020.pdf",
+      "url": "https://www.DemocratizingWork.org/s/Work_Democratize_Decommodify_Remediate_FRA.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 53375,
+      "sha256": "7de8f40f5441cdf79c9088492e6748c6d45517a1b8cc1b87dbe7a4d2b1f2fb85"
+    },
+    {
+      "file": "research/sources/penseurs/finkielkraut-discours-reception-academie-2016.html",
+      "url": "https://www.academie-francaise.fr/discours-de-reception-de-m-alain-finkielkraut",
+      "accessed": "2026-11-01",
+      "bytes": 75884,
+      "sha256": "3d17139fb709d0fbe36496fadaaeb619e6ab975c0e9d1331b865441262a0984e"
+    },
+    {
+      "file": "research/sources/penseurs/fontaine-conseil-constitutionnel-grand-continent-2023.html",
+      "url": "https://legrandcontinent.eu/fr/2023/04/14/le-conseil-constitutionnel-est-il-vraiment-un-contre-pouvoir/",
+      "accessed": "2026-11-01",
+      "bytes": 222847,
+      "sha256": "d15d95ba3360cdce98cb46b6cfa8c4711570b8c733aff83974369dc64421e147"
+    },
+    {
+      "file": "research/sources/penseurs/friedman-social-responsibility-1970.pdf",
+      "url": "https://business.pitt.edu/wp-content/uploads/2025/02/25Right-Readings-Friedman-1.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 59178,
+      "sha256": "c22780c68643b3da1544805cff19b446977548e775ba3b813492b8cf0640e334"
+    },
+    {
+      "file": "research/sources/penseurs/glazer-in-defense-of-preference-1998.html",
+      "url": "https://newrepublic.com/article/104772/in-defense-preference",
+      "accessed": "2026-11-01",
+      "bytes": 157842,
+      "sha256": "1c65f4414f781c61026b23babcfff781d61d8b22752132dc1ea0c9124979533d"
+    },
+    {
+      "file": "research/sources/penseurs/gnesotto-quatre-defis-strategiques-2018.pdf",
+      "url": "https://institutdelors.eu/content/uploads/2025/04/Les4defisstrategiquesdelUE-Gnesotto-juillet2018-1.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 264157,
+      "sha256": "12e3924c89b71209a029a18b1e12fa1e34e22f89f2b1741e227fee8c9d0ce2c4"
+    },
+    {
+      "file": "research/sources/penseurs/gollier-vie-des-idees-2022.pdf",
+      "url": "https://laviedesidees.fr/IMG/pdf/20221202_gollier.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 197723,
+      "sha256": "507739053df77cf3819fedf6fd11d67606e24d4e0140ca5aeb581d0a676b0652"
+    },
+    {
+      "file": "research/sources/penseurs/grand-audition-an-2023-04-13.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/cion_afetr/l16cion_afetr2223044_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 840148,
+      "sha256": "ca02a9e92b81426d34490987670e87d7fab537aa6865a759c33828e322d1e9e3"
+    },
+    {
+      "file": "research/sources/penseurs/heran-lecon-inaugurale-resume-2018.pdf",
+      "url": "https://college-de-france.fr/sites/default/files/documents/francois-heran/UPL7518490759684155479_527_536_43_Heran.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 605465,
+      "sha256": "9253b5c652e8a4ee3fc48784a8bcc3d8fb311c3c6c377cf3b4bd3d375b660025"
+    },
+    {
+      "file": "research/sources/penseurs/jonas-principe-responsabilite-eduscol.pdf",
+      "url": "https://eduscol.education.fr/document/24064/download",
+      "accessed": "2026-11-01",
+      "bytes": 248780,
+      "sha256": "37778b675e275091d4e7b090ef2cede6e97380edcc638e280046aa3d030e43a8"
+    },
+    {
+      "file": "research/sources/penseurs/kant-de-la-paix-perpetuelle-barni.html",
+      "url": "https://fr.wikisource.org/wiki/M%C3%A9taphysique_des_m%C5%93urs_(trad._Barni)/Tome_I/PERAD/De_la_paix",
+      "accessed": "2026-11-01",
+      "bytes": 231803,
+      "sha256": "03a32571311c981f69b565b6a9d6c917e219581ada8bec93c983b3a09eb75ec4"
+    },
+    {
+      "file": "research/sources/penseurs/kant-projet-paix-perpetuelle-barni.html",
+      "url": "https://fr.wikisource.org/wiki/Projet_de_paix_perp%C3%A9tuelle",
+      "accessed": "2026-11-01",
+      "bytes": 231803,
+      "sha256": "03a32571311c981f69b565b6a9d6c917e219581ada8bec93c983b3a09eb75ec4"
+    },
+    {
+      "file": "research/sources/penseurs/keynes-national-self-sufficiency-1933.html",
+      "url": "https://jmaynardkeynes.ucc.ie/national-self-sufficiency.html",
+      "accessed": "2026-11-01",
+      "bytes": 35496,
+      "sha256": "a5c0261231a6e0c78fdc7b047fe42e4fb9cda7101c11fac482863fed22a5f43a"
+    },
+    {
+      "file": "research/sources/penseurs/kintzler-audition-an-2021-01-15.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/15/comptes-rendus/csprincrep/l15csprincrep2021034_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 894314,
+      "sha256": "166a30302475e3fb9c5bbd65d7791173c7937257dc715fc06471215d149ffd6d"
+    },
+    {
+      "file": "research/sources/penseurs/kymlicka-multiculturalism-mpi-2012.pdf",
+      "url": "https://ej.issuelab.org/resources/13140/13140.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 1984962,
+      "sha256": "c35d6ee0a4a77bab19b50032679ea34c17af0067fe8a4b0779e6e538cb6615af"
+    },
+    {
+      "file": "research/sources/penseurs/latour-gestes-barrieres-aoc-2020.pdf",
+      "url": "https://www.bruno-latour.fr/sites/default/files/P-202-AOC-03-20.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 139177,
+      "sha256": "468030fb991eba800ee3a5a163680ffd7445bd305487bde67ddf54ad5453c5dc"
+    },
+    {
+      "file": "research/sources/penseurs/laurent-sciences-po-2020.html",
+      "url": "https://www.sciencespo.fr/fr/actualites/les-inegalites-jouent-un-role-decisif-dans-la-destruction-ecologique/",
+      "accessed": "2026-11-01",
+      "bytes": 475168,
+      "sha256": "9c720c4e324dae10e658d93b46fd0b1093d7cf6e393e4e345903f77fb8e74f74"
+    },
+    {
+      "file": "research/sources/penseurs/linz-perils-of-presidentialism-1990.pdf",
+      "url": "https://fenix.iseg.ulisboa.pt/downloadFile/1126033050836624/Juan%20Linz_presidentialism.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 666141,
+      "sha256": "b953be0d5a302667c78e41f49d7a6b8cc25ae66db8fefced40cb2767381fed7d"
+    },
+    {
+      "file": "research/sources/penseurs/list-systeme-national-economie-politique.html",
+      "url": "https://fr.wikisource.org/wiki/Syst%C3%A8me_national_d%E2%80%99%C3%A9conomie_politique/Texte_entier",
+      "accessed": "2026-11-01",
+      "bytes": 1569552,
+      "sha256": "1b5087765574a2c743b275c95e49dba935061bb7cdb1990230a3bdbcd21a039d"
+    },
+    {
+      "file": "research/sources/penseurs/locke-lettre-tolerance.html",
+      "url": "https://fr.wikisource.org/wiki/Lettre_sur_la_tol%C3%A9rance",
+      "accessed": "2026-11-01",
+      "bytes": 189016,
+      "sha256": "5524f70dce2966c269448fc4d205adf51b19968d855631d74ec0513e2dfa505d"
+    },
+    {
+      "file": "research/sources/penseurs/lordon-sortir-de-l-euro-diplo-2013.html",
+      "url": "https://www.monde-diplomatique.fr/2013/08/LORDON/49561",
+      "accessed": "2026-11-01",
+      "bytes": 41361,
+      "sha256": "bfcf523e159f6cec40b624af5f0548ec7c4500dc0c0b25a4e2c4b960ccdf7df2"
+    },
+    {
+      "file": "research/sources/penseurs/manent-peuple-politique-grand-continent-2019.html",
+      "url": "https://legrandcontinent.eu/fr/2019/07/14/le-peuple-politique/",
+      "accessed": "2026-11-01",
+      "bytes": 207767,
+      "sha256": "081f3b96072957f1cb80a3d4b8aa0d404cf5b83001f4e63be207769c3d9e570e"
+    },
+    {
+      "file": "research/sources/penseurs/marx-adresse-inaugurale-ait-1864.html",
+      "url": "https://www.marxists.org/francais/marx/works/1864/09/18640928.htm",
+      "accessed": "2026-11-01",
+      "bytes": 30134,
+      "sha256": "308b8a2717fb041aaa1a4928c4e151d5337113aa4af7e692ed9bb1f34ec76e91"
+    },
+    {
+      "file": "research/sources/penseurs/marx-engels-manifeste-ch2.html",
+      "url": "https://www.marxists.org/francais/marx/works/1847/00/kmfe18470000b.htm",
+      "accessed": "2026-11-01",
+      "bytes": 27423,
+      "sha256": "a441ccd35780c9f062b0e4ba270adfd0bd82548a14d4e815ff0e0481a4dcbd74"
+    },
+    {
+      "file": "research/sources/penseurs/mazzucato-mission-oriented-2018.pdf",
+      "url": "https://www.era.gv.at/public/documents/3483/mazzucato_report_2018.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 468632,
+      "sha256": "814a581fda332bdbec1747bdab49db221dcd139fb4d7e5573e528ad5662e347a"
+    },
+    {
+      "file": "research/sources/penseurs/mill-de-la-liberte-ch1.html",
+      "url": "https://fr.wikisource.org/wiki/De_la_libert%C3%A9/01",
+      "accessed": "2026-11-01",
+      "bytes": 100536,
+      "sha256": "377a7bb1bf02639da108100ff7ecbdefda2b660394358a5e904d01a06fef3674"
+    },
+    {
+      "file": "research/sources/penseurs/miller-immigration-case-for-limits-2005.pdf",
+      "url": "https://icmigrations.cnrs.fr/wp-content/uploads/2024/03/LECTURE-4-David-Miller-Immigration-the-case-for-limits.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 96433,
+      "sha256": "797c712ff0296bed54307057fd58f1e8e80b2117d51e2653d6dc62ec8eb4d643"
+    },
+    {
+      "file": "research/sources/penseurs/mokyr-discours-banquet-nobel-2025.html",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2025/mokyr/speech/",
+      "accessed": "2026-11-01",
+      "bytes": 174727,
+      "sha256": "128e8f8225d264ae08d6804a912aa5a97967635c9e84c2f9d1edce0554654e51"
+    },
+    {
+      "file": "research/sources/penseurs/montbrial-jdd-ifri-2022.html",
+      "url": "https://www.ifri.org/fr/presse-contenus-repris-sur-le-site/thierry-de-montbrial-president-de-lifri-gagner-une-guerre-cest",
+      "accessed": "2026-11-01",
+      "bytes": 99320,
+      "sha256": "92efb53dc97eea3230d5b89ec36f47bfe5d1e5fbe088b9e966b14da472ce11a4"
+    },
+    {
+      "file": "research/sources/penseurs/montesquieu-esprit-des-lois-livre-11.html",
+      "url": "https://fr.wikisource.org/wiki/De_l%E2%80%99esprit_des_lois_(%C3%A9d._Nourse)/Livre_11",
+      "accessed": "2026-11-01",
+      "bytes": 182961,
+      "sha256": "8ef733afd1dc4bbbb52983ffa35d9561323f9606acb0b2b61a8b3fed41ded8bd"
+    },
+    {
+      "file": "research/sources/penseurs/morel-differenciation-acteurs-publics-2021.html",
+      "url": "https://acteurspublics.fr/articles/benjamin-morel-la-differenciation-dangers-et-faux-semblants/",
+      "accessed": "2026-11-01",
+      "bytes": 145941,
+      "sha256": "64ccf064422e44609e66bb3d596e9d39514d047dc0714695bbdf8533a46b46ea"
+    },
+    {
+      "file": "research/sources/penseurs/morgenthau-politics-among-nations-1948.txt",
+      "url": "https://archive.org/details/in.ernet.dli.2015.74487",
+      "accessed": "2026-11-01",
+      "bytes": 1478065,
+      "sha256": "f58e2547efae6749b4369692c7c65c80605955b730cc9bd09252380ba6a020aa"
+    },
+    {
+      "file": "research/sources/penseurs/ostrom-conference-nobel-2009.pdf",
+      "url": "https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2428710,
+      "sha256": "5d11eb59b78e94bef479e66216078231dc803aa9bedd907314a96aba0e53c5f1"
+    },
+    {
+      "file": "research/sources/penseurs/pasquier-ambition-decentralisatrice-acteurs-publics-2022.html",
+      "url": "https://acteurspublics.fr/articles/romain-pasquier-avoir-enfin-une-vraie-ambition-decentralisatrice-est-primordial/",
+      "accessed": "2026-11-01",
+      "bytes": 144981,
+      "sha256": "bd05d28838edd94df2247b59dd9b36a06f41a8662c8708a6ff796b66e6570c20"
+    },
+    {
+      "file": "research/sources/penseurs/pelluchon-ultime-recours-2022.pdf",
+      "url": "https://www.lagrandeconversation.com/app/uploads/2022/12/Un-ultime-recours-au-cas-par-cas-La-Grande-Conversation.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 265330,
+      "sha256": "a1c58421f07557df0808cbd2628d12c4270992212dfd7f2a6ff6d183e7f5f06c"
+    },
+    {
+      "file": "research/sources/penseurs/pelopidas-ceri-2022.html",
+      "url": "https://www.sciencespo.fr/ceri/fr/actualites/la-recherche-independante-au-service-du-choix-democratique-sur-les-arsenaux-nucleaires/",
+      "accessed": "2026-11-01",
+      "bytes": 491173,
+      "sha256": "7e5b44bceb5194bddbad4185abc14bac0045e48e805cec28680b7c12b8bbf02f"
+    },
+    {
+      "file": "research/sources/penseurs/piketty-isf-en-amerique-2019.html",
+      "url": "https://www.lemonde.fr/blog/piketty/2019/02/12/lisf-en-amerique/",
+      "accessed": "2026-11-01",
+      "bytes": 158862,
+      "sha256": "ccb1bbd31beaf749b9f40fe90793cb928d18ad17039367b6746fcd1fda900ae8"
+    },
+    {
+      "file": "research/sources/penseurs/piketty-repenser-code-capital-2017.html",
+      "url": "https://www.lemonde.fr/blog/piketty/2017/09/12/repenser-le-code-du-capital/",
+      "accessed": "2026-11-01",
+      "bytes": 147021,
+      "sha256": "345a438fbccfc252445b362c9e9b7f87839afb93f33193b68cac306b1bcd8d8d"
+    },
+    {
+      "file": "research/sources/penseurs/piketty-saez-stantcheva-nber-17616.pdf",
+      "url": "https://www.nber.org/system/files/working_papers/w17616/w17616.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 562135,
+      "sha256": "b170e7c06bb80c5946beb4bd1a87da8f06da74a435219d2e56c00b2adfb2050b"
+    },
+    {
+      "file": "research/sources/penseurs/pisani-ferry-mahfouz-incidences-economiques-2023.pdf",
+      "url": "https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/2023-incidences-economiques-rapport-pisani-5juin.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 3725586,
+      "sha256": "d54d83f33af34cea75cea2b1fc68d1477a448e3209a29c3764a374160e2170a3"
+    },
+    {
+      "file": "research/sources/penseurs/posner-privacy-surveillance-law-2008.pdf",
+      "url": "https://lawreview.uchicago.edu/sites/default/files/75_1_Posner.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 96308,
+      "sha256": "379f96882009702d25e574d639159b09db8950ced795b0a503fe722ed2a3e3eb"
+    },
+    {
+      "file": "research/sources/penseurs/posner-vermeule-accommodating-emergencies.html",
+      "url": "https://hls.harvard.edu/bibliography/accommodating-emergencies/",
+      "accessed": "2026-11-01",
+      "bytes": 597945,
+      "sha256": "a3a26d4affd57a1ad8fc412fd530f61b3db346711963db4aa427db0f90c27761"
+    },
+    {
+      "file": "research/sources/penseurs/renan-qu-est-ce-qu-une-nation-1882.html",
+      "url": "https://fr.wikisource.org/wiki/Qu%E2%80%99est-ce_qu%E2%80%99une_nation_%3F",
+      "accessed": "2026-11-01",
+      "bytes": 109602,
+      "sha256": "52d9d189fc82a20d0bbc884a4e8ae014470ec0c4651cffb18bb45a4239e6babf"
+    },
+    {
+      "file": "research/sources/penseurs/res-publica-institutions-ve-republique-2024.pdf",
+      "url": "https://fondation-res-publica.org/wp-content/uploads/2024/12/Actes-Comment-les-institutions-de-la-Ve-republique-peuvent-elles-evoluer-.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 610650,
+      "sha256": "10f4c1ca1dce3e2c3af5576e2b1cb350d4270907b9867a35cf1183504d9c1690"
+    },
+    {
+      "file": "research/sources/penseurs/ricot-audition-senat-2025-07-09.html",
+      "url": "https://www.senat.fr/compte-rendu-commissions/20250707/soci.html",
+      "accessed": "2026-11-01",
+      "bytes": 388005,
+      "sha256": "9ca119203ae75f4d947482bd6911cd7f41c7bad275a789b44d123b4796ae9517"
+    },
+    {
+      "file": "research/sources/penseurs/ritchie-co2-gdp-decoupling-2021.html",
+      "url": "https://ourworldindata.org/co2-gdp-decoupling",
+      "accessed": "2026-11-01",
+      "bytes": 56618,
+      "sha256": "44fe13489ea090c938ca88b720cf4834feaa98337f32efe8902a99c6153ecb50"
+    },
+    {
+      "file": "research/sources/penseurs/rosanvallon-legitimite-democratique-2008.pdf",
+      "url": "https://www.college-de-france.fr/media/pierre-rosanvallon/UPL35577_livrerosanvallon.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 10543,
+      "sha256": "c2c1e22837d9ac3d1ec0d950145404a322fd53a23e5b7cdea7f6b8cc9897491e"
+    },
+    {
+      "file": "research/sources/penseurs/rousseau-contrat-social-1762.html",
+      "url": "https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Texte_entier",
+      "accessed": "2026-11-01",
+      "bytes": 487416,
+      "sha256": "d5d12bf07eac2630388bc13d616f70d595925ec53c4441dd733e9bc0ec769b21"
+    },
+    {
+      "file": "research/sources/penseurs/roussellier-force-de-gouverner-sciences-po-2016.html",
+      "url": "https://www.sciencespo.fr/fr/actualites/force-de-gouverner/",
+      "accessed": "2026-11-01",
+      "bytes": 471916,
+      "sha256": "21c07d108e48691feb74d0b5930cf2d666aa1975cff91f802c09288d2d2d57ee"
+    },
+    {
+      "file": "research/sources/penseurs/salin-revue-politique-2022.html",
+      "url": "https://www.revuepolitique.fr/les-francais-doivent-retrouver-le-gout-de-la-liberte-individuelle-une-interview-du-professeur-pascal-salin/",
+      "accessed": "2026-11-01",
+      "bytes": 285521,
+      "sha256": "6e013f88a8d1878ac6ad2d362db3bf7a32edd141fd420ca74a4dee246c546888"
+    },
+    {
+      "file": "research/sources/penseurs/sapir-euro-vingt-ans-res-publica-2019.pdf",
+      "url": "https://fondation-res-publica.org/wp-content/uploads/2023/03/Leuro-vingt-ans-apres-bilan-et-perspectives.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 415536,
+      "sha256": "da65005e383ee21b791c5742b77886ea8af9d76056ee6dfb746cab6bed48a3aa"
+    },
+    {
+      "file": "research/sources/penseurs/sapir-politis-protectionnisme-2012.html",
+      "url": "https://www.politis.fr/articles/2012/03/faut-il-un-protectionnisme-europeen-17688/",
+      "accessed": "2026-11-01",
+      "bytes": 162220,
+      "sha256": "5a8602e126bd2d4e0624f3d307a24cc3a0b1c0287e93857c22f279e000c63977"
+    },
+    {
+      "file": "research/sources/penseurs/scharpf-community-and-autonomy-2010.pdf",
+      "url": "https://www.mpifg.de/135440/mpifg_bd_68.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2385890,
+      "sha256": "9c606005762417373d957cf8fbbd57bb289958aeaa42d5cea2722cd2c930f447"
+    },
+    {
+      "file": "research/sources/penseurs/schnapper-integration-questions-europe-90.pdf",
+      "url": "https://old.robert-schuman.eu/fr/doc/questions-d-europe/qe-90-fr.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 59722,
+      "sha256": "11f23b57b28bea46cac33104e53dbe7d042ddd1c73296addadf85424810a6d0c"
+    },
+    {
+      "file": "research/sources/penseurs/seguin-exception-irrecevabilite-1992-05-05.pdf",
+      "url": "https://archives.assemblee-nationale.fr/9/cri/1991-1992-ordinaire2/022.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 2295113,
+      "sha256": "78557dcc74fdd87bddd97f3753529a0209960943c16d99ead8852510cbe083d6"
+    },
+    {
+      "file": "research/sources/penseurs/senac-parite-quotas-vie-des-idees-2008.html",
+      "url": "https://laviedesidees.fr/Parite-quotas-la-qualite-de-l",
+      "accessed": "2026-11-01",
+      "bytes": 65828,
+      "sha256": "7415bc6b5e071a012990c493fab85c2bc69c4399b5f09dd0dd728ee0edee5a6f"
+    },
+    {
+      "file": "research/sources/penseurs/sieyes-dire-veto-royal-1789.html",
+      "url": "https://fr.wikisource.org/wiki/Dire_de_l%27abb%C3%A9_Siey%C3%A8s,_sur_la_question_du_Veto_royal,_%C3%A0_la_s%C3%A9ance_du_7_septembre_1789",
+      "accessed": "2026-11-01",
+      "bytes": 110358,
+      "sha256": "2b1f263fdf8fae8affb77dceca7d9166768d7b8f7cc4fc9d4b6aa50abd3f006e"
+    },
+    {
+      "file": "research/sources/penseurs/simon-observatoire-inegalites-2010.html",
+      "url": "https://www.inegalites.fr/Il-n-existe-pas-de-politique-de-lutte-contre-les-discriminations-sans",
+      "accessed": "2026-11-01",
+      "bytes": 81164,
+      "sha256": "f0e2beed95264550a97d16ea372391b55700533a2774a988d089f6040a85d000"
+    },
+    {
+      "file": "research/sources/penseurs/simon-ultimate-resource-2-ch20.txt",
+      "url": "http://www.juliansimon.com/writings/Ultimate_Resource/TCHAR20.txt",
+      "accessed": "2026-11-01",
+      "bytes": 41702,
+      "sha256": "fff20c51bb34e5776d3bacda2ed69a88b0ac7f32d1e6d1bb71ceee313c185c82"
+    },
+    {
+      "file": "research/sources/penseurs/stael-considerations-revolution-3-24.html",
+      "url": "https://fr.wikisource.org/wiki/Consid%C3%A9rations_sur_%E2%80%A6_la_R%C3%A9volution_Fran%C3%A7aise/Troisi%C3%A8me_partie/XXIV",
+      "accessed": "2026-11-01",
+      "bytes": 73799,
+      "sha256": "7220c45e632eafb853f8345990c40f0a699e8c7f7654a37771d268c60dc87ae5"
+    },
+    {
+      "file": "research/sources/penseurs/taylor-politics-of-recognition-1994.pdf",
+      "url": "https://web.ics.purdue.edu/~drkelly/TaylorPoliticsOfRecognition1994.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 645949,
+      "sha256": "961a5b012b02786e547a185f5c263b442ba19f0713e7b484b319a4291627d272"
+    },
+    {
+      "file": "research/sources/penseurs/tenenbaum-partenaire-fiable-ifri-2024.html",
+      "url": "https://www.ifri.org/fr/presse-contenus-repris-sur-le-site/la-france-doit-se-montrer-un-partenaire-fiable-la-hauteur-des",
+      "accessed": "2026-11-01",
+      "bytes": 105658,
+      "sha256": "861f2f831787149a3de0b555f8d60b113ce65e0bbc5133a33055e75f94ce8456"
+    },
+    {
+      "file": "research/sources/penseurs/terra-nova-ric-deliberatif-2019.pdf",
+      "url": "https://tnova.fr/site/assets/files/11908/terra-nova_ric-deliberatif_190219.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 8967530,
+      "sha256": "8749bf487e63c078b3c1bf663496fd7975a4c9c0ea15a02b4bf4baca7078af9b"
+    },
+    {
+      "file": "research/sources/penseurs/tertrais-grand-continent-2024.html",
+      "url": "https://legrandcontinent.eu/fr/2024/03/11/nucleaire-face-a-poutine-une-dissuasion-a-leuropeenne-conversation-avec-bruno-tertrais/",
+      "accessed": "2026-11-01",
+      "bytes": 228904,
+      "sha256": "a67db7b1b9a2c52302f31291e9e45b05bde472bffca92ad9743ce9d29c608cb5"
+    },
+    {
+      "file": "research/sources/penseurs/thery-leroyer-filiation-origines-parentalite-2014.pdf",
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/144000203.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 17403007,
+      "sha256": "90c7c5f7625278b772bbbdc3ae8d7a34a2d517001e0f4c8ee12bbbaa493bf567"
+    },
+    {
+      "file": "research/sources/penseurs/tirole-conference-nobel-2014-fr.pdf",
+      "url": "https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/by/tirole/nobel_lecture_fr_30_mars_2015_partenaires_idei.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 753505,
+      "sha256": "4acce482ba8a30b458c8a868fa19f488f66bf36c4b62fa133b2b43992d837779"
+    },
+    {
+      "file": "research/sources/penseurs/tocqueville-democratie-amerique-1-1-5.html",
+      "url": "https://fr.wikisource.org/wiki/De_la_d%C3%A9mocratie_en_Am%C3%A9rique/%C3%89dition_1848/Tome_1/Premi%C3%A8re_partie/Chapitre_5",
+      "accessed": "2026-11-01",
+      "bytes": 247267,
+      "sha256": "0a3a5cb027ef7cbf4aa388908cab7bdc553dadfbaf3fba0efb3b0dd2782c64ce"
+    },
+    {
+      "file": "research/sources/penseurs/tribalat-impasses-politique-migratoire-2020.html",
+      "url": "https://www.micheletribalat.fr/435984650/446554436",
+      "accessed": "2026-11-01",
+      "bytes": 134232,
+      "sha256": "18454d5299c8b8a679e5a2b393b838750167b9de2771ae7c75f626bfd68bd5eb"
+    },
+    {
+      "file": "research/sources/penseurs/tribalat-integration-fin-modele-2015.html",
+      "url": "https://www.micheletribalat.fr/434872084/435558977",
+      "accessed": "2026-11-01",
+      "bytes": 279841,
+      "sha256": "b03c758cf0b36018104b008b82a106af00a5ab22029741a53862518903d596b3"
+    },
+    {
+      "file": "research/sources/penseurs/waldron-case-against-judicial-review-2006.pdf",
+      "url": "https://openyls.law.yale.edu/bitstreams/4579485c-6d53-4310-959e-7921f32e4a68/download",
+      "accessed": "2026-11-01",
+      "bytes": 3870518,
+      "sha256": "8eb651da93e74bf06af8d2be23acb4d49b8943ab5eadfac5fb4b0ff33caa310f"
+    },
+    {
+      "file": "research/sources/penseurs/walzer-kyunghyang-2022.html",
+      "url": "https://www.khan.co.kr/en/article/202204251747207",
+      "accessed": "2026-11-01",
+      "bytes": 447670,
+      "sha256": "7f16a57fc6cf9c9595b6eccc29427b438729b2879906ec312392f2284d2057f9"
+    },
+    {
+      "file": "research/sources/penseurs/wieviorka-politis-2011.html",
+      "url": "https://www.politis.fr/articles/2011/03/les-termes-du-debat-gouvernemental-sont-biaises-13356/",
+      "accessed": "2026-11-01",
+      "bytes": 162998,
+      "sha256": "f71165266fce95847421dc85e860965fd3f1d3d6b0524dbbe9f4bb81e9a24e51"
+    },
+    {
+      "file": "research/sources/penseurs/wihtol-de-wenden-iris-2017.html",
+      "url": "https://www.iris-france.org/86479-limmigration-3-questions-a-catherine-wihtol-de-wenden/",
+      "accessed": "2026-11-01",
+      "bytes": 134745,
+      "sha256": "d5bedd3a54666f0182ce706d563a6d066e36154b8940f5c84dabd443cca4d9fe"
+    },
+    {
+      "file": "research/sources/penseurs/bagehot-constitution-anglaise-gaulhiac-1869.html",
+      "url": "https://archive.org/stream/laconstitutiona00bagegoog/laconstitutiona00bagegoog_djvu.txt",
+      "accessed": "2026-11-01",
+      "bytes": 810967,
+      "sha256": "43494e94d6b5c1f9363c7d679f6255127f54c5177a2f364956a7e3ef76927c46"
+    },
+    {
+      "file": "research/sources/penseurs/hamilton-federaliste-70-jeze-1902.html",
+      "url": "https://archive.org/stream/lefdralistec00hami/lefdralistec00hami_djvu.txt",
+      "accessed": "2026-11-01",
+      "bytes": 1838214,
+      "sha256": "e5e2949e609e4212c2b8ea5f39c63dadb0ab9a1dc773b8b3af05ef343713f6d9"
+    },
+    {
+      "file": "research/sources/penseurs/hobbes-leviathan-2e-partie-folliot.pdf",
+      "url": "https://classiques.uqam.ca/classiques/hobbes_thomas/leviathan/leviathan_partie_2/leviathan_2e_partie.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 808917,
+      "sha256": "1fdad763ef84cf198207b54d50d647e463154b1978b83364b483c5b7b06c4868"
+    },
+    {
+      "file": "research/sources/penseurs/landemore-grand-continent-2025.html",
+      "url": "https://legrandcontinent.eu/fr/2025/08/08/islande-grand-tour/",
+      "accessed": "2026-11-01",
+      "bytes": 225050,
+      "sha256": "03d6a6e374facd3b8030f0767ef79cc498a519cb6f85dc935a05fd6df966ba3c"
+    },
+    {
+      "file": "research/sources/penseurs/mathieu-crise-democratie-liberale-res-publica-2021.html",
+      "url": "https://fondation-res-publica.org/2021/11/22/la-crise-du-modele-europeen-de-democratie-liberale/",
+      "accessed": "2026-11-01",
+      "bytes": 124734,
+      "sha256": "eff0ee9a25b82adbe16879e2a9f7260775d8aa81b74710e480a5a1d40e7de30a"
+    },
+    {
+      "file": "research/sources/penseurs/mearsheimer-le-temps-2015.html",
+      "url": "https://www.letemps.ch/monde/menacant-livrer-armes-lukraine-americains-jouent-feu",
+      "accessed": "2026-11-01",
+      "bytes": 244073,
+      "sha256": "9c84fcec17b525201832a06b68843e83e8d0eb0b064e3d3758a592b27216d2a1"
+    },
+    {
+      "file": "research/sources/penseurs/michaels-marianne-observatoire-inegalites-2009.html",
+      "url": "https://www.inegalites.fr/La-diversite-ne-reduit-pas-les-inegalites-Entretien-avec-Walter-Benn-Michaels",
+      "accessed": "2026-11-01",
+      "bytes": 70490,
+      "sha256": "d72f74d0b7715f7d7432fe5a5667bff440453b9170cedded2b08013e3ce847ed"
+    },
+    {
+      "file": "research/sources/penseurs/proudhon-principe-federatif-1863.html",
+      "url": "https://fr.wikisource.org/wiki/Proudhon_-_Du_Principe_f%C3%A9d%C3%A9ratif/Texte_entier",
+      "accessed": "2026-11-01",
+      "bytes": 688894,
+      "sha256": "2beae98bf380bd007b589d9c0703e006f0b6200f0d1d21bef76ff08f97f1b36a"
+    },
+    {
+      "file": "research/sources/penseurs/urbinati-manin-vie-des-idees-2008.html",
+      "url": "https://laviedesidees.fr/La-democratie-representative-est-elle-reellement-democratique",
+      "accessed": "2026-11-01",
+      "bytes": 114192,
+      "sha256": "bb15176e64d6fd5d6404dd4562ef40ce54c99b5515a0f1b094951b011983b514"
+    },
+    {
+      "file": "research/sources/penseurs/vegece-institutions-militaires-livre-3-nisard.html",
+      "url": "https://fr.wikisource.org/wiki/Institutions_militaires/Livre_III",
+      "accessed": "2026-11-01",
+      "bytes": 158875,
+      "sha256": "2bce9ce0702b2a055e0aa2a27c019695e18e8de5cf91729fd66ef64c9825aeca"
+    },
+    {
+      "file": "research/sources/penseurs/blanchard-grand-continent-2023.html",
+      "url": "https://legrandcontinent.eu/fr/2023/01/22/la-baisse-du-taux-dinteret-est-un-phenomene-mondial-une-conversation-avec-olivier-blanchard/",
+      "accessed": "2026-11-01",
+      "bytes": 230204,
+      "sha256": "94eb823f0628a36436dede413fde0eef2ce918ab8c29e9e157e9da98ac3fb022"
+    },
+    {
+      "file": "research/sources/penseurs/chang-monde-diplomatique-2003.html",
+      "url": "https://www.monde-diplomatique.fr/2003/06/CHANG/10189",
+      "accessed": "2026-11-01",
+      "bytes": 42616,
+      "sha256": "c2b6acc3ee5cb9b763e9a073cd9bb5da7574bc71336c3a028e5cd6068547604d"
+    },
+    {
+      "file": "research/sources/penseurs/habermas-grand-continent-2026.html",
+      "url": "https://legrandcontinent.eu/fr/2026/03/14/habermas-in-memoriam/",
+      "accessed": "2026-11-01",
+      "bytes": 229877,
+      "sha256": "e9b102b18a53ff04c1801f496c9652b3017cdd811f83978a01bcf3de3af280c4"
+    },
+    {
+      "file": "research/sources/penseurs/hayek-utilisation-connaissance-laissons-faire-26.pdf",
+      "url": "https://www.coppetinstitute.org/EL/LaissonsFaire.No26_.Octobre2018-17-27.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 279317,
+      "sha256": "f9c57ae11e2e12c3aa75a0f8f90ac4f10d62479fd136739b1385095bc9e5134f"
+    },
+    {
+      "file": "research/sources/penseurs/keynes-theorie-generale-livres-4-6-largentaye.pdf",
+      "url": "https://web.archive.org/web/20180421230746id_/http://classiques.uqac.ca/classiques/keynes_john_maynard/theorie_gen_emploi/theorie_emploi_monnaie_2.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 688823,
+      "sha256": "d029ba052a97593eb00484b0fe1462ac46d442830e3ff9508b5c8ae5b6999f6f"
+    },
+    {
+      "file": "research/sources/penseurs/nozick-anarchie-etat-utopie-puf.html",
+      "url": "https://www.puf.com/anarchie-etat-et-utopie",
+      "accessed": "2026-11-01",
+      "bytes": 103326,
+      "sha256": "ff948ec1999d98aeb9420894d31307eaa075829a748d9af3b32c05844c4acca9"
+    },
+    {
+      "file": "research/sources/penseurs/piketty-union-parlementaire-europeenne-2023.html",
+      "url": "https://thomaspiketty.wordpress.com/2023/06/13/pour-une-union-parlementaire-europeenne-upe/",
+      "accessed": "2026-11-01",
+      "bytes": 147340,
+      "sha256": "fb6bf08de5b91994176de3eee040db9b8c213d5149f3677f73ae7c568d8c347c"
+    },
+    {
+      "file": "research/sources/penseurs/rodrik-gouvernance-mondiale-grand-continent-2021.html",
+      "url": "https://legrandcontinent.eu/fr/2021/03/17/le-perimetre-adequat-de-la-gouvernance-mondiale/",
+      "accessed": "2026-11-01",
+      "bytes": 287921,
+      "sha256": "4a295e164b35f20a3c2d2c68f7e39a1faf34346c38b362e2761bf45bfe4a2d03"
+    },
+    {
+      "file": "research/sources/penseurs/salin-impot-mondial-institut-liberal-2022.pdf",
+      "url": "https://www.libinst.ch/publications/IL-Salin-Impot%20mondial.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 175021,
+      "sha256": "a3f6bbeaf48aefaf823644069cb88fc8be43cea9e616eb135b4703aaaa69904b"
+    },
+    {
+      "file": "research/sources/penseurs/smith-richesse-des-nations-4-2-garnier.html",
+      "url": "https://fr.wikisource.org/wiki/Recherches_sur_la_nature_et_les_causes_de_la_richesse_des_nations/Livre_4/2",
+      "accessed": "2026-11-01",
+      "bytes": 154590,
+      "sha256": "3fe7b774353976a62e90c59ccd8c7fdedbfebdf0278b193addff662ec9979943"
+    },
+    {
+      "file": "research/sources/penseurs/zucman-audition-an-2026-05-06.pdf",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cepat/l17cepat2526022_compte-rendu.pdf",
+      "accessed": "2026-11-01",
+      "bytes": 641567,
+      "sha256": "b20d2953ad6a84a0989c308d0007d389c894cca272164a5f48d1e7a226385e26"
+    },
+    {
+      "file": "research/sources/penseurs/bastiat-sophismes-economiques.html",
+      "url": "https://fr.wikisource.org/wiki/Sophismes_%C3%A9conomiques/Texte_entier",
+      "accessed": "2026-11-01",
+      "bytes": 769845,
+      "sha256": "39b057cd48924217f72df68a704fca762f466347e35df8294ec1140de043cb88"
     }
   ]
 }

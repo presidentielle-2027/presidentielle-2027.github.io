@@ -117,6 +117,29 @@ test('The standalone classic script starts and completes the questionnaire witho
  assert.match(method,/Reconquête[\s\S]*?Texte comparé : Droite nationale souverainiste/);
 });
 
+test('Every axis presents arguments for both poles and the method page lists every cited author',()=>{
+ const refs=read('../research/references.json');
+ const answers=Object.fromEntries(questions.slice(0,36).map((q,i)=>[q.id,i%2?-1:1]));
+ const app=boot({methodVersion:METHOD_VERSION,answers,priorities:{},cursor:36,usePriorities:true});
+ assert.doesNotMatch(app.elements.navigation.innerHTML,/Idées/);
+ app.go('#resultats');
+ app.action('results-tab',undefined,{tab:'axes'});
+ const html=app.html();
+ assert.equal((html.match(/<section class="arguments"/g)||[]).length,A);
+ assert.equal((html.match(/<div class="arg-pole">/g)||[]).length,2*A);
+ assert.equal((html.match(/<article class="arg">/g)||[]).length,refs.arguments.length);
+ for(const a of axisList){
+  const row=html.split(`id="axe-${a.id}"`)[1].split('<details class="axis-row"')[0];
+  assert.ok(row.includes(`<p class="arg-pole-name">${a.low}</p>`)&&row.includes(`<p class="arg-pole-name">${a.high}</p>`),a.id);
+ }
+ // L'ancienne adresse de la page Idées mène à la méthode, qui liste tous les auteurs du catalogue.
+ app.go('#references');
+ const method=app.html();
+ assert.match(method,/id="auteurs"/);
+ assert.equal(method.match(/<ul class="author-list">[\s\S]*?<\/ul>/)[0].match(/<li>/g).length,refs.thinkers.length);
+ assert.ok(method.includes(`${refs.thinkers.length} auteurs`));
+});
+
 test('A partial questionnaire still lists every family of the catalog in the proximities',()=>{
  const answers=Object.fromEntries(questions.slice(0,36).map((q,i)=>[q.id,i%2?-1:1]));
  const app=boot({methodVersion:METHOD_VERSION,answers,priorities:{},cursor:36,usePriorities:true});
