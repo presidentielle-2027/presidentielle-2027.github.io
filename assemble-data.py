@@ -101,7 +101,7 @@ for axis, ids in references['axisHighlights'].items():
     assert axis in axis_ids, axis
     assert all(i in economists and axis in economists[i]['axes'] for i in ids), (axis, ids)
 
-data = {'edition': 'France · octobre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
+data = {'edition': 'France · novembre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
         'families': families, 'familiesVersion': families_catalog['version'], 'parties': parties_catalog}
 (base / 'dist/data.js').write_text('window.REPERES_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print(f'Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(references["economists"])} economists, '
