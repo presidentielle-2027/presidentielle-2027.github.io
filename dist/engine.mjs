@@ -8,13 +8,15 @@ export function computeProfile(axes,answers={}){
   return {id:axis.id,score:values.length>=2?value:null,provisional:values.length===1?value:null,valid:values.length,completed:axis.questions.filter(q=>isAnswer(answers[q.id])).length,skipped:axis.questions.filter(q=>answers[q.id]==='skip').length,spread:values.length?Math.sqrt(mean(values.map(v=>(v-value)**2))):null,contrast:values.length>=2&&Math.max(...values)-Math.min(...values)>=7.5,contributions};
  });
 }
+// Nombre minimal d'axes mesurés de part et d'autre pour comparer une famille à un profil.
+export const MIN_COMMON_AXES=6;
 export function compareFamilies(profile,families,priorities={},usePriorities=true){
  const map=Object.fromEntries(profile.map(s=>[s.id,s]));
  return families.map(f=>{
   const common=Object.entries(f.positions).flatMap(([id,target])=>map[id]?.score!==null&&map[id]?.score!==undefined&&typeof target==='number'?[{id,target,score:map[id].score,weight:usePriorities?(priorities[id]??2):1}]:[]);
   const weight=common.reduce((s,x)=>s+x.weight,0);const distance=weight?common.reduce((s,x)=>s+Math.abs(x.score-x.target)*x.weight,0)/weight:null;
   return {...f,distance,common,coverage:common.length/Object.keys(f.positions).length};
- }).filter(f=>f.common.length>=6).sort((a,b)=>a.distance-b.distance);
+ }).filter(f=>f.common.length>=MIN_COMMON_AXES).sort((a,b)=>a.distance-b.distance);
 }
 export function globalCoordinates(profile){
  const map=Object.fromEntries(profile.map(s=>[s.id,s.score]));

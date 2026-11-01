@@ -63,7 +63,7 @@ docker compose up -d --build
 docker compose down
 ```
 
-La liaison fournie écoute uniquement sur la machine hôte. Pour un service exposé, adapter le réseau ou le reverse proxy de votre hébergement et y terminer HTTPS. L'application n'a pas de base de données ni de volume serveur à sauvegarder.
+La configuration NGINX fournie envoie `Cache-Control: no-cache` : le navigateur revalide chaque fichier à chaque visite, si bien qu'après une mise à jour la page ne mélange pas d'anciennes données avec le nouveau code. La liaison fournie écoute uniquement sur la machine hôte. Pour un service exposé, adapter le réseau ou le reverse proxy de votre hébergement et y terminer HTTPS. L'application n'a pas de base de données ni de volume serveur à sauvegarder.
 
 L'image de base est `nginxinc/nginx-unprivileged:stable-alpine`, issue du projet NGINX. Ce tag suit les mises à jour de sa branche ; une infrastructure exigeant des builds reproductibles peut le remplacer par le digest approuvé dans son registre.
 
