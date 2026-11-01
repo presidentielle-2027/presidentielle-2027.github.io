@@ -1,5 +1,5 @@
 {
-  "version": "2026.10",
+  "version": "2026.11",
   "families": [
     {
       "id": "anticapitalisme",
@@ -24,6 +24,26 @@
           "party": "npaa",
           "url": "https://www.npa-lanticapitaliste.org/principes-fondateurs"
         }
+      ],
+      "compared": [
+        {
+          "title": "Nathalie Arthaud – Présidentielle 2027 (2026)",
+          "kind": "texte de campagne",
+          "party": "lo",
+          "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+        },
+        {
+          "title": "Réponse de Selma Labib à Philippe Juvin (2026)",
+          "kind": "texte de campagne",
+          "party": "npar",
+          "url": "https://npa-revolutionnaires.org/articles/reponse-de-selma-labib-a-philippe-juvin-rapporteur-general-de-la-commission-des-finances"
+        },
+        {
+          "title": "Nos propositions (2026)",
+          "kind": "programme",
+          "party": "rp",
+          "url": "https://anasse2027.fr/programme/depliant-anasse-2027.pdf"
+        }
       ]
     },
     {
@@ -37,15 +57,59 @@
         "budget": 3,
         "ecology": 5,
         "europe": 7,
-        "trade": 9,
+        "trade": 7,
         "territory": 3
       },
       "sources": [
         {
-          "title": "Site du Parti communiste français",
-          "kind": "site de parti",
+          "title": "Un communisme de conquêtes – Base commune votée au 40e congrès (2026)",
+          "kind": "texte doctrinal",
           "party": "pcf",
-          "url": "https://www.pcf.fr/"
+          "url": "https://assets.nationbuilder.com/pcf/pages/2819/attachments/original/1784790181/base_commune_finale_40e_congres_ppp.pdf"
+        }
+      ]
+    },
+    {
+      "id": "gauchederupture",
+      "name": "Gauche de rupture écologique",
+      "description": "Planification écologique, redistribution très forte et pôles publics dans les secteurs stratégiques, dans une 6e République parlementaire dotée d’un référendum d’initiative citoyenne. Elle revendique la primauté des choix nationaux sur les règles européennes, un protectionnisme écologique et la sortie des alliances militaires permanentes.",
+      "positions": {
+        "redistribution": 0,
+        "economy": 1,
+        "work": 1,
+        "budget": 3,
+        "society": 1,
+        "liberties": 1,
+        "immigration": 1,
+        "integration": 2,
+        "religion": 2,
+        "ecology": 1,
+        "europe": 8,
+        "trade": 9,
+        "defense": 10,
+        "checks": 3,
+        "executive": 1,
+        "participation": 9,
+        "territory": 3
+      },
+      "sources": [
+        {
+          "title": "L’Avenir en commun (4e édition, 2025)",
+          "kind": "programme",
+          "party": "lfi",
+          "url": "https://web.archive.org/web/20250603222117/https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf"
+        },
+        {
+          "title": "Comment nous allons remettre de l’ordre dans les comptes publics (2026)",
+          "kind": "texte de campagne",
+          "party": "lfi",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf"
+        },
+        {
+          "title": "Comment nous allons garantir l’égalité pour des ruralités où il fait bon vivre ? (2026)",
+          "kind": "texte de campagne",
+          "party": "lfi",
+          "url": "https://melenchon2027.fr/programme/plans-thematiques/ruralite/"
         }
       ]
     },
@@ -72,6 +136,14 @@
           "kind": "programme",
           "party": "ps",
           "url": "https://projet-socialiste.fr/projet/"
+        }
+      ],
+      "compared": [
+        {
+          "title": "Aux Françaises et aux Français – Tenir la promesse de la France (2026)",
+          "kind": "texte de campagne",
+          "party": "laconvention",
+          "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf"
         }
       ]
     },
@@ -101,6 +173,20 @@
           "party": "lesecologistes",
           "url": "https://projet.lesecologistes.fr/"
         }
+      ],
+      "compared": [
+        {
+          "title": "Vivre autrement !",
+          "kind": "texte doctrinal",
+          "party": "ge",
+          "url": "https://generationecologie.fr/wp-content/uploads/2025/07/VIVRE-AUTREMENT-14eme-convention-nationale.pdf"
+        },
+        {
+          "title": "Le temps des possibles – Manifeste (2026)",
+          "kind": "texte doctrinal",
+          "party": "generations",
+          "url": "https://www.generation-s.fr/wp-content/uploads/2026/09/manifeste.pdf"
+        }
       ]
     },
     {
@@ -127,6 +213,14 @@
           "kind": "site de parti",
           "party": "renaissance",
           "url": "https://parti-renaissance.fr/"
+        }
+      ],
+      "compared": [
+        {
+          "title": "Nos priorités",
+          "kind": "programme",
+          "party": "modem",
+          "url": "https://www.mouvementdemocrate.fr/une-societe-unie-et-solidaire-7924"
         }
       ]
     },
@@ -230,15 +324,40 @@
         "ecology": 8,
         "europe": 9,
         "trade": 9,
-        "executive": 8,
         "participation": 8
       },
       "sources": [
         {
-          "title": "Contre-budget 2026",
+          "title": "M la France – Mon programme présidentiel (2022)",
           "kind": "programme",
           "party": "rn",
-          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf"
+          "url": "https://mlafrance.fr/pdfs/manifeste-m-la-france-programme-presidentiel.pdf"
+        },
+        {
+          "title": "22 mesures pour 2022",
+          "kind": "programme",
+          "party": "rn",
+          "url": "https://mlafrance.fr/pdfs/22-mesures-pour-2022.pdf"
+        },
+        {
+          "title": "Notre projet pour une Europe des nations (2024)",
+          "kind": "programme",
+          "party": "rn",
+          "url": "https://rassemblementnational.fr/documents/202411-programme-europeennes.pdf"
+        }
+      ],
+      "compared": [
+        {
+          "title": "Pour que la France reste la France – Mon programme (2022)",
+          "kind": "programme",
+          "party": "reconquete",
+          "url": "https://assets.nationbuilder.com/themes/61c071ce4764e8b1483d1a8c/attachments/original/1648220408/programme_eric_zemmour_presidentielle_2022.pdf"
+        },
+        {
+          "title": "Le Projet de Debout la France (2026)",
+          "kind": "programme",
+          "party": "dlf",
+          "url": "https://www.debout-la-france.fr/notre-projet/"
         }
       ]
     },

@@ -1,8 +1,8 @@
 # Avant l'isoloir, par Repères — version autonome et déployable
 
-**72 questions · 18 axes · lecture axe par axe · 10 familles politiques · 20 économistes.**
+**72 questions · 18 axes · lecture axe par axe · 11 familles politiques · 20 économistes.**
 
-Une aide à la préparation du choix pour l'élection présidentielle de 2027. L'outil compare les réponses à dix familles d'idées, mesure un écart plutôt qu'un pourcentage de compatibilité et ne donne aucune consigne de vote.
+Une aide à la préparation du choix pour l'élection présidentielle de 2027. L'outil compare les réponses à onze familles d'idées, mesure un écart plutôt qu'un pourcentage de compatibilité et ne donne aucune consigne de vote.
 
 Cette distribution fonctionne indépendamment de ChatGPT : aucun compte, aucune clé API, aucun backend applicatif et aucun abonnement ne sont nécessaires. Les réponses et les scores sont calculés dans le navigateur. Les liens vers les sources constituent des lectures facultatives.
 
@@ -83,7 +83,7 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 | Fichier | Rôle |
 |---|---|
 | `research/questionnaire.json` | Les quatre thèmes, les 18 axes, leurs pôles et les 72 propositions |
-| `research/families.json` | La version des repères, les profils éditoriaux des dix familles, leurs coordonnées et leurs sources (titre, éditeur, type de document, parti éventuel) |
+| `research/families.json` | La version des repères, les profils éditoriaux des onze familles, leurs coordonnées, leurs textes de référence et les textes d'autres partis comparés à leurs repères |
 | `research/parties.json` | Les partis retenus selon le critère d'inclusion indiqué dans le fichier, la justification de chacun et, pour ceux dont aucun texte ne sert de référence à une famille, la raison de cette absence |
 | `research/references.json` | Les vingt économistes, leurs thèses, nuances et références, et ceux mis en avant sous chaque axe |
 | `dist/engine.mjs` | Les calculs et la validation des imports |

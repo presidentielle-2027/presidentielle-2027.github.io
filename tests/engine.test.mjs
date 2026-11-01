@@ -90,7 +90,7 @@ test('Family proximity labels reuse the agreement, divergence and transversal th
 });
 test('Families are placed on the two-dimension map only where their reference points define both coordinates',()=>{
  const placed=families.filter(f=>{const c=familyCoordinates(f);return c.economic!==null&&c.cultural!==null;});
- assert.equal(placed.length,7);
+ assert.equal(placed.length,8);
  for(const f of families){const c=familyCoordinates(f),p=axes.map(a=>({id:a.id,score:f.positions[a.id]??null}));assert.deepEqual(c,globalCoordinates(p));}
  assert.deepEqual(coordinateReading({economic:3.4,cultural:6.6}),{eco:'économie redistributive et collective',culture:'valeurs culturelles conservatrices'});
  assert.deepEqual(coordinateReading({economic:5,cultural:null}),{eco:'économie mixte',culture:null});

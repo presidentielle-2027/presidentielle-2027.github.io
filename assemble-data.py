@@ -35,7 +35,7 @@ assert all(a['group'] in theme_ids for a in questionnaire['axes'])
 assert all(any(a['group'] == t for a in questionnaire['axes']) for t in theme_ids)
 
 # Familles : une version datée, des repères entre 0 et 10 sur des axes connus, des sources décrites.
-SOURCE_KINDS = {'programme', 'texte doctrinal', 'site de parti', 'rapport', 'recherche', 'institut'}
+SOURCE_KINDS = {'programme', 'texte doctrinal', 'texte de campagne', 'site de parti', 'rapport', 'recherche', 'institut'}
 party_ids = [p['id'] for p in parties]
 assert len(set(party_ids)) == len(parties), 'identifiant de parti en double'
 assert re.fullmatch(r'\d{4}\.\d{1,2}', families_catalog['version']), 'version des familles attendue sous la forme AAAA.M'
@@ -50,9 +50,14 @@ for family in families:
         assert source['title'] and source['kind'] in SOURCE_KINDS, (family['id'], source)
         assert re.match(r'https?://', source['url']), (family['id'], source['url'])
         assert 'party' not in source or source['party'] in party_ids, f"{family['id']} : parti inconnu {source['party']}"
+    # Textes comparés : textes de partis vérifiés proches des repères, sans avoir servi à les fixer.
+    for text in family.get('compared', []):
+        assert text['party'] in party_ids and text['title'] and text['kind'] in SOURCE_KINDS, (family['id'], text)
+        assert re.match(r'https?://', text['url']), (family['id'], text['url'])
 
-# Partis : chacun sert de référence à au moins une famille, ou porte la raison explicite de son absence.
+# Partis : chacun sert de référence à une famille, y est comparé, ou porte la raison explicite de son absence.
 referenced = {s['party'] for f in families for s in f['sources'] if 'party' in s}
+referenced |= {t['party'] for f in families for t in f.get('compared', [])}
 BASIS_TYPES = {'assemblee', 'parlement-europeen', 'presidentielle-2027'}
 for party in parties:
     # Un parti sans site officiel trouvé garde une adresse vide plutôt qu'une adresse supposée.
