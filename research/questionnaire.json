@@ -1,0 +1,708 @@
+{
+  "version": "1.0",
+  "language": "fr-FR",
+  "axes": [
+    {
+      "id": "redistribution",
+      "name": "Redistribution des richesses",
+      "shortName": "Redistribution",
+      "group": "economie",
+      "low": "Redistribution forte",
+      "high": "Redistribution limitée",
+      "description": "Mesure la place souhaitée des impôts et des transferts dans la réduction des écarts de revenus et de patrimoine.",
+      "questions": [
+        {
+          "id": "q01",
+          "axis": "redistribution",
+          "text": "L’impôt sur les revenus les plus élevés devrait être augmenté pour financer la solidarité.",
+          "context": "La question porte sur la contribution des ménages les plus aisés.",
+          "direction": -1
+        },
+        {
+          "id": "q02",
+          "axis": "redistribution",
+          "text": "Un prélèvement annuel sur les très grands patrimoines devrait financer la solidarité nationale.",
+          "context": "Le patrimoine comprendrait aussi les participations détenues dans les entreprises.",
+          "direction": -1
+        },
+        {
+          "id": "q03",
+          "axis": "redistribution",
+          "text": "Les droits de succession devraient être fortement réduits, y compris sur les héritages les plus importants.",
+          "context": "La proposition concerne également les transmissions de grande valeur.",
+          "direction": 1
+        },
+        {
+          "id": "q04",
+          "axis": "redistribution",
+          "text": "Les prestations de solidarité devraient se limiter à garantir un minimum de ressources.",
+          "context": "Au-delà de ce minimum, la réduction des écarts de revenus ne serait plus leur objectif.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "name": "Organisation de l’économie",
+      "shortName": "Économie",
+      "group": "economie",
+      "low": "Orientation publique",
+      "high": "Coordination par le marché",
+      "description": "Distingue la propriété et l’orientation publiques de la production d’une coordination reposant principalement sur les entreprises et la concurrence.",
+      "questions": [
+        {
+          "id": "q05",
+          "axis": "economy",
+          "text": "L’État devrait détenir une participation majoritaire dans les principales entreprises de production d’électricité.",
+          "context": "Il s’agit du contrôle de la production, indépendamment du choix des sources d’énergie.",
+          "direction": -1
+        },
+        {
+          "id": "q06",
+          "axis": "economy",
+          "text": "La puissance publique devrait orienter une part importante des investissements privés vers les secteurs qu’elle juge prioritaires.",
+          "context": "La question porte sur l’orientation des investissements, pas seulement sur leur financement.",
+          "direction": -1
+        },
+        {
+          "id": "q07",
+          "axis": "economy",
+          "text": "L’exploitation des lignes ferroviaires devrait être ouverte à la concurrence entre opérateurs.",
+          "context": "Le financement public d’un service resterait possible.",
+          "direction": 1
+        },
+        {
+          "id": "q08",
+          "axis": "economy",
+          "text": "Les entreprises devraient fixer leurs prix librement, sauf dans les situations de monopole.",
+          "context": "La proposition concerne les prix, sans supprimer les règles de sécurité des produits.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "name": "Pouvoir dans l’entreprise",
+      "shortName": "Travail",
+      "group": "economie",
+      "low": "Pouvoir des salariés",
+      "high": "Pouvoir des dirigeants",
+      "description": "Mesure la répartition souhaitée du pouvoir de décision entre salariés, dirigeants et propriétaires dans les relations de travail.",
+      "questions": [
+        {
+          "id": "q09",
+          "axis": "work",
+          "text": "Les représentants des salariés devraient disposer de la moitié des sièges dans les conseils d’administration des grandes entreprises.",
+          "context": "La proposition concerne le partage des décisions de gouvernance.",
+          "direction": -1
+        },
+        {
+          "id": "q10",
+          "axis": "work",
+          "text": "Une convention de branche devrait fixer des protections auxquelles une entreprise ne pourrait pas déroger à la baisse.",
+          "context": "La question porte sur la place des garanties négociées collectivement.",
+          "direction": -1
+        },
+        {
+          "id": "q11",
+          "axis": "work",
+          "text": "Les propriétaires d’une entreprise devraient garder le dernier mot sur ses choix d’investissement.",
+          "context": "Les salariés pourraient être consultés sans disposer d’un pouvoir de blocage.",
+          "direction": 1
+        },
+        {
+          "id": "q12",
+          "axis": "work",
+          "text": "Un accord individuel entre un salarié et son employeur devrait pouvoir déroger à certaines garanties de la convention de branche.",
+          "context": "La proposition suppose l’accord explicite des deux parties.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "name": "Priorité budgétaire",
+      "shortName": "Budget",
+      "group": "economie",
+      "low": "Emprunt pour investir",
+      "high": "Réduction des déficits",
+      "description": "Mesure l’arbitrage entre recours à l’emprunt pour certaines dépenses et priorité donnée à la maîtrise du déficit.",
+      "questions": [
+        {
+          "id": "q13",
+          "axis": "budget",
+          "text": "Un investissement public utile à long terme devrait pouvoir être financé par l’emprunt, même si le déficit augmente pendant plusieurs années.",
+          "context": "La question suppose que l’utilité de l’investissement a été évaluée.",
+          "direction": -1
+        },
+        {
+          "id": "q14",
+          "axis": "budget",
+          "text": "En période de récession, l’État devrait accepter une hausse temporaire du déficit pour soutenir l’activité.",
+          "context": "La proposition concerne une baisse générale de l’activité économique.",
+          "direction": -1
+        },
+        {
+          "id": "q15",
+          "axis": "budget",
+          "text": "La réduction du déficit devrait primer sur le lancement de nouveaux investissements publics.",
+          "context": "La situation envisagée se situe en dehors d’une crise exceptionnelle.",
+          "direction": 1
+        },
+        {
+          "id": "q16",
+          "axis": "budget",
+          "text": "Une règle d’équilibre budgétaire devrait limiter durablement la possibilité de financer les dépenses publiques par l’emprunt.",
+          "context": "Des exceptions seraient prévues pour les crises exceptionnelles.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "society",
+      "name": "Autonomie et normes sociales",
+      "shortName": "Choix de vie",
+      "group": "societe",
+      "low": "Autonomie personnelle",
+      "high": "Normes traditionnelles",
+      "description": "Explore la place des choix individuels par rapport à des normes familiales et morales communes.",
+      "questions": [
+        {
+          "id": "q17",
+          "axis": "society",
+          "text": "Les personnes majeures devraient pouvoir modifier la mention du sexe à l’état civil par une déclaration administrative.",
+          "context": "La proposition concerne uniquement la procédure d’état civil des adultes.",
+          "direction": -1
+        },
+        {
+          "id": "q18",
+          "axis": "society",
+          "text": "Une personne majeure atteinte d’une maladie incurable devrait pouvoir demander une aide à mourir.",
+          "context": "La question porte sur le principe, dans un cadre médical réglementé.",
+          "direction": -1
+        },
+        {
+          "id": "q19",
+          "axis": "society",
+          "text": "Les aides à la famille devraient favoriser les couples composés d’un homme et d’une femme.",
+          "context": "La proposition porte sur l’orientation des aides, pas sur l’interdiction des autres familles.",
+          "direction": 1
+        },
+        {
+          "id": "q20",
+          "axis": "society",
+          "text": "L’accès à la procréation médicalement assistée devrait être réservé aux couples composés d’un homme et d’une femme.",
+          "context": "La question porte sur les conditions d’accès, indépendamment du financement.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "liberties",
+      "name": "Sécurité et libertés publiques",
+      "shortName": "Libertés",
+      "group": "societe",
+      "low": "Garanties des libertés",
+      "high": "Pouvoirs de sécurité étendus",
+      "description": "Mesure les arbitrages entre garanties individuelles et extension des moyens de surveillance et de maintien de l’ordre.",
+      "questions": [
+        {
+          "id": "q21",
+          "axis": "liberties",
+          "text": "La surveillance policière ciblant une personne identifiée devrait exiger une autorisation judiciaire préalable.",
+          "context": "La question concerne la surveillance préventive, hors urgence immédiate.",
+          "direction": -1
+        },
+        {
+          "id": "q22",
+          "axis": "liberties",
+          "text": "Les usages de la force par la police devraient pouvoir être examinés par une autorité indépendante de la police et du gouvernement.",
+          "context": "Cette autorité disposerait de moyens d’enquête propres.",
+          "direction": -1
+        },
+        {
+          "id": "q23",
+          "axis": "liberties",
+          "text": "La police devrait pouvoir utiliser la reconnaissance faciale en temps réel dans les lieux publics sur autorisation administrative.",
+          "context": "La proposition ne prévoit pas d’autorisation judiciaire préalable.",
+          "direction": 1
+        },
+        {
+          "id": "q24",
+          "axis": "liberties",
+          "text": "Un préfet devrait pouvoir interdire une manifestation en cas de risque sérieux de troubles, avant qu’une infraction soit commise.",
+          "context": "La question porte sur une interdiction préventive.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "immigration",
+      "name": "Politique migratoire",
+      "shortName": "Immigration",
+      "group": "societe",
+      "low": "Accueil plus ouvert",
+      "high": "Conditions restrictives",
+      "description": "Mesure les conditions d’entrée et de séjour souhaitées, séparément des attentes d’intégration culturelle.",
+      "questions": [
+        {
+          "id": "q25",
+          "axis": "immigration",
+          "text": "Un étranger sans titre de séjour qui vit en France depuis plusieurs années et occupe un emploi stable devrait pouvoir être régularisé.",
+          "context": "La proposition concerne des personnes déjà présentes sur le territoire.",
+          "direction": -1
+        },
+        {
+          "id": "q26",
+          "axis": "immigration",
+          "text": "La France devrait délivrer davantage de visas de travail aux personnes qui souhaitent venir y exercer une activité.",
+          "context": "La question porte sur l’immigration de travail, distincte du droit d’asile.",
+          "direction": -1
+        },
+        {
+          "id": "q27",
+          "axis": "immigration",
+          "text": "Il faudrait fixer un plafond annuel d’entrées pour l’immigration en dehors du droit d’asile.",
+          "context": "Ce plafond couvrirait les autres principaux motifs d’installation.",
+          "direction": 1
+        },
+        {
+          "id": "q28",
+          "axis": "immigration",
+          "text": "Le regroupement familial devrait être réservé aux personnes dont le revenu dépasse nettement le salaire minimum.",
+          "context": "La proposition concerne les conditions matérielles exigées de la personne déjà installée.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "integration",
+      "name": "Modèle d’intégration culturelle",
+      "shortName": "Intégration",
+      "group": "societe",
+      "low": "Pluralisme culturel",
+      "high": "Assimilation culturelle",
+      "description": "Distingue l’acceptation de cultures durablement diverses de l’exigence d’une convergence forte vers une culture nationale commune.",
+      "questions": [
+        {
+          "id": "q29",
+          "axis": "integration",
+          "text": "Les collectivités devraient soutenir les associations qui entretiennent les cultures d’origine de leurs habitants.",
+          "context": "La proposition concerne des activités culturelles respectant les lois communes.",
+          "direction": -1
+        },
+        {
+          "id": "q30",
+          "axis": "integration",
+          "text": "L’intégration devrait être jugée d’abord sur le respect des lois, sans exiger l’abandon de pratiques culturelles licites.",
+          "context": "Les mêmes règles juridiques s’appliqueraient à tous.",
+          "direction": -1
+        },
+        {
+          "id": "q31",
+          "axis": "integration",
+          "text": "L’acquisition de la nationalité française devrait exiger une adhésion démontrée aux traditions culturelles françaises.",
+          "context": "Cette exigence irait au-delà de la langue et du respect des lois.",
+          "direction": 1
+        },
+        {
+          "id": "q32",
+          "axis": "integration",
+          "text": "L’école devrait chercher avant tout à transmettre une culture nationale commune plutôt qu’à valoriser les cultures d’origine des élèves.",
+          "context": "La question porte sur la priorité pédagogique lorsque ces objectifs entrent en concurrence.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "religion",
+      "name": "Expression religieuse et laïcité",
+      "shortName": "Laïcité",
+      "group": "societe",
+      "low": "Liberté d’expression",
+      "high": "Restrictions élargies",
+      "description": "Mesure l’étendue des restrictions souhaitées à l’expression religieuse des individus ; la neutralité des institutions publiques est admise aux deux pôles.",
+      "questions": [
+        {
+          "id": "q33",
+          "axis": "religion",
+          "text": "Une personne devrait pouvoir porter un signe religieux visible dans la rue dès lors que son visage reste identifiable.",
+          "context": "La question ne concerne pas les agents publics dans l’exercice de leurs fonctions.",
+          "direction": -1
+        },
+        {
+          "id": "q34",
+          "axis": "religion",
+          "text": "Les usagers d’un service public devraient pouvoir porter des signes religieux lorsqu’ils utilisent ce service.",
+          "context": "Le personnel du service resterait soumis à la neutralité.",
+          "direction": -1
+        },
+        {
+          "id": "q35",
+          "axis": "religion",
+          "text": "Les entreprises privées devraient pouvoir interdire de façon générale les signes religieux visibles dans leurs locaux.",
+          "context": "La proposition concerne les salariés, même sans contact avec la clientèle.",
+          "direction": 1
+        },
+        {
+          "id": "q36",
+          "axis": "religion",
+          "text": "Une association recevant une subvention publique devrait imposer la neutralité religieuse à ses adhérents pendant ses activités.",
+          "context": "La proposition étendrait la neutralité aux participants, pas seulement aux responsables.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "discrimination",
+      "name": "Méthode de lutte contre les discriminations",
+      "shortName": "Discriminations",
+      "group": "societe",
+      "low": "Mesures ciblées",
+      "high": "Dispositifs universels",
+      "description": "Explore la méthode privilégiée pour lutter contre les discriminations : ciblage de groupes ou priorité aux règles communes et aux critères individuels et sociaux.",
+      "questions": [
+        {
+          "id": "q37",
+          "axis": "discrimination",
+          "text": "Des objectifs chiffrés de représentation des groupes sous-représentés devraient être imposés dans les grandes entreprises.",
+          "context": "Par exemple pour les femmes ou les personnes en situation de handicap.",
+          "direction": -1
+        },
+        {
+          "id": "q38",
+          "axis": "discrimination",
+          "text": "Des places dans certaines formations devraient pouvoir être réservées à des groupes ayant subi des discriminations.",
+          "context": "La question porte sur des mesures correctrices ciblées, à qualifications minimales définies.",
+          "direction": -1
+        },
+        {
+          "id": "q39",
+          "axis": "discrimination",
+          "text": "L’attribution des aides publiques devrait reposer sur des critères individuels et sociaux, sans quotas liés à l’appartenance à un groupe.",
+          "context": "La proposition concerne les critères de sélection, pas l’existence des discriminations.",
+          "direction": 1
+        },
+        {
+          "id": "q40",
+          "axis": "discrimination",
+          "text": "Pour lutter contre les discriminations, il faudrait privilégier des règles identiques pour tous plutôt que des dérogations ciblées.",
+          "context": "La question compare deux méthodes d’action, sans nier l’objectif d’égalité.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "ecology",
+      "name": "Priorité écologique",
+      "shortName": "Écologie",
+      "group": "monde",
+      "low": "Limites écologiques",
+      "high": "Priorité à la production",
+      "description": "Mesure la priorité accordée à l’environnement quand elle entre en conflit avec l’activité ou les volumes de production ; le choix des technologies reste distinct.",
+      "questions": [
+        {
+          "id": "q41",
+          "axis": "ecology",
+          "text": "Un projet d’infrastructure devrait pouvoir être abandonné pour préserver un écosystème, même s’il créerait des emplois.",
+          "context": "La question suppose un conflit réel entre les deux objectifs.",
+          "direction": -1
+        },
+        {
+          "id": "q42",
+          "axis": "ecology",
+          "text": "La consommation de ressources naturelles devrait être plafonnée, même si cela ralentit certaines productions.",
+          "context": "Il s’agit de limites portant sur les volumes consommés, pas seulement sur l’efficacité technique.",
+          "direction": -1
+        },
+        {
+          "id": "q43",
+          "axis": "ecology",
+          "text": "Une obligation environnementale devrait pouvoir être reportée lorsqu’elle menace directement le maintien d’une activité industrielle.",
+          "context": "La question porte sur la priorité à retenir en cas de conflit avéré.",
+          "direction": 1
+        },
+        {
+          "id": "q44",
+          "axis": "ecology",
+          "text": "Une nouvelle installation industrielle devrait pouvoir être autorisée malgré des atteintes locales à l’environnement si elle assure une production jugée indispensable.",
+          "context": "La production envisagée ne pourrait pas être obtenue sans cet impact local.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "europe",
+      "name": "Intégration européenne",
+      "shortName": "Europe",
+      "group": "monde",
+      "low": "Intégration européenne",
+      "high": "Souveraineté nationale",
+      "description": "Mesure le niveau auquel les décisions devraient être prises et la répartition souhaitée des compétences entre la France et l’Union européenne.",
+      "questions": [
+        {
+          "id": "q45",
+          "axis": "europe",
+          "text": "L’Union européenne devrait disposer d’une capacité permanente d’emprunt commun pour financer ses projets.",
+          "context": "Les décisions de financement seraient prises au niveau européen.",
+          "direction": -1
+        },
+        {
+          "id": "q46",
+          "axis": "europe",
+          "text": "Dans davantage de domaines, les décisions européennes devraient pouvoir être prises à la majorité des États plutôt qu’à l’unanimité.",
+          "context": "Un État pourrait ainsi être engagé malgré son opposition.",
+          "direction": -1
+        },
+        {
+          "id": "q47",
+          "axis": "europe",
+          "text": "La France devrait pouvoir écarter l’application d’une règle européenne lorsqu’elle contredit un choix de son Parlement.",
+          "context": "La proposition porte sur la primauté à donner à une décision nationale.",
+          "direction": 1
+        },
+        {
+          "id": "q48",
+          "axis": "europe",
+          "text": "Des compétences transférées à l’Union européenne devraient être rendues aux États membres.",
+          "context": "La question concerne une réduction générale du périmètre des décisions européennes.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "name": "Ouverture commerciale",
+      "shortName": "Commerce",
+      "group": "monde",
+      "low": "Libre-échange",
+      "high": "Protection économique",
+      "description": "Mesure l’ouverture souhaitée aux échanges et aux investissements internationaux par rapport à la protection des capacités nationales ou européennes.",
+      "questions": [
+        {
+          "id": "q49",
+          "axis": "trade",
+          "text": "La France devrait soutenir des accords commerciaux réduisant les droits de douane avec ses partenaires.",
+          "context": "La proposition concerne les barrières commerciales, sans supprimer les règles de sécurité des produits.",
+          "direction": -1
+        },
+        {
+          "id": "q50",
+          "axis": "trade",
+          "text": "Les marchés publics devraient être ouverts aux fournisseurs étrangers sans préférence liée à leur nationalité.",
+          "context": "Les offres seraient comparées selon les mêmes exigences de qualité et de prix.",
+          "direction": -1
+        },
+        {
+          "id": "q51",
+          "axis": "trade",
+          "text": "Des droits de douane plus élevés devraient protéger les productions jugées stratégiques.",
+          "context": "La question suppose que les produits importés respectent déjà les normes applicables.",
+          "direction": 1
+        },
+        {
+          "id": "q52",
+          "axis": "trade",
+          "text": "L’État devrait pouvoir refuser le rachat d’une entreprise stratégique par un groupe étranger, même sans risque militaire identifié.",
+          "context": "La protection de la capacité de production serait ici le motif principal.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "defense",
+      "name": "Alliances et autonomie stratégique",
+      "shortName": "Défense",
+      "group": "monde",
+      "low": "Alliances intégrées",
+      "high": "Autonomie stratégique",
+      "description": "Mesure le rôle souhaité des alliances militaires permanentes par rapport à la liberté de décision et aux capacités autonomes de la France.",
+      "questions": [
+        {
+          "id": "q53",
+          "axis": "defense",
+          "text": "La France devrait confier davantage de missions de défense à des structures militaires communes avec ses alliés.",
+          "context": "La question porte sur une intégration permanente, pas sur une coalition ponctuelle.",
+          "direction": -1
+        },
+        {
+          "id": "q54",
+          "axis": "defense",
+          "text": "La France devrait accepter un commandement militaire partagé pour certaines de ses forces.",
+          "context": "Des décisions opérationnelles seraient prises collectivement avec les alliés.",
+          "direction": -1
+        },
+        {
+          "id": "q55",
+          "axis": "defense",
+          "text": "La France devrait réduire ses engagements militaires permanents au sein d’alliances pour garder davantage de liberté d’action.",
+          "context": "La coopération ponctuelle avec d’autres pays resterait possible.",
+          "direction": 1
+        },
+        {
+          "id": "q56",
+          "axis": "defense",
+          "text": "L’autonomie dans la production des équipements militaires devrait primer sur les économies permises par une dépendance aux alliés.",
+          "context": "La question oppose une capacité autonome à une solution extérieure moins coûteuse.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "checks",
+      "name": "Limitation du pouvoir politique",
+      "shortName": "Contre-pouvoirs",
+      "group": "democratie",
+      "low": "Contre-pouvoirs forts",
+      "high": "Primauté de la majorité",
+      "description": "Mesure l’étendue des limites et contrôles opposables à une majorité politique ; cet axe est distinct de la force de l’exécutif et de la participation citoyenne.",
+      "questions": [
+        {
+          "id": "q57",
+          "axis": "checks",
+          "text": "Le Conseil constitutionnel devrait pouvoir empêcher l’application d’une loi majoritaire qui porte atteinte aux droits fondamentaux.",
+          "context": "La question porte sur la capacité effective de contrôle du pouvoir politique.",
+          "direction": -1
+        },
+        {
+          "id": "q58",
+          "axis": "checks",
+          "text": "La direction des médias publics devrait être protégée de toute nomination directement décidée par le gouvernement.",
+          "context": "La proposition concerne leur indépendance à l’égard du pouvoir exécutif.",
+          "direction": -1
+        },
+        {
+          "id": "q59",
+          "axis": "checks",
+          "text": "Une loi approuvée par référendum devrait pouvoir s’imposer malgré une censure du Conseil constitutionnel.",
+          "context": "La proposition donne ici la priorité à la décision majoritaire.",
+          "direction": 1
+        },
+        {
+          "id": "q60",
+          "axis": "checks",
+          "text": "La majorité élue devrait pouvoir remplacer certaines autorités administratives indépendantes par des services placés sous son autorité.",
+          "context": "La question porte sur le contrôle politique de missions confiées à des organismes autonomes.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "executive",
+      "name": "Équilibre exécutif et Parlement",
+      "shortName": "Exécutif",
+      "group": "democratie",
+      "low": "Prépondérance parlementaire",
+      "high": "Exécutif fort",
+      "description": "Mesure la répartition du pouvoir entre gouvernement, présidence et assemblées, sans présumer du respect des libertés ou des contre-pouvoirs.",
+      "questions": [
+        {
+          "id": "q61",
+          "axis": "executive",
+          "text": "Le gouvernement devrait pouvoir être renversé par un vote à la majorité simple de l’Assemblée nationale.",
+          "context": "La question porte sur la responsabilité du gouvernement devant les députés.",
+          "direction": -1
+        },
+        {
+          "id": "q62",
+          "axis": "executive",
+          "text": "Le Parlement devrait maîtriser l’essentiel de son ordre du jour législatif.",
+          "context": "Le gouvernement ne disposerait pas d’une priorité générale sur les textes examinés.",
+          "direction": -1
+        },
+        {
+          "id": "q63",
+          "axis": "executive",
+          "text": "Le président devrait pouvoir choisir le gouvernement sans vote préalable d’investiture de l’Assemblée nationale.",
+          "context": "Le contrôle parlementaire pourrait intervenir après sa nomination.",
+          "direction": 1
+        },
+        {
+          "id": "q64",
+          "axis": "executive",
+          "text": "Le gouvernement devrait pouvoir faire adopter un budget sans vote positif des députés s’ils ne réunissent pas une majorité pour le renverser.",
+          "context": "La question concerne un mécanisme d’adoption lié à la responsabilité gouvernementale.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "participation",
+      "name": "Participation directe des citoyens",
+      "shortName": "Participation",
+      "group": "democratie",
+      "low": "Délégation aux élus",
+      "high": "Participation directe",
+      "description": "Mesure la place souhaitée des décisions directes des citoyens en complément ou à la place de la représentation élective.",
+      "questions": [
+        {
+          "id": "q65",
+          "axis": "participation",
+          "text": "Les élus devraient garder la décision finale après les travaux d’une convention citoyenne.",
+          "context": "La convention aurait ici un rôle de proposition et de consultation.",
+          "direction": -1
+        },
+        {
+          "id": "q66",
+          "axis": "participation",
+          "text": "Un député devrait exercer son mandat jusqu’à l’élection suivante sans pouvoir être révoqué par une pétition citoyenne.",
+          "context": "Les électeurs conserveraient leur pouvoir de sanction lors du scrutin suivant.",
+          "direction": -1
+        },
+        {
+          "id": "q67",
+          "axis": "participation",
+          "text": "Un nombre suffisant de signatures citoyennes devrait permettre de déclencher un référendum national.",
+          "context": "La question porte sur un droit d’initiative indépendant de la volonté du gouvernement.",
+          "direction": 1
+        },
+        {
+          "id": "q68",
+          "axis": "participation",
+          "text": "Une part du budget d’une commune devrait être directement décidée par ses habitants.",
+          "context": "Les habitants choisiraient les projets dans une enveloppe définie.",
+          "direction": 1
+        }
+      ]
+    },
+    {
+      "id": "territory",
+      "name": "Organisation territoriale",
+      "shortName": "Territoires",
+      "group": "democratie",
+      "low": "Centralisation",
+      "high": "Décentralisation",
+      "description": "Mesure le niveau territorial auquel les compétences, les règles et les ressources publiques devraient être décidées.",
+      "questions": [
+        {
+          "id": "q69",
+          "axis": "territory",
+          "text": "Les règles des principaux services publics devraient être les mêmes dans toutes les régions.",
+          "context": "La priorité serait donnée à l’uniformité nationale plutôt qu’à l’adaptation locale.",
+          "direction": -1
+        },
+        {
+          "id": "q70",
+          "axis": "territory",
+          "text": "L’État devrait fixer l’essentiel des moyens financiers attribués aux collectivités locales.",
+          "context": "La question porte sur la maîtrise des ressources, pas sur la suppression des collectivités.",
+          "direction": -1
+        },
+        {
+          "id": "q71",
+          "axis": "territory",
+          "text": "Les collectivités devraient disposer de davantage de liberté pour fixer leurs propres impôts.",
+          "context": "Des mécanismes nationaux de solidarité pourraient être conservés.",
+          "direction": 1
+        },
+        {
+          "id": "q72",
+          "axis": "territory",
+          "text": "Les régions devraient pouvoir adapter certaines normes nationales aux particularités de leur territoire.",
+          "context": "La proposition concerne des compétences définies, dans un cadre constitutionnel commun.",
+          "direction": 1
+        }
+      ]
+    }
+  ]
+}

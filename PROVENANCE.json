@@ -1,0 +1,12 @@
+{
+  "application": "Repères — Cartographie politique",
+  "edition": "France · octobre 2026",
+  "source_commit": "e8d8399b39c9c30c92d0dcb0989b5856a0441e4a",
+  "method_version": "reperes-fr-2026.1",
+  "contents": {
+    "questions": 72,
+    "axes": 18,
+    "economists": 20,
+    "families": 10
+  }
+}

@@ -1,0 +1,20 @@
+# Fichiers système macOS
+.DS_Store
+
+# Sessions exportées depuis l'application lors d'essais : elles contiennent des opinions politiques
+reperes-session-politique*.json
+
+# Caches Python et dépendances Node éventuelles
+__pycache__/
+*.pyc
+node_modules/
+
+# Réglages locaux d'éditeur et de Claude Code
+.vscode/
+.idea/
+*.swp
+.claude/settings.local.json
+
+# Variables d'environnement et identifiants d'hébergement
+.env
+.env.*
