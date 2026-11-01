@@ -17,7 +17,8 @@ function boot(session,key='avant-isoloir-v1'){
  const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
  assert.doesNotMatch(html,/<script\b[^>]*\bsrc\s*=|<link\b[^>]*rel=["']stylesheet/i);
  assert.doesNotMatch(html,/<script\b[^>]*type=["']module/i);
- const scripts=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(x=>x[1]);
+ // Les données structurées (JSON-LD) décrivent la page pour les moteurs de recherche ; elles ne s'exécutent pas.
+ const scripts=[...html.matchAll(/<script\b(?![^>]*application\/ld\+json)[^>]*>([\s\S]*?)<\/script>/gi)].map(x=>x[1]);
  const elements=Object.fromEntries(['main','navigation','toast'].map(id=>[id,{innerHTML:'',style:{},focus(){},querySelector(){return null}}]));
  const handlers={},windowHandlers={},saved=new Map(session?[[key,JSON.stringify(session)]]:[]);
  let hash='';
@@ -148,6 +149,21 @@ test('Answers saved under the former storage key move to the current key on firs
  const moved=JSON.parse(app.saved.get('avant-isoloir-v1'));
  assert.deepEqual(moved.answers,{q01:2,q02:-1});assert.deepEqual(moved.priorities,{work:3});assert.equal(moved.cursor,2);
  assert.equal(moved.methodVersion,METHOD_VERSION);
+});
+
+test('The page describes itself for search engines with figures taken from the catalogs',()=>{
+ const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const meta=name=>html.match(new RegExp(`<meta (?:name|property)="${name}" content="([^"]*)"`))?.[1]??'';
+ const title=html.match(/<title>([^<]*)<\/title>/)[1];
+ for(const text of [title,meta('description'),meta('og:description')])assert.ok(text.includes(`${Q} propositions`),text);
+ for(const text of [meta('description'),meta('og:description')])assert.ok(text.includes(`${familyList.length} familles`),text);
+ assert.ok(meta('og:description').includes(`${A} thèmes`));
+ assert.match(html,/<link rel="canonical" href="https:\/\/presidentielle-2027\.github\.io\/">/);
+ const ld=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(x=>JSON.parse(x[1]));
+ assert.equal(ld.length,1);assert.ok(ld[0].some(x=>x['@type']==='WebApplication'));
+ const noscript=html.match(/<noscript><div class="noscript">([\s\S]*?)<\/div><\/noscript>/)[1];
+ assert.ok(noscript.includes(`${Q} propositions réparties sur ${A} thèmes`));
+ for(const a of axisList)assert.ok(noscript.includes(a.name.slice(1)),a.name);
 });
 
 test('A partial questionnaire still lists every family of the catalog in the proximities',()=>{

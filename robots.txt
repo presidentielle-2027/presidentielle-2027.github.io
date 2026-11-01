@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /dist/
+Disallow: /research/
+Disallow: /tests/
+Disallow: /scripts/
+Disallow: /branding/
+Disallow: /*.md$
+
+Sitemap: https://presidentielle-2027.github.io/sitemap.xml

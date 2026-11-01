@@ -24,6 +24,8 @@ Le dépôt est `presidentielle-2027/presidentielle-2027.github.io` ; GitHub publ
 
 Le fichier vide `.nojekyll` désactive le traitement Jekyll : GitHub Pages sert les fichiers tels quels. Tout le contenu versionné devient accessible en ligne (`dist/`, `research/`, `tests/`…) ; les copies des sources citées, hors de Git, ne sont pas publiées. Les pages utilisent des fragments d'URL (`#questionnaire`, `#resultats`) : aucune réécriture côté serveur n'est nécessaire. GitHub Pages ne dépose pas de cookie, ce que suppose la mention « Sans cookie ni traceur publicitaire » du pied de page ; un autre hébergement doit le vérifier.
 
+Référencement : le titre et la description de la page visent la présidentielle 2027 ; l'URL canonique désigne la racine, pour que la copie de `dist/` ne fasse pas doublon. Les balises Open Graph et Twitter renvoient à l'image de partage `og-image.png`, et des données structurées (schema.org, `WebSite` et `WebApplication`) décrivent le site. Le fichier autonome contient une présentation lisible sans JavaScript, générée à partir des catalogues. `robots.txt` écarte des moteurs les dossiers techniques et les fichiers Markdown, et désigne `sitemap.xml`. Pour suivre l'indexation, déclarer le site dans Google Search Console et Bing Webmaster Tools, puis y soumettre `https://presidentielle-2027.github.io/sitemap.xml`.
+
 ### Autre hébergement web
 
 Publier **le contenu de `dist/`** dans le répertoire web de l'hébergement :
@@ -80,7 +82,7 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 | `dist/styles.css` | L'apparence et les adaptations mobiles |
 | `dist/fonts/` | Les polices IBM Plex Sans et IBM Plex Mono (licence SIL OFL 1.1, voir `OFL.txt`), servies avec le site et intégrées en data URI dans le fichier autonome `index.html` : aucune requête vers un service de polices tiers |
 | `dist/index.html` | La structure de la page web |
-| `branding/` | L'icône du site (`icon.svg`, traits épais pour rester lisible à 16 px) et le logo de l'organisation GitHub (`logo.svg`, rendu en `logo-organisation.png`) ; `python3 scripts/build-icons.py` (demande `rsvg-convert`) les intègre en data URI dans `dist/index.html` et régénère le logo |
+| `branding/` | L'icône du site (`icon.svg`, traits épais pour rester lisible à 16 px) et le logo de l'organisation GitHub (`logo.svg`, rendu en `logo-organisation.png`) ; `python3 scripts/build-icons.py` (demande `rsvg-convert` et Chrome) les intègre en data URI dans `dist/index.html`, régénère le logo et l'image de partage `og-image.png` de la racine |
 
 Après modification des données, régénérer **les deux distributions** avec Python 3 :
 
