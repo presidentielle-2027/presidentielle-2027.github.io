@@ -65,7 +65,7 @@ h1 em{{font-style:normal;color:#5b3fa3}}
 <div class="logo">{(base / 'branding/logo.svg').read_text()}</div>
 <div><span class="tag">ÉLECTION PRÉSIDENTIELLE 2027</span>
 <h1>Faites le point<br><em>sur vos convictions.</em></h1>
-<div class="facts">{questions_n} propositions · {len(questionnaire['axes'])} thèmes · {len(families)} familles d’idées</div>
+<div class="facts">{questions_n} propositions · {len(questionnaire['axes'])} sujets · {len(families)} familles politiques</div>
 <div class="site">Avant l’isoloir · presidentielle-2027.github.io</div></div>
 </body></html>'''
 chrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'

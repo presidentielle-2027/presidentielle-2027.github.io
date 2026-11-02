@@ -29,16 +29,16 @@ if imports_removed != 1 or re.search(r'^\s*(?:import|export)\b', engine + '\n' +
     raise SystemExit('La structure des modules a changé : adapter cet assembleur.')
 
 # Présentation lisible sans JavaScript, pour les moteurs de recherche et les navigateurs sans script : ses nombres et
-# la liste des thèmes viennent des catalogues, comme ceux de l'application.
+# la liste des sujets (les axes) viennent des catalogues, comme ceux de l'application.
 catalog = json.loads(data.split('=', 1)[1].rstrip().rstrip(';'))
 themes = [a['name'][0].lower() + a['name'][1:] for a in catalog['axes']]
 listing = ', '.join(themes[:-1]) + ' et ' + themes[-1]
 questions_n = sum(len(a['questions']) for a in catalog['axes'])
 noscript = ('<noscript><div class="noscript"><h1>Présidentielle 2027 : faites le point sur vos convictions</h1>'
-            f'<p>Avant l’isoloir propose {questions_n} propositions réparties sur {len(themes)} thèmes : {listing}. '
-            f'Le bilan situe vos positions thème par thème et mesure votre écart avec {len(catalog["families"])} familles d’idées ; '
-            f'sous chaque thème, des auteurs présentent les arguments des deux pôles ({len(catalog["references"]["thinkers"])} auteurs en tout).</p>'
-            '<p>Le site est indépendant, sans lien avec les pouvoirs publics ni avec les partis. Le calcul se fait sur votre appareil, '
+            f'<p>Avant l’isoloir propose {questions_n} propositions réparties sur {len(themes)} sujets : {listing}. '
+            f'Le bilan situe vos positions sujet par sujet et mesure votre écart avec {len(catalog["families"])} familles d’idées ; '
+            f'sous chaque sujet, des auteurs présentent les arguments des deux pôles ({len(catalog["references"]["thinkers"])} auteurs en tout).</p>'
+            '<p>Le site est indépendant, sans lien avec les pouvoirs publics ni avec les partis. Le calcul se fait dans votre navigateur, '
             'sans inscription ni consigne de vote. Activez JavaScript pour répondre au questionnaire.</p></div></noscript>')
 loading = '<main id="main" tabindex="-1"><div class="loading">Préparation du questionnaire…</div></main>'
 if html.count(loading) != 1:

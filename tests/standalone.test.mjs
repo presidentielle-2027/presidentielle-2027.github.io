@@ -161,8 +161,16 @@ test('The home page leads with the next step of the questionnaire and gathers se
  assert.match(partial,/data-action="resume"[^>]*>Reprendre le questionnaire/);
  assert.match(partial,new RegExp(`10 / ${Q} propositions parcourues · ${Q-10} restantes`));
  assert.doesNotMatch(partial,/href="#resultats"/);
- for(const a of ['export-session','import','reset'])assert.ok(partial.indexOf(`data-action="${a}"`)>partial.indexOf('class="notice"'),a);
+ assert.ok(partial.indexOf('class="about"')>partial.indexOf('class="steps"'));
+ // La date de dernière mise à jour suit le fichier VERSION (AAAA.M).
+ const [y,m]=VERSION.split('.');
+ assert.match(partial,new RegExp(`Dernière mise à jour : ${new Date(+y,+m-1,1).toLocaleDateString('fr-FR',{month:'long',year:'numeric'})}\\.`));
+ for(const a of ['export-session','import','reset'])assert.ok(partial.indexOf(`data-action="${a}"`)>partial.indexOf('class="about"'),a);
  assert.match(partial,/data-action="export-session">Exporter mes réponses/);
+ // Les nombres des catalogues s'écrivent en chiffres ; ↗ est réservé aux liens externes.
+ assert.match(partial,new RegExp(`${familyList.length} familles d’idées`));
+ assert.match(partial,new RegExp(`${questions.length/A} propositions par axe`));
+ assert.doesNotMatch(partial,/↗/);
  assert.match(partial,/data-action="import">Importer mes réponses/);
  const done=boot(session(Q));
  assert.match(done.html(),/href="#resultats">Voir mon bilan/);
@@ -177,12 +185,12 @@ test('The page describes itself for search engines with figures taken from the c
  const title=html.match(/<title>([^<]*)<\/title>/)[1];
  for(const text of [title,meta('description'),meta('og:description')])assert.ok(text.includes(`${Q} propositions`),text);
  for(const text of [meta('description'),meta('og:description')])assert.ok(text.includes(`${familyList.length} familles`),text);
- assert.ok(meta('og:description').includes(`${A} thèmes`));
+ assert.ok(meta('og:description').includes(`${A} sujets`));
  assert.match(html,/<link rel="canonical" href="https:\/\/presidentielle-2027\.github\.io\/">/);
  const ld=[...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(x=>JSON.parse(x[1]));
  assert.equal(ld.length,1);assert.ok(ld[0].some(x=>x['@type']==='WebApplication'));
  const noscript=html.match(/<noscript><div class="noscript">([\s\S]*?)<\/div><\/noscript>/)[1];
- assert.ok(noscript.includes(`${Q} propositions réparties sur ${A} thèmes`));
+ assert.ok(noscript.includes(`${Q} propositions réparties sur ${A} sujets`));
  for(const a of axisList)assert.ok(noscript.includes(a.name.slice(1)),a.name);
 });
 

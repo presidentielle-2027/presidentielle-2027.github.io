@@ -119,7 +119,10 @@ for axis in axis_ids:
 # Version de la distribution, la seule affichée dans l'application : celle du fichier VERSION.
 version = (base / 'VERSION').read_text().strip()
 assert re.fullmatch(r'\d{4}\.\d{1,2}(\.v\d+)?', version), f'VERSION inattendue : {version}'
-data = {'version': version, 'edition': 'France · novembre 2026', 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
+# Édition inscrite dans les sessions exportées : le mois et l'année de la version.
+MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+edition = f"France · {MOIS[int(version.split('.')[1]) - 1]} {version.split('.')[0]}"
+data = {'version': version, 'edition': edition, 'themes': themes, 'axes': questionnaire['axes'], 'references': references,
         'families': families, 'familiesVersion': families_catalog['version'], 'parties': parties_catalog}
 (base / 'dist/data.js').write_text('window.ISOLOIR_DATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print(f'Version {version}. Assembled {len(questions)} questions, {len(questionnaire["axes"])} axes, {len(thinkers)} authors, {len(references["arguments"])} arguments, '

@@ -15,6 +15,8 @@ export function computeProfile(axes,answers={}){
 }
 // Nombre minimal d'axes mesurés de part et d'autre pour comparer une famille à un profil.
 export const MIN_COMMON_AXES=6;
+// Axes mesurés nécessaires à la lecture globale du bilan.
+export const MIN_SYNTHESIS_AXES=12;
 export function compareFamilies(profile,families,priorities={},usePriorities=true){
  const map=Object.fromEntries(profile.map(s=>[s.id,s]));
  return families.map(f=>{
@@ -37,7 +39,7 @@ export function coordinateReading(c){
 }
 export function interpretation(profile,ranked){
  const map=Object.fromEntries(profile.map(s=>[s.id,s]));const measured=profile.filter(s=>s.score!==null).length;const c=globalCoordinates(profile);
- if(measured<12||c.economic===null||c.cultural===null||!ranked.length)return {ready:false,title:'Un bilan encore incomplet',description:'Il faut au moins 12 axes renseignés, dont deux en économie et deux sur les valeurs culturelles, pour proposer une lecture globale.',measured};
+ if(measured<MIN_SYNTHESIS_AXES||c.economic===null||c.cultural===null||!ranked.length)return {ready:false,title:'Un bilan encore incomplet',description:`Il faut au moins ${MIN_SYNTHESIS_AXES} axes renseignés, dont 2 en économie et 2 sur les valeurs culturelles, pour proposer une lecture globale.`,measured};
  const first=ranked[0],second=ranked[1];
  const mixed=first.distance>READING.transversal;const tied=!!second&&second.distance-first.distance<READING.tie;
  const {eco,culture}=coordinateReading(c);
@@ -51,7 +53,7 @@ export const READING={strong:3,middle:1,tie:.35,clear:1,transversal:3,agree:1,di
 // Au milieu de l'axe, « avis partagés » (au moins une réponse vers chaque pôle) se distingue d'une position intermédiaire.
 export function axisReading(axis,s){
  const score=typeof s==='number'?s:s?.score;
- if(typeof score!=='number')return {kind:'unmeasured',pole:null,contrast:false,text:'Non mesuré : moins de deux réponses de fond',short:'non mesuré'};
+ if(typeof score!=='number')return {kind:'unmeasured',pole:null,contrast:false,text:'Non mesuré : moins de 2 réponses de fond',short:'non mesuré'};
  const values=typeof s==='object'?(s.contributions??[]).map(x=>x.value):[],contrast=typeof s==='object'&&!!s.contrast,d=Math.abs(score-5);
  if(d<=READING.middle)return values.some(v=>v<5)&&values.some(v=>v>5)
   ?{kind:'split',pole:null,contrast,text:`Avis partagés entre « ${axis.low} » et « ${axis.high} »`,short:'avis partagés'}
