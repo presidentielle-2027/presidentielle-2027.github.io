@@ -134,6 +134,9 @@ test('Every axis presents arguments for both poles and the method page lists eve
  for(const a of axisList){
   const row=html.split(`id="axe-${a.id}"`)[1].split('<details class="axis-row"')[0];
   assert.ok(row.includes(`<p class="arg-pole-name">${a.low}</p>`)&&row.includes(`<p class="arg-pole-name">${a.high}</p>`),a.id);
+  // Le volet d'un axe liste chacune de ses propositions avec la réponse donnée et un bouton pour la modifier.
+  assert.equal((row.match(/data-action="edit-question"/g)||[]).length,a.questions.length,a.id);
+  for(const t of ['Ce que mesure cet axe','Ce sujet pèse dans mon choix','Vos réponses','Arguments en présence'])assert.ok(row.includes(t),`${a.id} : ${t}`);
  }
  // L'ancienne adresse de la page Idées mène à la méthode, qui liste tous les auteurs du catalogue.
  app.go('#references');
