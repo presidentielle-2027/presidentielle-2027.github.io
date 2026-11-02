@@ -10,7 +10,7 @@ Cette distribution fonctionne indépendamment de ChatGPT : aucun compte, aucune 
 
 Ouvrir **`index.html`**, à la racine de l'archive, dans un navigateur récent, par un double-clic. Ce fichier contient l'interface, les styles, les polices, les questions, les références et les calculs. Il peut être copié, envoyé ou conservé sur une clé USB. Il fonctionne sans connexion pour le questionnaire et le bilan ; les liens bibliographiques demandent une connexion.
 
-La sauvegarde automatique dépend du stockage local autorisé par le navigateur. Pour une page ouverte en `file://`, le comportement du stockage peut varier. L'export JSON permet de conserver la session explicitement et de la réimporter. Garder le même nom et le même emplacement de fichier facilite la reprise locale ; ne pas compter sur cette sauvegarde pour transférer une session entre appareils.
+La sauvegarde automatique dépend du stockage local autorisé par le navigateur. Pour une page ouverte en `file://`, le comportement du stockage peut varier. L'export JSON permet de conserver les réponses explicitement et de les réimporter. Garder le même nom et le même emplacement de fichier facilite la reprise locale ; ne pas compter sur cette sauvegarde pour transférer des réponses entre appareils.
 
 ## 2. Publier sur GitHub Pages
 
@@ -61,7 +61,7 @@ Le seul fichier `index.html` de la racine peut aussi être publié sur un serveu
 ## 3. Sauvegarde, accès et changement d'hébergement
 
 - Chaque personne conserve ses réponses dans son navigateur. Cette distribution n'agrège pas les résultats de plusieurs personnes et n'envoie pas les réponses à un serveur.
-- Pour passer de la version hébergée dans ChatGPT à cette distribution, exporter d'abord la session JSON depuis l'ancienne version, puis utiliser **Importer une session** dans la nouvelle.
+- Pour passer de la version hébergée dans ChatGPT à cette distribution, exporter d'abord les réponses en JSON depuis l'ancienne version, puis utiliser **Importer mes réponses** dans la nouvelle.
 - Le stockage est lié à l'origine du site. Changer de domaine ou de navigateur ne transporte pas automatiquement les réponses : utiliser l'export/import.
 - Le contrôle d'accès privé de l'hébergement ChatGPT n'est pas inclus. Cette distribution n'impose pas de connexion, et un site GitHub Pages est public. Pour limiter l'accès, utiliser un hébergement doté d'une authentification.
 

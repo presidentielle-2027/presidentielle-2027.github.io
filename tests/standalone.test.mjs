@@ -151,6 +151,26 @@ test('Answers saved under the former storage key move to the current key on firs
  assert.equal(moved.methodVersion,METHOD_VERSION);
 });
 
+test('The home page leads with the next step of the questionnaire and gathers session management at the bottom',()=>{
+ const session=n=>({methodVersion:METHOD_VERSION,answers:Object.fromEntries(questions.slice(0,n).map(q=>[q.id,1])),priorities:{},cursor:Math.min(n,Q-1),usePriorities:true});
+ const empty=boot().html();
+ assert.match(empty,/data-action="start"/);
+ assert.match(empty,/data-action="import"/);
+ assert.doesNotMatch(empty,/data-action="(?:resume|export-session|reset)"/);
+ const partial=boot(session(10)).html();
+ assert.match(partial,/data-action="resume"[^>]*>Reprendre le questionnaire/);
+ assert.match(partial,new RegExp(`10 / ${Q} propositions parcourues · ${Q-10} restantes`));
+ assert.doesNotMatch(partial,/href="#resultats"/);
+ for(const a of ['export-session','import','reset'])assert.ok(partial.indexOf(`data-action="${a}"`)>partial.indexOf('class="notice"'),a);
+ assert.match(partial,/data-action="export-session">Exporter mes réponses/);
+ assert.match(partial,/data-action="import">Importer mes réponses/);
+ const done=boot(session(Q));
+ assert.match(done.html(),/href="#resultats">Voir mon bilan/);
+ assert.doesNotMatch(done.html(),/data-action="resume"/);
+ // Les libellés parlent de réponses : le mot « session » ne reste que dans les identifiants internes.
+ for(const page of ['accueil','questionnaire','resultats','methode']){done.go(page);assert.doesNotMatch(done.html(),/>[^<]*\bsession/i,page);}
+});
+
 test('The page describes itself for search engines with figures taken from the catalogs',()=>{
  const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const meta=name=>html.match(new RegExp(`<meta (?:name|property)="${name}" content="([^"]*)"`))?.[1]??'';
