@@ -17,7 +17,7 @@ const KEY='avant-isoloir-v1';
 // Anciennes clés : les réponses qui y sont enregistrées passent sous la clé actuelle au premier chargement.
 const LEGACY_KEYS=['reperes-politique-fr-v1'];
 // Couleurs des graphiques SVG, alignées sur styles.css : le violet est réservé aux positions de l’utilisateur.
-const C={grid:'#d6d6d2',ref:'#8b9096',user:'#5b3fa3',ink:'#141414',muted:'#5c6066',surface:'#f4f4f2',card:'#ffffff'};
+const C={grid:'#d5d9df',ref:'#8b9096',user:'#6247e8',ink:'#141414',muted:'#5c6066',surface:'#f3f5f7',card:'#ffffff'};
 const fresh=()=>({methodVersion:METHOD_VERSION,answers:{},priorities:{},cursor:0,usePriorities:true});
 let state=fresh(),storageOK=true,resultsTab='panorama',openAxes=new Set(),compareFamily='',usePriorities=true,toastTimer;
 try{let raw=localStorage.getItem(KEY);const legacy=raw?null:LEGACY_KEYS.find(k=>localStorage.getItem(k)!==null);if(legacy)raw=localStorage.getItem(legacy);if(raw)state=sanitizeSession(JSON.parse(raw),axes);if(legacy){localStorage.setItem(KEY,JSON.stringify(state));localStorage.removeItem(legacy);}}catch{storageOK=false;}

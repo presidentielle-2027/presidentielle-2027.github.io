@@ -54,11 +54,11 @@ card = f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><style>
 @font-face{{font-family:Plex;font-weight:600;src:url({(fonts / 'ibm-plex-sans-latin-600-normal.woff2').as_uri()})}}
 @font-face{{font-family:PlexMono;font-weight:500;src:url({(fonts / 'ibm-plex-mono-latin-500-normal.woff2').as_uri()})}}
 html,body{{margin:0;width:1200px;height:630px;overflow:hidden}}
-body{{background:#f6f1e7;font-family:Plex,sans-serif;color:#141414;display:flex;align-items:center;gap:70px;padding:0 90px;box-sizing:border-box}}
+body{{background:#edfaf5;font-family:Plex,sans-serif;color:#141414;display:flex;align-items:center;gap:70px;padding:0 90px;box-sizing:border-box}}
 .logo{{width:290px;height:290px;flex:none}}
-.tag{{display:inline-block;font-family:PlexMono,monospace;font-weight:500;font-size:22px;letter-spacing:.1em;color:#4f4636;background:#fff;border-left:5px solid #c9a571;padding:10px 18px}}
+.tag{{display:inline-block;font-family:PlexMono,monospace;font-weight:500;font-size:22px;letter-spacing:.1em;color:#0d5546;background:#fff;border-left:5px solid #7fd8c0;padding:10px 18px}}
 h1{{font-size:68px;line-height:1.05;letter-spacing:-.025em;font-weight:600;margin:28px 0 26px}}
-h1 em{{font-style:normal;color:#5b3fa3}}
+h1 em{{font-style:normal;color:#6247e8}}
 .facts{{font-family:PlexMono,monospace;font-weight:500;font-size:21px;white-space:nowrap;color:#5c6066}}
 .site{{margin-top:34px;font-size:26px}}
 </style></head><body>
