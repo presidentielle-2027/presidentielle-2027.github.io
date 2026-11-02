@@ -1,0 +1,31 @@
+name: Erreur sur une citation, une source ou un repère
+description: Une citation inexacte, un lien mort, un repère qui ne correspond pas aux textes d’une famille d’idées.
+labels: ["source"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page concernée
+      description: Adresse de la page, ou nom de l’axe ou de la famille d’idées.
+    validations:
+      required: true
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Ce qui est inexact
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: "Adresse du texte et passage exact, entre guillemets. Sont admis : texte officiel d’un parti ou d’un candidat, déclaration publique d’un responsable citée mot pour mot, texte doctrinal daté. Ne sont pas retenus : sondages, votes, commentaires de presse sur un parti."
+    validations:
+      required: true
+  - type: checkboxes
+    id: fait
+    attributes:
+      label: Objet du signalement
+      options:
+        - label: Ce signalement porte sur un fait vérifiable, pas sur une opinion au sujet d’un parti, d’un candidat ou d’une idée.
+          required: true

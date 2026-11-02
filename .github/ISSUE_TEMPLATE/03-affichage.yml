@@ -1,0 +1,33 @@
+name: Problème d’affichage ou de fonctionnement
+description: Une page mal affichée, un bouton sans effet, un bilan qui ne s’ouvre pas.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Un signalement est public : n’y joignez pas vos réponses ni votre fichier exporté."
+  - type: input
+    id: page
+    attributes:
+      label: Page concernée
+      description: Adresse de la page ou étape du questionnaire.
+    validations:
+      required: true
+  - type: textarea
+    id: constat
+    attributes:
+      label: Ce qui s’est passé
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Ce qui était attendu
+    validations:
+      required: true
+  - type: input
+    id: environnement
+    attributes:
+      label: Navigateur et appareil
+      placeholder: Safari sur iPhone, Firefox sur Windows…
+    validations:
+      required: true

@@ -1,0 +1,26 @@
+name: Parti absent ou information à corriger dans le catalogue
+description: Un parti qui remplit le critère d’inclusion sans figurer au catalogue, ou une information inexacte à son sujet.
+labels: ["partis"]
+body:
+  - type: markdown
+    attributes:
+      value: "Le critère d’inclusion est indiqué en tête de la [page des partis](https://presidentielle-2027.github.io/partis/)."
+  - type: input
+    id: parti
+    attributes:
+      label: Nom du parti
+    validations:
+      required: true
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Ce qui manque ou est inexact
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Siège de député à l’Assemblée nationale ou au Parlement européen, investiture ou soutien publié d’un candidat déclaré.
+    validations:
+      required: true
