@@ -1,4 +1,6 @@
 User-agent: *
+Allow: /dist/styles.css
+Allow: /dist/fonts/
 Disallow: /dist/
 Disallow: /research/
 Disallow: /tests/

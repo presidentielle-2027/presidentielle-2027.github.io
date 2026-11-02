@@ -14,49 +14,63 @@ La sauvegarde automatique dépend du stockage local autorisé par le navigateur.
 
 ## 2. Publier sur GitHub Pages
 
-Le site publié est le fichier autonome `index.html` de la racine. Il contient le code, les données et les polices : aucune compilation n'est nécessaire, et une mise à jour ne peut pas mélanger d'anciennes données avec le nouveau code.
+Le site publié est formé des fichiers générés à la racine du dépôt :
 
-Le dépôt est `presidentielle-2027/presidentielle-2027.github.io` ; GitHub publie le site à l'adresse https://presidentielle-2027.github.io/.
+- `index.html`, le fichier autonome : questionnaire et bilan, avec le code, les données et les polices, si bien qu'une mise à jour ne peut pas mélanger d'anciennes données avec le nouveau code ;
+- `methode/`, `axes/`, `familles/`, `partis/` et `auteurs/`, les pages de référence, statiques, qui chargent `dist/styles.css` et les polices de `dist/fonts/` ;
+- `sitemap.xml`, `robots.txt`, `og-image.png` et le fichier vide `.nojekyll`.
 
-1. Pousser sur la branche `main`.
-2. Dans *Settings → Pages* du dépôt, la source est *Deploy from a branch*, branche `main`, dossier `/ (root)`.
-3. Chaque poussée sur `main` republie le site en une à deux minutes.
+Le dépôt est `presidentielle-2027/presidentielle-2027.github.io` ; GitHub publie le site à l'adresse https://presidentielle-2027.github.io/. La source de *Settings → Pages* est *Deploy from a branch*, branche `main`, dossier `/ (root)`.
 
-Le fichier vide `.nojekyll` désactive le traitement Jekyll : GitHub Pages sert les fichiers tels quels. Tout le contenu versionné devient accessible en ligne (`dist/`, `research/`, `tests/`…) ; les copies des sources citées, hors de Git, ne sont pas publiées. Les pages utilisent des fragments d'URL (`#questionnaire`, `#resultats`) : aucune réécriture côté serveur n'est nécessaire. GitHub Pages ne dépose pas de cookie, ce que suppose la mention « Sans cookie ni traceur publicitaire » du pied de page ; un autre hébergement doit le vérifier.
+GitHub ne construit rien : il publie les fichiers commités tels quels. Pour publier une modification :
 
-Référencement : le titre et la description de la page visent la présidentielle 2027 ; l'URL canonique désigne la racine, pour que la copie de `dist/` ne fasse pas doublon. Les balises Open Graph et Twitter renvoient à l'image de partage `og-image.png`, et des données structurées (schema.org, `WebSite` et `WebApplication`) décrivent le site. Le fichier autonome contient une présentation lisible sans JavaScript, générée à partir des catalogues. `robots.txt` écarte des moteurs les dossiers techniques et les fichiers Markdown, et désigne `sitemap.xml`. Pour suivre l'indexation, déclarer le site dans Google Search Console et Bing Webmaster Tools, puis y soumettre `https://presidentielle-2027.github.io/sitemap.xml`.
+1. Reconstruire les fichiers générés et lancer les tests :
 
-### Autre hébergement web
+   ```bash
+   python3 scripts/build-standalone.py
+   node --test tests/engine.test.mjs tests/standalone.test.mjs
+   ```
 
-Publier **le contenu de `dist/`** dans le répertoire web de l'hébergement :
+2. Prévisualiser le site (voir ci-dessous).
+3. Commiter `index.html`, `sitemap.xml` et les dossiers des pages de référence avec les sources modifiées. Une famille ou un axe ajouté crée un dossier à ajouter au dépôt ; une page retirée des catalogues disparaît de son dossier à la génération et doit aussi disparaître du dépôt.
+4. Pousser sur la branche `main`. Le site est republié en une à deux minutes ; l'onglet *Actions* du dépôt montre la publication (`pages-build-deployment`).
 
-```text
-index.html
-styles.css
-data.js
-app.mjs
-engine.mjs
-fonts/
-```
+Le fichier `.nojekyll` désactive le traitement Jekyll : GitHub Pages sert les fichiers tels quels, et chaque dossier de page est servi par son `index.html` (`/axes/immigration/` sert `axes/immigration/index.html`). Tout le contenu versionné devient accessible en ligne (`dist/`, `research/`, `tests/`…) ; les copies des sources citées, hors de Git, ne sont pas publiées. Le questionnaire et le bilan utilisent des fragments d'URL (`#questionnaire`, `#resultats`) : aucune réécriture côté serveur n'est nécessaire. GitHub Pages ne dépose pas de cookie, ce que suppose la mention « Sans cookie ni traceur publicitaire » du pied de page ; un autre hébergement doit le vérifier.
 
-Aucune compilation ni installation de paquets n'est nécessaire : ces fichiers sont déjà prêts. Ils peuvent être servis à la racine d'un domaine ou dans un sous-répertoire ; les chemins de l'application sont relatifs.
+### Prévisualiser le site avant de le publier
 
-Exemples d'URL : `https://votre-domaine.fr/` ou `https://votre-domaine.fr/avant-isoloir/`.
-
-Le serveur doit servir les fichiers `.mjs` avec un type MIME JavaScript (`text/javascript` ou `application/javascript`). Les pages utilisent des fragments d'URL (`#questionnaire`, `#resultats`) : aucune réécriture côté serveur n'est nécessaire.
-
-Pour essayer cette version sur votre ordinateur avec Python 3 :
+Après la reconstruction, servir **la racine du dépôt**, qui a la même arborescence que le site publié :
 
 ```bash
 cd presidentielle-2027.github.io
-python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
+python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Ouvrir ensuite `http://localhost:8080`. Arrêter avec `Ctrl+C`. Ce serveur est destiné à l'essai local ; pour un accès durable sur Internet, publier les fichiers sur un hébergement web avec HTTPS.
+Ouvrir ensuite `http://127.0.0.1:8080/` : l'accueil, puis `/methode/`, `/axes/`, `/familles/`, `/partis/` et `/auteurs/` par le menu « Comprendre ». Arrêter avec `Ctrl+C`. Le serveur sert les fichiers présents sans rien reconstruire : relancer `python3 scripts/build-standalone.py` après chaque modification.
+
+Ne pas servir `dist/` seul (`--directory dist`) : ce dossier contient la version modulaire de l'application, mais ni le fichier autonome ni les pages de référence, dont les liens répondent alors par une erreur 404. Cette version modulaire s'ouvre à l'adresse `http://127.0.0.1:8080/dist/` quand la racine est servie ; sa balise `site-root` fait mener son menu aux pages de la racine.
+
+Référencement : le titre et la description de la page visent la présidentielle 2027 ; l'URL canonique désigne la racine, pour que la copie de `dist/` ne fasse pas doublon. Les balises Open Graph et Twitter renvoient à l'image de partage `og-image.png`, et des données structurées (schema.org, `WebSite` et `WebApplication`) décrivent le site. Le fichier autonome contient une présentation lisible sans JavaScript, générée à partir des catalogues. Des pages statiques, elles aussi lisibles sans JavaScript, donnent une adresse propre au contenu public : la méthode (`methode/`), les axes (`axes/`, et une page par axe avec sa définition, ses pôles, ses propositions, les arguments des deux pôles et les repères de toutes les familles), les familles d'idées (`familles/`, et une page par famille avec ses repères sur chaque axe, ses textes de référence et les partis cités), le catalogue des partis (`partis/`) et les auteurs cités (`auteurs/`). Elles sont générées par `scripts/build-pages.mjs` à partir des gabarits de `dist/pages.js` et des fonctions de rendu de l'application, chargent `dist/styles.css` et ne contiennent aucun programme ; le questionnaire et le bilan restent dans `index.html`. Le menu « Comprendre » de l'en-tête, commun à l'application et aux pages statiques, mène à ces pages ; elles reprennent la présentation du bilan (en-tête « Comprendre le bilan », rubriques en onglets). `sitemap.xml` est généré en même temps et liste toutes ces adresses. `robots.txt` écarte des moteurs les dossiers techniques et les fichiers Markdown, sauf la feuille de style et les polices de `dist/` utilisées par les pages statiques, et désigne `sitemap.xml`. Pour suivre l'indexation, déclarer le site dans Google Search Console et Bing Webmaster Tools, puis y soumettre `https://presidentielle-2027.github.io/sitemap.xml`.
+
+### Autre hébergement web
+
+Publier les mêmes fichiers que sur GitHub Pages, en gardant leur arborescence :
+
+```text
+index.html
+methode/  axes/  familles/  partis/  auteurs/
+dist/styles.css
+dist/fonts/
+sitemap.xml
+robots.txt
+og-image.png
+```
+
+Aucune compilation ni installation de paquets n'est nécessaire : ces fichiers sont déjà prêts, et leurs chemins sont relatifs. Ils peuvent être servis à la racine d'un domaine ou dans un sous-répertoire (`https://votre-domaine.fr/` ou `https://votre-domaine.fr/avant-isoloir/`). L'adresse canonique, l'image de partage et le plan du site désignent `https://presidentielle-2027.github.io/` : sur un autre domaine, remplacer cette adresse dans `dist/index.html` et `robots.txt`, puis reconstruire.
+
+La version modulaire de `dist/` (`index.html`, `app.mjs`, `engine.mjs`, `data.js`, `styles.css`, `fonts/`) sépare les fichiers pour faciliter la maintenance ; `dist/pages.js` ne sert qu'à la génération des pages. Pour la publier aussi, le serveur doit servir les fichiers `.mjs` avec un type MIME JavaScript (`text/javascript` ou `application/javascript`) et faire revalider les fichiers à chaque visite (`Cache-Control: no-cache`), afin qu'après une mise à jour la page ne mélange pas d'anciennes données avec le nouveau code.
 
 **Ne pas ouvrir `dist/index.html` par double-clic** : cette version utilise des modules JavaScript qui demandent une origine HTTP(S). Pour le double-clic, utiliser le fichier `index.html` à la racine de l'archive, et non celui de `dist/`.
-
-Le seul fichier `index.html` de la racine peut aussi être publié sur un serveur web. La version `dist/` sépare les fichiers pour faciliter leur maintenance et leur mise en cache ; dans ce cas, configurer le serveur pour que le navigateur revalide les fichiers à chaque visite (`Cache-Control: no-cache`), afin qu'après une mise à jour la page ne mélange pas d'anciennes données avec le nouveau code.
 
 ## 3. Sauvegarde, accès et changement d'hébergement
 
@@ -79,20 +93,21 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 | `research/sources/` | Les copies des textes, comptes rendus et articles cités, rangées par groupe et conservées hors de Git ; seul `index.json`, versionné, donne pour chaque fichier son adresse d'origine, sa date de consultation et son empreinte SHA-256, vérifiée à l'assemblage pour chaque copie présente |
 | `dist/engine.mjs` | Les calculs et la validation des imports |
 | `dist/app.mjs` | Le parcours, les graphiques, les résultats et les exports |
+| `dist/pages.js` | Les gabarits des pages statiques (méthode, axes, familles d'idées, partis, auteurs), évalués à la construction avec les fonctions de `app.mjs` ; le navigateur ne le charge pas |
 | `dist/styles.css` | L'apparence et les adaptations mobiles |
 | `dist/fonts/` | Les polices IBM Plex Sans et IBM Plex Mono (licence SIL OFL 1.1, voir `OFL.txt`), servies avec le site et intégrées en data URI dans le fichier autonome `index.html` : aucune requête vers un service de polices tiers |
 | `dist/index.html` | La structure de la page web |
 | `branding/` | L'icône du site (`icon.svg`, traits épais pour rester lisible à 16 px) et le logo de l'organisation GitHub (`logo.svg`, rendu en `logo-organisation.png`) ; `python3 scripts/build-icons.py` (demande `rsvg-convert` et Chrome) les intègre en data URI dans `dist/index.html`, régénère le logo et l'image de partage `og-image.png` de la racine |
 
-Après modification des données, régénérer **les deux distributions** avec Python 3 :
+Après toute modification des données, des gabarits ou des styles, régénérer **les fichiers publiés** avec Python 3 et Node.js :
 
 ```bash
 python3 scripts/build-standalone.py
 ```
 
-Le script commence par reconstruire `dist/data.js`, puis produit le fichier autonome `index.html`, à la racine, avec exactement les mêmes données et calculs. Il n'accède pas au réseau. Ne pas modifier uniquement le HTML autonome : une reconstruction écraserait ces modifications.
+Le script commence par reconstruire `dist/data.js`, puis produit le fichier autonome `index.html`, à la racine, avec exactement les mêmes données et calculs, et enfin, avec Node.js, les pages statiques (`methode/`, `axes/`, `familles/`, `partis/`, `auteurs/`) et `sitemap.xml`. Il n'accède pas au réseau. Ne jamais modifier ces fichiers générés à la main : une reconstruction écraserait ces modifications. Les pages d'une famille ou d'un axe retiré des catalogues sont supprimées à la génération. Pour voir le résultat, servir la racine du dépôt (section 2, « Prévisualiser le site avant de le publier »).
 
-Pour vérifier les calculs, Node.js récent est nécessaire uniquement au développement :
+Pour vérifier les calculs et le contenu des pages, Node.js récent est nécessaire au développement :
 
 ```bash
 node --test tests/engine.test.mjs

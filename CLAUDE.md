@@ -8,7 +8,8 @@ Outil civique neutre pour la présidentielle 2027 : 80 propositions, 20 axes, co
 - `assemble-data.py` : vérifie la cohérence des catalogues par des `assert` et écrit `dist/data.js`. Une incohérence arrête la construction.
 - `dist/engine.mjs` : calculs purs (profil, écarts, lecture des scores, seuils `READING`, `MIN_COMMON_AXES`). `dist/app.mjs` : rendu en gabarits de chaînes. `dist/styles.css` : règles sur de très longues lignes ; modifier par remplacement exact d'une règle, jamais par numéro de ligne.
 - `scripts/build-standalone.py` : reconstruit `dist/data.js` puis `index.html` à la racine (tout intégré, sans module). Ne jamais modifier ce fichier ni `dist/data.js` à la main.
-- Publication : GitHub Pages sert `index.html` à la racine (branche `main`, dossier racine) ; `.nojekyll` désactive Jekyll.
+- `dist/pages.js` : gabarits des pages statiques (méthode, axes, familles d'idées, partis, auteurs), jamais chargé par le navigateur. `scripts/build-pages.mjs` (lancé par `build-standalone.py`) l'évalue avec `dist/app.mjs` dans un navigateur simulé et écrit `methode/`, `axes/`, `axes/<axe>/`, `familles/`, `familles/<famille>/`, `partis/`, `auteurs/` et `sitemap.xml` ; ne jamais modifier ces fichiers à la main. Une commande `data-action`, un lien vers une page absente ou une ancre sans cible arrête la génération. Le menu « Comprendre » de l'en-tête (`navLinks`, `SECTIONS` dans `dist/app.mjs`) y mène depuis toutes les pages ; l'application y renvoie par `pageHref`, et les anciennes adresses `#methode` et `#references` y redirigent.
+- Publication : GitHub Pages (« Deploy from a branch », `main`, dossier racine, `.nojekyll`) publie les fichiers commités tels quels, sans construction. `index.html`, `sitemap.xml` et les dossiers `methode/`, `axes/`, `familles/`, `partis/`, `auteurs/` sont donc reconstruits puis commités avec les sources. Les pages chargent `dist/styles.css` et `dist/fonts/`, que `robots.txt` laisse lire. `dist/index.html` porte `<meta name="site-root" content="../">` pour que sa version modulaire mène aux pages de la racine ; l'assemblage la retire du fichier autonome.
 - `scripts/capture-frames.mjs` : captures en temps réel d'une page dans Chrome sans interface, pour vérifier une animation (voir « Vérification visuelle »).
 - `research/sources/` : les copies des sources sont locales, hors de Git. Après un clone sans elles, l'assemblage signale les copies absentes sans s'arrêter ; `index.json` permet de les retélécharger et d'en vérifier l'empreinte.
 
@@ -20,7 +21,9 @@ node --check dist/app.mjs
 node --test tests/engine.test.mjs tests/standalone.test.mjs
 ```
 
-Puis régénérer `SHA256SUMS.txt` sur sa propre liste de fichiers (ajouter tout nouveau fichier livré). Le shell est zsh : ne pas compter sur le découpage d'une variable, passer la liste par `xargs` :
+Pour voir le site comme GitHub Pages, servir la racine du dépôt : `python3 -m http.server 8765 --bind 127.0.0.1`, puis `http://127.0.0.1:8765/`. Jamais `--directory dist` : ce dossier ne contient ni le fichier autonome ni les pages de référence (erreur 404 sur le menu « Comprendre »).
+
+Puis régénérer `SHA256SUMS.txt` sur sa propre liste de fichiers (ajouter tout nouveau fichier livré, dont la page d'une famille ou d'un axe ajouté ; retirer celle d'une page supprimée). Le shell est zsh : ne pas compter sur le découpage d'une variable, passer la liste par `xargs` :
 
 ```bash
 L=$(mktemp) T=$(mktemp); awk '{print $2}' SHA256SUMS.txt > "$L" && xargs shasum -a 256 < "$L" > "$T" && mv "$T" SHA256SUMS.txt; rm -f "$L"
@@ -43,15 +46,16 @@ L=$(mktemp) T=$(mktemp); awk '{print $2}' SHA256SUMS.txt > "$L" && xargs shasum 
 
 ## Cohérence de l'interface
 
-- Toute liste de familles affiche le catalogue complet dans l'ordre de `familyList(ranked)` : d'abord les familles comparées, de la plus proche à la plus éloignée, puis les autres. Une famille qu'on ne peut pas comparer apparaît comme « non comparée », elle ne disparaît pas.
+- Toute liste de familles affiche le catalogue complet dans l'ordre de `familyList(ranked)` : d'abord les familles comparées, de la plus proche à la plus éloignée, puis les autres. Une famille qu'on ne peut pas comparer apparaît comme « non comparée », elle ne disparaît pas. Dans les pages statiques, sans réponses à comparer, les familles sont rangées par ordre alphabétique : l'ordre du catalogue suit à peu près un axe gauche-droite.
 - Tout nombre affiché (familles, partis, auteurs, axes, propositions) est calculé à partir des catalogues, jamais écrit en dur dans `dist/app.mjs`.
 - Aucune présentation ne suggère un axe gauche-droite : la cible des proximités range les familles par ordre alphabétique autour du centre, seule la distance (l'écart moyen) a un sens. L'aperçu de la page d'accueil ne simule aucun résultat.
 - Une animation respecte `prefers-reduced-motion` (état final immédiat, aucune lecture automatique) et n'apparaît pas dans le bilan imprimé, qui garde la liste des proximités ; les volets repliables des cartes y sont dépliés.
 - Dans les graphiques, le violet (`--accent`) est réservé aux positions de l'utilisateur ; la famille mise en avant est en encre, les autres en gris.
+- Les pages statiques reprennent la présentation du bilan : en-tête commun « Comprendre le bilan », rubriques en onglets (`.tabs`), titre de page avec pictogramme, contenu dans une carte (`.sheet`) découpée en blocs titrés (`blockTitle`), sans colonne latérale ni fil d'Ariane. La page d'un axe se lit comme sa carte dépliée dans l'onglet des axes ; les repères d'une famille reprennent les positions de la vue d'ensemble, avec le losange de la famille à la place du point violet. Partis et auteurs partagent le même tableau (`dataTable`), présenté en fiches sur téléphone.
 
 ## Vérification visuelle
 
-Copier `dist/` dans un dossier temporaire, ajouter un `seed.js` chargé avant `data.js` qui écrit une session dans `localStorage` (clé `avant-isoloir-v1`), servir le dossier avec `python3 -m http.server`, puis capturer avec Chrome sans interface (`--headless=new --screenshot` ou `--print-to-pdf`). Pour une largeur de téléphone, afficher la page dans une iframe de 390 px en `position:fixed` : la fenêtre sans interface ne descend pas sous environ 500 px.
+Pages de référence et fichier autonome : servir la racine du dépôt. Application avec une session : copier `dist/` dans un dossier temporaire, ajouter un `seed.js` chargé avant `data.js` qui écrit une session dans `localStorage` (clé `avant-isoloir-v1`), servir le dossier avec `python3 -m http.server` (les liens du menu « Comprendre » y répondent par une erreur 404, ce qui est attendu), puis capturer avec Chrome sans interface (`--headless=new --screenshot` ou `--print-to-pdf`). Pour une largeur de téléphone, afficher la page dans une iframe de 390 px en `position:fixed` : la fenêtre sans interface ne descend pas sous environ 500 px.
 
 Pour une animation (cible du bilan, aperçu de l'accueil), `--screenshot` ne convient pas : il fonctionne en temps virtuel, qui fige les transitions CSS. Capturer en temps réel avec `scripts/capture-frames.mjs`, qui pilote Chrome par son protocole de débogage et accepte aussi une largeur de téléphone :
 

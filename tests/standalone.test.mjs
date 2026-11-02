@@ -22,7 +22,7 @@ function boot(session,key='avant-isoloir-v1'){
  const elements=Object.fromEntries(['main','navigation','toast'].map(id=>[id,{innerHTML:'',style:{},focus(){},querySelector(){return null}}]));
  const handlers={},windowHandlers={},saved=new Map(session?[[key,JSON.stringify(session)]]:[]);
  let hash='';
- const location={get hash(){return hash},set hash(value){hash=value.startsWith('#')?value:'#'+value}};
+ const location={get hash(){return hash},set hash(value){hash=value.startsWith('#')?value:'#'+value},replace(href){this.replaced=href}};
  const bodyClasses=new Set();
  const document={getElementById:id=>elements[id],addEventListener(type,fn){(handlers[type]??=[]).push(fn)},querySelector(){return null},
   createElement:()=>({id:'',innerHTML:'',remove(){delete elements[this.id]}}),
@@ -111,16 +111,14 @@ test('The standalone classic script starts and completes the questionnaire witho
  fire(windowHandlers.afterprint);
  assert.equal(elements['print-report'],undefined);
  assert.ok(!bodyClasses.has('print-report-on'));
+ // Les pages de référence sont des pages statiques : le menu « Comprendre » de l'en-tête y mène, l'ancienne adresse #methode y renvoie.
+ const menu=elements.navigation.innerHTML.match(/<details class="nav-menu[^"]*">[\s\S]*?<\/details>/)[0];
+ for(const path of ['methode/','axes/','familles/','partis/','auteurs/'])assert.ok(menu.includes(`<a href="${path}">`),path);
  app.go('#methode');
- const method=app.html(),parties=read('../research/parties.json').parties;
- assert.match(method,/id="familles-partis"/);
- assert.ok(method.includes(`Version ${VERSION}.`));
- assert.equal((method.match(/<table class="party-table">[\s\S]*?<\/table>/g)||[]).join('').match(/<tr><td>/g).length,parties.length);
- assert.match(method,/La France insoumise[\s\S]*?Texte de référence : Gauche de rupture écologique/);
- assert.match(method,/Reconquête[\s\S]*?Texte comparé : Droite nationale souverainiste/);
+ assert.equal(location.replaced,'methode/');
 });
 
-test('Every axis presents arguments for both poles and the method page lists every cited author',()=>{
+test('Every axis presents arguments for both poles and links to its static page',()=>{
  const refs=read('../research/references.json');
  const answers=Object.fromEntries(questions.slice(0,36).map((q,i)=>[q.id,i%2?-1:1]));
  const app=boot({methodVersion:METHOD_VERSION,answers,priorities:{},cursor:36,usePriorities:true});
@@ -137,13 +135,14 @@ test('Every axis presents arguments for both poles and the method page lists eve
   // Le volet d'un axe liste chacune de ses propositions avec la réponse donnée et un bouton pour la modifier.
   assert.equal((row.match(/data-action="edit-question"/g)||[]).length,a.questions.length,a.id);
   for(const t of ['Ce que mesure cet axe','Ce sujet pèse dans mon choix','Vos réponses','Arguments en présence'])assert.ok(row.includes(t),`${a.id} : ${t}`);
+  assert.ok(row.includes(`href="axes/${a.id}/"`),a.id);
  }
- // L'ancienne adresse de la page Idées mène à la méthode, qui liste tous les auteurs du catalogue.
+ // Chaque carte de famille de l'onglet Proximités mène à la page de la famille.
+ app.action('results-tab',undefined,{tab:'familles'});
+ for(const f of familyList)assert.ok(app.html().includes(`href="familles/${f.id}/"`),f.id);
+ // L'ancienne adresse de la page Idées mène à la page des auteurs.
  app.go('#references');
- const method=app.html();
- assert.match(method,/id="auteurs"/);
- assert.equal(method.match(/<ul class="author-list">[\s\S]*?<\/ul>/)[0].match(/<li>/g).length,refs.thinkers.length);
- assert.ok(method.includes(`${refs.thinkers.length} auteurs`));
+ assert.equal(app.location.replaced,'auteurs/');
 });
 
 test('Answers saved under the former storage key move to the current key on first load',()=>{
@@ -195,6 +194,78 @@ test('The page describes itself for search engines with figures taken from the c
  const noscript=html.match(/<noscript><div class="noscript">([\s\S]*?)<\/div><\/noscript>/)[1];
  assert.ok(noscript.includes(`${Q} propositions réparties sur ${A} sujets`));
  for(const a of axisList)assert.ok(noscript.includes(a.name.slice(1)),a.name);
+});
+
+test('Static pages present the method, axes, families, parties and authors without JavaScript, and the sitemap lists them all',()=>{
+ const page=path=>fs.readFileSync(new URL(`../${path}index.html`,import.meta.url),'utf8');
+ const refs=read('../research/references.json'),parties=read('../research/parties.json').parties;
+ const site='https://presidentielle-2027.github.io/';
+ const byName=familyList.slice().sort((x,y)=>x.name.localeCompare(y.name,'fr',{sensitivity:'base'}));
+ const check=(path,html)=>{
+  // Une page statique ne charge aucun programme : seules les données structurées (JSON-LD) y figurent.
+  assert.equal((html.match(/<script\b/g)||[]).length,1,path);
+  assert.doesNotMatch(html,/data-action=/,path);
+  assert.ok(html.includes(`<link rel="canonical" href="${site}${path}">`),path);
+  const ld=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.equal(ld['@type'],'WebPage');assert.equal(ld.url,site+path);
+  // L'en-tête mène à toutes les pages de référence par le menu « Comprendre », marqué comme rubrique courante.
+  const menu=html.match(/<details class="nav-menu active">[\s\S]*?<\/details>/)[0];
+  assert.equal((menu.match(/<a href=/g)||[]).length,5,path);
+  assert.doesNotMatch(html,/class="crumbs"/,path);
+  // Les rubriques figurent en onglets, comme les vues du bilan, la rubrique courante marquée ; un seul titre h1 par page.
+  assert.equal((html.match(/<nav class="tabs" aria-label="Rubriques">[\s\S]*?<\/nav>/)[0].match(/class="tab active"/g)||[]).length,1,path);
+  assert.equal((html.match(/<h1\b/g)||[]).length,1,path);
+  for(const [,id] of html.matchAll(/href="#([\w-]*)"/g))assert.ok(html.includes(`id="${id}"`),`${path} #${id}`);
+ };
+ const method=page('methode/');check('methode/',method);
+ assert.ok(method.includes(`Version ${VERSION}, cadre français.`));
+ assert.doesNotMatch(method,/class="reading"/);
+ assert.doesNotMatch(method,/id="familles-partis"|id="auteurs"/);
+ const index=page('axes/');check('axes/',index);
+ assert.ok(index.includes(`<span>Les ${A} axes du questionnaire</span></h1>`));
+ for(const a of axisList){
+  const path=`axes/${a.id}/`,html=page(path);check(path,html);
+  assert.ok(index.includes(`href="../${path}"`),a.id);
+  assert.ok(html.includes(`<span>${a.name}</span></h1>`),a.id);
+  assert.equal((html.match(/class="prop-text"/g)||[]).length,a.questions.length,a.id);
+  assert.equal((html.match(/<article class="arg">/g)||[]).length,refs.arguments.filter(x=>x.axis===a.id).length,a.id);
+  // Toutes les familles figurent, par ordre alphabétique ; celles qui ne tranchent pas l'axe sont dites non définies.
+  const rows=[...html.matchAll(/<a class="axis-mini ref-mini[^"]*" href="..\/..\/familles\/([\w-]+)\/"/g)].map(x=>x[1]);
+  assert.deepEqual(rows,byName.map(f=>f.id),a.id);
+  assert.equal((html.match(/class="axis-ref"/g)||[]).length,familyList.filter(f=>typeof f.positions[a.id]==='number').length,a.id);
+ }
+ const families=page('familles/');check('familles/',families);
+ assert.ok(families.includes(`<span>Les ${familyList.length} familles d’idées</span></h1>`));
+ for(const f of familyList){
+  const path=`familles/${f.id}/`,html=page(path);check(path,html);
+  assert.ok(families.includes(`href="../${path}"`),f.id);
+  assert.ok(html.includes(`<span>${f.name}</span></h1>`),f.id);
+  // Une ligne par axe : les axes que la famille ne définit pas restent affichés comme non définis.
+  assert.equal((html.match(/<a class="axis-mini ref-mini/g)||[]).length,A,f.id);
+  assert.equal((html.match(/class="gap-ref"/g)||[]).length,Object.keys(f.positions).length,f.id);
+  assert.equal((html.match(/<a class="axis-mini ref-mini undefined"/g)||[]).length,A-Object.keys(f.positions).length,f.id);
+  assert.equal((html.match(/<strong>Textes de référence<\/strong>/g)||[]).length,1,f.id);
+ }
+ const partiesPage=page('partis/');check('partis/',partiesPage);
+ assert.equal((partiesPage.match(/<tr id="parti-[\w-]+"><th scope="row">/g)||[]).length,parties.length);
+ assert.match(partiesPage,/La France insoumise[\s\S]*?Texte de référence : <a href="..\/familles\/gauchederupture\/">Gauche de rupture écologique<\/a>/);
+ assert.match(partiesPage,/Reconquête[\s\S]*?Texte comparé : <a href="..\/familles\/droitenationale\/">Droite nationale souverainiste<\/a>/);
+ const authors=page('auteurs/');check('auteurs/',authors);
+ // Partis et auteurs partagent le même tableau.
+ assert.equal((partiesPage.match(/<table class="data-table">/g)||[]).length,2);assert.equal((authors.match(/<table class="data-table">/g)||[]).length,1);
+ assert.equal((authors.match(/<tr><th scope="row">/g)||[]).length,refs.thinkers.length);
+ assert.ok(authors.includes(`<span>Les ${refs.thinkers.length} auteurs cités</span></h1>`));
+ const sitemap=fs.readFileSync(new URL('../sitemap.xml',import.meta.url),'utf8');
+ assert.deepEqual([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]),[site,`${site}methode/`,`${site}axes/`,...axisList.map(a=>`${site}axes/${a.id}/`),`${site}familles/`,...byName.map(f=>`${site}familles/${f.id}/`),`${site}partis/`,`${site}auteurs/`]);
+ // Les pages statiques chargent la feuille de style de dist/, que les robots doivent pouvoir lire.
+ const robots=fs.readFileSync(new URL('../robots.txt',import.meta.url),'utf8');
+ assert.match(robots,/^Allow: \/dist\/styles\.css$/m);assert.match(robots,/^Allow: \/dist\/fonts\/$/m);
+ // Sans JavaScript, la présentation de l'accueil mène aussi aux pages statiques.
+ const home=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ // Les pages sont à la racine : la version modulaire de dist/ y remonte, le fichier autonome y est déjà.
+ assert.doesNotMatch(home,/<meta name="site-root"/);
+ assert.match(fs.readFileSync(new URL('../dist/index.html',import.meta.url),'utf8'),/<meta name="site-root" content="\.\.\/">/);
+ assert.match(home,/<noscript><div class="noscript">[\s\S]*?<a href="methode\/">[\s\S]*?<a href="axes\/">/);
 });
 
 test('A partial questionnaire still lists every family of the catalog in the proximities',()=>{

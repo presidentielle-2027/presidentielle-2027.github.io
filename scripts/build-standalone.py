@@ -5,6 +5,7 @@ import base64
 import json
 import re
 import runpy
+import subprocess
 
 base = Path(__file__).resolve().parents[1]
 runpy.run_path(str(base / 'assemble-data.py'), run_name='__main__')
@@ -39,12 +40,20 @@ noscript = ('<noscript><div class="noscript"><h1>Présidentielle 2027 : faites l
             f'Le bilan situe vos positions sujet par sujet et mesure votre écart avec {len(catalog["families"])} familles d’idées ; '
             f'sous chaque sujet, des auteurs présentent les arguments des deux pôles ({len(catalog["references"]["thinkers"])} auteurs en tout).</p>'
             '<p>Le site est indépendant, sans lien avec les pouvoirs publics ni avec les partis. Le calcul se fait dans votre navigateur, '
-            'sans inscription ni consigne de vote. Activez JavaScript pour répondre au questionnaire.</p></div></noscript>')
+            'sans inscription ni consigne de vote. Activez JavaScript pour répondre au questionnaire.</p>'
+            f'<p><a href="methode/">La méthode</a> · <a href="axes/">Les {len(themes)} axes, leurs propositions et leurs arguments</a> · '
+            f'<a href="familles/">Les {len(catalog["families"])} familles d’idées</a> · <a href="partis/">Les {len(catalog["parties"]["parties"])} partis</a> · '
+            f'<a href="auteurs/">Les {len(catalog["references"]["thinkers"])} auteurs cités</a></p></div></noscript>')
 loading = '<main id="main" tabindex="-1"><div class="loading">Préparation du questionnaire…</div></main>'
 if html.count(loading) != 1:
     raise SystemExit('Le conteneur principal de dist/index.html a changé : adapter la présentation sans JavaScript.')
 html = html.replace(loading, loading.replace('</main>', noscript + '</main>'))
 html = html.replace('</head>', '  <noscript><style>.loading{display:none}</style></noscript>\n</head>', 1)
+# Le fichier autonome est à la racine du site, comme les pages statiques : il n'a pas besoin de remonter depuis dist/.
+site_root = '  <meta name="site-root" content="../">\n'
+if html.count(site_root) != 1:
+    raise SystemExit('La balise site-root de dist/index.html a changé : adapter cet assembleur.')
+html = html.replace(site_root, '')
 
 script = data + '\n(function(){\n"use strict";\n' + engine + '\n' + app + '\n})();\n'
 script = re.sub(r'</script', r'<\\/script', script, flags=re.IGNORECASE)
@@ -58,3 +67,6 @@ if re.search(r'url\((?!data:)', css):
     raise SystemExit('Une police ou une image n’a pas été intégrée au document autonome.')
 (base / 'index.html').write_text(html)
 print('Fichier autonome prêt : index.html')
+
+# Pages statiques de la méthode et des axes, et plan du site, à partir des mêmes données et des mêmes fonctions de rendu.
+subprocess.run(['node', str(base / 'scripts' / 'build-pages.mjs')], check=True)
