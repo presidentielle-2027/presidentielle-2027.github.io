@@ -257,6 +257,17 @@ test('Static pages present the method, axes, families, parties and authors witho
  assert.ok(authors.includes(`<span>Les ${refs.thinkers.length} auteurs cités</span></h1>`));
  const sitemap=fs.readFileSync(new URL('../sitemap.xml',import.meta.url),'utf8');
  assert.deepEqual([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>x[1]),[site,`${site}methode/`,`${site}axes/`,...axisList.map(a=>`${site}axes/${a.id}/`),`${site}familles/`,...byName.map(f=>`${site}familles/${f.id}/`),`${site}partis/`,`${site}auteurs/`]);
+ // Chaque adresse porte sa date de mise à jour (format W3C, avec le décalage horaire), sa fréquence et sa priorité.
+ assert.ok(sitemap.includes('<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">'));
+ const urls=[...sitemap.matchAll(/<url>\n<loc>([^<]+)<\/loc>\n<lastmod>([^<]+)<\/lastmod>\n<changefreq>([^<]+)<\/changefreq>\n<priority>([^<]+)<\/priority>\n<\/url>/g)];
+ assert.equal(urls.length,(sitemap.match(/<url>/g)||[]).length);
+ for(const [,loc,lastmod,changefreq,priority] of urls){
+  assert.match(lastmod,/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d\d:\d\d$/,loc);
+  assert.ok(Date.parse(lastmod)<=Date.now(),loc);
+  assert.ok(['always','hourly','daily','weekly','monthly','yearly','never'].includes(changefreq),loc);
+  assert.match(priority,/^(?:0\.\d|1\.0)$/,loc);
+ }
+ assert.equal(urls[0][4],'1.0');
  // Les pages statiques chargent la feuille de style de dist/, que les robots doivent pouvoir lire.
  const robots=fs.readFileSync(new URL('../robots.txt',import.meta.url),'utf8');
  assert.match(robots,/^Allow: \/dist\/styles\.css$/m);assert.match(robots,/^Allow: \/dist\/fonts\/$/m);
@@ -279,4 +290,18 @@ test('A partial questionnaire still lists every family of the catalog in the pro
  assert.ok((families.match(/class="pc-hit uncompared"/g)||[]).length>0);
  assert.match(families,/Non comparée/);
  for(const f of familyList)assert.ok(families.includes(`<h3>${f.name}</h3>`),f.name);
+});
+
+test('The README figure cards show the counts of the catalogs and every card the README links to exists',()=>{
+ const card=name=>fs.readFileSync(new URL(`../branding/chiffres/${name}.svg`,import.meta.url),'utf8');
+ const thinkers=read('../research/references.json').thinkers.length;
+ for(const [name,count] of [['questions',Q],['axes',A],['familles',familyList.length],['auteurs',thinkers]]){
+  const svg=card(name);
+  assert.match(svg,new RegExp(`<title>${count} `),name);
+  assert.match(svg,new RegExp(`font-size="48"[^>]*>${count}</text>`),name);
+ }
+ const readme=fs.readFileSync(new URL('../README.md',import.meta.url),'utf8');
+ const linked=[...readme.matchAll(/\]\((branding\/chiffres\/[\w-]+\.svg)\)/g)].map(x=>x[1]);
+ assert.equal(linked.length,4);
+ for(const path of linked)assert.ok(fs.existsSync(new URL(`../${path}`,import.meta.url)),path);
 });

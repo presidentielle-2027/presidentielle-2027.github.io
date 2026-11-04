@@ -1,40 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://presidentielle-2027.github.io/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/methode/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/redistribution/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/economy/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/work/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/budget/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/society/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/liberties/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/immigration/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/integration/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/religion/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/discrimination/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/ecology/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/europe/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/trade/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/defense/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/military/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/assistance/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/checks/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/executive/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/participation/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/axes/territory/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/anticapitalisme/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/socialliberalisme/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/communisme/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/liberalconservateur/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/droitenationale/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/ecologie/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/gauchederupture/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/gaullismesocial/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/liberalprogressiste/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/libertarianisme/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/familles/socialdemocratie/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/partis/</loc></url>
-  <url><loc>https://presidentielle-2027.github.io/auteurs/</loc></url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://presidentielle-2027.github.io/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/methode/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/redistribution/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/economy/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/work/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/budget/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/society/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/liberties/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/immigration/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/integration/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/religion/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/discrimination/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/ecology/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/europe/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/trade/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/defense/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/military/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/assistance/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/checks/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/executive/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/participation/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/axes/territory/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/anticapitalisme/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/socialliberalisme/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/communisme/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/liberalconservateur/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/droitenationale/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/ecologie/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/gauchederupture/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/gaullismesocial/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/liberalprogressiste/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/libertarianisme/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/familles/socialdemocratie/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/partis/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://presidentielle-2027.github.io/auteurs/</loc>
+<lastmod>2026-11-04T20:39:03+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
 </urlset>

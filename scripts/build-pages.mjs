@@ -95,6 +95,22 @@ for(const [path,page] of html){
  }
 }
 
+// Plan du site : l'accueil, puis toutes les pages statiques, avec leur fréquence de changement et leur priorité. Une page
+// dont le contenu change, ou qui apparaît, est datée de cette génération ; une page identique garde la date du plan
+// précédent, pour que la date de mise à jour reste fiable d'une génération à l'autre. Le fichier autonome est écrit après
+// cette génération par scripts/build-standalone.py, qui signale par --home-changed que l'accueil change.
+const FREQUENCIES=['always','hourly','daily','weekly','monthly','yearly','never'];
+const entries=[{path:'',changefreq:'weekly',priority:1},...pages];
+for(const {path,changefreq,priority} of entries)if(!FREQUENCIES.includes(changefreq)||!(priority>=0&&priority<=1))fail(`${path||'accueil'} : fréquence ou priorité du plan du site invalide (${changefreq}, ${priority}).`);
+const sitemapFile=new URL('sitemap.xml',base);
+const previous=new Map(fs.existsSync(sitemapFile)?[...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map(m=>[m[1],m[2]]):[]);
+const changed=new Set([...html].filter(([path,page])=>{const file=new URL(`${path}index.html`,base);return !fs.existsSync(file)||fs.readFileSync(file,'utf8')!==page;}).map(([path])=>path));
+if(process.argv.includes('--home-changed'))changed.add('');
+// Date et heure de la génération, à l'heure de Paris, au format W3C des plans de site (2026-11-04T14:16:00+01:00).
+const clock=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',timeZoneName:'longOffset',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).map(p=>[p.type,p.value]));
+const now=`${clock.year}-${clock.month}-${clock.day}T${clock.hour}:${clock.minute}:${clock.second}${clock.timeZoneName.replace('GMT','')||'+00:00'}`;
+const sitemap=entries.map(({path,changefreq,priority})=>{const loc=SITE+path,lastmod=changed.has(path)?now:previous.get(loc)??now;return `<url>\n<loc>${loc}</loc>\n<lastmod>${lastmod}</lastmod>\n<changefreq>${changefreq}</changefreq>\n<priority>${priority.toFixed(1)}</priority>\n</url>`;});
+
 // Les pages d'une génération précédente qui n'existent plus sont retirées, puis les pages sont écrites.
 for(const [path] of sections){
  const dir=new URL(path,base);
@@ -102,7 +118,5 @@ for(const [path] of sections){
 }
 for(const [path,page] of html){const target=new URL(`${path}index.html`,base);fs.mkdirSync(new URL('./',target),{recursive:true});fs.writeFileSync(target,page);}
 
-// Plan du site : l'accueil et toutes les pages statiques.
-const paths=['',...html.keys()];
-fs.writeFileSync(new URL('sitemap.xml',base),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths.map(p=>`  <url><loc>${SITE}${p}</loc></url>`).join('\n')}\n</urlset>\n`);
-console.log(`Pages statiques prêtes : ${html.size} pages, sitemap.xml (${paths.length} adresses).`);
+fs.writeFileSync(sitemapFile,`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n${sitemap.join('\n')}\n</urlset>\n`);
+console.log(`Pages statiques prêtes : ${html.size} pages (modifiées : ${[...changed].filter(Boolean).length}) ; sitemap.xml (${entries.length} adresses${changed.has('')?', accueil modifié':''}).`);

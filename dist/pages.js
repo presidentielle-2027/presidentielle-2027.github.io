@@ -92,28 +92,33 @@ function authorsPage(){
  return `${pageTitle('authors',`Les ${list.length} auteurs cités`)}<div class="static-text"><p>Sous chaque axe, des thèses d’auteurs éclairent les deux pôles : une ou deux mises en avant de chaque côté, parfois complétées par d’autres lectures. Elles ne modifient ni vos réponses ni vos scores.</p><p>Sont retenus des chercheurs, des intellectuels et des penseurs dont la pensée ou les écrits ont été reconnus par leurs pairs, et qui ne sont associés ni à une théorie du complot, ni à la désinformation, ni à des propos extrémistes, racistes ou antisémites, ni à une condamnation ou à un scandale public. Les auteurs classiques sont lus pour leur œuvre. Les responsables politiques du passé figurent lorsque leur pensée éclaire un axe ; les candidats et les dirigeants en fonction n’y figurent pas, leurs positions apparaissant dans les textes de référence des familles d’idées. Les thèses sont des synthèses de la rédaction ; les citations, en français, reproduisent mot pour mot le texte de l’auteur ou sa traduction publiée, et chaque source est conservée dans les archives de l’outil.</p></div><article class="sheet"><section>${blockTitle('authors','Auteurs cités',`${list.length} auteurs, par ordre alphabétique`)}${dataTable(['Auteur','Discipline et institution','Axes où il est cité'],list.map(t=>({cells:[`<span class="cell-title">${e(t.name)}</span>`,e([t.discipline,t.role].filter(Boolean).join(' · '))+(t.years?`<small>${e(t.years)}</small>`:''),listFr(axesOf(t))]})))}</section></article>`;
 }
 
-// Toutes les pages statiques, dans l'ordre du plan du site : adresse, rubrique, titre, description, contenu.
+// Toutes les pages statiques, dans l'ordre du plan du site : adresse, rubrique, titre, description, contenu, fréquence de
+// changement et priorité dans le plan du site. La fréquence suit le catalogue dont la page dépend : les repères des
+// familles et le catalogue des partis évoluent avec la parution des programmes et des candidatures, d'une semaine à
+// l'autre ; le questionnaire, la méthode et les auteurs ne changent qu'avec une édition, d'un mois à l'autre. La priorité,
+// relative aux autres pages du site (l'accueil est à 1.0), place les sommaires des rubriques avant les pages d'un axe ou
+// d'une famille, et la page des auteurs, complément des arguments, en dernier.
 function staticPages(){
  return [
-  {path:'methode/',section:'methode/',body:methodPage(),
+  {path:'methode/',section:'methode/',body:methodPage(),changefreq:'monthly',priority:0.7,
    title:'Méthode : calcul du bilan, seuils de lecture et sources · Avant l’isoloir',
    description:`Comment Avant l’isoloir situe vos positions sur ${AXES_N} axes et mesure votre écart avec ${familyCount} familles d’idées pour la présidentielle 2027 : formules, seuils de lecture, limites de l’outil et sources.`},
-  {path:'axes/',section:'axes/',body:axesPage(),
+  {path:'axes/',section:'axes/',body:axesPage(),changefreq:'monthly',priority:0.8,
    title:`Les ${AXES_N} axes du questionnaire : propositions et arguments · Avant l’isoloir`,
    description:`Redistribution, immigration, Europe, écologie, institutions… Les ${AXES_N} axes d’Avant l’isoloir pour la présidentielle 2027, leurs ${QUESTIONS_N} propositions, les arguments de ${AUTHORS_N} auteurs et les repères de ${familyCount} familles d’idées.`},
-  ...axes.map(a=>({path:`axes/${a.id}/`,section:'axes/',body:axisPage(a),
+  ...axes.map(a=>({path:`axes/${a.id}/`,section:'axes/',body:axisPage(a),changefreq:'monthly',priority:0.6,
    title:`${a.name} : propositions, arguments et repères · Avant l’isoloir`,
    description:`${a.low} ou ${lcFirst(a.high)} : les ${a.questions.length} propositions d’Avant l’isoloir sur l’axe « ${a.name} », les thèses de ${new Set(D.references.arguments.filter(x=>x.axis===a.id).flatMap(x=>x.authors)).size} auteurs aux deux pôles et les repères de ${familyCount} familles d’idées.`})),
-  {path:'familles/',section:'familles/',body:familiesPage(),
+  {path:'familles/',section:'familles/',body:familiesPage(),changefreq:'weekly',priority:0.8,
    title:`Les ${familyCount} familles d’idées : repères et textes de référence · Avant l’isoloir`,
    description:`Les ${familyCount} familles d’idées auxquelles Avant l’isoloir compare vos réponses pour la présidentielle 2027 : leurs repères sur ${AXES_N} axes, leurs textes de référence et les partis cités.`},
-  ...familiesByName.map(f=>({path:`familles/${f.id}/`,section:'familles/',body:familyPage(f),
+  ...familiesByName.map(f=>({path:`familles/${f.id}/`,section:'familles/',body:familyPage(f),changefreq:'weekly',priority:0.7,
    title:`${f.name} : repères et textes de référence · Avant l’isoloir`,
    description:`${f.description} Repères sur ${Object.keys(f.positions).length} axes, textes de référence et partis cités.`})),
-  {path:'partis/',section:'partis/',body:partiesPage(),
+  {path:'partis/',section:'partis/',body:partiesPage(),changefreq:'weekly',priority:0.8,
    title:`Les ${PARTIES_N} partis du catalogue : critère et familles d’idées · Avant l’isoloir`,
    description:`Les ${PARTIES_N} partis retenus par Avant l’isoloir pour la présidentielle 2027 : critère d’inclusion, candidature et textes rattachés aux familles d’idées.`},
-  {path:'auteurs/',section:'auteurs/',body:authorsPage(),
+  {path:'auteurs/',section:'auteurs/',body:authorsPage(),changefreq:'monthly',priority:0.5,
    title:`Les ${AUTHORS_N} auteurs cités : arguments des deux pôles · Avant l’isoloir`,
    description:`Les ${AUTHORS_N} chercheurs et penseurs dont Avant l’isoloir cite les thèses aux deux pôles de ses ${AXES_N} axes, et les critères de leur choix.`}];
 }

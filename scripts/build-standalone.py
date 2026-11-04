@@ -65,8 +65,46 @@ if re.search(r'<script\b[^>]*\bsrc\s*=|<link\b[^>]*rel=[\'"]stylesheet', html, f
     raise SystemExit('Une ressource externe subsiste dans le document autonome.')
 if re.search(r'url\((?!data:)', css):
     raise SystemExit('Une police ou une image n’a pas été intégrée au document autonome.')
-(base / 'index.html').write_text(html)
-print('Fichier autonome prêt : index.html')
+
+# Cartes de chiffres du README (branding/chiffres/), au format des cartes de l'accueil (.fact) : pictogramme de
+# l'application, nombre tiré des catalogues, teintes de la charte dans l'ordre des thèmes. GitHub sert les images SVG avec
+# une politique de sécurité (default-src 'none') qui peut bloquer une police intégrée : le texte prend IBM Plex Sans si
+# elle est installée, sinon la police du système.
+palette = dict(re.findall(r'--([\w-]+):(#[0-9a-fA-F]{6})', re.search(r':root\{([^}]*)\}', css).group(1)))
+icons = dict(re.findall(r"(\w+):'([^']*)'", re.search(r'const ICONS=\{(.*?)\};', app, flags=re.S).group(1)))
+font = "'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+
+
+def fact_card(icon, value, lines, tone):
+    pale, line, ink = palette[f'{tone}-pale'], palette[tone], palette[f'{tone}-ink']
+    label = ''.join(f'<tspan x="22" dy="{18 if i else 0}">{text}</tspan>' for i, text in enumerate(lines))
+    glyph = icons[icon].replace('class="i-fill"', f'fill="{palette["card"]}"')
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="192" height="196" viewBox="0 0 192 196" role="img">'
+            f'<title>{value} {" ".join(lines)}</title>'
+            f'<clipPath id="card"><rect width="192" height="196" rx="3"/></clipPath>'
+            f'<g clip-path="url(#card)"><rect width="192" height="196" fill="{pale}"/><rect width="192" height="3" fill="{line}"/></g>'
+            f'<circle cx="44" cy="47" r="22" fill="{palette["card"]}"/>'
+            f'<svg x="33" y="36" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{ink}" stroke-width="1.6" '
+            f'stroke-linecap="round" stroke-linejoin="round">{glyph}</svg>'
+            f'<text x="21" y="128" font-family="{font}" font-size="48" font-weight="600" letter-spacing="-1.44" '
+            f'fill="{palette["ink"]}">{value}</text>'
+            f'<text x="22" y="159" font-family="{font}" font-size="13" fill="{ink}">{label}</text></svg>\n')
+
+
+facts = [('questions', 'propositions', questions_n, ['questions']),
+         ('axes', 'axes', len(catalog['axes']), ['axes, lus', 'axe par axe']),
+         ('familles', 'families', len(catalog['families']), ['familles', 'politiques']),
+         ('auteurs', 'authors', len(catalog['references']['thinkers']), ['auteurs cités aux', 'deux pôles des axes'])]
+figures = base / 'branding' / 'chiffres'
+figures.mkdir(exist_ok=True)
+for (name, icon, value, lines), tone in zip(facts, ['menthe', 'citron', 'ciel', 'peche']):
+    (figures / f'{name}.svg').write_text(fact_card(icon, value, lines, tone))
 
 # Pages statiques de la méthode et des axes, et plan du site, à partir des mêmes données et des mêmes fonctions de rendu.
-subprocess.run(['node', str(base / 'scripts' / 'build-pages.mjs')], check=True)
+# Le plan du site date l'accueil de cette génération seulement si le fichier autonome change. Celui-ci est écrit après les
+# pages : si leur génération échoue, il reste inchangé et la génération suivante constate encore sa modification.
+standalone = base / 'index.html'
+home_changed = not standalone.exists() or standalone.read_text() != html
+subprocess.run(['node', str(base / 'scripts' / 'build-pages.mjs')] + (['--home-changed'] if home_changed else []), check=True)
+standalone.write_text(html)
+print('Fichier autonome prêt : index.html')

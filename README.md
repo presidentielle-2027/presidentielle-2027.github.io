@@ -1,14 +1,27 @@
-# Avant l'isoloir — version autonome et déployable
+# presidentielle-2027
 
-**80 questions · 20 axes · lecture axe par axe · 11 familles politiques · 114 auteurs cités aux deux pôles des axes.**
+[![Site en ligne](https://img.shields.io/website?url=https%3A%2F%2Fpresidentielle-2027.github.io%2F&label=site&up_message=en%20ligne&down_message=hors%20ligne)](https://presidentielle-2027.github.io/)
+[![Publication sur GitHub Pages](https://img.shields.io/github/deployments/presidentielle-2027/presidentielle-2027.github.io/github-pages?label=publication)](https://github.com/presidentielle-2027/presidentielle-2027.github.io/actions/workflows/pages/pages-build-deployment)
+[![Version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpresidentielle-2027%2Fpresidentielle-2027.github.io%2Fmain%2FVERSION&query=%24&label=version&color=6247e8)](VERSION)
 
-Une aide à la préparation du choix pour l'élection présidentielle de 2027. L'outil compare les réponses à onze familles d'idées, mesure un écart plutôt qu'un pourcentage de compatibilité et ne donne aucune consigne de vote.
+![Réponses calculées dans le navigateur](https://img.shields.io/badge/r%C3%A9ponses-dans%20le%20navigateur-0d5546)
+![Aucun cookie](https://img.shields.io/badge/cookies-aucun-0d5546)
+![Aucune dépendance npm](https://img.shields.io/badge/d%C3%A9pendances%20npm-aucune-0d5546)
 
-Cette distribution fonctionne indépendamment de ChatGPT : aucun compte, aucune clé API, aucun backend applicatif et aucun abonnement ne sont nécessaires. Les réponses et les scores sont calculés dans le navigateur. Les liens vers les sources constituent des lectures facultatives.
+[![Élection présidentielle 2027 : « Faites le point sur vos convictions. »](og-image.png)](https://presidentielle-2027.github.io/)
+
+[![Nombre de questions](branding/chiffres/questions.svg)](https://presidentielle-2027.github.io/)
+[![Nombre d'axes, lus axe par axe](branding/chiffres/axes.svg)](https://presidentielle-2027.github.io/axes/)
+[![Nombre de familles politiques](branding/chiffres/familles.svg)](https://presidentielle-2027.github.io/familles/)
+[![Nombre d'auteurs cités aux deux pôles des axes](branding/chiffres/auteurs.svg)](https://presidentielle-2027.github.io/auteurs/)
+
+Ce dépôt publie https://presidentielle-2027.github.io/, un outil qui aide à préparer son choix pour l'élection présidentielle de 2027. Il compare les réponses à onze familles d'idées, mesure un écart plutôt qu'un pourcentage de compatibilité et ne donne aucune consigne de vote.
+
+Cette distribution fonctionne indépendamment de ChatGPT : elle ne demande ni compte, ni clé API, ni backend applicatif, ni abonnement. Les réponses et les scores sont calculés dans le navigateur. Les liens vers les sources sont des lectures facultatives.
 
 ## 1. Distribuer un fichier ouvrable directement
 
-Ouvrir **`index.html`**, à la racine de l'archive, dans un navigateur récent, par un double-clic. Ce fichier contient l'interface, les styles, les polices, les questions, les références et les calculs. Il peut être copié, envoyé ou conservé sur une clé USB. Il fonctionne sans connexion pour le questionnaire et le bilan ; les liens bibliographiques demandent une connexion.
+Ouvrir `index.html`, à la racine de l'archive, dans un navigateur récent, par un double-clic. Ce fichier contient l'interface, les styles, les polices, les questions, les références et les calculs. Il peut être copié, envoyé ou conservé sur une clé USB. Il fonctionne sans connexion pour le questionnaire et le bilan ; les liens bibliographiques demandent une connexion.
 
 La sauvegarde automatique dépend du stockage local autorisé par le navigateur. Pour une page ouverte en `file://`, le comportement du stockage peut varier. L'export JSON permet de conserver les réponses explicitement et de les réimporter. Garder le même nom et le même emplacement de fichier facilite la reprise locale ; ne pas compter sur cette sauvegarde pour transférer des réponses entre appareils.
 
@@ -32,14 +45,14 @@ GitHub ne construit rien : il publie les fichiers commités tels quels. Pour pub
    ```
 
 2. Prévisualiser le site (voir ci-dessous).
-3. Commiter `index.html`, `sitemap.xml` et les dossiers des pages de référence avec les sources modifiées. Une famille ou un axe ajouté crée un dossier à ajouter au dépôt ; une page retirée des catalogues disparaît de son dossier à la génération et doit aussi disparaître du dépôt.
+3. Commiter `index.html`, `sitemap.xml`, les dossiers des pages de référence et les cartes de chiffres `branding/chiffres/` avec les sources modifiées. Une famille ou un axe ajouté crée un dossier à ajouter au dépôt ; une page retirée des catalogues disparaît de son dossier à la génération et doit aussi disparaître du dépôt.
 4. Pousser sur la branche `main`. Le site est republié en une à deux minutes ; l'onglet *Actions* du dépôt montre la publication (`pages-build-deployment`).
 
 Le fichier `.nojekyll` désactive le traitement Jekyll : GitHub Pages sert les fichiers tels quels, et chaque dossier de page est servi par son `index.html` (`/axes/immigration/` sert `axes/immigration/index.html`). Tout le contenu versionné devient accessible en ligne (`dist/`, `research/`, `tests/`…) ; les copies des sources citées, hors de Git, ne sont pas publiées. Le questionnaire et le bilan utilisent des fragments d'URL (`#questionnaire`, `#resultats`) : aucune réécriture côté serveur n'est nécessaire. GitHub Pages ne dépose pas de cookie, ce que suppose la mention « Sans cookie ni traceur publicitaire » du pied de page ; un autre hébergement doit le vérifier.
 
 ### Prévisualiser le site avant de le publier
 
-Après la reconstruction, servir **la racine du dépôt**, qui a la même arborescence que le site publié :
+Après la reconstruction, servir la racine du dépôt, qui a la même arborescence que le site publié :
 
 ```bash
 cd presidentielle-2027.github.io
@@ -50,7 +63,23 @@ Ouvrir ensuite `http://127.0.0.1:8080/` : l'accueil, puis `/methode/`, `/axes/`,
 
 Ne pas servir `dist/` seul (`--directory dist`) : ce dossier contient la version modulaire de l'application, mais ni le fichier autonome ni les pages de référence, dont les liens répondent alors par une erreur 404. Cette version modulaire s'ouvre à l'adresse `http://127.0.0.1:8080/dist/` quand la racine est servie ; sa balise `site-root` fait mener son menu aux pages de la racine.
 
-Référencement : le titre et la description de la page visent la présidentielle 2027 ; l'URL canonique désigne la racine, pour que la copie de `dist/` ne fasse pas doublon. Les balises Open Graph et Twitter renvoient à l'image de partage `og-image.png`, et des données structurées (schema.org, `WebSite` et `WebApplication`) décrivent le site. Le fichier autonome contient une présentation lisible sans JavaScript, générée à partir des catalogues. Des pages statiques, elles aussi lisibles sans JavaScript, donnent une adresse propre au contenu public : la méthode (`methode/`), les axes (`axes/`, et une page par axe avec sa définition, ses pôles, ses propositions, les arguments des deux pôles et les repères de toutes les familles), les familles d'idées (`familles/`, et une page par famille avec ses repères sur chaque axe, ses textes de référence et les partis cités), le catalogue des partis (`partis/`) et les auteurs cités (`auteurs/`). Elles sont générées par `scripts/build-pages.mjs` à partir des gabarits de `dist/pages.js` et des fonctions de rendu de l'application, chargent `dist/styles.css` et ne contiennent aucun programme ; le questionnaire et le bilan restent dans `index.html`. Le menu « Comprendre » de l'en-tête, commun à l'application et aux pages statiques, mène à ces pages ; elles reprennent la présentation du bilan (en-tête « Comprendre le bilan », rubriques en onglets). `sitemap.xml` est généré en même temps et liste toutes ces adresses. `robots.txt` écarte des moteurs les dossiers techniques et les fichiers Markdown, sauf la feuille de style et les polices de `dist/` utilisées par les pages statiques, et désigne `sitemap.xml`. Pour suivre l'indexation, déclarer le site dans Google Search Console et Bing Webmaster Tools, puis y soumettre `https://presidentielle-2027.github.io/sitemap.xml`.
+### Référencement
+
+Le titre et la description de la page visent la présidentielle 2027. L'URL canonique désigne la racine, pour que la copie de `dist/` ne fasse pas doublon. Les balises Open Graph et Twitter renvoient à l'image de partage `og-image.png`, et des données structurées (schema.org, `WebSite` et `WebApplication`) décrivent le site. Le fichier autonome contient une présentation lisible sans JavaScript, générée à partir des catalogues.
+
+Des pages statiques, elles aussi lisibles sans JavaScript, donnent une adresse propre au contenu public :
+
+- la méthode (`methode/`) ;
+- les axes (`axes/`), avec une page par axe : sa définition, ses pôles, ses propositions, les arguments des deux pôles et les repères de toutes les familles ;
+- les familles d'idées (`familles/`), avec une page par famille : ses repères sur chaque axe, ses textes de référence et les partis cités ;
+- le catalogue des partis (`partis/`) ;
+- les auteurs cités (`auteurs/`).
+
+`scripts/build-pages.mjs` les génère à partir des gabarits de `dist/pages.js` et des fonctions de rendu de l'application. Elles chargent `dist/styles.css` et ne contiennent aucun programme ; le questionnaire et le bilan restent dans `index.html`. Le menu « Comprendre » de l'en-tête, commun à l'application et aux pages statiques, mène à ces pages, qui reprennent la présentation du bilan (en-tête « Comprendre le bilan », rubriques en onglets).
+
+`sitemap.xml` est généré en même temps. Il liste toutes ces adresses, chacune avec sa date de mise à jour (`lastmod`, à l'heure de Paris), sa fréquence de changement (`changefreq`) et sa priorité (`priority`). Une page prend la date de la génération qui modifie son contenu ; une page inchangée garde la date du plan précédent, si bien qu'une reconstruction sans modification laisse le plan identique. La fréquence et la priorité de chaque page sont fixées dans `staticPages()` (`dist/pages.js`), celles de l'accueil dans `scripts/build-pages.mjs`.
+
+`robots.txt` écarte des moteurs les dossiers techniques et les fichiers Markdown, sauf la feuille de style et les polices de `dist/` utilisées par les pages statiques, et désigne `sitemap.xml`. Pour suivre l'indexation, déclarer le site dans Google Search Console et Bing Webmaster Tools, puis y soumettre `https://presidentielle-2027.github.io/sitemap.xml`.
 
 ### Autre hébergement web
 
@@ -66,16 +95,16 @@ robots.txt
 og-image.png
 ```
 
-Aucune compilation ni installation de paquets n'est nécessaire : ces fichiers sont déjà prêts, et leurs chemins sont relatifs. Ils peuvent être servis à la racine d'un domaine ou dans un sous-répertoire (`https://votre-domaine.fr/` ou `https://votre-domaine.fr/avant-isoloir/`). L'adresse canonique, l'image de partage et le plan du site désignent `https://presidentielle-2027.github.io/` : sur un autre domaine, remplacer cette adresse dans `dist/index.html` et `robots.txt`, puis reconstruire.
+Aucune compilation ni installation de paquets n'est nécessaire : ces fichiers sont déjà prêts, et leurs chemins sont relatifs. Ils peuvent être servis à la racine d'un domaine ou dans un sous-répertoire (`https://votre-domaine.fr/` ou `https://votre-domaine.fr/presidentielle-2027/`). L'adresse canonique, l'image de partage et le plan du site désignent `https://presidentielle-2027.github.io/` : sur un autre domaine, remplacer cette adresse dans `dist/index.html` et `robots.txt`, puis reconstruire.
 
 La version modulaire de `dist/` (`index.html`, `app.mjs`, `engine.mjs`, `data.js`, `styles.css`, `fonts/`) sépare les fichiers pour faciliter la maintenance ; `dist/pages.js` ne sert qu'à la génération des pages. Pour la publier aussi, le serveur doit servir les fichiers `.mjs` avec un type MIME JavaScript (`text/javascript` ou `application/javascript`) et faire revalider les fichiers à chaque visite (`Cache-Control: no-cache`), afin qu'après une mise à jour la page ne mélange pas d'anciennes données avec le nouveau code.
 
-**Ne pas ouvrir `dist/index.html` par double-clic** : cette version utilise des modules JavaScript qui demandent une origine HTTP(S). Pour le double-clic, utiliser le fichier `index.html` à la racine de l'archive, et non celui de `dist/`.
+Ne pas ouvrir `dist/index.html` par double-clic : cette version utilise des modules JavaScript qui demandent une origine HTTP(S). Pour une ouverture par double-clic, utiliser le fichier `index.html` de la racine de l'archive.
 
 ## 3. Sauvegarde, accès et changement d'hébergement
 
 - Chaque personne conserve ses réponses dans son navigateur. Cette distribution n'agrège pas les résultats de plusieurs personnes et n'envoie pas les réponses à un serveur.
-- Pour passer de la version hébergée dans ChatGPT à cette distribution, exporter d'abord les réponses en JSON depuis l'ancienne version, puis utiliser **Importer mes réponses** dans la nouvelle.
+- Pour passer de la version hébergée dans ChatGPT à cette distribution, exporter d'abord les réponses en JSON depuis l'ancienne version, puis utiliser « Importer mes réponses » dans la nouvelle.
 - Le stockage est lié à l'origine du site. Changer de domaine ou de navigateur ne transporte pas automatiquement les réponses : utiliser l'export/import.
 - Le contrôle d'accès privé de l'hébergement ChatGPT n'est pas inclus. Cette distribution n'impose pas de connexion, et un site GitHub Pages est public. Pour limiter l'accès, utiliser un hébergement doté d'une authentification.
 
@@ -97,17 +126,17 @@ Tous les fichiers sont lisibles et modifiables, sans dépendance npm.
 | `dist/styles.css` | L'apparence et les adaptations mobiles |
 | `dist/fonts/` | Les polices IBM Plex Sans et IBM Plex Mono (licence SIL OFL 1.1, voir `OFL.txt`), servies avec le site et intégrées en data URI dans le fichier autonome `index.html` : aucune requête vers un service de polices tiers |
 | `dist/index.html` | La structure de la page web |
-| `branding/` | L'icône du site (`icon.svg`, traits épais pour rester lisible à 16 px) et le logo de l'organisation GitHub (`logo.svg`, rendu en `logo-organisation.png`) ; `python3 scripts/build-icons.py` (demande `rsvg-convert` et Chrome) les intègre en data URI dans `dist/index.html`, régénère le logo et l'image de partage `og-image.png` de la racine |
+| `branding/` | L'icône du site (`icon.svg`, traits épais pour rester lisible à 16 px) et le logo de l'organisation GitHub (`logo.svg`, rendu en `logo-organisation.png`) ; `python3 scripts/build-icons.py` (demande `rsvg-convert` et Chrome) les intègre en data URI dans `dist/index.html`, régénère le logo et l'image de partage `og-image.png` de la racine. Les cartes de chiffres du README (`chiffres/`) sont écrites par `scripts/build-standalone.py` à partir des catalogues |
 
-Après toute modification des données, des gabarits ou des styles, régénérer **les fichiers publiés** avec Python 3 et Node.js :
+Après toute modification des données, des gabarits ou des styles, régénérer les fichiers publiés avec Python 3 et Node.js :
 
 ```bash
 python3 scripts/build-standalone.py
 ```
 
-Le script commence par reconstruire `dist/data.js`, puis produit le fichier autonome `index.html`, à la racine, avec exactement les mêmes données et calculs, et enfin, avec Node.js, les pages statiques (`methode/`, `axes/`, `familles/`, `partis/`, `auteurs/`) et `sitemap.xml`. Il n'accède pas au réseau. Ne jamais modifier ces fichiers générés à la main : une reconstruction écraserait ces modifications. Les pages d'une famille ou d'un axe retiré des catalogues sont supprimées à la génération. Pour voir le résultat, servir la racine du dépôt (section 2, « Prévisualiser le site avant de le publier »).
+Le script reconstruit `dist/data.js`, puis, avec exactement les mêmes données et calculs, le fichier autonome `index.html` de la racine et, avec Node.js, les pages statiques (`methode/`, `axes/`, `familles/`, `partis/`, `auteurs/`) et `sitemap.xml`, ainsi que les cartes de chiffres du README (`branding/chiffres/`). Il n'accède pas au réseau. Ne jamais modifier ces fichiers générés à la main : une reconstruction écraserait ces modifications. Les pages d'une famille ou d'un axe retiré des catalogues sont supprimées à la génération. Pour voir le résultat, servir la racine du dépôt (section 2, « Prévisualiser le site avant de le publier »).
 
-Pour vérifier les calculs et le contenu des pages, Node.js récent est nécessaire au développement :
+Les tests, qui vérifient les calculs et le contenu des pages, demandent une version récente de Node.js :
 
 ```bash
 node --test tests/engine.test.mjs
@@ -119,7 +148,7 @@ Le script de génération vérifie aussi le nombre d'axes et de propositions, l'
 
 Les repères des familles ont leur propre version dans `research/families.json` : `AAAA.M` pour la première version d'un mois, puis `AAAA.M.v2`, `AAAA.M.v3`… pour les révisions du même mois. Modifier une famille, en ajouter ou en retirer impose de changer cette version, enregistrée dans les sessions exportées. La page Méthode et le rapport imprimé n'affichent qu'une version, celle de la distribution, lue dans le fichier `VERSION`. Les réponses ne dépendant pas des familles, ce changement ne rend pas les sessions existantes incompatibles.
 
-Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 80 réponses, l'affichage des onglets du bilan, les arguments des deux pôles sous chaque axe et la liste des auteurs de la page Méthode, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe `file://` n'a pas pu être vérifiée dans le navigateur de préparation, dont la politique interdit ce protocole.
+Le test autonome exécute le script assemblé dans un environnement JavaScript simulant les événements nécessaires au parcours : il vérifie le démarrage, les 80 réponses, l'affichage des onglets du bilan, les arguments des deux pôles sous chaque axe et la liste des auteurs de la page Méthode, sans import ni appel réseau. Ce test ne remplace pas une vérification visuelle dans un navigateur. L'ouverture directe en `file://` n'a pas pu être vérifiée : le navigateur utilisé pour les tests interdit ce protocole.
 
 ## 5. Méthode et périmètre
 
